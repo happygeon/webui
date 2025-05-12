@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gloss & Glam Hair Salon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+    }
+    header {
+      background: #ff6f91;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .stylist-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .stylist-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1 1 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .stylist-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .service-menu {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .service-item {
+      margin-bottom: 15px;
+    }
+    .service-item h4 {
+      margin: 0 0 5px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      background: #ff6f91;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/50" alt="Salon Logo" />
+    <span style="font-size: 1.5rem;">Gloss & Glam Hair Salon</span>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Meet Our Stylists</h2>
+      <div class="stylist-grid">
+        <div class="stylist-card">
+          <img src="https://via.placeholder.com/100" alt="Stylist 1" />
+          <h3>Maria Lopez</h3>
+          <p>Specialty: Hair Coloring & Highlights</p>
+        </div>
+        <div class="stylist-card">
+          <img src="https://via.placeholder.com/100" alt="Stylist 2" />
+          <h3>Jake Kim</h3>
+          <p>Specialty: Men's Cuts & Styling</p>
+        </div>
+        <div class="stylist-card">
+          <img src="https://via.placeholder.com/100" alt="Stylist 3" />
+          <h3>Sasha Greene</h3>
+          <p>Specialty: Curls & Perms</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Service Menu</h2>
+      <div class="service-menu">
+        <div class="service-item">
+          <h4>Haircut</h4>
+          <p>Precision cuts for all hair types. Includes wash and blow dry. - <strong>$45</strong></p>
+        </div>
+        <div class="service-item">
+          <h4>Hair Coloring</h4>
+          <p>Full color, root touch-up, balayage or highlights. - <strong>From $80</strong></p>
+        </div>
+        <div class="service-item">
+          <h4>Perm</h4>
+          <p>Add volume and texture with our modern perm treatments. - <strong>$100</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Book an Appointment</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <label for="stylist">Choose a Stylist</label>
+        <select id="stylist" required>
+          <option value="">-- Select Stylist --</option>
+          <option>Maria Lopez</option>
+          <option>Jake Kim</option>
+          <option>Sasha Greene</option>
+        </select>
+
+        <label for="service">Choose a Service</label>
+        <select id="service" required>
+          <option value="">-- Select Service --</option>
+          <option>Haircut</option>
+          <option>Hair Coloring</option>
+          <option>Perm</option>
+        </select>
+
+        <label for="date">Select Date</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Select Time</label>
+        <input type="time" id="time" required />
+
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>

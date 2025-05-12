@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coffee Shop Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdf6f0;
+      color: #333;
+    }
+
+    header, footer {
+      background-color: #6f4e37;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+
+    h1, h2 {
+      color: #6f4e37;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, select, textarea, button {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      margin-top: 2rem;
+      background-color: #6f4e37;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #593a27;
+    }
+
+    .confirmation {
+      margin-top: 1rem;
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Java Brew Coffee</h1>
+    <p>Order your favorite coffee online</p>
+  </header>
+
+  <main>
+    <h2>Coffee Order Form</h2>
+    <form id="coffeeForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="coffee">Select Coffee:</label>
+      <select id="coffee" name="coffee" required>
+        <option value="">--Please choose--</option>
+        <option value="Espresso">Espresso</option>
+        <option value="Latte">Latte</option>
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+        <option value="Mocha">Mocha</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <select id="size" name="size" required>
+        <option value="">--Please choose--</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+
+      <label for="instructions">Special Instructions:</label>
+      <textarea id="instructions" name="instructions" rows="4"></textarea>
+
+      <button type="submit">Place Order</button>
+      <p class="confirmation" id="confirmationMessage"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Java Brew Coffee. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('coffeeForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const name = document.getElementById('name').value;
+      const coffee = document.getElementById('coffee').value;
+      const size = document.getElementById('size').value;
+
+      if (name && coffee && size) {
+        document.getElementById('confirmationMessage').textContent =
+          `Thank you, ${name}! Your ${size.toLowerCase()} ${coffee} is being prepared.`;
+        this.reset();
+      } else {
+        document.getElementById('confirmationMessage').textContent = '';
+        alert("Please complete all required fields.");
+      }
+    });
+  </script>
+
+</body>
+</html>

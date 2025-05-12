@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glamour Hair Salon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header img {
+      height: 50px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline;
+      margin-left: 15px;
+      font-size: 2em;
+      color: #c94f7c;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #c94f7c;
+      margin-bottom: 20px;
+    }
+    .stylists, .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stylist, .service {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 300px;
+    }
+    .stylist img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .stylist h3, .service h3 {
+      margin: 10px 0 5px;
+    }
+    .booking-form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .booking-form label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+    .booking-form input, .booking-form select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    .booking-form button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #c94f7c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .booking-form button:hover {
+      background-color: #a83f64;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/80x50?text=Logo" alt="Salon Logo">
+    <h1>Glamour Hair Salon</h1>
+  </header>
+
+  <section>
+    <h2>Our Stylists</h2>
+    <div class="stylists">
+      <div class="stylist">
+        <img src="https://via.placeholder.com/300x200?text=Stylist+1" alt="Stylist 1">
+        <h3>Jessica Lee</h3>
+        <p>Specialty: Haircut & Styling</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/300x200?text=Stylist+2" alt="Stylist 2">
+        <h3>Mark Evans</h3>
+        <p>Specialty: Hair Coloring</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/300x200?text=Stylist+3" alt="Stylist 3">
+        <h3>Sophia Chen</h3>
+        <p>Specialty: Perm & Treatments</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Service Menu</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Haircut</h3>
+        <p>Precision cuts tailored to your face shape and style.</p>
+        <strong>$40</strong>
+      </div>
+      <div class="service">
+        <h3>Coloring</h3>
+        <p>Professional color application with long-lasting results.</p>
+        <strong>$70</strong>
+      </div>
+      <div class="service">
+        <h3>Perm</h3>
+        <p>Add volume and curl to your hair with our gentle perm technique.</p>
+        <strong>$90</strong>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Book an Appointment</h2>
+    <form class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="stylist">Choose a Stylist</label>
+      <select id="stylist" name="stylist" required>
+        <option value="">Select</option>
+        <option value="jessica">Jessica Lee</option>
+        <option value="mark">Mark Evans</option>
+        <option value="sophia">Sophia Chen</option>
+      </select>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">Select</option>
+        <option value="haircut">Haircut - $40</option>
+        <option value="coloring">Coloring - $70</option>
+        <option value="perm">Perm - $90</option>
+      </select>
+
+      <label for="date">Select Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Select Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+</body>
+</html>

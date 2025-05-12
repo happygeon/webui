@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites - Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffdf8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      background-color: #f8b400;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 60px;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .menu-section {
+      padding: 2rem;
+    }
+
+    .category {
+      margin-bottom: 2rem;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #f8b400;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .menu-item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .menu-item h3 {
+      margin: 0 0 0.2rem;
+      font-size: 1.2rem;
+    }
+
+    .menu-item p {
+      margin: 0.2rem 0;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      color: #444;
+      margin-top: 0.3rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .menu-section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Restaurant Logo">
+    <h1>Delicious Bites</h1>
+  </header>
+
+  <div class="menu-section">
+    <div class="category">
+      <h2>Appetizers</h2>
+      <div class="menu-item">
+        <h3>Bruschetta</h3>
+        <p>Grilled bread topped with fresh tomatoes, garlic, and basil.</p>
+        <div class="price">$6.50</div>
+      </div>
+      <div class="menu-item">
+        <h3>Stuffed Mushrooms</h3>
+        <p>Mushrooms filled with cheese and herbs, baked to perfection.</p>
+        <div class="price">$7.25</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Main Dishes</h2>
+      <div class="menu-item">
+        <h3>Grilled Salmon</h3>
+        <p>Fresh Atlantic salmon with lemon butter sauce, served with veggies.</p>
+        <div class="price">$18.00</div>
+      </div>
+      <div class="menu-item">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Classic Italian pasta with eggs, cheese, pancetta, and pepper.</p>
+        <div class="price">$14.50</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Beverages</h2>
+      <div class="menu-item">
+        <h3>Fresh Lemonade</h3>
+        <p>Made with real lemons and a hint of mint.</p>
+        <div class="price">$3.00</div>
+      </div>
+      <div class="menu-item">
+        <h3>Iced Coffee</h3>
+        <p>Chilled coffee with cream and a shot of vanilla.</p>
+        <div class="price">$3.75</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delish Diner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff6347;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .menu {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #ff6347;
+      padding-bottom: 5px;
+    }
+
+    .item {
+      margin: 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .item-name {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .item-description {
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .item-price {
+      font-weight: bold;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Restaurant Logo">
+    <h1>Delish Diner</h1>
+  </header>
+
+  <div class="menu">
+
+    <div class="category">
+      <h2>Appetizers</h2>
+      <div class="item">
+        <div class="item-name">Garlic Bread <span class="item-price">$4.50</span></div>
+        <div class="item-description">Toasted baguette slices with garlic butter and herbs.</div>
+      </div>
+      <div class="item">
+        <div class="item-name">Mozzarella Sticks <span class="item-price">$6.00</span></div>
+        <div class="item-description">Fried mozzarella cheese served with marinara sauce.</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Main Dishes</h2>
+      <div class="item">
+        <div class="item-name">Grilled Chicken Alfredo <span class="item-price">$13.99</span></div>
+        <div class="item-description">Creamy Alfredo pasta with grilled chicken breast.</div>
+      </div>
+      <div class="item">
+        <div class="item-name">Veggie Burger <span class="item-price">$10.50</span></div>
+        <div class="item-description">Plant-based patty with lettuce, tomato, and avocado on a toasted bun.</div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Beverages</h2>
+      <div class="item">
+        <div class="item-name">Iced Tea <span class="item-price">$2.50</span></div>
+        <div class="item-description">Freshly brewed black tea served over ice.</div>
+      </div>
+      <div class="item">
+        <div class="item-name">Lemonade <span class="item-price">$2.75</span></div>
+        <div class="item-description">Homemade lemonade with a splash of mint.</div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

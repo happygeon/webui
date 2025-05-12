@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glamour Locks Salon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    section {
+      padding: 20px;
+    }
+    .stylists, .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .stylist, .service {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+    }
+    .stylist img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .booking-form {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #ff69b4;
+      border: none;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e0559e;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/60" alt="Salon Logo">
+  <h1>Glamour Locks Salon</h1>
+</header>
+
+<section>
+  <h2>Our Stylists</h2>
+  <div class="stylists">
+    <div class="stylist">
+      <img src="https://via.placeholder.com/250x200?text=Stylist+1" alt="Stylist 1">
+      <h3>Jenna Rose</h3>
+      <p>Specialty: Balayage & Modern Cuts</p>
+    </div>
+    <div class="stylist">
+      <img src="https://via.placeholder.com/250x200?text=Stylist+2" alt="Stylist 2">
+      <h3>Mark Styles</h3>
+      <p>Specialty: Classic Barbering & Beard Trims</p>
+    </div>
+    <div class="stylist">
+      <img src="https://via.placeholder.com/250x200?text=Stylist+3" alt="Stylist 3">
+      <h3>Elena Glam</h3>
+      <p>Specialty: Vibrant Coloring & Updos</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <div class="services">
+    <div class="service">
+      <h3>Haircut</h3>
+      <p>Precision cuts tailored to your style.</p>
+      <strong>$45</strong>
+    </div>
+    <div class="service">
+      <h3>Coloring</h3>
+      <p>Full color, highlights, balayage, and more.</p>
+      <strong>$80+</strong>
+    </div>
+    <div class="service">
+      <h3>Perm</h3>
+      <p>Add volume or waves with a classic perm.</p>
+      <strong>$70</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Book an Appointment</h2>
+  <form class="booking-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" required>
+
+    <label for="stylist">Choose a Stylist</label>
+    <select id="stylist" required>
+      <option value="">Select...</option>
+      <option value="jenna">Jenna Rose</option>
+      <option value="mark">Mark Styles</option>
+      <option value="elena">Elena Glam</option>
+    </select>
+
+    <label for="service">Choose a Service</label>
+    <select id="service" required>
+      <option value="">Select...</option>
+      <option value="haircut">Haircut</option>
+      <option value="coloring">Coloring</option>
+      <option value="perm">Perm</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Time</label>
+    <input type="time" id="time" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+</body>
+</html>

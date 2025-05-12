@@ -1,0 +1,2 @@
+Generate a hair salon booking UI with a single HTML file.
+Include sections such as salon name and logo, stylist profiles (with photo, name, specialty), service menu (e.g., haircut, coloring, perm) with descriptions and prices, a date & time picker for booking

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glow & Shear Salon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background-color: #f4c2c2;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+    header h1 {
+      display: inline;
+      margin-left: 10px;
+      font-size: 2em;
+      vertical-align: middle;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #f4c2c2;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .stylists {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .stylist {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      width: 250px;
+      background: #fff;
+      text-align: center;
+    }
+    .stylist img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .service {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .booking {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #f4c2c2;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #e89da1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/60x60.png?text=Logo" alt="Salon Logo">
+  <h1>Glow & Shear Salon</h1>
+</header>
+
+<div class="container">
+  <section class="section">
+    <h2>Meet Our Stylists</h2>
+    <div class="stylists">
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 1">
+        <h3>Emma Stone</h3>
+        <p>Color Specialist</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 2">
+        <h3>Liam James</h3>
+        <p>Men's Cuts & Fades</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 3">
+        <h3>Sophia Ray</h3>
+        <p>Perm & Texture Styling</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Service Menu</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Haircut</h3>
+        <p>Precision cuts tailored to your style.</p>
+        <strong>$45</strong>
+      </div>
+      <div class="service">
+        <h3>Coloring</h3>
+        <p>Full color, highlights, balayage, and more.</p>
+        <strong>$80+</strong>
+      </div>
+      <div class="service">
+        <h3>Perm</h3>
+        <p>Texturizing treatments for curls or waves.</p>
+        <strong>$70</strong>
+      </div>
+      <div class="service">
+        <h3>Blowout</h3>
+        <p>Smooth, voluminous styling after a wash.</p>
+        <strong>$35</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Book Your Appointment</h2>
+    <div class="booking">
+      <form>
+        <label for="service">Select Service:</label>
+        <select id="service" name="service">
+          <option value="haircut">Haircut</option>
+          <option value="coloring">Coloring</option>
+          <option value="perm">Perm</option>
+          <option value="blowout">Blowout</option>
+        </select>
+
+        <label for="stylist">Select Stylist:</label>
+        <select id="stylist" name="stylist">
+          <option value="emma">Emma Stone</option>
+          <option value="liam">Liam James</option>
+          <option value="sophia">Sophia Ray</option>
+        </select>
+
+        <label for="date">Choose Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Choose Time:</label>
+        <input type="time" id="time" name="time">
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </section>
+</div>
+
+</body>
+</html>

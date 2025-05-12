@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glamour Hair Salon Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+    header {
+      background: #ffe6e6;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      height: 80px;
+    }
+    h1 {
+      margin: 10px 0 0;
+    }
+    section {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .stylists {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .stylist {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      padding: 10px;
+    }
+    .stylist img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    .services {
+      max-width: 600px;
+      margin: auto;
+    }
+    .service {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .service h4 {
+      margin: 0;
+    }
+    .booking-form {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    .booking-form label {
+      display: block;
+      margin-top: 10px;
+    }
+    .booking-form input, .booking-form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    .booking-form button {
+      margin-top: 15px;
+      padding: 10px;
+      width: 100%;
+      background-color: #ff9999;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/150x80?text=Salon+Logo" alt="Salon Logo">
+    <h1>Glamour Hair Salon</h1>
+  </header>
+
+  <section>
+    <h2>Our Stylists</h2>
+    <div class="stylists">
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 1">
+        <h3>Alex</h3>
+        <p>Specialist in Modern Cuts</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 2">
+        <h3>Bella</h3>
+        <p>Color & Highlights</p>
+      </div>
+      <div class="stylist">
+        <img src="https://via.placeholder.com/100" alt="Stylist 3">
+        <h3>Chris</h3>
+        <p>Perms & Styling</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Service Menu</h2>
+    <div class="services">
+      <div class="service">
+        <h4>Haircut</h4>
+        <p>Includes wash, cut & style – $40</p>
+      </div>
+      <div class="service">
+        <h4>Coloring</h4>
+        <p>Full color or highlights – $70</p>
+      </div>
+      <div class="service">
+        <h4>Perm</h4>
+        <p>Volume & curl treatment – $85</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Book an Appointment</h2>
+    <form class="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="stylist">Choose Stylist:</label>
+      <select id="stylist" required>
+        <option value="">Select</option>
+        <option value="alex">Alex</option>
+        <option value="bella">Bella</option>
+        <option value="chris">Chris</option>
+      </select>
+
+      <label for="service">Select Service:</label>
+      <select id="service" required>
+        <option value="">Select</option>
+        <option value="haircut">Haircut</option>
+        <option value="coloring">Coloring</option>
+        <option value="perm">Perm</option>
+      </select>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+</body>
+</html>

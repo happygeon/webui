@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glamour Touch Salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffe0e6;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline;
+      margin-left: 10px;
+      font-size: 2em;
+      vertical-align: middle;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
+
+    .stylists {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .stylist {
+      flex: 1 1 200px;
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .stylist img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .services {
+      margin-top: 20px;
+    }
+
+    .service {
+      background: white;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .service h4 {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .booking-form {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .booking-form label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    .booking-form input, .booking-form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .booking-form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff7ea8;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .booking-form button:hover {
+      background-color: #ff5c8a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/60x60.png?text=💇" alt="Salon Logo">
+  <h1>Glamour Touch Salon</h1>
+</header>
+
+<div class="container">
+
+  <h2>Our Stylists</h2>
+  <div class="stylists">
+    <div class="stylist">
+      <img src="https://via.placeholder.com/100" alt="Stylist 1">
+      <h3>Emma L.</h3>
+      <p>Color Specialist</p>
+    </div>
+    <div class="stylist">
+      <img src="https://via.placeholder.com/100" alt="Stylist 2">
+      <h3>Jason M.</h3>
+      <p>Men's Cuts & Styling</p>
+    </div>
+    <div class="stylist">
+      <img src="https://via.placeholder.com/100" alt="Stylist 3">
+      <h3>Sophia K.</h3>
+      <p>Perm & Texture Expert</p>
+    </div>
+  </div>
+
+  <h2>Service Menu</h2>
+  <div class="services">
+    <div class="service">
+      <h4>Haircut <span>$40</span></h4>
+      <p>Precision cut with consultation and blow dry.</p>
+    </div>
+    <div class="service">
+      <h4>Coloring <span>$75+</span></h4>
+      <p>Includes full color or highlights with toner and finish.</p>
+    </div>
+    <div class="service">
+      <h4>Perm <span>$90</span></h4>
+      <p>Classic or modern wave styles with full consultation.</p>
+    </div>
+  </div>
+
+  <h2>Book an Appointment</h2>
+  <form class="booking-form">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" required>
+
+    <label for="stylist">Choose Stylist</label>
+    <select id="stylist" required>
+      <option value="">-- Select --</option>
+      <option>Emma L.</option>
+      <option>Jason M.</option>
+      <option>Sophia K.</option>
+    </select>
+
+    <label for="service">Select Service</label>
+    <select id="service" required>
+      <option value="">-- Select --</option>
+      <option>Haircut</option>
+      <option>Coloring</option>
+      <option>Perm</option>
+    </select>
+
+    <label for="date">Choose Date</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Choose Time</label>
+    <input type="time" id="time" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+</div>
+
+</body>
+</html>

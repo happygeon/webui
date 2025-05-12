@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+    }
+
+    .menu-section {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .menu-section h2 {
+      border-bottom: 2px solid #444;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .menu-item {
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .menu-item p {
+      margin: 5px 0;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #e67e22;
+    }
+
+    @media (max-width: 600px) {
+      .menu-section {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Restaurant Logo" />
+    <h1>Delish Bistro</h1>
+  </header>
+
+  <div class="menu-section">
+    <h2>Appetizers</h2>
+    <div class="menu-item">
+      <h3>Bruschetta <span class="price">$6.99</span></h3>
+      <p>Grilled bread with fresh tomatoes, garlic, and basil.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Stuffed Mushrooms <span class="price">$7.99</span></h3>
+      <p>Button mushrooms filled with herbed cheese and breadcrumbs.</p>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Main Dishes</h2>
+    <div class="menu-item">
+      <h3>Grilled Salmon <span class="price">$18.99</span></h3>
+      <p>Served with seasonal vegetables and lemon butter sauce.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Chicken Alfredo Pasta <span class="price">$15.50</span></h3>
+      <p>Creamy Alfredo sauce tossed with fettuccine and grilled chicken.</p>
+    </div>
+  </div>
+
+  <div class="menu-section">
+    <h2>Beverages</h2>
+    <div class="menu-item">
+      <h3>Fresh Lemonade <span class="price">$3.50</span></h3>
+      <p>Made with real lemons and a touch of honey.</p>
+    </div>
+    <div class="menu-item">
+      <h3>Iced Coffee <span class="price">$4.00</span></h3>
+      <p>Cold brewed coffee served over ice with milk or cream.</p>
+    </div>
+  </div>
+
+</body>
+</html>

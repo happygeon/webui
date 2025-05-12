@@ -1,0 +1,2 @@
+Generate a restaurant ordering UI with a single HTML file.
+Include sections such as restaurant name and logo, menu categories (e.g., appetizers, main dishes, beverages), individual menu items with name, description, price

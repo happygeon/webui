@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gourmet Haven - Menu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      max-height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline;
+      font-size: 2em;
+      margin-left: 15px;
+      vertical-align: middle;
+    }
+
+    .menu-section {
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .menu-category {
+      margin-bottom: 30px;
+    }
+
+    .menu-category h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #444;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .menu-item p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .price {
+      float: right;
+      color: #000;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .price {
+        float: none;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://via.placeholder.com/60" alt="Restaurant Logo">
+    <h1>Gourmet Haven</h1>
+  </header>
+
+  <div class="menu-section">
+
+    <div class="menu-category">
+      <h2>Appetizers</h2>
+      <div class="menu-item">
+        <h3>Bruschetta <span class="price">$6.50</span></h3>
+        <p>Grilled bread topped with garlic, tomatoes, and basil.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Stuffed Mushrooms <span class="price">$7.00</span></h3>
+        <p>Portobello mushrooms stuffed with cheese and herbs.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Main Dishes</h2>
+      <div class="menu-item">
+        <h3>Grilled Salmon <span class="price">$18.95</span></h3>
+        <p>Served with lemon butter sauce and seasonal vegetables.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Alfredo <span class="price">$15.50</span></h3>
+        <p>Creamy alfredo pasta with grilled chicken breast.</p>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Beverages</h2>
+      <div class="menu-item">
+        <h3>Fresh Lemonade <span class="price">$3.00</span></h3>
+        <p>House-made lemonade with a splash of mint.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Iced Coffee <span class="price">$4.00</span></h3>
+        <p>Cold brewed coffee served over ice.</p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delish Diner Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fafafa;
+      color: #333;
+    }
+    header {
+      background-color: #ff6347;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    h1 {
+      display: inline-block;
+      font-size: 2em;
+      margin: 0;
+      vertical-align: middle;
+    }
+    .menu {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .category {
+      margin-bottom: 40px;
+    }
+    .category h2 {
+      border-bottom: 2px solid #ff6347;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #ff6347;
+    }
+    .menu-item {
+      margin-bottom: 20px;
+    }
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.2em;
+    }
+    .description {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .price {
+      font-weight: bold;
+      float: right;
+      color: #444;
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/60" alt="Restaurant Logo">
+  <h1>Delish Diner</h1>
+</header>
+
+<div class="menu">
+  <div class="category">
+    <h2>Appetizers</h2>
+    <div class="menu-item clearfix">
+      <h3>Bruschetta <span class="price">$6.50</span></h3>
+      <p class="description">Toasted bread with fresh tomatoes, garlic, and basil.</p>
+    </div>
+    <div class="menu-item clearfix">
+      <h3>Stuffed Mushrooms <span class="price">$7.00</span></h3>
+      <p class="description">Mushrooms filled with cheese and herbs, baked to perfection.</p>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Main Dishes</h2>
+    <div class="menu-item clearfix">
+      <h3>Grilled Salmon <span class="price">$15.99</span></h3>
+      <p class="description">Served with a lemon butter sauce and seasonal vegetables.</p>
+    </div>
+    <div class="menu-item clearfix">
+      <h3>Chicken Alfredo <span class="price">$13.50</span></h3>
+      <p class="description">Fettuccine pasta tossed in a creamy Alfredo sauce with grilled chicken.</p>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>Beverages</h2>
+    <div class="menu-item clearfix">
+      <h3>Fresh Lemonade <span class="price">$3.00</span></h3>
+      <p class="description">Hand-squeezed lemons with a touch of mint.</p>
+    </div>
+    <div class="menu-item clearfix">
+      <h3>Iced Tea <span class="price">$2.50</span></h3>
+      <p class="description">Classic black iced tea served chilled.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

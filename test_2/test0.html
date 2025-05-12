@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chic Cut Salon - Booking</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fffaf9;
+      color: #333;
+    }
+    header {
+      background-color: #ffb6b9;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    header img {
+      height: 60px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .stylists, .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .booking-form {
+      background-color: #ffe0e3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .booking-form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .booking-form input, .booking-form select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .booking-form button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #ff7b89;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .booking-form button:hover {
+      background-color: #ff5e70;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://via.placeholder.com/60x60?text=Logo" alt="Salon Logo">
+  <h1>Chic Cut Salon</h1>
+</header>
+
+<section>
+  <h2>Our Stylists</h2>
+  <div class="stylists">
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Stylist+1" alt="Stylist 1">
+      <h3>Alex Morgan</h3>
+      <p>Specialty: Modern Haircuts, Styling</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Stylist+2" alt="Stylist 2">
+      <h3>Taylor Lee</h3>
+      <p>Specialty: Coloring, Highlights</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200?text=Stylist+3" alt="Stylist 3">
+      <h3>Jordan Rivera</h3>
+      <p>Specialty: Perms, Curly Hair</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Service Menu</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Haircut</h3>
+      <p>Precision cuts tailored to your style.</p>
+      <strong>$40</strong>
+    </div>
+    <div class="card">
+      <h3>Hair Coloring</h3>
+      <p>Vibrant or natural color, your choice.</p>
+      <strong>$70</strong>
+    </div>
+    <div class="card">
+      <h3>Perm</h3>
+      <p>Get the perfect wave or curl that lasts.</p>
+      <strong>$90</strong>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Book Your Appointment</h2>
+  <form class="booking-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required />
+
+    <label for="service">Choose a Service:</label>
+    <select id="service" required>
+      <option value="">Select...</option>
+      <option value="Haircut">Haircut - $40</option>
+      <option value="Coloring">Hair Coloring - $70</option>
+      <option value="Perm">Perm - $90</option>
+    </select>
+
+    <label for="stylist">Preferred Stylist:</label>
+    <select id="stylist" required>
+      <option value="">Select...</option>
+      <option value="Alex Morgan">Alex Morgan</option>
+      <option value="Taylor Lee">Taylor Lee</option>
+      <option value="Jordan Rivera">Jordan Rivera</option>
+    </select>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" required />
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" required />
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+</body>
+</html>

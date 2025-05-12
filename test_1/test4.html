@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Ordering UI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    h1 {
+      display: inline;
+      font-size: 2em;
+    }
+    .menu-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .category {
+      margin-bottom: 40px;
+    }
+    .category h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .menu-item {
+      background: white;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .menu-item h3 {
+      margin: 0 0 5px;
+      font-size: 1.2em;
+    }
+    .menu-item p {
+      margin: 5px 0;
+    }
+    .menu-item .price {
+      float: right;
+      font-weight: bold;
+      color: #333;
+    }
+    @media (max-width: 600px) {
+      .menu-item .price {
+        float: none;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/50" alt="Restaurant Logo" />
+    <h1>Delicious Bites</h1>
+  </header>
+
+  <div class="menu-section">
+
+    <div class="category">
+      <h2>Appetizers</h2>
+      <div class="menu-item">
+        <h3>Garlic Bread <span class="price">$4.99</span></h3>
+        <p>Freshly baked bread with garlic butter and herbs.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Stuffed Mushrooms <span class="price">$6.50</span></h3>
+        <p>Button mushrooms filled with cheese and herbs, baked to perfection.</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Main Dishes</h2>
+      <div class="menu-item">
+        <h3>Grilled Chicken Alfredo <span class="price">$12.99</span></h3>
+        <p>Grilled chicken served over fettuccine in a creamy Alfredo sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Veggie Burger <span class="price">$10.50</span></h3>
+        <p>Black bean patty with lettuce, tomato, and vegan mayo on a toasted bun.</p>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Beverages</h2>
+      <div class="menu-item">
+        <h3>Fresh Lemonade <span class="price">$2.99</span></h3>
+        <p>Homemade lemonade with a touch of mint.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Iced Tea <span class="price">$2.50</span></h3>
+        <p>Refreshing brewed black tea served over ice.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

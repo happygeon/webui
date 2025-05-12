@@ -1,0 +1,5 @@
+Create a web page with HTML that has a form for a coffee shop. Add some style and make it do something with JavaScript. Put everything in one file.
+
+You are an newbe of frontend developer. Create a web page with HTML that has a form for a coffee shop. Put everything in one file. this web page wouldn't be look good or good responsive
+
+add css somting but you can skip header or somting

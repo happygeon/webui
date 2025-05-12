@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glamour Locks Hair Salon</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #f8cdd3;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 60px;
+      vertical-align: middle;
+    }
+
+    header h1 {
+      display: inline;
+      margin-left: 15px;
+      font-size: 2rem;
+      vertical-align: middle;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b03060;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .stylist-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stylist-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .stylist-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .service-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .service-list li {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+
+    .service-list strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    form {
+      margin-top: 20px;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    form input, form select {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+    form button {
+      margin-top: 15px;
+      padding: 10px 15px;
+      background-color: #b03060;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background-color: #8e2d50;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/60x60?text=GL" alt="Glamour Locks Logo" />
+    <h1>Glamour Locks Hair Salon</h1>
+  </header>
+
+  <section>
+    <h2>Our Stylists</h2>
+    <div class="stylist-grid">
+      <div class="stylist-card">
+        <img src="https://via.placeholder.com/100" alt="Stylist 1" />
+        <h3>Jenna Lee</h3>
+        <p>Color Specialist</p>
+      </div>
+      <div class="stylist-card">
+        <img src="https://via.placeholder.com/100" alt="Stylist 2" />
+        <h3>Marco Ruiz</h3>
+        <p>Men’s Cuts & Beard Styling</p>
+      </div>
+      <div class="stylist-card">
+        <img src="https://via.placeholder.com/100" alt="Stylist 3" />
+        <h3>Sophia Zhang</h3>
+        <p>Perm & Texture Services</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Service Menu</h2>
+    <ul class="service-list">
+      <li>
+        <strong>Haircut - $45</strong>
+        Classic cut and style tailored to your face shape and hair texture.
+      </li>
+      <li>
+        <strong>Coloring - $90+</strong>
+        Professional hair coloring, highlights, balayage and more.
+      </li>
+      <li>
+        <strong>Perm - $100+</strong>
+        Add long-lasting curls or waves to enhance your hair’s volume.
+      </li>
+      <li>
+        <strong>Deep Conditioning - $35</strong>
+        Nourishing treatment to restore shine and strength.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Book an Appointment</h2>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="service">Select Service:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a Service --</option>
+        <option value="haircut">Haircut</option>
+        <option value="coloring">Coloring</option>
+        <option value="perm">Perm</option>
+        <option value="conditioning">Deep Conditioning</option>
+      </select>
+
+      <label for="stylist">Preferred Stylist:</label>
+      <select id="stylist" name="stylist">
+        <option value="">-- No Preference --</option>
+        <option value="jenna">Jenna Lee</option>
+        <option value="marco">Marco Ruiz</option>
+        <option value="sophia">Sophia Zhang</option>
+      </select>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+</body>
+</html>
