@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop Order</title>
+    <style>
+        body {
+            background-color: yellow;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            background-color: red;
+            padding: 10px;
+            color: white;
+        }
+        label, input {
+            font-size: 20px;
+        }
+        input[type="text"] {
+            background-color: lightblue;
+        }
+        input[type="email"] {
+            background-color: green;
+        }
+        input[type="submit"] {
+            background-color: purple;
+        }
+        .checkboxes {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coffee Order Form</h1>
+    <form action="" method="post">
+        <label for="name">Your Name: </label>
+        <input type="text" id="name" name="name" value=""><br><br>
+
+        <label for="email">Your Email: </label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="coffee">What coffee do you want?: </label>
+        <select id="coffee" name="coffee">
+            <option value="espresso">Espresso</option>
+            <option value="latte">Latte</option>
+            <option value="mocha">Mocha</option>
+        </select><br><br>
+
+        <p>Choose your size:</p>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label><br><br>
+
+        <p class="checkboxes">Add extras (choose any):</p>
+        <input type="checkbox" id="syrup" name="extras" value="syrup"> Syrup<br>
+        <input type="checkbox" id="milk" name="extras" value="milk"> Milk<br>
+        <input type="checkbox" id="whipped" name="extras" value="whipped cream"> Whipped Cream<br><br>
+
+        <label for="message">Special Request: </label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
