@@ -14,4 +14,15 @@ if __name__ == "__main__":
         completions = [[{"role": "assistant", "content": html_content}]]
         scores = html_structure_reward_func(completions)
 
+        #print(f"📄 {filename} 점수: {scores[0]*100:.2f} / 100")
+
+        completions = [[{"role": "assistant", "content": html_content}]]
+        scores = html_structure_reward_func_v2(completions)
+
+        #print(f"📄 {filename} 점수: {scores[0]*100:.2f} / 100")
+        
+        completions = [[{"role": "assistant", "content": html_content}]]
+        scores = html_structure_reward_func_v3(completions)
+
         print(f"📄 {filename} 점수: {scores[0]*100:.2f} / 100")
+        print("---------------------------------------------")
