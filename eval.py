@@ -185,26 +185,25 @@ class RewardFunc:
             return 1.0
         else:
             return 0.7
-    
     def structure_eval(self, html_content):
         score = 0
-        soup = BeautifulSoup(html_content, 'html.parser')
+        self.soup = BeautifulSoup(html_content, 'html.parser')
         if not html_content.lower().startswith('<!doctype'):
             score -= 20.0
-        html_tag = soup.find('html')
+        html_tag = self.soup.find('html')
         if not html_tag or not html_tag.get('lang'):
             score -= 10.0
-        if not soup.find('meta', attrs={'name': 'viewport'}):
+        if not self.soup.find('meta', attrs={'name': 'viewport'}):
             score -= 10.0
-        headings = soup.find_all(['h1', 'h2', 'h3'])
+        headings = self.soup.find_all(['h1', 'h2', 'h3'])
         if not headings:
             score -= 8.0
-        elif not soup.find('h1'):
+        elif not self.soup.find('h1'):
             score -= 5.0
         semantic_tags = ['header', 'nav', 'main', 'section', 'article', 'aside', 'footer']
         used_tags = set()
         for tag in semantic_tags:
-            if soup.find(tag):
+            if self.soup.find(tag):
                 used_tags.add(tag)
         semantic_count = len(used_tags)
         if semantic_count >= 4:
@@ -213,16 +212,63 @@ class RewardFunc:
             score -= 5.0
         elif semantic_count == 2:
             score -= 2.0
-        div_count = len(soup.find_all('div'))
-        total_elements = len(soup.find_all())
+        div_count = len(self.soup.find_all('div'))
+        total_elements = len(self.soup.find_all())
         if total_elements > 0 and (div_count / total_elements) > 0.7:
             score -= 5.0
-        for form in soup.find_all('form'):
+        for form in self.soup.find_all('form'):
             for input_tag in form.find_all('input'):
                 if not input_tag.get('id'):
                     score -= 1.0
         return score
+    def responsive_eval(self, html_content):
+        score = 0
+        fixed_unit_penalty = 0
+        style_text = html_content.lower()
+        fixed_units = re.findall(r'(?:style\s*=\s*[\"\'][^\"\']*?)(\d+(px|pt|cm|mm))', style_text)
+        if fixed_units:
+            fixed_unit_penalty += len(fixed_units) * 1.5
+        for style in self.soup.find_all('style'):
+            if 'px' in style.text:
+                fixed_unit_penalty += style.text.count('px') * 1.0
+        score -= min(fixed_unit_penalty, 10.0)
 
+        responsive_bonus = 0
+        for unit in ['%', 'vw', 'vh', 'em', 'rem']:
+            if unit in style_text:
+                responsive_bonus += 0.5
+        score += min(responsive_bonus, 2.5)
+        return score
+    def color_harmony_eval(self, html_content):
+        score = 0
+        color_values = self.extract_colors(html_content)
+        harmony = self.color_harmony_score(color_values)
+        if harmony < 0.4:
+            score -= 5.0
+        elif harmony > 0.8:
+            score += 3.0
+        elif harmony > 0.6:
+            score += 1.5
+        return score
+    def css_eval(self, html_content):
+        score = 0
+        self.soup = BeautifulSoup(html_content, 'html.parser')
+        style_tags = self.soup.find_all('style')
+        inline_styles = re.findall(r'style\s*=\s*[\"\']', html_content)
+        class_attrs = re.findall(r'class\s*=\s*[\"\']', html_content)
+
+        css_score_penalty = 0
+        if not style_tags:
+            css_score_penalty += 5.0
+        if not inline_styles:
+            css_score_penalty += 5.0
+        if not class_attrs:
+            css_score_penalty += 3.0
+        score -= css_score_penalty
+        return score
+    
+    def normalize_score(self, score):
+        return max(0.0, min(score, 100.0)) / 100.0
     def eval(self):
         scores = []
         for html_content in self.responses:
@@ -231,9 +277,18 @@ class RewardFunc:
                 continue
             score = 100.0
             # 1. 구조 평가
-            score += min(0, self.structure_eval(html_content))
+            score += self.structure_eval(html_content)
             # 2. 반응형 단위 평가
-
+            score += self.responsive_eval(html_content)
+            # 3. 색상 조화도 평가
+            score += self.color_harmony_eval(html_content)
+            # 4. CSS 존재 여부 평가
+            score += self.css_eval(html_content)
+            # 최종 점수 정규화
+            score = self.normalize_score(score)
+            scores.append(score)
+        return scores
+            
 
 
     

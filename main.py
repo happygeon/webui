@@ -26,3 +26,7 @@ if __name__ == "__main__":
 
         print(f"📄 {filename} 점수: {scores[0]*100:.2f} / 100")
         print("---------------------------------------------")
+        
+        reward = RewardFunc(completions)
+        reward_score = reward.eval()
+        print(f"📄 {filename} 점수: {reward_score[0]*100:.2f} / 100")
