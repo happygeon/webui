@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Shop Order</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6e3;
+      color: #4b2e2e;
+      padding: 30px;
+    }
+    h1 {
+      color: #4b2e2e;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background-color: #fff3dd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(75, 46, 46, 0.2);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #4b2e2e;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #4b2e2e;
+      color: #fdf6e3;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Order Your Coffee</h1>
+  <form id="coffeeForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="drink">Choose your drink</label>
+    <select id="drink">
+      <option value="Latte">Latte</option>
+      <option value="Cappuccino">Cappuccino</option>
+      <option value="Espresso">Espresso</option>
+    </select>
+
+    <label for="size">Size</label>
+    <select id="size">
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+    <div class="message" id="message"></div>
+  </form>
+
+  <script>
+    document.getElementById("coffeeForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const drink = document.getElementById("drink").value;
+      const size = document.getElementById("size").value;
+      document.getElementById("message").textContent = `Thank you, ${name}. Your ${size} ${drink} is being prepared!`;
+    });
+  </script>
+</body>
+</html>

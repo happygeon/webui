@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Order</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #222;
+      color: #222;
+      padding: 40px;
+    }
+    form {
+      background-color: #222;
+      color: #222;
+      max-width: 350px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #222;
+    }
+    label, input, select {
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+    }
+    input, select {
+      padding: 8px;
+      background-color: #333;
+      color: #222;
+      border: none;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #ff5733; /* Only contrasting color */
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .message {
+      margin-top: 20px;
+      color: #ff5733;
+    }
+  </style>
+</head>
+<body>
+  <form id="coffeeForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" required>
+
+    <label for="drink">Drink</label>
+    <select id="drink">
+      <option value="Americano">Americano</option>
+      <option value="Mocha">Mocha</option>
+    </select>
+
+    <label for="size">Size</label>
+    <select id="size">
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+    </select>
+
+    <button type="submit">Order</button>
+    <div class="message" id="message"></div>
+  </form>
+
+  <script>
+    document.getElementById("coffeeForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const drink = document.getElementById("drink").value;
+      const size = document.getElementById("size").value;
+      document.getElementById("message").textContent = `${name}, your ${size} ${drink} is on its way!`;
+    });
+  </script>
+</body>
+</html>
