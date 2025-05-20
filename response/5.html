@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>Tech Conference</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Tech Conference 2023</h1>
+            <p>Welcome to the premier technology conference of the year.</p>
+        </header>
+
+        <main>
+            <section id="agenda">
+                <h2>Agenda Schedule</h2>
+                <ul>
+                    <li>
+                        <h3>Day 1</h3>
+                        <ul>
+                            <li>9:00 AM - Opening Keynote</li>
+                            <li>10:00 AM - Panel Discussion</li>
+                            <!-- Add more items dynamically -->
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Day 2</h3>
+                        <ul>
+                            <li>9:30 AM - Workshop</li>
+                            <li>11:00 AM - Networking Event</li>
+                            <!-- Add more items dynamically -->
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="speakers">
+                <h2>Speakers</h2>
+                <div>
+                    <h3>Speaker Name 1</h3>
+                    <div>
+                        <p>Bio: <span style="display:none;">This speaker specializes in...</span></p>
+                        <button onclick="toggleBio(this)">Toggle Bio</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>Speaker Name 2</h3>
+                    <div>
+                        <p>Bio: <span style="display:none;">This speaker is known for...</span></p>
+                        <button onclick="toggleBio(this)">Toggle Bio</button>
+                    </div>
+                </div>
+                <!-- More speakers can be added here -->
+            </section>
+
+            <section id="registration">
+                <h2>Register Now</h2>
+                <form>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="ticket">Ticket Type:</label><br>
+                    <select id="ticket" name="ticket">
+                        <option value="general">General Admission</option>
+                        <option value="vip">VIP</option>
+                    </select><br><br>
+
+                    <input type="submit" value="Register">
+                </form>
+            </section>
+        </main>
+
+        <script>
+            function toggleBio(button) {
+                var bioText = button.previousElementSibling.querySelector('span');
+                if (bioText.style.display === "none") {
+                    bioText.style.display = "inline";
+                    button.textContent = "Hide Bio";
+                } else {
+                    bioText.style.display = "none";
+                    button.textContent = "Show Bio";
+                }
+            }
+        </script>
+    </body>
+</html>

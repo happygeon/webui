@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        #mapContainer {
+            height: 500px;
+            width: 100%;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            color: #777;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="date"] {
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul#listingItems {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Booking Platform</h1>
+    </header>
+    
+    <main>
+        <section id="map">
+            <h2>Interactive Map Search</h2>
+            <!-- Placeholder for the map -->
+            <div id="mapContainer">
+                <p>Map will be displayed here</p>
+            </div>
+        </section>
+
+        <section id="filter">
+            <h2>Filter Listings</h2>
+            <!-- Filter options will go here -->
+            <form>
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination">
+                
+                <label for="priceRange">Price Range:</label>
+                <input type="text" id="priceRange" name="priceRange">
+                
+                <label for="travelDate">Travel Date:</label>
+                <input type="date" id="travelDate" name="travelDate">
+                
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="listings">
+            <h2>Listings</h2>
+            <!-- Listing items will be displayed here -->
+            <ul id="listingItems">
+                <li>Listing 1</li>
+                <li>Listing 2</li>
+                <li>Listing 3</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Booking Platform</p>
+    </footer>
+
+    <script>
+        // Example JavaScript for handling form submission
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>

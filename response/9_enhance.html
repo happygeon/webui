@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .vehicle {
+            border: 1px solid #ddd;
+            padding: 20px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .vehicle:hover {
+            transform: scale(1.05);
+        }
+        .vehicle img {
+            max-width: 100%;
+            height: auto;
+        }
+        .vehicle h2 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        .specs {
+            display: none;
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+        .filter-sliders {
+            margin-bottom: 20px;
+        }
+        .filter-slider {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .vehicle-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Dealership</h1>
+    </header>
+    <div class="container">
+        <div class="filter-sliders">
+            <!-- Animated Filter Sliders -->
+            <input type="range" class="filter-slider" min="0" max="50000" value="0" step="1000">
+            <input type="range" class="filter-slider" min="0" max="5" value="0" step="1">
+        </div>
+        <!-- Responsive Vehicle Grid -->
+        <div class="vehicle-grid">
+            <div class="vehicle" onclick="toggleSpecs(this)">
+                <img src="car1.jpg" alt="Car Model 1">
+                <h2>Car Model 1</h2>
+                <div class="specs">
+                    <p>Specification details...</p>
+                </div>
+            </div>
+            <div class="vehicle" onclick="toggleSpecs(this)">
+                <img src="car2.jpg" alt="Car Model 2">
+                <h2>Car Model 2</h2>
+                <div class="specs">
+                    <p>Specification details...</p>
+                </div>
+            </div>
+            <!-- Add more vehicles as needed -->
+        </div>
+    </div>
+
+    <script>
+        function toggleSpecs(element) {
+            var specs = element.querySelector('.specs');
+            if (specs.style.display === 'none' || specs.style.display === '') {
+                specs.style.display = 'block';
+            } else {
+                specs.style.display = 'none';
+            }
+        }
+
+        // Add animation to filter sliders
+        document.querySelectorAll('.filter-slider').forEach(slider => {
+            slider.addEventListener('input', function() {
+                this.style.background = `linear-gradient(to right, #333 ${this.value / this.max * 100}%, #fff 0%)`;
+            });
+        });
+    </script>
+</body>
+</html>

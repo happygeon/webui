@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>News Website</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            header {
+                position: sticky;
+                top: 0;
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                text-align: center;
+            }
+            main {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+            article {
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: #f9f9f9;
+            }
+            .loading {
+                text-align: center;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>News Website</h1>
+        </header>
+        <main id="news-container">
+            <!-- Articles will be dynamically loaded here -->
+        </main>
+        <div class="loading" id="loading">Loading more articles...</div>
+
+        <script>
+            let page = 1;
+
+            function loadArticles() {
+                for (let i = 0; i < 5; i++) { // Simulate adding 5 articles
+                    const article = document.createElement('article');
+                    article.innerHTML = `<h2>Article Title ${(page - 1) * 5 + i + 1}</h2><p>Article content goes here...</p>`;
+                    document.getElementById('news-container').appendChild(article);
+                }
+                page++;
+            }
+
+            function handleScroll() {
+                const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+                if (scrollTop + clientHeight >= scrollHeight - 5) {
+                    loadArticles();
+                }
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            document.addEventListener('DOMContentLoaded', () => {
+                loadArticles();
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Social Media Platform</title>
+    </head>
+    <body>
+        <!-- Header for the social media platform -->
+        <header>
+            <h1>Social Media Platform</h1>
+            <!-- Navigation for dark mode toggle -->
+            <nav>
+                <button id="darkModeToggle">Toggle Dark Mode</button>
+            </nav>
+        </header>
+
+        <!-- Main section for notifications and feed -->
+        <main>
+            <!-- Aside for live notifications -->
+            <aside id="notifications">
+                <h2>Live Notifications</h2>
+                <ul>
+                    <li>New friend request from John Doe</li>
+                    <li>You have 5 new likes</li>
+                    <li>Upcoming event: Webinar at 3 PM</li>
+                </ul>
+            </aside>
+
+            <!-- Section for the masonry feed -->
+            <section id="masonryFeed">
+                <h2>Feed</h2>
+                <div class="feed-item">Post 1 Content</div>
+                <div class="feed-item">Post 2 Content</div>
+                <div class="feed-item">Post 3 Content</div>
+                <div class="feed-item">Post 4 Content</div>
+                <!-- More feed items can be added here -->
+            </section>
+        </main>
+        
+        <!-- Example inline script for the dark mode toggle functionality -->
+        <script>
+            document.getElementById('darkModeToggle').onclick = function() {
+                document.body.classList.toggle('dark-mode');
+            };
+        </script>
+    </body>
+</html>

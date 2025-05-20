@@ -1,6 +1,133 @@
-```html\n<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>BookApp</title>\n    <style>\n        body {\n            font-family: Arial, sans-serif;\n      
-      margin: 0;\n            padding: 0;\n            background-color: #f4f4f4;\n        }\n        .header {\n            background-color: #333;\n            color: white;\n            text-align: center;\n            padding: 1em 0;\n        }\n        .carousel-container {\n            width: 100%;\n            overflow: hidden;\n        }\n        .carousel-slide {\n        
-    display: flex;\n            transition: transform 0.5s ease-in-out;\n        }\n        .carousel-item {\n            min-width: 200px;\n            box-sizing: border-box;\n            padding: 10px;\n            background-color: white;\n            margin-right: 10px;\n            border-radius: 5px;\n            box-shadow: 0 2px 5px rgba(0,0,0,0.1);\n        }\n        .grid-container {\n            display: grid;\n            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));\n            gap: 10px;\n            padding: 1em;\n        }\n        .book-item {\n            background-color: white;\n            padding: 10px;\n            border-radius: 5px;\n            box-shadow: 0 2px 5px rgba(0,0,0,0.1);\n        }\n        .footer {\n            background-color: #333;\n            color: white;\n            text-align: center;\n            padding: 1em 0;\n            position: fixed;\n            bottom: 0;\n
-width: 100%;\n        }\n    </style>\n</head>\n<body>\n    <div class="header">\n        <h1>Welcome to BookApp</h1>\n    </div>\n\n    <!-- Carousel -->\n    <div class="carousel-container">\n        <div class="carousel-slide" id="carouselSlide">\n            <div class="carousel-item">\n                <img src="https://via.placeholder.com/200x300?text=Featured+Book+1" alt="Featured Book 1">\n                <h3>Title 1</h3>\n                <p>Description of Book 1...</p>\n            </div>\n            <div class="carousel-item">\n                <img src="https://via.placeholder.com/200x300?text=Featured+Book+2" alt="Featured Book 2">\n                <h3>Title 2</h3>\n                <p>Description of Book 2...</p>\n            </div>\n            <div class="carousel-item">\n                <img src="https://via.placeholder.com/200x300?text=Featured+Book+3" alt="Featured Book 3">\n                <h3>Title 3</h3>\n                <p>Description of Book 3...</p>\n            </div>\n        </div>\n    </div>\n\n    <!-- New Arrivals Grid -->\n    <div class="grid-container">\n        <div class="book-item">\n            <img src="https://via.placeholder.com/200x300?text=New+Arrival+1" alt="New Arrival 1">\n            <h3>Title 1</h3>\n            <p>Description of New Arrival 1...</p>\n        </div>\n        <div class="book-item">\n            <img src="https://via.placeholder.com/200x300?text=New+Arrival+2" alt="New Arrival 2">\n            <h3>Title 2</h3>\n            <p>Description of New Arrival 2...</p>\n        </div>\n        <div class="book-item">\n            <img src="https://via.placeholder.com/200x300?text=New+Arrival+3" alt="New Arrival 3">\n            <h3>Title 3</h3>\n            <p>Description of New Arrival 3...</p>\n        </div>\n        <!-- Add more book items as needed -->\n    </div>\n\n    <!-- Footer -->\n    <div class="footer">\n        <p>&copy; 2023 BookApp. All rights reserved.</p>\n    </div>\n\n    <script>\n        // JavaScript for carousel functionality can be added here\n    </script>\n</body>\n</html>\n```\n\nThis HTML template creates a simple homepage for a book application. It includes a header, a responsive carousel at the top featuring three books, and a grid layout displaying new arrivals. The CSS styles 
-ensure that the page is visually appealing and easy to navigate on various devices. The footer provides copyright information. A basic structure for carousel functionality using JavaScript is 
-also provided in the `<script>` tag, which you can expand upon to add interactivity such as automatic sliding or manual navigation.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Ecommerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      position: relative;
+      margin: 0 15px;
+    }
+
+    nav ul li button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li button:hover {
+      background-color: #45a049;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    nav ul li ul li {
+      text-align: left;
+    }
+
+    nav ul li ul li a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #575757;
+    }
+
+    main {
+      padding: 20px;
+      background-color: #fff;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Coffee Shop</h1>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <button onclick="toggleMenu('coffeeMenu')">Coffee</button>
+        <ul id="coffeeMenu" style="display:none;">
+          <li><a href="#">Espresso</a></li>
+          <li><a href="#">Latte</a></li>
+          <li><a href="#">Cappuccino</a></li>
+        </ul>
+      </li>
+      <li>
+        <button onclick="toggleMenu('teaMenu')">Tea</button>
+        <ul id="teaMenu" style="display:none;">
+          <li><a href="#">Green Tea</a></li>
+          <li><a href="#">Black Tea</a></li>
+          <li><a href="#">Herbal Tea</a></li>
+        </ul>
+      </li>
+      <li>
+        <button onclick="toggleMenu('accessoriesMenu')">Accessories</button>
+        <ul id="accessoriesMenu" style="display:none;">
+          <li><a href="#">Coffee Mugs</a></li>
+          <li><a href="#">Grinders</a></li>
+          <li><a href="#">Filters</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <p>Explore our wide range of coffee products.</p>
+  </main>
+  <script>
+    function toggleMenu(menuId) {
+      var menu = document.getElementById(menuId);
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
