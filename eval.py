@@ -289,10 +289,6 @@ class RewardFunc:
             scores.append(score)
         return scores
             
-
-
-    
-
 def html_structure_reward_func_v3(completions, **kwargs) -> list[float]:
     from bs4 import BeautifulSoup
     import re

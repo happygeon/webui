@@ -1,0 +1,302 @@
+[
+  {
+    "query": "Create a homepage for a book app with a carousel at the top for featured books and a grid layout for new arrivals."
+  },
+  {
+    "query": "Design a search results page with filtering options for genres and authors, and a sidebar for refining search results."
+  },
+  {
+    "query": "Develop a book detail page that includes tabs for reviews, author bio, and related books."
+  },
+  {
+    "query": "Create a user profile page with sections for reading history and wish list, and integrate an accordion widget for genre preferences."
+  },
+  {
+    "query": "Design a library section with collapsible categories and a list of borrowed books with return dates."
+  },
+  {
+    "query": "Build a landing page for a reference guide series with a video header, and call-to-action buttons leading to individual guides."
+  },
+  {
+    "query": "Create a toolbar with a sticky navigation menu for quick access to top authors, bestsellers, and categories."
+  },
+  {
+    "query": "Develop a widget for book recommendations that dynamically updates based on user reading habits."
+  },
+  {
+    "query": "Design an author spotlight page featuring a photo gallery and a timeline widget of their published works."
+  },
+  {
+    "query": "Construct a FAQ page for a book club with expandable questions and answers, supported by live chat integration."
+  },
+  {
+    "query": "Develop a community forum page that includes threaded discussions and a search function for finding specific book topics."
+  },
+  {
+    "query": "Create a landing page for a seasonal book sale with a countdown timer and a promotional banner."
+  },
+  {
+    "query": "Design a newsletter subscription widget that prompts users to sign up for weekly book recommendations."
+  },
+  {
+    "query": "Build an audiobook player page with controls for playback speed and bookmarks for marking favorite parts."
+  },
+  {
+    "query": "Create a kids' section with interactive storybooks and animated characters, integrating a gesture-based navigation widget."
+  },
+  {
+    "query": "Design a page with an interactive map showing locations of bookshops and libraries, with filters for types of books available."
+  },
+  {
+    "query": "Develop a UI for virtual bookshelf organization, allowing users to drag and drop book covers to customize shelves."
+  },
+  {
+    "query": "Create an event page for author signings, equipped with a registration form and event calendar widget."
+  },
+  {
+    "query": "Design a feedback form page with a star-rating system and a collapsible comment section for detailed user reviews."
+  },
+  {
+    "query": "Build a page with a dynamic reading progress tracker widget that syncs with the user's current book."
+  },
+  {
+    "query": "Create a product page for collectible editions, showcasing high-quality images and specifications."
+  },
+  {
+    "query": "Design a community corner page featuring book memes, quizzes, and a leaderboard for most active members."
+  },
+  {
+    "query": "Develop a browsing page incorporating infinite scroll for exploring an extensive collection of academic references."
+  },
+  {
+    "query": "Create a booking form page for library appointments, including a date picker and time slot selection."
+  },
+  {
+    "query": "Design a mobile-friendly UI for a book donation page, with progress bars displaying donation goals."
+  },
+  {
+    "query": "Build a teacher's resource section with downloadable guides and a carousel of featured lesson plans."
+  },
+  {
+    "query": "Create an awards page displaying book titles, authors, and associated accolades with a sticky nav for category navigation."
+  },
+  {
+    "query": "Design a login page with social media integration and an optional two-factor authentication checkbox."
+  },
+  {
+    "query": "Develop a subscription management page for a digital book service, featuring a toggle for notifications and reminders."
+  },
+  {
+    "query": "Create a progress page for courses based on reference books, integrating graphs depicting completed modules."
+  },
+  {
+    "query": "Design an author interview series page with embedded podcast players and transcriptions."
+  },
+  {
+    "query": "Build a landing page for an upcoming literature festival with detailed schedules and prominent call-to-action buttons for ticket purchase."
+  },
+  {
+    "query": "Create a library inventory management interface with sortable columns for book categories and conditions."
+  },
+  {
+    "query": "Design a wish list page that includes checkboxes for prioritizing items and sharing options via social media."
+  },
+  {
+    "query": "Develop a curation page for monthly book club picks, with suggested reading guides and discussion prompts."
+  },
+  {
+    "query": "Create a browser-based reading widget with night mode, adjustable font sizes, and page turning animations."
+  },
+  {
+    "query": "Design a detailed subscription dashboard, showing membership benefits and renewal options."
+  },
+  {
+    "query": "Build an interactive guide selection tool, allowing users to filter and compare different study guides based on user ratings."
+  },
+  {
+    "query": "Create an admin panel for managing digital book collections, with functionalities to add new entries and edit existing metadata."
+  },
+  {
+    "query": "Develop a promotional offers page that displays limited-time discounts and promotional codes."
+  },
+  {
+    "query": "Design a community event calendar sharing upcoming author and book-related events, with RSVP buttons."
+  },
+  {
+    "query": "Create a toggle-based interface for switching between book summaries and full reviews."
+  },
+  {
+    "query": "Design an about us page detailing the history and mission of the reference app, with a contact form and social media links."
+  },
+  {
+    "query": "Build a sales ranking page showcasing top-selling books, with a search bar to find specific titles."
+  },
+  {
+    "query": "Create a web-based enrollment form for literature courses, including drop-down menus and multi-select questions."
+  },
+  {
+    "query": "Design a marketing landing page for an exclusive membership program, featuring testimonials and membership tiers."
+  },
+  {
+    "query": "Develop a reference guide's glossary page with alphabetically collapsible sections and quick search functionality."
+  },
+  {
+    "query": "Create a donation acknowledgment page where donors can see their contributions and available rewards."
+  },
+  {
+    "query": "Design a library layout visualization tool, using drag-and-drop functionality to plan book placements."
+  },
+  {
+    "query": "Build a notification panel interface with sorting options for different types of alerts and messages."
+  },
+  {
+    "query": "Create an interactive quiz widget that tests users' knowledge on specific books, with instant feedback."
+  },
+  {
+    "query": "Develop a blog section UI for book reviews, featuring a side-bar for recent posts and a comment section."
+  },
+  {
+    "query": "Design an interface for audio notes, allowing users to record reflections on what they read and tag specific book chapters."
+  },
+  {
+    "query": "Create a volunteer registration page for library helpers, with skill input fields and shift preferences."
+  },
+  {
+    "query": "Build a glossary term lookup with pop-up definitions and links to full encyclopedia entries."
+  },
+  {
+    "query": "Design a resource download page that categorizes documents by format and subject, with a search filter."
+  },
+  {
+    "query": "Create a bookmarking tool that facilitates users to organize saved quotes and annotate them."
+  },
+  {
+    "query": "Design a comparative analysis tool for textbooks, with a split-view feature for juxtaposing contents."
+  },
+  {
+    "query": "Develop a literature search engine interface that highlights semantic relationships between authors."
+  },
+  {
+    "query": "Create a social sharing widget for short stories that aligns with user-generated recommendations."
+  },
+  {
+    "query": "Design a visual storytelling page where users can upload art inspired by books they love."
+  },
+  {
+    "query": "Build a payment gateway for paid archival content, with integrated currency conversion options."
+  },
+  {
+    "query": "Create a historical timeline page, allowing exploration of key literary movements through period-specific filters."
+  },
+  {
+    "query": "Design a print layout preview for books, helping users configure their desired format and pagination."
+  },
+  {
+    "query": "Build a book genre exploration page with round robin display to spotlight diverse titles."
+  },
+  {
+    "query": "Create a widget for storyteller view, allowing users to read and rate narrated books."
+  },
+  {
+    "query": "Design a photo gallery for illustrated editions, complete with lightbox feature for enhanced viewing."
+  },
+  {
+    "query": "Develop a collector's section with rare book profiles, showcasing high-resolution zoomable photos."
+  },
+  {
+    "query": "Create a market trend analysis tool, predicting book demand with associated graphics."
+  },
+  {
+    "query": "Design a content curation tool where users can create thematic lists for book compilations."
+  },
+  {
+    "query": "Build a personalized dashboard interface showing current reading stats and recommendations."
+  },
+  {
+    "query": "Create an accessibility options widget where users can customize reading assistance tools."
+  },
+  {
+    "query": "Design an author collaboration page, facilitating co-author networking and project management."
+  },
+  {
+    "query": "Develop a plagiarism checker interface for content creators and academic writers."
+  },
+  {
+    "query": "Create a writing competition submission portal with category selectors and file upload functionality."
+  },
+  {
+    "query": "Design a leaderboards page for book reading challenges with rewards tracking."
+  },
+  {
+    "query": "Build a resource center page to house instructional videos, sorted by subject and level."
+  },
+  {
+    "query": "Create a real-time availability tracker for library books, updating as items are borrowed."
+  },
+  {
+    "query": "Design a suggestions box interface where users can propose new features or content additions."
+  },
+  {
+    "query": "Develop a widget for comparing translations of a specific literary text with side-by-side presentation."
+  },
+  {
+    "query": "Create a venue map for book fairs to help attendees navigate exhibitor locations and events."
+  },
+  {
+    "query": "Design a virtual reality reading environment, providing immersive reading experiences for select titles."
+  },
+  {
+    "query": "Build an event RSVP tracker allowing users to set reminders for book launches and meet-ups."
+  },
+  {
+    "query": "Create a cross-referencing tool linking character appearances across multiple books."
+  },
+  {
+    "query": "Design an interactive slideshow for a modern author's journey, integrating audio commentary."
+  },
+  {
+    "query": "Develop a resource-sharing platform for book study groups with integration for direct uploads."
+  },
+  {
+    "query": "Create a merchandise store for book-related goods, incorporating a shopping cart feature."
+  },
+  {
+    "query": "Design a welcome tour page for onboarding new users, highlighting key features of the app."
+  },
+  {
+    "query": "Build a language learning support page using books, with interactive exercises and progress checks."
+  },
+  {
+    "query": "Create an author's portfolio showcase page featuring multimedia presentations of their works."
+  },
+  {
+    "query": "Design a digital reading challenge interface, allowing users to track progress and set goals."
+  },
+  {
+    "query": "Develop a re-reader's diary widget where users record experiences revisiting books."
+  },
+  {
+    "query": "Create an automated summary generator for books, enabling users to create quick references."
+  },
+  {
+    "query": "Design a complex search query builder page, accommodating advanced filtering for detailed literary analysis."
+  },
+  {
+    "query": "Build a scholar profile page displaying academic affiliations and book publications."
+  },
+  {
+    "query": "Create an animated infographic displaying the evolution of written language and script."
+  },
+  {
+    "query": "Design an interactive book pairing feature, recommending complementary reads based on user favorites."
+  },
+  {
+    "query": "Develop a poetry exploration page fitted with audio recitations and text annotations."
+  },
+  {
+    "query": "Create a social network widget linking user-generated book clubs and discussion boards."
+  },
+  {
+    "query": "Design a feedback loop page with satisfaction surveys and incentivized engagement tracker."
+  }
+]
