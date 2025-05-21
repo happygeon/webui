@@ -288,7 +288,112 @@ class RewardFunc:
             score = self.normalize_score(score)
             scores.append(score)
         return scores
+    def new_eval(self):
+        from bs4 import BeautifulSoup
+        import re
+        import colorsys
+        import numpy as np
+        from collections import Counter
+        import math
+
+        def extract_colors(css_text):
+            """CSS에서 색상 코드 추출"""
+            hex_colors = re.findall(r'#(?:[0-9a-fA-F]{3}){1,2}', css_text)
+            rgb_colors = re.findall(r'rgb[a]?\(([^)]+)\)', css_text)
+            rgb_colors = ['rgb(' + c + ')' for c in rgb_colors]
+            return hex_colors + rgb_colors
+
+        def color_to_hsl(color):
+            """색상 값을 HSL로 변환"""
+            try:
+                if color.startswith('#'):
+                    hex_color = color.lstrip('#')
+                    if len(hex_color) == 3:
+                        hex_color = ''.join([c*2 for c in hex_color])
+                    r, g, b = [int(hex_color[i:i+2], 16)/255.0 for i in (0, 2, 4)]
+                elif color.startswith('rgb'):
+                    nums = [int(n.strip()) for n in re.findall(r'\d+', color)[:3]]
+                    r, g, b = [n / 255.0 for n in nums]
+                else:
+                    return None
+                return colorsys.rgb_to_hls(r, g, b)  # H, L, S
+            except:
+                return None
+
+        def compute_color_harmony_score(colors):
+            """색상 조화 점수 계산"""
+            hsl_colors = [color_to_hsl(c) for c in colors]
+            hsl_colors = [c for c in hsl_colors if c is not None]
             
+            if len(hsl_colors) < 2:
+                return 50  # 너무 적은 색상일 경우 평균 점수
+
+            hues = [c[0] for c in hsl_colors]
+            lightness = [c[1] for c in hsl_colors]
+            saturation = [c[2] for c in hsl_colors]
+            
+            hue_var = np.var(hues)
+            light_var = np.var(lightness)
+            sat_var = np.var(saturation)
+            
+            # 이상적으로는 색상 다양성은 moderate, 명도는 적절히 균형
+            hue_score = 100 - min(hue_var * 200, 100)
+            light_score = 100 - min(light_var * 300, 100)
+            sat_score = 100 - min(sat_var * 300, 100)
+
+            return round((hue_score * 0.4 + light_score * 0.3 + sat_score * 0.3), 2)
+
+        def compute_layout_score(soup):
+            """레이아웃 점수 계산"""
+            divs = soup.find_all(['div', 'section', 'article', 'main', 'aside'])
+            if not divs:
+                return 50  # 레이아웃 요소 없음
+
+            depths = []
+            widths = []
+            heights = []
+            for div in divs:
+                depth = len(list(div.parents))
+                style = div.get('style', '')
+                width = re.search(r'width\s*:\s*(\d+)', style)
+                height = re.search(r'height\s*:\s*(\d+)', style)
+                depths.append(depth)
+                if width:
+                    widths.append(int(width.group(1)))
+                if height:
+                    heights.append(int(height.group(1)))
+
+            depth_score = 100 - min(np.std(depths) * 10, 50)  # 계층 일관성
+            width_score = 100 - min(np.std(widths) if widths else 50, 50)
+            height_score = 100 - min(np.std(heights) if heights else 50, 50)
+
+            return round((depth_score * 0.4 + width_score * 0.3 + height_score * 0.3), 2)
+
+        def evaluate_design_from_html(html_text):
+            soup = BeautifulSoup(html_text, 'html.parser')
+            
+            css_text = ''.join([tag.string or '' for tag in soup.find_all('style')])
+            inline_styles = ' '.join([tag.get('style', '') for tag in soup.find_all(style=True)])
+            combined_css = css_text + ' ' + inline_styles
+
+            colors = extract_colors(combined_css)
+            color_score = compute_color_harmony_score(colors)
+            layout_score = compute_layout_score(soup)
+            
+            total_score = round((color_score * 0.4 + layout_score * 0.6), 2)
+
+            return {
+                "color_harmony": color_score,
+                "layout": layout_score,
+                "total_score": total_score
+            }
+
+        results = []
+        for html_content in self.responses:
+            results.append(evaluate_design_from_html(html_content))
+        return results
+
+
 def html_structure_reward_func_v3(completions, **kwargs) -> list[float]:
     from bs4 import BeautifulSoup
     import re
