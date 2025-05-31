@@ -237,7 +237,7 @@ class RewardFunc:
             color_score = compute_color_harmony_score(colors)
             layout_score = compute_layout_score(soup)
             
-            total_score = round((color_score * 0.4 + layout_score * 0.6), 2)
+            total_score = round((color_score), 2)
 
             return {
                 "color_harmony": color_score,

@@ -7,7 +7,8 @@ if __name__ == "__main__":
     files = []
     for i in range(10):
         files.append(folder_path + str(i) + "_enhance.html")
-        files.append(folder_path + str(i) + ".html")
+        #files.append(folder_path + str(i) + ".html")
+        files.append(folder_path + str(i) + "_enhance_2.html")
     
     for filename in files:
         # 기본적으로 현재 디렉토리의 sample.html을 평가
@@ -18,11 +19,9 @@ if __name__ == "__main__":
         completions = [[{"role": "assistant", "content": html_content}]]
         
         reward = RewardFunc(completions)
-        reward_score = reward.eval()
-        #print(f"📄 {filename} 점수: {reward_score[0]*100:.2f} / 100")
-        #print("---------------------------------------------")
 
         reward_new_score = reward.new_eval()
         reward_new_score = reward_new_score[0]['total_score']
-        print(f"📄 {filename} (new) 점수: {reward_new_score:.2f} / 100")
-        print("---------------------------------------------")
+        print(f"{filename} 점수: {reward_new_score:.2f} / 100")
+        
+        

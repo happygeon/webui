@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Forum</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sticky-nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .forum {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thread {
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .thread:last-child {
+            border-bottom: none;
+        }
+
+        .thread-title {
+            font-size: 1.2em;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .content {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .nested-comments {
+            margin-left: 20px;
+            border-left: 2px dashed #ccc;
+            padding-left: 10px;
+        }
+
+        .collapsible.active + .content {
+            display: block;
+        }
+
+        .collapsible::after {
+            content: '+';
+            float: right;
+            color: #fff;
+            font-size: 1em;
+            margin-left: 5px;
+        }
+
+        .collapsible.active::after {
+            content: '-';
+        }
+
+        @media (max-width: 768px) {
+            .forum {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sticky-nav">
+        Sticky Navigation Bar
+    </div>
+    <div class="forum">
+        <div class="thread collapsible">
+            <div class="thread-title">Thread Title 1</div>
+            <div class="content">
+                <div>Thread content goes here...</div>
+                <div class="nested-comments">
+                    <div>Comment 1</div>
+                    <div class="nested-comments">
+                        <div>Reply to Comment 1</div>
+                    </div>
+                    <div>Comment 2</div>
+                </div>
+            </div>
+        </div>
+        <div class="thread collapsible">
+            <div class="thread-title">Thread Title 2</div>
+            <div class="content">
+                <div>Thread content goes here...</div>
+                <div class="nested-comments">
+                    <div>Comment 1</div>
+                    <div class="nested-comments">
+                        <div>Reply to Comment 1</div>
+                    </div>
+                    <div>Comment 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var collapsibles = document.querySelectorAll('.collapsible');
+            for (var i = 0; i < collapsibles.length; i++) {
+                collapsibles[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

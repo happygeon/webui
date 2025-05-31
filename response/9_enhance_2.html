@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .vehicle {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .vehicle:hover {
+            transform: translateY(-5px);
+        }
+        .vehicle h2 {
+            margin: 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+        .specs {
+            padding: 10px;
+            background-color: #f9f9f9;
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .vehicle.active .specs {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Car Dealership</h1>
+    </header>
+    <div class="container">
+        <!-- Responsive Vehicle Grid -->
+        <div class="vehicle-grid">
+            <div class="vehicle" onclick="toggleSpecs(this)">
+                <h2>Car Model 1</h2>
+                <div class="specs">
+                    <p>Engine: V8</p>
+                    <p>Horsepower: 400hp</p>
+                    <p>Mileage: 15,000 miles</p>
+                </div>
+            </div>
+            <div class="vehicle" onclick="toggleSpecs(this)">
+                <h2>Car Model 2</h2>
+                <div class="specs">
+                    <p>Engine: Turbocharged I4</p>
+                    <p>Horsepower: 300hp</p>
+                    <p>Mileage: 10,000 miles</p>
+                </div>
+            </div>
+            <!-- Add more vehicles as needed -->
+        </div>
+    </div>
+    <script>
+        function toggleSpecs(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

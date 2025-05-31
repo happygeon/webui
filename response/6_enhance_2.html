@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>News Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        article {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        article h2 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        article p {
+            color: #666;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Website</h1>
+    </header>
+    <main id="news-container">
+        <!-- Articles will be dynamically loaded here -->
+    </main>
+    <div class="loading" id="loading">Loading more articles...</div>
+
+    <script>
+        let page = 1;
+
+        function loadArticles() {
+            for (let i = 0; i < 5; i++) { // Simulate adding 5 articles
+                const article = document.createElement('article');
+                article.innerHTML = `
+                    <h2>Article Title ${(page - 1) * 5 + i + 1}</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                `;
+                document.getElementById('news-container').appendChild(article);
+            }
+            page++;
+        }
+
+        function handleScroll() {
+            const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+            if (scrollTop + clientHeight >= scrollHeight - 5) {
+                loadArticles();
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        document.addEventListener('DOMContentLoaded', () => {
+            loadArticles();
+        });
+    </script>
+</body>
+</html>

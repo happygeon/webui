@@ -20,7 +20,7 @@ def preprocess_html(html):
 
 import re
 
-def extract_html_and_save(response, index, is_enhance="_enhance", folder = "./response/"):
+def extract_html_and_save(response, index, is_enhance="_enhance_2", folder = "./response/"):
     """
     Extracts the HTML block from <html> to </html> using regex and saves it to a file.
     
@@ -46,7 +46,7 @@ for index, i in enumerate(data[:10]):
     query = i['query']
     file = i['html']
     file = preprocess_html(file)
-    extract_html_and_save(file, index, is_enhance="")
+    #extract_html_and_save(file, index, is_enhance="")
     
     merge_query = f"""
     Enhance the following HTML by adding embedded CSS and JavaScript to improve its appearance and interactivity.

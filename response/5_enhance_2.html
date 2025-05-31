@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference 2023</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            background-color: #fff;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .speaker-bio {
+            display: none;
+        }
+        .speaker-bio.active {
+            display: block;
+        }
+        .btn-toggle {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Conference 2023</h1>
+        <p>Welcome to the premier technology conference of the year.</p>
+    </header>
+
+    <main>
+        <section id="agenda">
+            <h2>Agenda Schedule</h2>
+            <ul>
+                <li>
+                    <h3>Day 1</h3>
+                    <ul>
+                        <li>9:00 AM - Opening Keynote</li>
+                        <li>10:00 AM - Panel Discussion</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Day 2</h3>
+                    <ul>
+                        <li>9:30 AM - Workshop</li>
+                        <li>11:00 AM - Networking Event</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="speakers">
+            <h2>Speakers</h2>
+            <div>
+                <h3>Speaker Name 1</h3>
+                <div>
+                    <p class="speaker-bio">Bio: This speaker specializes in cutting-edge technologies and has been recognized as one of the most influential thinkers in the industry.</p>
+                    <button class="btn-toggle">Show Bio</button>
+                </div>
+            </div>
+            <div>
+                <h3>Speaker Name 2</h3>
+                <div>
+                    <p class="speaker-bio">Bio: Known for his innovative approach to software development, this speaker has led several successful projects and holds multiple patents.</p>
+                    <button class="btn-toggle">Show Bio</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration">
+            <h2>Register Now</h2>
+            <form>
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="ticket">Ticket Type:</label><br>
+                <select id="ticket" name="ticket">
+                    <option value="general">General Admission</option>
+                    <option value="vip">VIP</option>
+                </select><br><br>
+
+                <input type="submit" value="Register">
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.querySelectorAll('.btn-toggle').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const bio = this.nextElementSibling;
+                bio.classList.toggle('active');
+                this.textContent = bio.classList.contains('active') ? 'Hide Bio' : 'Show Bio';
+            });
+        });
+    </script>
+</body>
+</html>
