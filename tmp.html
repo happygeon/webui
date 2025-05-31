@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Creation Screen</title>
+</head>
+<body>
+    <header>
+        <h1>Character Creation</h1>
+    </header>
+    <nav>
+        <ul id="tabs">
+            <li><a href="#customization">Customization</a></li>
+            <li><a href="#appearance">Appearance</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#backstory">Backstory</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="customization">
+            <h2>Customization Options</h2>
+            <form>
+                <label for="character-name">Name:</label>
+                <input type="text" id="character-name" name="character-name" required />
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender" value="male" /> Male</label>
+                    <label><input type="radio" name="gender" value="female" /> Female</label>
+                    <label><input type="radio" name="gender" value="non-binary" /> Non-binary</label>
+                </fieldset>
+
+                <label for="class">Class:</label>
+                <select id="class" name="class">
+                    <option value="warrior">Warrior</option>
+                    <option value="mage">Mage</option>
+                    <option value="rogue">Rogue</option>
+                </select>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <section id="appearance">
+            <h2>Character Appearance</h2>
+            <img src="https://images.unsplash.com/photo-1617289755070-3590b660a06e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTgzNjR8MHwxfHNlYXJjaHwxfHxjaGFyYWN0ZXIlMjBjdXN0b21pemF0aW9uJTIwb3B0aW9uc3xlbnwwfHx8fDE3NDg3MTA4ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080" 
+                 alt="character customization options" style="width:100%; max-width:500px;" />
+
+            <label for="skin-tone">Skin Tone:</label>
+            <input type="color" id="skin-tone" name="skin-tone" />
+
+            <label for="hair-style">Hair Style:</label>
+            <select id="hair-style" name="hair-style">
+                <option value="long">Long</option>
+                <option value="short">Short</option>
+                <option value="bald">Bald</option>
+            </select>
+
+            <label for="eye-color">Eye Color:</label>
+            <input type="color" id="eye-color" name="eye-color" />
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <label for="skill-points">Skill Points:</label>
+            <input type="number" id="skill-points" name="skill-points" min="0" max="100" />
+
+            <label for="skills-list">Select Skills:</label>
+            <select id="skills-list" name="skills" multiple>
+                <option value="swordsmanship">Swordsmanship</option>
+                <option value="archery">Archery</option>
+                <option value="alchemy">Alchemy</option>
+            </select>
+        </section>
+
+        <section id="backstory">
+            <h2>Character Backstory</h2>
+            <textarea id="backstory-text" name="backstory-text" rows="4" cols="50" placeholder="Write your character's backstory here..."></textarea>
+        </section>
+
+        <aside id="preview-widget">
+            <h2>Character Preview</h2>
+            <div id="preview-area">
+                <img src="https://images.unsplash.com/photo-1635003913011-95971abba560?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NTgzNjR8MHwxfHNlYXJjaHwxfHwzRCUyMGNoYXJhY3RlciUyMG1vZGVsfGVufDB8fHx8MTc0ODcxMDg4M3ww&ixlib=rb-4.1.0&q=80&w=1080" 
+                     alt="3D character model" style="width:100%; max-width:400px;" />
+            </div>
+            <button id="rotate-character">Rotate Character</button>
+        </aside>
+    </main>
+</body>
+</html>
