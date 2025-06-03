@@ -21,7 +21,7 @@ if __name__ == "__main__":
         reward = RewardFunc(completions)
 
         reward_new_score = reward.new_eval()
-        reward_new_score = reward_new_score[0]['total_score']
-        print(f"{filename} 점수: {reward_new_score:.2f} / 100")
+        #reward_new_score = reward_new_score[0]['total_score']
+        print(f"{filename} 점수: {reward_new_score} / 100")
         
         

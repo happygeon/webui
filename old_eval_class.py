@@ -154,12 +154,14 @@ class RewardFunc:
         import math
 
         def extract_colors(css_text):
+            """CSS에서 색상 코드 추출"""
             hex_colors = re.findall(r'#(?:[0-9a-fA-F]{3}){1,2}', css_text)
             rgb_colors = re.findall(r'rgb[a]?\(([^)]+)\)', css_text)
             rgb_colors = ['rgb(' + c + ')' for c in rgb_colors]
             return hex_colors + rgb_colors
 
         def color_to_hsl(color):
+            """색상 값을 HSL로 변환"""
             try:
                 if color.startswith('#'):
                     hex_color = color.lstrip('#')
@@ -171,31 +173,42 @@ class RewardFunc:
                     r, g, b = [n / 255.0 for n in nums]
                 else:
                     return None
-                return colorsys.rgb_to_hls(r, g, b)
+                return colorsys.rgb_to_hls(r, g, b)  # H, L, S
             except:
                 return None
 
         def compute_color_harmony_score(colors):
+            """색상 조화 점수 계산"""
             hsl_colors = [color_to_hsl(c) for c in colors]
             hsl_colors = [c for c in hsl_colors if c is not None]
+            
             if len(hsl_colors) < 2:
-                return 50
+                return 50  # 너무 적은 색상일 경우 평균 점수
+
             hues = [c[0] for c in hsl_colors]
             lightness = [c[1] for c in hsl_colors]
             saturation = [c[2] for c in hsl_colors]
+            
             hue_var = np.var(hues)
             light_var = np.var(lightness)
             sat_var = np.var(saturation)
+            
+            # 이상적으로는 색상 다양성은 moderate, 명도는 적절히 균형
             hue_score = 100 - min(hue_var * 200, 100)
             light_score = 100 - min(light_var * 300, 100)
             sat_score = 100 - min(sat_var * 300, 100)
+
             return round((hue_score * 0.4 + light_score * 0.3 + sat_score * 0.3), 2)
 
         def compute_layout_score(soup):
+            """레이아웃 점수 계산"""
             divs = soup.find_all(['div', 'section', 'article', 'main', 'aside'])
             if not divs:
-                return 50
-            depths, widths, heights = [], [], []
+                return 50  # 레이아웃 요소 없음
+
+            depths = []
+            widths = []
+            heights = []
             for div in divs:
                 depth = len(list(div.parents))
                 style = div.get('style', '')
@@ -206,42 +219,16 @@ class RewardFunc:
                     widths.append(int(width.group(1)))
                 if height:
                     heights.append(int(height.group(1)))
-            depth_score = 100 - min(np.std(depths) * 10, 50)
+
+            depth_score = 100 - min(np.std(depths) * 10, 50)  # 계층 일관성
             width_score = 100 - min(np.std(widths) if widths else 50, 50)
             height_score = 100 - min(np.std(heights) if heights else 50, 50)
+
             return round((depth_score * 0.4 + width_score * 0.3 + height_score * 0.3), 2)
-
-        def evaluate_responsiveness_score(soup, html_text):
-            css_text = ''.join([tag.string or '' for tag in soup.find_all('style')])
-            inline_styles = ' '.join([tag.get('style', '') for tag in soup.find_all(style=True)])
-            full_style = (css_text + ' ' + inline_styles + ' ' + html_text).lower()
-
-            # 1. 구조 기반 점수 (최대 50점)
-            structural_score = 0
-            if soup.find('meta', attrs={"name": "viewport"}):
-                structural_score += 25
-            if '@media' in full_style:
-                structural_score += 25
-
-            # 2. 고정 단위 감점 (최대 감점 20점)
-            fixed_units = re.findall(r'(?:style\s*=\s*["\'][^"\']*?)(\d+(px|pt|cm|mm))', full_style)
-            fixed_penalty = len(fixed_units) * 1.5
-            fixed_penalty += full_style.count('px') * 0.5
-            fixed_penalty = min(fixed_penalty, 20)
-
-            # 3. 반응형 단위 보너스 (최대 30점)
-            responsive_bonus = 0
-            for unit in ['%', 'vw', 'vh', 'em', 'rem']:
-                responsive_bonus += full_style.count(unit) * 0.2
-            responsive_bonus = min(responsive_bonus, 30)
-
-            # 종합 점수
-            score = structural_score - fixed_penalty + responsive_bonus
-            return round(max(0, min(score, 100)), 2)
-
 
         def evaluate_design_from_html(html_text):
             soup = BeautifulSoup(html_text, 'html.parser')
+            
             css_text = ''.join([tag.string or '' for tag in soup.find_all('style')])
             inline_styles = ' '.join([tag.get('style', '') for tag in soup.find_all(style=True)])
             combined_css = css_text + ' ' + inline_styles
@@ -249,18 +236,14 @@ class RewardFunc:
             colors = extract_colors(combined_css)
             color_score = compute_color_harmony_score(colors)
             layout_score = compute_layout_score(soup)
-            responsive_score = evaluate_responsiveness_score(soup, html_text)
-
-            # 새로운 가중치 기반 총점 (각 3분할)
-            total_score = round((color_score * 0.34 + layout_score * 0.33 + responsive_score * 0.33), 2)
+            
+            total_score = round((color_score), 2)
 
             return {
                 "color_harmony": color_score,
                 "layout": layout_score,
-                "responsiveness": responsive_score,
                 "total_score": total_score
             }
-
 
         results = []
         for html_content in self.responses:

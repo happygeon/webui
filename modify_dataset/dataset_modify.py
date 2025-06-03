@@ -47,7 +47,7 @@ def call_gpt(query, html):
     messages.append({"role": "user", "content": f"query: {query}\nhtml: {html}"})
 
     response = openai.ChatCompletion.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=messages,
         temperature=0.4
     )
@@ -56,7 +56,10 @@ def call_gpt(query, html):
 # 7. main 실행
 results = []
 
+i=0
+print(len(items))
 for item in items:
+    i += 1
     query = item["query"]
     html = item["html"]
     print(f"[INFO] Processing query: {query[:40]}...")
@@ -67,10 +70,8 @@ for item in items:
     modified_html = parsed["modified_html"]
     image_queries = parsed["image_queries"]
 
-    print("done gpt call")
-    print(modified_html)
-    print(image_queries)
-    
+    print("done gpt call index:", i)
+
     # Unsplash로 실제 이미지 URL 매핑
     for key, keyword in image_queries.items():
         img_url = get_unsplash_url(keyword)
@@ -82,7 +83,8 @@ for item in items:
         "final_html": modified_html,
         "keywords": image_queries
     })
-    break
+    if(i == 100):
+        break
 
 # 8. 결과 저장
 with open("output.json", "w", encoding="utf-8") as f:
