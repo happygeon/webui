@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Welcome to KTO</title>
+</head>
+
+<script language="JavaScript" type="text/javascript">
+var lang; 
+var langLower;
+var langTest;
+var langText;
+var langUrl;
+
+if (navigator.language != null) {    lang = navigator.language;
+} else if (navigator.userLanguage != null) {    lang = navigator.userLanguage;
+} else if (navigator.systemLanguage != null) {    lang = navigator.systemLanguage;
+} else {    lang = "none";
+}
+
+langLower = lang.toLowerCase();
+langTest = langLower.substr(0,2);
+
+if (langLower == "ko-kr" || langTest == "ko") {langUrl = "https://korean.visitkorea.or.kr/main/main.do";
+} else if (langLower == "en-us" || langTest == "en") {    langUrl = "https://english.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "zh-tw" || langLower == "zh-hk") {    langUrl = "https://big5chinese.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "zh-cn") {    langUrl = "https://chinese.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "ja-jp" || langTest == "ja") {    langUrl = "https://japanese.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "de-de" || langTest == "de") {    langUrl = "https://german.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "fr-fr" || langTest == "fr") {    langUrl = "https://french.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "id-id" || langLower == "in-id" || langTest == "id" || langTest == "in") {    langUrl = "https://www.visitkorea.or.id/";
+} else if (langLower == "es-es" || langTest == "es") {    langUrl = "https://spanish.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "th-th" || langTest == "th") {    langUrl = "https://www.kto.or.th/";
+} else if (langLower == "ru-ru" || langTest == "ru") {    langUrl = "https://russian.visitkorea.or.kr/svc/main/index.do";
+} else if (langLower == "tr-tr" || langTest == "tr") {    langUrl = "https://www.ktoturkiye.com/";
+} else {    langUrl = "https://english.visitkorea.or.kr/svc/main/index.do";
+}
+
+location.href = langUrl
+</script>
+
+</html>
+
+

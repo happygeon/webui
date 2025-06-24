@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>네이버 : 로그인</title>
+
+
+
+
+
+
+
+</head>
+<body>
+<div>
+<div><a href="https://www.naver.com">본문 바로가기</a></div>
+<header role="banner">
+<div>
+<a href="https://www.naver.com">
+<h1>NAVER</h1>
+</a>
+<div>
+<select name="locale_switch" title="언어선택">
+<option value="ko_KR">한국어</option>
+<option value="en_US">English</option>
+<option value="zh-Hans_CN">中文(简体)</option>
+<option value="zh-Hant_TW">中文(台灣)</option>
+</select>
+</div>
+</div>
+</header>
+<div>
+<!-- content -->
+<div>
+<div>
+<ul role="tablist">
+<li role="presentation">
+<!--[주] 탭메뉴 활성화시(=선택시) "on"을 추가해주세요. 접근성: aria-selected는 탭 선택시 true, 미선택시 false로 적용-->
+<!--[주:접근성] 탭메뉴의 id 값과 탭내용의 aria-controls를 연결하고 있습니다. -->
+<a aria-selected="true" href="#none" role="tab">
+<span><span>ID/전화번호</span></span>
+</a>
+</li>
+<li role="presentation">
+<a aria-selected="false" href="#none" role="tab">
+<span><span>일회용 번호</span></span>
+</a>
+</li>
+<li role="presentation">
+<a aria-selected="false" href="#none" role="tab">
+<span><span>QR코드</span></span>
+</a>
+</li>
+</ul>
+<form action="https://nid.naver.com/nidlogin.login" autocomplete="off" method="POST" name="frmNIDLogin" target="_top">
+<input name="localechange" type="hidden" value=""/>
+<input name="dynamicKey" type="hidden" value="5wVGAuRzXYuoBRAaQK_6c0tH_fkil51n5Zkdz8Glbi7u-NuQ0f3E4pDYOQ-rP_5adZfAT5kJsjzb5AavnkbZiHE4b6jvxcSF4Vr9jH8pU08"/>
+<input name="encpw" type="hidden" value=""/>
+<input name="sessionKey" type="hidden" value=""/>
+<input name="show_pk" type="hidden" value="true"/>
+<input name="wtoken" type="hidden" value=""/>
+<input name="svctype" type="hidden" value="1"/>
+<input name="bvsd" type="hidden" value=""/>
+<input name="locale" type="hidden" value="ko_KR"/>
+<input name="url" type="hidden" value="https://www.naver.com"/>
+<input name="enctp" type="hidden" value="1"/>
+<input name="next_step" type="hidden" value="false"/>
+<input name="fbOff" type="hidden" value="true"/>
+<input name="smart_LEVEL" type="hidden" value="1"/>
+<input name="encnm" type="hidden" value=""/>
+<ul>
+<li>
+<div aria-controls="loinid" role="tabpanel">
+<div>
+<div>
+<div>
+<input accesskey="L" aria-label="아이디 또는 전화번호" autocapitalize="none" maxlength="41" name="id" title="아이디" type="text" value=""/>
+<label aria-hidden="true" for="id">아이디 또는 전화번호</label>
+<button type="button">
+<span>
+<span>삭제</span>
+</span>
+</button>
+</div>
+<div>
+<input aria-label="비밀번호" maxlength="16" name="pw" title="비밀번호" type="password"/>
+<label aria-hidden="true" for="pw">비밀번호</label>
+<button aria-pressed="false" type="button">
+<span>
+<span>선택 안 됨,비밀번호 표시</span>
+</span>
+</button>
+<button type="button">
+<span>
+<span>삭제</span>
+</span>
+</button>
+</div>
+</div>
+</div>
+<div>
+<div>
+<input name="nvlong" type="checkbox" value="off"/>
+<label for="keep">로그인 상태 유지</label>
+</div>
+<div>
+<a href="/login/ext/help_ip3.html" target="_blank" title="IP보안"><span>IP보안</span></a>
+<span>
+<input type="checkbox" value="off"/>
+<label for="switch">
+<span aria-checked="true" role="checkbox">ON</span>
+<span aria-checked="false" role="checkbox">OFF</span>
+</label>
+</span>
+</div>
+</div>
+<div>
+<div>
+<p><strong>Caps Lock</strong>이 켜져 있습니다.</p>
+</div>
+</div>
+<div>
+<div>
+<strong>아이디 또는 전화번호</strong>를 입력해 주세요.
+                                    </div>
+</div>
+<div>
+<div>
+<strong>비밀번호</strong>를 입력해 주세요.
+                                    </div>
+</div>
+<div>
+<div>
+                                        패스키 로그인에 실패했습니다. 다시 시도해 주세요.
+                                    </div>
+<a href="https://nca.naver.com/chat/account/view" target="_blank">
+<span><span>챗봇</span></span>
+</a>
+</div>
+<div>
+<div>
+                                        패스키 로그인에 실패했습니다. 다른 로그인 수단으로 로그인 해주세요.
+                                    </div>
+<a href="https://nca.naver.com/chat/account/view" target="_blank">
+<span><span>챗봇</span></span>
+</a>
+</div>
+<div>
+<div>
+                                        패스키 로그인에 실패했습니다. 다른 로그인 수단으로 로그인 해주세요.
+                                    </div>
+<a href="https://nca.naver.com/chat/account/view" target="_blank">
+<span><span>챗봇</span></span>
+</a>
+</div>
+<div>
+<div>
+                                        패스키 로그인에 실패했습니다. 새로고침 후 다시 시도해 주세요.
+                                    </div>
+<a href="https://nca.naver.com/chat/account/view" target="_blank">
+<span><span>챗봇</span></span>
+</a>
+</div>
+<div>
+<div>
+</div>
+</div>
+<div>
+<button type="button">
+<span>다음</span>
+<span>로그인 버튼</span>
+</button>
+</div>
+<div>
+<span>지문 · 얼굴 인증을 설정했다면</span>
+</div>
+<div>
+<button type="button">
+<span>패스키 로그인</span>
+<span>패스키로그인 버튼</span>
+</button>
+</div>
+</div>
+</li>
+</ul>
+</form>
+</div>
+<ul>
+<li><a href="https://nid.naver.com/user2/api/route?m=routePwInquiry&amp;lang=ko_KR" target="_blank">비밀번호 찾기</a></li>
+<li><a href="https://nid.naver.com/user2/api/route?m=routeIdInquiry&amp;lang=ko_KR" target="_blank">아이디 찾기</a></li>
+<li><a href="https://nid.naver.com/user2/V2Join?m=agree&amp;lang=ko_KR&amp;realname=N" target="_blank">회원가입</a>
+</li>
+</ul>
+<!--배너-->
+<div>
+                 
+            </div>
+</div>
+<!-- //content -->
+</div>
+<div>
+<div>
+<!--[주]고객센터,제휴문의,서비스안내-->
+<ul>
+<li><a href="http://www.naver.com/rules/service.html" target="_blank"><span>이용약관</span></a></li>
+<li><a href="http://www.naver.com/rules/privacy.html" target="_blank"><span><strong>개인정보처리방침</strong></span></a></li>
+<li><a href="http://www.naver.com/rules/disclaimer.html" target="_blank"><span>책임의 한계와 법적고지</span></a></li>
+<li><a href="https://help.naver.com/alias/membership/p.membership/main.naver" target="_blank"><span>회원정보 고객센터</span></a></li>
+</ul>
+<div>
+<a href="https://www.navercorp.com" target="_blank">
+<span><span>네이버</span></span>
+</a>
+<span>Copyright</span>
+<span>© NAVER Corp.</span>
+<span>All Rights Reserved.</span>
+</div>
+</div>
+</div>
+</div>
+<input name="nclicks_nsc" type="hidden" value="nid.login_kr"/>
+<input name="nid_buk" type="hidden" value="none"/>
+<input name="removeLink" type="hidden" value=""/>
+<input name="hide_util" type="hidden" value=""/>
+<input name="ncaptchaSplit" type="hidden" value="none"/>
+<input name="id_error_msg" type="hidden" value="&lt;strong&gt;아이디 또는 전화번호&lt;/strong&gt;를 입력해 주세요."/>
+<input name="pw_error_msg" type="hidden" value="&lt;strong&gt;비밀번호&lt;/strong&gt;를 입력해 주세요."/>
+<input name="onload_pk" type="hidden" value="false"/>
+<input name="locale" type="hidden" value="ko_KR"/>
+<input name="adult_surl_v2" type="hidden" value=""/>
+<input name="ispopup" type="hidden" value="false"/>
+
+
+
+
+<div>20</div>
+</body>
+</html>

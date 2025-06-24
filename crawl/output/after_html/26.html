@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>MIT - Massachusetts Institute of Technology</title>
+
+
+
+
+<!--[if gt IE 8]><!-->
+</head>
+<body>
+
+<a href="#main">Skip to content â</a>
+<div><notification v-if="isHomepage"></notification></div>
+<nav>
+<div>
+<a href="/">
+ <h1>Massachusetts Institute of Technology</h1>
+</a>
+<ul>
+<li>
+<a href="/education">Education</a>
+</li>
+<li>
+<a href="/research">Research</a>
+</li>
+<li>
+<a href="/innovation">Innovation</a>
+</li>
+<li>
+<a href="/admissions-aid">Admissions + Aid</a>
+</li>
+<li>
+<a href="/campus-life">Campus Life</a>
+</li>
+<li>
+<a href="http://news.mit.edu/" target="_blank">News</a>
+</li>
+<li>
+<a href="/alumni">Alumni</a>
+</li>
+<li>
+<a href="/about">About MIT</a>
+</li>
+<li>
+<a href="/building-a-better-world">Give</a>
+</li>
+<li>
+<button>More <span>â</span></button>
+<ul>
+<li>
+<a href="/admissions-aid">Admissions + Aid</a>
+</li>
+<li>
+<a href="/campus-life">Campus Life</a>
+</li>
+<li>
+<a href="http://news.mit.edu/" target="_blank">News</a>
+</li>
+<li>
+<a href="/alumni">Alumni</a>
+</li>
+<li>
+<a href="/about">About MIT</a>
+</li>
+<li>
+<a href="/building-a-better-world">Give</a>
+</li>
+</ul>
+</li>
+</ul>
+<div>
+<button><span>Menu</span> <span>â</span></button>
+<a href="/search">
+<span>Search</span>
+
+
+</a>
+</div>
+</div>
+</nav>
+<div></div>
+<main>
+<!-- Autosuggest UI handled by Vue.js components -->
+<div :class="{
+    'search-has-quick-links': searchMode
+  }" @keydown.down.exact.prevent="onDown" @keydown.shift.tab.exact="onShiftTab" @keydown.tab.exact="onTab" @keydown.up.exact.prevent="onUp">
+<div>
+<a href="#">Menu</a>
+<div>
+<form action="/search" method="GET">
+<label for="es-search-form-input">Explore websites, people, and locations</label>
+<div>
+
+<div></div>
+<input :placeholder="[[placeholderText]]" aria-label="search" autocomplete="off" name="q" ref="searchInput" type="query" v-model="query" v-on:click="onFocus" v-on:keydown="onKeydown" v-on:keyup="onInput"/>
+<div v-if="isOnSearchResultPage">
+<input name="options[]" type="checkbox" v-model="searchOptions" value="lns"/>
+<label for="option1">Look up people by “last name sounds like”</label>
+</div>
+<span :style="[isOnSearchResultPage ? {'display':'none'} : '']" ref="searchPlaceholder">
+            What are you looking for?
+          </span>
+<button aria-label="reset" for="es-search-form" ref="resetButton" type="reset" v-if="searchMode" v-on:click="resetQuery">
+
+</button>
+<div v-if="query.length &amp;&amp; !isOnSearchResultPage">
+<result-list :query="query" ref="results"></result-list>
+<button form="es-search-form" type="submit">
+<span>See More Results</span>
+
+</button>
+<p><a href="/feedback">Suggestions or feedback?</a></p>
+</div>
+</div>
+</form>
+<suggested-links v-if="!query.length &amp;&amp; !isOnSearchResultPage"></suggested-links>
+</div>
+</div>
+<wallpaper-image v-if="searchMode"></wallpaper-image>
+</div>
+<div aria-label="spotlight" role="region" tabindex="0">
+<div>
+<article>
+<div>
+<div>
+<figure>
+<a href="http://news.mit.edu/2025/cold-spray-3d-printing-technique-effective-bridge-repair-0620" target="_blank">
+<img alt="Team poses outside next to the 3D-printed patch on a red bridge." src="/files/images/202506/MIT-3D-Printed-Bridge-SL.jpg"/>
+</a>
+</figure>
+</div>
+<h2>
+
+<span>Spotlight: Jun 22, 2025</span>
+</h2>
+<div>
+<p>More than half of the nationâs 623,218 bridges are experiencing significant deterioration. But <a href="https://meche.mit.edu" target="_blank">mechanical engineers</a> at MIT and elsewhere have successfully demonstrated that <a href="https://news.mit.edu/topic/3-d-printing" target="_blank">3D printing</a> may provide a cost-effective, minimally disruptive solution.</p>
+</div>
+<div>
+<h4>Jun 22, 2025</h4>
+<a href="http://news.mit.edu/2025/cold-spray-3d-printing-technique-effective-bridge-repair-0620" target="_blank">Full story</a>
+<div>
+<h4>Share:</h4>
+<ul>
+<li>
+<a href="https://twitter.com/share?url=http://web.mit.edu/spotlight/3d-printed-bridge-repairs-sunday" target="_blank">
+<span>Twitter</span>
+
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer/sharer.php?u=http://web.mit.edu/spotlight/3d-printed-bridge-repairs-sunday" target="_blank">
+<span>Facebook</span>
+
+</a>
+</li>
+</ul>
+</div>
+<span>
+<spotlight-explore-more-link :linktospotlightsarchive="theLinkToSpotlightArchive"></spotlight-explore-more-link>
+</span>
+</div>
+</div>
+</article>
+<div>
+<div>
+            
+            Research and Education that Matter
+      
+          </div>
+<div>
+<div>
+<div>
+<div>
+<a href="http://news.mit.edu/2025/startup-biosensor-makes-drug-development-and-manufacturing-cheaper-0615" target="_blank">
+<img alt="gloved hands hold blue chip" height="467" loading="lazy" src="/files/images/202506/MIT-Advanced-Silicon-Group-dw.jpg" typeof="foaf:Image" width="700">
+</img></a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="http://news.mit.edu/2025/startup-biosensor-makes-drug-development-and-manufacturing-cheaper-0615" target="_blank">
+                    
+            Faster drug development
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>Co-founded by an MIT alumna, the Advanced Silicon Group has developed a handheld system that measures protein concentrations in just minutes. The tool should make drug development and manufacturing much faster and less costly.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a href="http://news.mit.edu/news-clip/boston-globe-1568" target="_blank">
+<img alt="group sitting on grass on campus" height="533" loading="lazy" src="/files/images/202506/54521550238_2928093b6c_c-hm.jpg" typeof="foaf:Image" width="799"/>
+</a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="http://news.mit.edu/news-clip/boston-globe-1568" target="_blank">
+                    
+            Incubator of key technologies
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>The Boston Globe noted key technologies, including the internet and the first widely used electronic navigation system, developed at MIT with federal support. The development of the internet has âMITâs fingerprints all over it,â John Guttag said.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a href="http://news.mit.edu/2025/weekly-pill-schizophrenia-shows-promise-clinical-trials-0610" target="_blank">
+<img alt="A star-shaped prototype closeup" height="467" loading="lazy" src="/files/images/202506/MIT-Schizophrenia-Trial-hm.jpg" typeof="foaf:Image" width="700"/>
+</a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="http://news.mit.edu/2025/weekly-pill-schizophrenia-shows-promise-clinical-trials-0610" target="_blank">
+                    
+            Once-a-week pills
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>With a new type of pill, some medications could be taken once a week instead of daily. In a phase 3 clinical trial, the capsule delivered the drug risperidone in patients with schizophrenia, controlling their symptoms just as well as daily doses.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a href="http://news.mit.edu/news-clip/fox-news-36" target="_blank">
+<img alt="6 photos of robot helping people get up from being seated" height="467" loading="lazy" src="/files/images/202506/MIT-ElderCare-Robot-01-press_hm.jpg" typeof="foaf:Image" width="700"/>
+</a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="http://news.mit.edu/news-clip/fox-news-36" target="_blank">
+                    
+            Independent living for seniors
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>MIT researchers developed a new robot thatâs designed to help physically support the elderly and prevent falls at home. âIt's easy to see how something like this could make a big difference for seniors wanting to stay independent,â Fox News reported.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a href="https://www.youtube.com/watch?v=04JCB9GT64c" target="_blank">
+<img alt="Killian columns" height="400" loading="lazy" src="/files/images/202505/Final-Thumbnails-Filehm.jpg" typeof="foaf:Image" width="600"/>
+</a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="https://www.youtube.com/watch?v=04JCB9GT64c" target="_blank">
+                    
+            A world without MIT
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>In a world without MIT, radar wouldnât have been available to help win World War II. We might not have email, CT scans, time-release drugs, photolithography, or GPS. And weâd lose over 30,000 companies, employing millions of people. Can you imagine?</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a href="https://www.youtube.com/watch?v=r7R8ewU1Wqc" target="_blank">
+<img alt="Kilian Court" height="400" loading="lazy" src="/files/images/202505/MIT-This-is-MIT-SLsub_0_0.jpg" typeof="foaf:Image" width="600"/>
+</a>
+</div>
+<div>
+<div>
+<strong></strong>
+</div>
+<div>
+<h3>
+<a href="https://www.youtube.com/watch?v=r7R8ewU1Wqc" target="_blank">
+                    
+            Contributions to the nation
+      
+          </a>
+</h3>
+</div>
+<div>
+<p>âSince its founding, MIT has been key to helping American science and innovation lead the world. Discoveries that begin here generate jobs and power the economy â and what we create today builds a better tomorrow for all of us.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<spotlights-archive-link :linktospotlightsarchive="theLinkToSpotlightArchive"></spotlights-archive-link>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<a href="/">
+
+<span>Massachusetts Institute of Technology</span>
+</a>
+<ul>
+<li>
+<a href="/education">Education</a>
+</li>
+<li>
+<a href="/research">Research</a>
+</li>
+<li>
+<a href="/innovation">Innovation</a>
+</li>
+<li>
+<a href="/admissions-aid">Admissions + Aid</a>
+</li>
+<li>
+<a href="/campus-life">Campus Life</a>
+</li>
+<li>
+<a href="https://news.mit.edu/">News<span>news.mit.edu</span></a>
+</li>
+<li>
+<a href="/about">About MIT</a>
+</li>
+<li>
+<a href="/alumni">Alumni</a>
+</li>
+
+<li>
+<a href="/building-a-better-world">Give</a>
+</li>
+</ul>
+<div>
+<p>
+              Massachusetts Institute of Technology
+          </p>
+<div>
+<a href="https://www.google.com/maps/place/Massachusetts+Institute+of+Technology/@42.360091,-71.09416,15z/data=!4m5!3m4!1s0x0:0xd0e08ea5b308203c!8m2!3d42.360091!4d-71.09416">77 Massachusetts Avenue, Cambridge, MA, USA</a>
+</div>
+<ul>
+<li><a href="/visitmit">Visit</a></li>
+<li><a href="https://whereis.mit.edu/">Map</a></li>
+<li><a href="https://calendar.mit.edu/">Events</a></li>
+<li><a href="/search/?redirect-origin=legacy&amp;tab=directory">People</a></li>
+<li><a href="https://careers.mit.edu/">Careers</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/privacy">Privacy</a></li>
+<li><a href="/accessibility">Accessibility</a></li>
+<li>
+<ul>
+<li>
+<a href="https://socialmediahub.mit.edu/">
+<span>Social Media Hub</span>
+</a>
+</li>
+<li>
+<a href="https://twitter.com/mit"><span>MIT@twitter</span>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/MITnews"><span>MIT@facebook</span>
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/mit"><span>MIT@youtube</span>
+
+</a>
+</li>
+<li>
+<a href="https://www.instagram.com/mit/"><span>MIT@instagram</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</footer>
+
+<!--[if gt IE 8]><!-->
+
+<!--<![endif]-->
+<!--[if lt IE 9]>
+<script src="/themes/mit/assets/js/ie-7-8.js?sy2dzc"></script>
+<![endif]-->
+</body>
+</html>

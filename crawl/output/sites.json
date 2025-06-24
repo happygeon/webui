@@ -1,0 +1,680 @@
+[
+  {
+    "index": 0,
+    "url": "https://www.naver.com",
+    "category": "portal",
+    "purpose": "main page"
+  },
+  {
+    "index": 1,
+    "url": "https://www.daum.net",
+    "category": "portal",
+    "purpose": "main page"
+  },
+  {
+    "index": 2,
+    "url": "https://www.bing.com",
+    "category": "portal",
+    "purpose": "main page"
+  },
+  {
+    "index": 3,
+    "url": "https://www.baidu.com",
+    "category": "portal",
+    "purpose": "main page"
+  },
+  {
+    "index": 4,
+    "url": "https://www.ecosia.org",
+    "category": "portal",
+    "purpose": "main page"
+  },
+  {
+    "index": 5,
+    "url": "https://www.bbc.com/news",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 6,
+    "url": "https://www.hani.co.kr",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 7,
+    "url": "https://www.chosun.com",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 8,
+    "url": "https://www.khan.co.kr",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 9,
+    "url": "https://www.aljazeera.com",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 10,
+    "url": "https://www.11st.co.kr",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 11,
+    "url": "https://www.coupang.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 12,
+    "url": "https://www.gmarket.co.kr",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 13,
+    "url": "https://www.ssg.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 14,
+    "url": "https://www.newegg.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 15,
+    "url": "https://www.todayhumor.co.kr",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 16,
+    "url": "https://bbs.ruliweb.com",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 17,
+    "url": "https://www.clien.net",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 18,
+    "url": "https://www.quora.com",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 19,
+    "url": "https://old.reddit.com",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 20,
+    "url": "https://brunch.co.kr",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 21,
+    "url": "https://velog.io",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 22,
+    "url": "https://medium.com",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 23,
+    "url": "https://blog.naver.com",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 24,
+    "url": "https://tistory.com",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 25,
+    "url": "https://www.yonsei.ac.kr",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 26,
+    "url": "https://www.mit.edu",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 27,
+    "url": "https://www.kaist.ac.kr",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 28,
+    "url": "https://www.korea.ac.kr",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 29,
+    "url": "https://www.cam.ac.uk",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 30,
+    "url": "https://www.gov.kr",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 31,
+    "url": "https://www.molit.go.kr",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 32,
+    "url": "https://data.go.kr",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 33,
+    "url": "https://www.korea.kr",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 34,
+    "url": "https://www.nhis.or.kr",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 35,
+    "url": "https://www.samsung.com/sec",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 36,
+    "url": "https://www.lg.com/kr",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 37,
+    "url": "https://www.skhynix.com",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 38,
+    "url": "https://www.intel.com",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 39,
+    "url": "https://www.hyundai.com",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 40,
+    "url": "https://www.stackoverflow.com",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 41,
+    "url": "https://www.w3schools.com",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 42,
+    "url": "https://developer.mozilla.org",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 43,
+    "url": "https://github.com/explore",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 44,
+    "url": "https://dev.to",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 45,
+    "url": "https://www.konest.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 46,
+    "url": "https://www.visitkorea.or.kr",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 47,
+    "url": "https://www.lonelyplanet.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 48,
+    "url": "https://www.tripit.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 49,
+    "url": "https://www.yanolja.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 50,
+    "url": "https://www.wsj.com",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 51,
+    "url": "https://www.ft.com",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 52,
+    "url": "https://www.reuters.com",
+    "category": "news",
+    "purpose": "main page"
+  },
+  {
+    "index": 53,
+    "url": "https://www.amazon.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 54,
+    "url": "https://www.ebay.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 55,
+    "url": "https://www.alibaba.com",
+    "category": "shopping",
+    "purpose": "main page"
+  },
+  {
+    "index": 56,
+    "url": "https://forums.androidcentral.com",
+    "category": "community",
+    "purpose": "main page"
+  },
+  {
+    "index": 57,
+    "url": "https://wordpress.com",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 58,
+    "url": "https://blog.google",
+    "category": "blog",
+    "purpose": "main page"
+  },
+  {
+    "index": 59,
+    "url": "https://ocw.mit.edu",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 60,
+    "url": "https://www.coursera.org",
+    "category": "education",
+    "purpose": "main page"
+  },
+  {
+    "index": 61,
+    "url": "https://www.usa.gov",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 62,
+    "url": "https://www.gov.uk",
+    "category": "government",
+    "purpose": "main page"
+  },
+  {
+    "index": 63,
+    "url": "https://www.apple.com",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 64,
+    "url": "https://www.microsoft.com",
+    "category": "corporate",
+    "purpose": "main page"
+  },
+  {
+    "index": 65,
+    "url": "https://techcrunch.com",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 66,
+    "url": "https://www.theverge.com",
+    "category": "tech",
+    "purpose": "main page"
+  },
+  {
+    "index": 67,
+    "url": "https://www.bloomberg.com",
+    "category": "finance",
+    "purpose": "main page"
+  },
+  {
+    "index": 68,
+    "url": "https://www.investing.com",
+    "category": "finance",
+    "purpose": "main page"
+  },
+  {
+    "index": 69,
+    "url": "https://www.webmd.com",
+    "category": "health",
+    "purpose": "main page"
+  },
+  {
+    "index": 70,
+    "url": "https://www.healthline.com",
+    "category": "health",
+    "purpose": "main page"
+  },
+  {
+    "index": 71,
+    "url": "https://www.espn.com",
+    "category": "sports",
+    "purpose": "main page"
+  },
+  {
+    "index": 72,
+    "url": "https://www.skysports.com",
+    "category": "sports",
+    "purpose": "main page"
+  },
+  {
+    "index": 73,
+    "url": "https://www.expedia.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 74,
+    "url": "https://www.airbnb.com",
+    "category": "travel",
+    "purpose": "main page"
+  },
+  {
+    "index": 75,
+    "url": "https://www.netflix.com",
+    "category": "entertainment",
+    "purpose": "main page"
+  },
+  {
+    "index": 76,
+    "url": "https://www.imdb.com",
+    "category": "entertainment",
+    "purpose": "main page"
+  },
+  {
+    "index": 77,
+    "url": "https://www.nature.com",
+    "category": "science",
+    "purpose": "main page"
+  },
+  {
+    "index": 78,
+    "url": "https://www.sciencemag.org",
+    "category": "science",
+    "purpose": "main page"
+  },
+  {
+    "index": 79,
+    "url": "https://www.behance.net",
+    "category": "art",
+    "purpose": "main page"
+  },
+  {
+    "index": 80,
+    "url": "https://www.deviantart.com",
+    "category": "art",
+    "purpose": "main page"
+  },
+  {
+    "index": 81,
+    "url": "https://nid.naver.com/nidlogin.login",
+    "category": "portal",
+    "purpose": "login page"
+  },
+  {
+    "index": 82,
+    "url": "https://www.google.com/maps",
+    "category": "portal",
+    "purpose": "map page"
+  },
+  {
+    "index": 83,
+    "url": "https://edition.cnn.com/search?q=climate",
+    "category": "news",
+    "purpose": "search results"
+  },
+  {
+    "index": 84,
+    "url": "https://www.bbc.com/news/world-us-canada-56919944",
+    "category": "news",
+    "purpose": "article page"
+  },
+  {
+    "index": 85,
+    "url": "https://www.aljazeera.com/news/2021/9/15/afghanistan-taliban-announcement",
+    "category": "news",
+    "purpose": "article page"
+  },
+  {
+    "index": 86,
+    "url": "https://www.amazon.com/dp/B08N5WRWNW",
+    "category": "shopping",
+    "purpose": "product detail page"
+  },
+  {
+    "index": 87,
+    "url": "https://www.amazon.com/gp/cart/view.html",
+    "category": "shopping",
+    "purpose": "shopping cart page"
+  },
+  {
+    "index": 88,
+    "url": "https://www.ebay.com/sch/i.html?_nkw=laptop",
+    "category": "shopping",
+    "purpose": "search results"
+  },
+  {
+    "index": 89,
+    "url": "https://www.newegg.com/p/N82E16868110242",
+    "category": "shopping",
+    "purpose": "product detail page"
+  },
+  {
+    "index": 90,
+    "url": "https://www.coupang.com/np/search?component=&q=headphones",
+    "category": "shopping",
+    "purpose": "search results"
+  },
+  {
+    "index": 91,
+    "url": "https://old.reddit.com/r/python/",
+    "category": "community",
+    "purpose": "subreddit listing"
+  },
+  {
+    "index": 92,
+    "url": "https://stackoverflow.com/questions/11828270/how-to-exit-the-vim-editor",
+    "category": "tech",
+    "purpose": "Q&A page"
+  },
+  {
+    "index": 93,
+    "url": "https://dev.to/t/playwright",
+    "category": "tech",
+    "purpose": "tag page"
+  },
+  {
+    "index": 94,
+    "url": "https://medium.com/@towardsdatascience/neural-networks-101-9a1a6eabc123",
+    "category": "blog",
+    "purpose": "blog post"
+  },
+  {
+    "index": 95,
+    "url": "https://brunch.co.kr/@username/42",
+    "category": "blog",
+    "purpose": "blog post"
+  },
+  {
+    "index": 96,
+    "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/",
+    "category": "education",
+    "purpose": "course detail page"
+  },
+  {
+    "index": 97,
+    "url": "https://www.coursera.org/learn/machine-learning",
+    "category": "education",
+    "purpose": "course page"
+  },
+  {
+    "index": 98,
+    "url": "https://www.usa.gov/contact",
+    "category": "government",
+    "purpose": "contact page"
+  },
+  {
+    "index": 99,
+    "url": "https://www.gov.uk/sign-in?continue=/search",
+    "category": "government",
+    "purpose": "login page"
+  },
+  {
+    "index": 100,
+    "url": "https://www.microsoft.com/en-us/careers",
+    "category": "corporate",
+    "purpose": "careers page"
+  },
+  {
+    "index": 101,
+    "url": "https://appleid.apple.com/auth/authorize",
+    "category": "corporate",
+    "purpose": "login page"
+  },
+  {
+    "index": 102,
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout",
+    "category": "tech",
+    "purpose": "documentation page"
+  },
+  {
+    "index": 103,
+    "url": "https://www.webmd.com/diet/health-benefits-of-avocado",
+    "category": "health",
+    "purpose": "article page"
+  },
+  {
+    "index": 104,
+    "url": "https://www.investing.com/equities/apple-computer-inc",
+    "category": "finance",
+    "purpose": "stock detail page"
+  },
+  {
+    "index": 105,
+    "url": "https://www.espn.com/nba/game/_/gameId/401307040",
+    "category": "sports",
+    "purpose": "match page"
+  },
+  {
+    "index": 106,
+    "url": "https://www.booking.com/searchresults.html?city=20088325",
+    "category": "travel",
+    "purpose": "search results"
+  },
+  {
+    "index": 107,
+    "url": "https://www.netflix.com/title/80057281",
+    "category": "entertainment",
+    "purpose": "media detail page"
+  },
+  {
+    "index": 108,
+    "url": "https://www.imdb.com/find?q=inception",
+    "category": "entertainment",
+    "purpose": "search results"
+  },
+  {
+    "index": 109,
+    "url": "https://www.sciencemag.org/news/2019/11/how-superbugs-unlock-key-dna-code",
+    "category": "science",
+    "purpose": "article page"
+  },
+  {
+    "index": 110,
+    "url": "https://arxiv.org/abs/2106.01345",
+    "category": "science",
+    "purpose": "paper abstract page"
+  },
+  {
+    "index": 111,
+    "url": "https://www.behance.net/gallery/12345678/Creative-Project",
+    "category": "art",
+    "purpose": "project gallery page"
+  },
+  {
+    "index": 112,
+    "url": "https://www.deviantart.com/users/login",
+    "category": "art",
+    "purpose": "login page"
+  }
+]

@@ -1,0 +1,487 @@
+<!DOCTYPE html><html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	
+
+
+
+<title>브런치스토리</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="title" content="brunchstory">
+<meta name="referrer" content="always">
+<meta name="secureToken" value="">
+<meta name="robots" content="max-image-preview:large">
+
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+
+<link rel="SHORTCUT ICON" href="//t1.daumcdn.net/brunch/static/icon/favicon/brunchstory/favicon_20230406.ico">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_180.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_152.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="//t1.daumcdn.net/brunch/static/icon/ios/brunchstory/ico_bi_120.png">
+
+
+                <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/css/B.min.css">
+                    <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/css/B.Message.min.css">
+    
+                        <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/css/B.Font.min.css">
+        
+
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.min-3.6.4.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.cookie.min-1.4.1.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.xdomainrequest.min-1.0.4.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/jquery.word-break-keep-all.min-1.3.0.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/handlebars.runtime.min-v4.7.8.js"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/sentry.min.5.27.4.js?v=20221124"></script>
+                                <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/libraries/js/clipboard.min.js"></script>
+            
+
+<script type="text/javascript" src="//t1.daumcdn.net/tiara/js/v1/tiara.min.js"></script>
+
+<script>
+    window.Guard = {
+        hasError:  false,
+        excuteFunctionArray: [],
+        loadedJsHistory: [],
+
+        /*
+            kebana에 프론트 로그 발생 오류를 기록 한다.
+         */
+        fetchLog: function(message, extraJson) {
+            if (!window.fetch && !fetch) {
+                return '';
+            }
+            var csrfToken = document.querySelector('meta[name=secureToken]').attributes['value'].value;
+
+            fetch('https://api.brunch.co.kr/v1/front-log', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
+                },
+                credentials: 'include',
+                body : JSON.stringify({
+                    message: message,
+                    extras: extraJson
+                })
+            })
+        },
+
+        /*
+            js파일의 tenth2 fetch 결과를 Matrix에 기록.
+         */
+        checkTenth2JsStatus: function (jsFileName) {
+            var phase = '/';
+                            phase = '/production/'
+                        var jsUrl = '//t1.daumcdn.net/brunch/static/prod/20250619173509' + phase + jsFileName;
+
+            if (!window.fetch && !fetch) {
+                return '';
+            }
+
+            fetch(jsUrl).then(function(response) {
+                Sentry.setTag('InitFail', 'FailLoadTenth2js');
+                Sentry.captureMessage('[BRUNCH] InitFail - Tenth2', {
+                    extra: {
+                        extra: {
+                            status: response.status,
+                            url: response.url,
+                            statusText: response.statusText,
+                        },
+                    },
+                });
+            }).catch(function(error) {
+                Sentry.captureMessage('[BRUNCH] InitFail - Tenth2', {
+                    extra: {
+                        extra: {
+                            url: jsUrl,
+                        },
+                    },
+                });
+            });
+        },
+
+        dynamicAppendJsLibraryTags: function(jsFileNameArray) {
+          for(var i=0; i<jsFileNameArray.length; i++) {
+              this.dynamicAppendJsLibraryTag(jsFileNameArray[i]);
+          }
+        },
+
+        dynamicAppendJsLibraryTag: function(jsFileName) {
+            this.createScriptTag('/static/libraries/js/', jsFileName);
+        },
+
+        /**
+         * 자바스크립트 동적 생성 함수
+         * @param {String} jsPath - 자바스크립트 파일 경로
+         * @param {String} jsFileName - 자바스크립트 파일 이름
+         * @param {Function} onLoadCallback - 스크립트 onLoad 이후 실행될 함수
+         */
+        createScriptTag: function(jsPath, jsFileName, onLoadCallback, type) {
+            this.loadedJsHistory.push(jsFileName);
+            var script = document.createElement('script');
+            script.type = type || 'text/javascript';
+            script.src = jsPath + jsFileName + '?v=1750604776792';
+            if (onLoadCallback) {
+                script.onload = function() {
+                    onLoadCallback();
+                }
+            }
+            script.onerror = function(e) {
+                this.matrixLogging(e, 'Invalid Script src', jsPath + jsFileName);
+            }.bind(this)
+            script.async = false;
+            this.removeScriptTag(jsPath + jsFileName);
+            document.getElementsByTagName('head')[0].appendChild(script);
+        },
+
+        /**
+         * dom 내에 존재하는 대상 스크립트를 찾아서 제거 하는 함수
+         * @param {String} targetSrc
+         */
+        removeScriptTag: function(targetSrc) {
+            for (var i=0; i<document.scripts.length; i++) {
+
+                if (document.scripts[i].src.indexOf(targetSrc) > -1) {
+                    document.scripts[i].remove();
+                }
+            }
+        },
+
+        /**
+         * 함수를 실행하고, 그 실행 내역을 Array에 저장
+         * @param {Function} func - 실행될 함수
+         */
+        executeAndSaveFunction: function(func) {
+            try {
+                this.excuteFunctionArray.push(func);
+                func();
+            } catch(e) {
+                console.error(e);
+                if(!this.hasError) {
+                    this.fetchLog('script error occur', {});
+                }
+                this.hasError = true;
+            }
+        },
+
+        /**
+         * 글뷰 페이지를 복구 하기 위한 함수
+         * 1. libraries 태그 복원
+         * 2. 글뷰 통합 번들 파일 추가
+         * @param {boolean} isPc
+         */
+        restoreArticlePage: function(isPc) {
+            var scripts = [
+                "sentry.min.5.27.4.js",
+                "jquery.min-3.6.4.js",
+                "jquery.cookie.min-1.4.1.js",
+                "jquery.xdomainrequest.min-1.0.4.js",
+                "jquery.word-break-keep-all.min-1.3.0.js",
+                "handlebars.runtime.min-v4.7.8.js"
+            ];
+            this.dynamicAppendJsLibraryTags(scripts);
+            this.excuteFunctionArray.push(function() {
+                this.loggedIsArticleRestored(isPc);
+            }.bind(this));
+
+            if (isPc) {
+                this.createScriptTag('/static/production/', 'brunch.article.pc.min.js', this.doExcuteFunctionArray.bind(this));
+            } else {
+                this.createScriptTag('/static/production/', 'brunch.article.mobile.min.js', this.doExcuteFunctionArray.bind(this));
+            }
+        },
+
+        /**
+         * article 페이지 복구 여부에 대한 기록 함수
+         * PC .wrap_body_frame 존재 유무
+         * Mobile #articleMain display 속성 확인 (not none)
+         * @param isPc
+         */
+        loggedIsArticleRestored: function(isPc) {
+            var isRestored = false;
+
+            if (isPc) {
+                isRestored = document.querySelector('.wrap_body_frame') !== null
+            } else {
+                isRestored = window.getComputedStyle(document.querySelector('#articleMain')).display !== 'none';
+            }
+
+            var fetchMsg = 'restorePageFail';
+
+            if (isRestored) {
+                fetchMsg = 'restorePage';
+            }
+
+            this.fetchLog(fetchMsg, {
+                isPc: isPc
+            })
+        },
+
+        doExcuteFunctionArray: function() {
+            if (this.excuteFunctionArray.length > 0) {
+                for (var i = 0; i < this.excuteFunctionArray.length; i++) {
+                    var func = this.excuteFunctionArray[i];
+
+                    if (func && typeof func === 'function') {
+                        try {
+                            func();
+                        } catch(e) {
+                            this.fetchLog('failRestorePage', {
+                                error: e,
+                            })
+                        }
+                    }
+                }
+            }
+        },
+
+        matrixLogging: function(error, tagValue, data) {
+            // B.Util 스크립트도 로딩이 안된 경우가 있어 별도의 로깅을 진행 한다.
+            Sentry.addBreadcrumb({
+                type: 'error',
+                category: 'error',
+                level: 'error',
+                data: data
+            });
+            Sentry.setTag('Monitoring', tagValue);
+            Sentry.captureMessage('[BRUNCH] Article View Restore Fail');
+        }
+    };
+</script>
+
+<script type="text/javascript">
+        
+    window._platform = "pc";
+
+    function sentryInit() {
+        Sentry.init({
+            dsn: 'https://82e056052bc34de9a6b32456d6f1f370@aem-kakao-collector.onkakao.net/1768',
+            release: '20250619173509',
+            environment: 'prod',
+                        allowUrls: [
+                "brunch.co.kr",
+                "dev.onkakao.net",
+                "daumcdn.net"
+            ],
+            beforeSend: function (event) {
+                                if('request' in event && 'headers' in event.request && 'User-Agent' in event.request.headers) {
+                    var lowerUserAgent = event.request.headers['User-Agent'].toLowerCase();
+                    var botIgnoredMsg = '[BRUNCH] Spider or Bot detected. Ignored.';
+                    if (lowerUserAgent.indexOf('bot') > -1 || lowerUserAgent.indexOf('crawl') > -1) {
+                        event.title = botIgnoredMsg;
+                        event.message = botIgnoredMsg;
+                    }
+                }
+                return event;
+            }
+        });
+
+        Sentry.setTag("ua.platform", window._platform);
+        
+        Sentry.setInitFail = function(message) {
+            Sentry.setTag('InitFail', 'InitFail');
+            Sentry.setTag('FailMessage', message)
+            Sentry.captureMessage('[BRUNCH] InitFail. Script is not initialized.');
+        }
+    }
+
+    Guard.executeAndSaveFunction(sentryInit);
+</script>
+
+<script>
+    if (typeof jQuery === 'undefined') {
+        var scripts = [
+            "sentry.min.5.27.4.js",
+            "jquery.min-3.6.4.js",
+            "jquery.cookie.min-1.4.1.js",
+            "jquery.xdomainrequest.min-1.0.4.js",
+            "jquery.word-break-keep-all.min-1.3.0.js",
+            "handlebars.runtime.min-v4.7.8.js"
+        ]
+        Guard.dynamicAppendJsLibraryTags(scripts);
+        Guard.fetchLog('libraries init', {});
+    }
+</script>
+			            <link rel="stylesheet" type="text/css" href="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/css/B.Exception.min.css">
+    	</head><body>
+	
+	
+	<div class="container">
+		<div class="outer">
+			<div class="wrap_exception inner">
+				
+<div class="alert-wrap exception centered">
+    		<img src="//t1.daumcdn.net/brunch/static/img/help/pc/img_logo_empty_230206.png" alt="brunch"><br>
+    
+    <div class="alert-title">존재하지 않는 사용자입니다.</div>
+
+            <div class="alert-sub-title">주소를 다시 한 번 확인해 보세요.</div>
+    
+    </div>
+			</div>
+		</div>
+	</div>
+
+	
+
+    <script type="text/javascript" src="//developers.kakao.com/sdk/js/kakao.min.js?v=2"></script>
+
+
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/B.min.js"></script>
+            
+
+
+
+    <script type="text/javascript">
+        function BrunchConfigInit() {
+            B.Config = {"createMagazineConfirm":"로그인이 필요합니다.","downloadDomain":"t1.daumcdn.net","channelPublicId":"_YYcYV","KakaoTvIframeHost":"https://play-tv.kakao.com","brunchbookArticleMinCount":10,"serviceUrl":"https://brunch.co.kr","active":"real","isInnerNetwork":false,"kakaoJSKey":"7577e1f674fc3bc73963db5bf15e03df","facebookApiVersion":"v11.0","serviceDomain":"brunch.co.kr","webpackJsUrl":"https://local-brunch-webpack-js.dev.onkakao.net","templateUrl":"/template/","isCbtHome":false,"matrixFtDsn":"https://82e056052bc34de9a6b32456d6f1f370@aem-kakao-collector.onkakao.net/1768","webpackCssUrl":"https://local-brunch-webpack-css.dev.onkakao.net","apiUrl":"https://api.brunch.co.kr","servicecode":"7eF1DYRbLy8LCLcy","brunchbookArticleMaxCount":30,"creatorsfitServiceUrl":"https://creatorsfit.kakao.com","thumbnailDomain":"img1.daumcdn.net","viteJsUrl":"https://local-brunch-home-vite.dev.onkakao.net"};
+            B.User = {
+                            };
+        }
+        Guard.executeAndSaveFunction(BrunchConfigInit)
+    </script>
+
+            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/static/purify.min.js"></script>
+                            <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/tiaraEventHandler.min.js"></script>
+                                    <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/B.Util.min.js"></script>
+            
+                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/B.Message.min.js"></script>
+            
+<script type="text/javascript">
+    function messageInit() {
+        try {
+            B.Message.init();
+        } catch (e) {
+            Sentry.setInitFail('Message')
+        }
+    }
+
+    (function() {
+        Guard.executeAndSaveFunction(messageInit);
+    })();
+</script>                        <script type="text/javascript" src="//t1.daumcdn.net/brunch/static/prod/20250619173509/production/B.Login.min.js"></script>
+            
+    <script type="text/javascript">
+        function loginInit() {
+            try {
+                // pc , mobile, tablet, unknown
+                var isPcOrTablet = !B.UserAgent.isMobile;
+                                                        B.Login.init(isPcOrTablet, '');
+                            } catch(e) {
+                Sentry.setInitFail("Login");
+            }
+        }
+        (function() {
+            Guard.executeAndSaveFunction(loginInit);
+        })();
+    </script><div class="layer_login">
+    <h2 class="screen_out">브런치 로그인</h2>
+    <div class="sign_kakao3">
+        <div class="item_slide">
+            <div class="top_logo">
+                <a href="/" class="link_brunch">
+                    <span class="ico_brunch_v1 ico_logo"></span> <span class="screen_out">브런치</span>
+                </a>
+            </div>
+            <div class="cont_slide">
+                <div class="slide_box">
+                     <ul class="list_slide slide1">
+                         <li class="slide_item slide1">
+                             <a href="https://brunch.co.kr/@brunch/2" target="_blank" class="link_item">
+                                 <div class="thum_item">
+                                     <img src="https://t1.daumcdn.net/brunch9/static/images/pc/pc-img-start-01.png" alt="일러스트영역" width="315" height="208">
+                             </div>
+                                <div class="cont_item">
+                                    <strong class="tit_info">브런치스토리 작가로 데뷔하세요.</strong> <span class="txt_info">진솔한 에세이부터 업계 전문 지식까지,<br>당신의 이야기를 세상에 선보이세요.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide_item slide2">
+                            <a href="https://brunch.co.kr/@brunch/133" target="_blank" class="link_item">
+                                <div class="thum_item">
+                                    <img src="https://t1.daumcdn.net/brunch9/static/images/pc/pc-img-start-02.png" alt="일러스트영역" width="315" height="208">
+                                </div>
+                                <div class="cont_item">
+                                    <strong class="tit_info">브런치스토리로 제안받는 새로운 기회</strong>
+                                    <span class="txt_info">다양한 프로젝트와 파트너를 통해<br>작가님의 작품이 책·강연 등으로 확장됩니다.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="slide_item slide3">
+                             <a href="https://brunch.co.kr/brunchbook/10publishers" target="_blank" class="link_item">
+                                 <div class="thum_item">
+                                     <img src="https://t1.daumcdn.net/brunch9/static/images/pc/pc-img-start-03.png" alt="일러스트영역" width="315" height="208">
+                                </div>
+                                <div class="cont_item">
+                                    <strong class="tit_info">글로 만나는 작가의 경험</strong> <span class="txt_info">작가를 구독하고, 새 글을 받아보세요.<br>당신에게 영감을 주는 작품을 추천합니다.</span>
+                                </div>
+                         </a>
+                        </li>
+                    </ul>
+                </div>
+                 <div class="paging_box">
+                     <button class="btn_arrow btn_prev on"> <span class="ico_brunch_v1 ico_arrow">이전</span> </button>
+                     <ul class="paging">
+                         <li><button class="btn_paging slide1 on"><span class="screen_out">1</span></button></li>
+                         <li><button class="btn_paging slide2"><span class="screen_out">2</span></button></li>
+                         <li><button class="btn_paging slide3"><span class="screen_out">3</span></button></li>
+                     </ul>
+                     <button class="btn_arrow btn_next on"> <span class="ico_brunch_v1 ico_arrow">다음</span> </button>
+                 </div>
+             </div>
+        </div>
+
+        <div class="item_start">
+            <div class="box_start">
+                <strong class="tit_txt">브런치스토리 시작하기</strong>
+                <a href="/auth/kakao?url=" class="link_start link_search" id="kakaoLogin" data-tiara-action-name="브런치스토리 시작하기 > 카카오계정으로 시작하기 클릭" data-tiara-action-kind="Login" data-tiara-layer="kakao">
+                    <span class="ico_brunch_v1 ico_ka"></span> <span class="txt_item">카카오계정으로 로그인</span>
+                </a>
+            </div>
+            <div class="box_searh">
+                <strong class="tit_txt">내 브런치스토리 찾기</strong>
+                <a href="/signin/find_account" target="_blank" title="새창열림" class="link_search" data-tiara-action-name="브런치 시작하기 > 카카오계정 찾기 클릭" data-tiara-action-kind="Login" data-tiara-layer="find_account">내 브런치스토리의 카카오계정을 모르겠어요</a>
+                <a href="/signin/connect_kakaoaccount" target="_blank" title="새창열림" class="link_search" data-tiara-action-name="브런치스토리 시작하기 > 카카오계정 연결하기 클릭" data-tiara-action-kind="Login" data-tiara-layer="connect_kakaoaccount">페이스북·트위터로만 로그인 했었나요?</a>
+                <a href="https://cs.kakao.com/helps?articleId=1073194268&amp;service=54&amp;category=474&amp;device=&amp;locale=ko" target="_blank" title="새창열림" class="desc_help">로그인 관련 상세 도움말</a>
+            </div>
+        </div>
+
+        <button class="btn_close" id="closeSigninPopup">
+            <span class="screen_out">창 닫기</span> <span class="ico_brunch_v1 ico_close"></span>
+        </button>
+    </div>
+</div>
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "브런치스토리",
+        "url": "https://brunch.co.kr",
+        "sameAs": [
+            "https://play.google.com/store/apps/details?id=com.daumkakao.android.brunchapp",
+            "https://apps.apple.com/kr/app/id1001388574"
+        ]
+    }
+</script>            <div class="compatible-info">
+            <em class="text_noti">브런치는 최신 브라우저에 최적화 되어있습니다.</em>
+            <a class="ico_browser ico_ie text_hide" target="_blank" href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie">IE</a>
+            <a class="ico_browser ico_chrome text_hide" target="_blank" href="http://www.google.co.kr/chrome/">chrome</a>
+            <a class="ico_browser ico_safari text_hide" target="_blank" href="http://www.apple.com/kr/safari/">safari</a>
+        </div>
+    
+    <script type="text/javascript">
+        try {
+                            if(B.UserAgent.isIE11Under) {
+                    jQuery('body').addClass('no-compatible');
+                }
+                    } catch(e) {
+        }
+    </script>
+
+
+
+</body></html>
