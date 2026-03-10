@@ -1,0 +1,11 @@
+1. To help travelers find and book unique accommodations in various locations, particularly in South Korea, with a focus on homes, apartments, and unique stays.
+
+2. Homepage
+
+3. Travel and hospitality
+
+4. (a) Search bar with filters for location, dates, and guests
+(b) Navigation menu with options for Homes, Experiences, and Services
+(c) Grid layout of property listings with key information and pricing
+(d) "Become a host" button for property owners to list their spaces
+(e) Footer with links to support, hosting resources, and company information

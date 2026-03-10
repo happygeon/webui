@@ -1,0 +1,30 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 1
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "help": "Main landmark should not be contained in another landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "help": "Document should not have more than one banner landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-no-duplicate-main",
+      "help": "Document should not have more than one main landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-unique",
+      "help": "Ensures landmarks are unique",
+      "count": 3
+    }
+  ]
+}

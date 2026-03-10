@@ -1,0 +1,6 @@
+Purpose: To direct international customers to the appropriate Best Buy website for their country, allowing them to shop and have orders shipped to their location.
+국제 고객을 해당 국가의 적절한 Best Buy 웹사이트로 안내하여 쇼핑하고 주문을 해당 위치로 배송받을 수 있도록 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: E-commerce
+전자상거래

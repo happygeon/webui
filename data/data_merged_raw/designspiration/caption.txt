@@ -1,0 +1,11 @@
+1. To provide a platform for creative professionals to save, organize, and explore design inspiration and ideas using a browser extension
+
+2. Landing page
+
+3. Design inspiration / Creative tools
+
+4. (a) Large, bold headline emphasizing the main value proposition
+(b) Clean, minimalist layout with ample white space
+(c) Prominent sign-up button for easy user conversion
+(d) Interactive color palette showcasing the tool's functionality
+(e) Floating card UI element demonstrating the collection feature

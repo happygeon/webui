@@ -1,0 +1,11 @@
+1. To provide in-depth information about Mars missions to space enthusiasts and science-minded readers, explaining orbital mechanics and mission planning for Mars exploration.
+
+2. Blog post
+
+3. Science and technology
+
+4. (a) Clear, readable typography for article text
+(b) Sidebar with search functionality and topic tags
+(c) Prominent article title and date
+(d) Navigation links to related content
+(e) Embedded diagrams illustrating orbital trajectories

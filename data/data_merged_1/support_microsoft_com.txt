@@ -1,0 +1,6 @@
+Purpose: To provide Microsoft users with support, resources, and information about Microsoft products and services, catering to both individual consumers and business users seeking assistance or exploring Microsoft offerings.
+   마이크로소프트 사용자에게 지원, 리소스 및 마이크로소프트 제품과 서비스에 대한 정보를 제공하여, 개인 소비자와 지원을 요청하거나 마이크로소프트 제품을 탐색하는 비즈니스 사용자 모두를 대상으로 합니다.
+Page Type: Landing page
+   랜딩 페이지
+Domain: Technology support and services
+   기술 지원 및 서비스

@@ -1,0 +1,118 @@
+The provided HTML code now includes a `<main>` element with an `aria-labelledby` attribute pointing to the `<h1>` header, which addresses the accessibility violations reported in the previous analysis. Here's the final code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie & TV Show Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better visual appeal */
+      .hero-bg {
+            background-image: url('path-to-hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-black p-4 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="/" class="text-white text-2xl">Entertainment Hub</a>
+            <ul class="flex space-x-4">
+                <li><a href="#movies" class="text-white hover:text-blue-500">Movies</a></li>
+                <li><a href="#tv-shows" class="text-white hover:text-blue-500">TV Shows</a></li>
+                <li><a href="#recommendations" class="text-white hover:text-blue-500">Recommendations</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg">
+        <h1 class="text-4xl md:text-6xl font-bold" id="welcome-header">Welcome to Entertainment Hub!</h1>
+        <p class="md:text-xl">Find your next favorite movie or TV show.</p>
+    </section>
+
+    <!-- Main Content -->
+    <main aria-labelledby="welcome-header">
+        <!-- Movies Section -->
+        <section id="movies" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-8">Top Rated Movies</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Movie Card Example -->
+                    <article class="overflow-hidden rounded-lg shadow-md">
+                        <img src="path-to-movie-poster.jpg" alt="Movie Poster" class="w-full h-64 object-cover">
+                        <div class="px-4 py-4">
+                            <h3 class="text-xl font-semibold truncate">Movie Title</h3>
+                            <p class="text-gray-700">Movie description goes here...</p>
+                            <a href="#" class="mt-4 block text-blue-500 hover:text-blue-700">Watch Trailer</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Shows Section -->
+        <section id="tv-shows" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-8">Popular TV Shows</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- TV Show Card Example -->
+                    <article class="overflow-hidden rounded-lg shadow-md">
+                        <img src="path-to-tv-show-poster.jpg" alt="TV Show Poster" class="w-full h-64 object-cover">
+                        <div class="px-4 py-4">
+                            <h3 class="text-xl font-semibold truncate">TV Show Title</h3>
+                            <p class="text-gray-700">TV show description goes here...</p>
+                            <a href="#" class="mt-4 block text-blue-500 hover:text-blue-700">Watch Episode</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-semibold mb-8">Recommended Content</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Recommendation Card Example -->
+                    <article class="overflow-hidden rounded-lg shadow-md">
+                        <img src="path-to-recommendation-poster.jpg" alt="Recommendation Poster" class="w-full h-64 object-cover">
+                        <div class="px-4 py-4">
+                            <h3 class="text-xl font-semibold truncate">Content Title</h3>
+                            <p class="text-gray-700">Recommendation description goes here...</p>
+                            <a href="#" class="mt-4 block text-blue-500 hover:text-blue-700">View Now</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Entertainment Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Summary of Changes:
+1. **Added `<main>` Element**: A `<main>` element was added at the appropriate section of the HTML document.
+2. **`aria-labelledby` Attribute**: The `<main>` element has been assigned an `aria-labelledby` attribute, linking it to the `<h1>` header with the ID `welcome-header`.
+
+These changes ensure that the webpage adheres to WCAG guidelines, particularly those related to landmark roles and uniqueness. This improvement enhances the accessibility of the website for users with disabilities.

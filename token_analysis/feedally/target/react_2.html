@@ -1,0 +1,120 @@
+**Thought:** The current HTML document now includes a `<main>` landmark and a single `<h1>` heading, which addresses the issues identified in the accessibility report. However, the `<main>` landmark is still nested within other landmarks, which violates the `landmark-main-is-top-level` rule. Additionally, the `landmark-no-duplicate-main` rule is violated because there is more than one main landmark.
+
+**Action:** I will remove the nesting of the `<main>` landmark and ensure that there is only one top-level main landmark in the document. This will address both the `landmark-main-is-top-level` and `landmark-no-duplicate-main` rules.
+
+**Observation:** After making these changes, I will verify that the document now complies with the recommended fixes without altering the existing structure or functionality.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Summer & 4th of July Sales</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .focus-visible:focus {
+            outline: 2px solid #1e40af;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">Target</a>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-gray-700">Home</a></li>
+                <li><a href="#products" class="hover:text-gray-700">Products</a></li>
+                <li><a href="#sales" class="hover:text-gray-700">Sales</a></li>
+                <li><a href="#about" class="hover:text-gray-700">About</a></li>
+                <li><a href="#contact" class="hover:text-gray-700">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main aria-label="Primary Content">
+        <!-- Hero Section -->
+        <section id="home" class="hero bg-cover bg-center h-screen" style="background-image: url('https://via.placeholder.com/1920x1080?text=Summer+and+4th+of+July+Promotions');">
+            <div class="container mx-auto text-center py-20">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Shop Now!</h1>
+                <p class="text-lg md:text-xl text-white mb-8">Explore our summer and 4th of July themed products and promotions.</p>
+                <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 focus-visible">Shop Summer Collection</button>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section id="products" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Featured Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="bg-white shadow-md p-4 rounded">
+                        <img src="https://via.placeholder.com/300x200?text=Product+1" alt="Product 1" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                        <p class="text-gray-700">$99</p>
+                        <button class="mt-2 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus-visible">Add to Cart</button>
+                    </article>
+                    <!-- Add more product articles here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sales Section -->
+        <section id="sales" class="bg-gray-200 py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Current Sales</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <article class="bg-white shadow-md p-4 rounded">
+                        <img src="https://via.placeholder.com/300x200?text=Sale+Item+1" alt="Sale Item 1" class="w-full h-auto rounded mb-4">
+                        <h3 class="text-xl font-semibold mb-2">Sale Item 1</h3>
+                        <p class="text-gray-700"><del>$199</del> $99</p>
+                        <button class="mt-2 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 focus-visible">Buy Now</button>
+                    </article>
+                    <!-- Add more sale articles here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">About Us</h2>
+                <p class="text-lg">At Target, we offer a wide range of summer and 4th of July themed products and exclusive promotions to make your shopping experience enjoyable and hassle-free.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 bg-gray-200">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" required class="border border-gray-300 rounded px-4 py-2 w-full">
+                    
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" required class="border border-gray-300 rounded px-4 py-2 w-full">
+                    
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="border border-gray-300 rounded px-4 py-2 w-full"></textarea>
+                    
+                    <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 focus-visible">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 text-center">
+        <p>&copy; 2023 Target. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This updated code now includes a single top-level `<main>` landmark and removes the nesting of the `<main>` landmark, resolving the accessibility issues reported.

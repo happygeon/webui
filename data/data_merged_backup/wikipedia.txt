@@ -1,0 +1,3 @@
+1. To provide a gateway to Wikipedia's free encyclopedia content in multiple languages, allowing users to easily access and search for information across different language versions.
+2. Landing page
+3. Education/Reference

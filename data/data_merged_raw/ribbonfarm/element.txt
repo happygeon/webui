@@ -1,0 +1,5 @@
+(a) Prominent Navigation Menu  
+(b) Engaging Header and Tagline  
+(c) Highlighted Article Title and Date  
+(d) Author Attribution with Link  
+(e) Teaser Text with Read More Link

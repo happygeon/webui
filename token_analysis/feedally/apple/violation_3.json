@@ -1,0 +1,15 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 8
+    },
+    {
+      "id": "landmark-unique",
+      "help": "Ensures landmarks are unique",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+1. To inform the public about WHO's role in leading health emergency responses and provide latest news on global health issues
+
+2. Homepage
+
+3. Healthcare/Public Health
+
+4. (a) Clear and prominent logo
+(b) Donation button in contrasting color
+(c) Large hero image with text overlay
+(d) "Read more" call-to-action button
+(e) "Latest news" section with thumbnail images

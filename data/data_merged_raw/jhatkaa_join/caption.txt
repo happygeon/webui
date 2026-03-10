@@ -1,0 +1,11 @@
+1. To raise awareness and gather support for protecting Ladakh's fragile ecology and demanding democratic rights for the region
+
+2. Petition page
+
+3. Environmental activism
+
+4. (a) Prominent petition form for easy sign-up
+(b) Clear call-to-action button ("Sign the petition")
+(c) Progress bar showing number of signatures
+(d) Informative updates section providing context
+(e) Concise explanation of the issue and demands

@@ -1,0 +1,6 @@
+Purpose: Providing real-time stock prices, market news, and financial data to help users monitor investments and stay informed about market trends.
+사용자들이 투자 상황을 모니터링하고 시장 동향에 대한 정보를 유지할 수 있도록 실시간 주식 가격, 시장 뉴스 및 재무 데이터를 제공합니다.
+Page Type: Financial dashboard / Market overview
+재무 대시보드 / 시장 개요
+Domain: Finance / Investing
+금융 / 투자

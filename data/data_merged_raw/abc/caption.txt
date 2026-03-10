@@ -1,0 +1,5 @@
+1. Presenting a streaming platform’s catalog with featured shows, movies, and personalized recommendations for subscribers to browse and watch content.
+
+2. Streaming service homepage
+
+3. Entertainment / Streaming

@@ -1,0 +1,141 @@
+**Thought:** The accessibility report indicates two primary issues that need addressing:
+1. **Landmark One Main**: The document should have at least one `main` landmark to clearly define the main content area.
+2. **Page Has Heading One**: The page should contain a level-one heading (`<h1>`), typically representing the main title of the page.
+
+These issues affect the overall accessibility of the webpage by making it harder for assistive technologies to navigate and understand the content hierarchy.
+
+**Action:** I will add a `main` landmark and ensure there is at least one level-one heading on the page.
+
+**Observation:** After applying these changes, the fixes should resolve the reported issues without altering the existing structure or functionality.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureYourFuture - Your Insurance Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better contrast and responsiveness */
+       .bg-custom {
+            background-color: #f7f7f7;
+        }
+       .text-custom {
+            color: #333;
+        }
+        @media (max-width: 768px) {
+          .bg-custom {
+                background-color: #ffffff;
+            }
+        }
+    </style>
+</head>
+<body class="bg-custom text-custom font-sans">
+    <header class="bg-white shadow-lg py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">SecureYourFuture</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+                    <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#resources" class="hover:text-blue-500">Resources</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-custom text-custom font-sans">
+        <section id="hero" class="py-20 bg-gray-100 text-center">
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-extrabold mb-4">Protecting Your Future</h1>
+                <p class="text-xl mb-8">Get personalized insurance quotes and learn how we can help you secure your loved ones.</p>
+                <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" aria-label="Request Quote">Request a Quote</button>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">About Us</h2>
+                <p>We are dedicated to helping individuals and businesses protect what's most important to them. Our team of experts provides comprehensive insurance solutions tailored to your needs.</p>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Home Insurance</h3>
+                        <p>Protect your home and belongings with our comprehensive coverage options.</p>
+                    </div>
+                    <div class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Auto Insurance</h3>
+                        <p>Ensure your peace of mind while driving with our affordable auto insurance plans.</p>
+                    </div>
+                    <div class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Business Insurance</h3>
+                        <p>Grow your business with reliable insurance solutions designed for your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="py-20 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Insurance Resources</h2>
+                <p>Explore our articles and guides to help you make informed decisions about your insurance needs.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                    <article class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Understanding Home Insurance</h3>
+                        <p>Learn about the different types of home insurance policies and how they can protect you.</p>
+                    </article>
+                    <article class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Choosing Auto Insurance</h3>
+                        <p>Guide to selecting the right auto insurance plan to cover your vehicle and liability risks.</p>
+                    </article>
+                    <article class="bg-white p-6 shadow-md rounded-lg">
+                        <h3 class="text-xl font-semibold mb-2">Business Insurance Basics</h3>
+                        <p>Essential tips for choosing the right business insurance to safeguard your operations.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+                <form action="#" method="post" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm sm:text-sm" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-4 px-6 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2023 SecureYourFuture. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+In this updated version, I added a `<main>` tag to encapsulate the main content of the page, fulfilling the requirement for a single `main` landmark. Additionally, I ensured that the first section already contains a level-one heading (`<h1>`), which meets the requirement for having at least one level-one heading on the page. These changes should resolve the reported issues while maintaining the original structure and functionality of the website.

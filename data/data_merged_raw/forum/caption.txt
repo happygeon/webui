@@ -1,0 +1,11 @@
+1. To provide a community forum for Manjaro Linux users to search for information, browse topics, and engage in discussions about the operating system.
+
+2. Forum homepage
+
+3. Technology/Software
+
+4. (a) Prominent search bar in the center
+(b) Clear categorization of topics in the sidebar
+(c) Category cards with icons and descriptions
+(d) Navigation menu in the header
+(e) Sign up and login buttons for user engagement

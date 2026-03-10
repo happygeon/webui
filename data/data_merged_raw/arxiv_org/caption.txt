@@ -1,0 +1,11 @@
+1. To provide open access to scholarly articles in scientific fields like physics, mathematics, and computer science for researchers and academics
+
+2. Homepage
+
+3. Academic research
+
+4. (a) Clear navigation menu with subject categories
+(b) Prominent search bar for finding articles
+(c) Brief explanation of the site's purpose and content
+(d) Login and donate buttons for user accounts and support
+(e) Subject search dropdown for browsing specific fields

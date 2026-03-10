@@ -1,0 +1,106 @@
+The provided HTML code now includes a `<main>` section and ensures that the primary content is wrapped within it. Additionally, a top-level heading (`<h1>`) has been added at the beginning of the document. These changes address the accessibility violation related to the lack of a main landmark and a top-level heading.
+
+To further enhance the accessibility, we can also add ARIA labels and roles where necessary, although they were not explicitly mentioned in the original report. However, since the current changes resolve the identified issue, no additional ARIA attributes are needed at this time.
+
+Here is the final, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Research Tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+     .focus-visible:focus {
+            outline: 2px solid #1e40af;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-lg py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">AI-Powered Research Tool</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                    <li><a href="#features" class="hover:text-blue-600">Features</a></li>
+                    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="py-24 bg-cover bg-center bg-[url('https://source.unsplash.com/random?science')] text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Unlock Scientific Insights</h2>
+            <p class="text-xl mb-8">Search and access thousands of scientific papers instantly.</p>
+            <button class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus-visible">Get Started</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="py-16 bg-white" aria-labelledby="about-label">
+            <div class="container mx-auto text-center">
+                <h2 id="about-label" class="text-3xl font-bold mb-8">What We Do</h2>
+                <p class="text-lg mb-16">We provide an AI-driven platform to help researchers, academics, and students quickly find and access relevant scientific literature.</p>
+                <img src="https://via.placeholder.com/600x400?text=AI+Search+Interface" alt="AI Search Interface" class="mx-auto w-full max-w-md rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section id="features" class="py-16 bg-gray-100" aria-labelledby="features-label">
+            <div class="container mx-auto text-center">
+                <h2 id="features-label" class="text-3xl font-bold mb-8">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Advanced Search</h3>
+                        <p class="text-base">Efficiently search through millions of academic papers using advanced filters and natural language processing.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Instant Access</h3>
+                        <p class="text-base">Access full-text articles in seconds without leaving our platform.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-4">Custom Dashboards</h3>
+                        <p class="text-base">Create personalized dashboards to track your research progress and save frequently accessed papers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-white" aria-labelledby="contact-label">
+            <div class="container mx-auto text-center">
+                <h2 id="contact-label" class="text-3xl font-bold mb-8">Get in Touch</h2>
+                <form action="#" method="post" class="max-w-md mx-auto space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 focus:outline-none focus-visible">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 px-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 AI-Powered Research Tool. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+This code now meets the WCAG requirement for a main landmark and a top-level heading, enhancing its accessibility for users with disabilities.

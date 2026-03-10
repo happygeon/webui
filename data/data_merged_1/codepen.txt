@@ -1,0 +1,6 @@
+Purpose: To attract and engage front-end developers and designers by showcasing CodePen's features as an online coding platform and social development environment.
+프론트엔드 개발자와 디자이너를 유치하고 참여시키기 위해 CodePen의 기능을 온라인 코딩 플랫폼이자 소셜 개발 환경으로 보여줍니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Web development / Technology
+웹 개발 / 기술

@@ -1,0 +1,109 @@
+### Thought:
+The current HTML code includes a `<main>` element with the `role="main"` attribute, which addresses the first violation (`landmark-main-is-top-level`). However, the document still contains multiple instances of the `<main>` tag, violating the second violation (`landmark-no-duplicate-main`). Additionally, there is no unique identifier for the `<main>` element, which violates the third violation (`landmark-unique`). To resolve these issues, we need to remove duplicate `<main>` elements and ensure each `<main>` element has a unique identifier.
+
+### Action:
+1. Remove the duplicate `<main>` elements.
+2. Ensure each `<main>` element has a unique identifier.
+
+### Observation:
+After making the necessary changes, we will verify if the document now complies with all the accessibility guidelines mentioned in the report.
+
+### Corrected HTML Code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Life Activism on Campus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       .focus-visible {
+            outline: 2px solid #6b7280;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-lg font-bold">Pro-Life Activism</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#events" class="hover:text-blue-500">Events</a></li>
+                    <li><a href="#resources" class="hover:text-blue-500">Resources</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="py-12 container mx-auto max-w-3xl">
+        <h1 class="text-4xl font-bold mb-4">Pro-Life Activism on Campus</h1>
+        <section id="hero" class="bg-indigo-600 text-white py-16 px-4 rounded-lg shadow-lg">
+            <h1 class="text-4xl font-bold mb-4">Join Our Pro-Life Movement on Campus</h1>
+            <p class="text-xl mb-8">Together, we can make a difference in our communities.</p>
+            <button class="px-6 py-3 bg-white text-black font-semibold rounded-full hover:bg-opacity-80" onclick="alert('Sign up form will be here')">Sign Up Now</button>
+        </section>
+
+        <section id="about" class="mt-16">
+            <h2 class="text-3xl font-bold mb-4">About Us</h2>
+            <p class="mb-8">We believe every life is precious and should be protected from conception until natural death. Our mission is to educate and mobilize students to stand up for pro-life values.</p>
+            <img src="/path/to/about-image.jpg" alt="About Image" class="w-full rounded-lg shadow-lg">
+        </section>
+
+        <section id="events" class="mt-16">
+            <h2 class="text-3xl font-bold mb-4">Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="/path/to/event1-image.jpg" alt="Event 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">Event Name</h3>
+                        <p class="text-gray-600 mb-2">Date: January 15th</p>
+                        <p class="text-gray-600">Location: Main Auditorium</p>
+                    </div>
+                </div>
+                <!-- Add more event cards as needed -->
+            </div>
+        </section>
+
+        <section id="resources" class="mt-16">
+            <h2 class="text-3xl font-bold mb-4">Resources</h2>
+            <ul class="list-disc pl-6">
+                <li><a href="#" class="text-blue-500 hover:text-blue-700">Pro-Life Reading List</a></li>
+                <li><a href="#" class="text-blue-500 hover:text-blue-700">Abortion Facts Sheet</a></li>
+                <li><a href="#" class="text-blue-500 hover:text-blue-700">Speaker Series Information</a></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mt-16">
+            <h2 class="text-3xl font-bold mb-4">Get Involved</h2>
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input type="text" id="name" name="name" required class="border border-gray-300 rounded-md px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm">
+
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" required class="border border-gray-300 rounded-md px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm">
+
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" required class="border border-gray-300 rounded-md px-3 py-2 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm"></textarea>
+
+                <button type="submit" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full hover:bg-opacity-80">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-white py-4 text-center text-gray-600">
+        <p>&copy; 2023 Pro-Life Activism. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+### Conclusion:
+The document now contains only one `<main>` element with a unique identifier (`id="main-content"`), thus resolving all the accessibility violations identified in the report. The original functionality and structure of the page remain intact.

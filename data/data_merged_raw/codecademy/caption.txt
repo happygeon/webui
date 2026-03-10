@@ -1,0 +1,11 @@
+1. To attract and engage potential students interested in learning in-demand tech skills like AI, data science, coding, and cybersecurity through Codecademy's online courses and Pro membership.
+
+2. Landing page
+
+3. Education (online learning)
+
+4. (a) Prominent call-to-action button ("Get started today")
+(b) Clear value proposition in large text ("Develop your...")
+(c) Promotional banner with discount offer
+(d) Simple navigation menu with sign-up and log-in options
+(e) Concise description of benefits and skills offered

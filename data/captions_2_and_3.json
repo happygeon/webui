@@ -1,0 +1,1202 @@
+{
+  "10times": {
+    "2": "Landing page",
+    "3": "Events and networking"
+  },
+  "3lbarberco": {
+    "2": "Landing page",
+    "3": "Service industry (barbershop)"
+  },
+  "abc": {
+    "2": "Streaming service homepage",
+    "3": "Entertainment / Streaming"
+  },
+  "accenture": {
+    "2": "Landing page",
+    "3": "Technology consulting"
+  },
+  "adobe": {
+    "2": "Landing page",
+    "3": "Software/Technology"
+  },
+  "airbnb": {
+    "2": "Homepage",
+    "3": "Travel and hospitality"
+  },
+  "airtable": {
+    "2": "Landing page",
+    "3": "Software development / Productivity"
+  },
+  "aliabdaal": {
+    "2": "Landing page",
+    "3": "Personal branding / Self-improvement"
+  },
+  "aliexpress": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "aljazeera": {
+    "2": "News homepage",
+    "3": "News media"
+  },
+  "allinclusivevacations": {
+    "2": "Landing page",
+    "3": "Travel and hospitality"
+  },
+  "allrecipes": {
+    "2": "Recipe portal homepage",
+    "3": "Food / Cooking"
+  },
+  "allrecipes_mobile": {
+    "2": "Recipe portal homepage",
+    "3": "Food / Cooking"
+  },
+  "amazon": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "amnesty": {
+    "2": "Homepage",
+    "3": "Non-profit / Human rights"
+  },
+  "apple": {
+    "2": "Homepage",
+    "3": "Technology / Consumer Electronics"
+  },
+  "arxiv_article": {
+    "2": "Research paper page",
+    "3": "Academic publishing"
+  },
+  "arxiv_org": {
+    "2": "Homepage",
+    "3": "Academic research"
+  },
+  "asos": {
+    "2": "Homepage",
+    "3": "E-commerce (Fashion)"
+  },
+  "atlassian": {
+    "2": "Landing page",
+    "3": "Software/Project Management"
+  },
+  "awwwards": {
+    "2": "Landing page",
+    "3": "Art and design"
+  },
+  "bain": {
+    "2": "Blog post",
+    "3": "Technology consulting"
+  },
+  "bbc": {
+    "2": "Homepage",
+    "3": "News media"
+  },
+  "bbc_mobile": {
+    "2": "News portal homepage",
+    "3": "News / Media"
+  },
+  "bbc_search": {
+    "2": "News aggregation page",
+    "3": "News media"
+  },
+  "bbs": {
+    "2": "Forum page",
+    "3": "Technology/Operating Systems"
+  },
+  "bcg": {
+    "2": "Landing page",
+    "3": "Business consulting"
+  },
+  "behance": {
+    "2": "Gallery/Portfolio Page",
+    "3": "Creative Networking/Showcase"
+  },
+  "behance_article": {
+    "2": "Social media post/gallery",
+    "3": "Social media"
+  },
+  "ben-evans": {
+    "2": "Blog post",
+    "3": "Technology analysis"
+  },
+  "bestbuy": {
+    "2": "Landing page",
+    "3": "E-commerce"
+  },
+  "bestbuy_country": {
+    "2": "Landing page",
+    "3": "E-commerce"
+  },
+  "bizzabo": {
+    "2": "Landing page",
+    "3": "Event management software"
+  },
+  "bookbub": {
+    "2": "Ranking/List page",
+    "3": "E-commerce"
+  },
+  "brainpickings": {
+    "2": "Blog post",
+    "3": "Education / Science"
+  },
+  "britannica": {
+    "2": "Article page",
+    "3": "Education/News"
+  },
+  "britannica_1": {
+    "2": "News portal homepage",
+    "3": "News / Entertainment"
+  },
+  "business_standard": {
+    "2": "Magazine section page",
+    "3": "Business news and media"
+  },
+  "buzzfeed": {
+    "2": "Food and recipe portal homepage",
+    "3": "Food / Cooking / Lifestyle"
+  },
+  "calendly": {
+    "2": "Landing page",
+    "3": "Productivity software"
+  },
+  "cambridge": {
+    "2": "Homepage",
+    "3": "Education"
+  },
+  "carbonmade": {
+    "2": "Landing page",
+    "3": "Professional services / Creative industry"
+  },
+  "cargocollective": {
+    "2": "Landing page",
+    "3": "Web development / Design"
+  },
+  "champlaintours": {
+    "2": "Landing page",
+    "3": "Travel and tourism"
+  },
+  "charitywater": {
+    "2": "Donation page",
+    "3": "Charity/Non-profit"
+  },
+  "cisco": {
+    "2": "Landing page",
+    "3": "Technology/IT"
+  },
+  "cnn_mobile": {
+    "2": "News portal homepage",
+    "3": "News / Media"
+  },
+  "cnn_search": {
+    "2": "Search results page",
+    "3": "News media"
+  },
+  "codecademy": {
+    "2": "Landing page",
+    "3": "Education (online learning)"
+  },
+  "codepen": {
+    "2": "Landing page",
+    "3": "Web development / Technology"
+  },
+  "community": {
+    "2": "Support forum homepage",
+    "3": "Technology (Networking)"
+  },
+  "conferencemonkey": {
+    "2": "Landing page",
+    "3": "Education/Professional Development"
+  },
+  "copyblogger": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "coroflot": {
+    "2": "Landing page",
+    "3": "Job board / Recruitment"
+  },
+  "coursera": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "craigmod": {
+    "2": "Author/Writer's Website",
+    "3": "Literature/Publishing"
+  },
+  "crevado": {
+    "2": "Landing page",
+    "3": "Creative/Portfolio"
+  },
+  "curlytales": {
+    "2": "Homepage",
+    "3": "Travel and Lifestyle"
+  },
+  "daringfireball": {
+    "2": "Blog post",
+    "3": "Technology / Design"
+  },
+  "dell": {
+    "2": "Product page",
+    "3": "Technology / Computer hardware"
+  },
+  "deloitte": {
+    "2": "Landing page",
+    "3": "Professional services"
+  },
+  "designerhangout": {
+    "2": "Landing page",
+    "3": "Outdoor recreation / Fishing guide service"
+  },
+  "designspiration": {
+    "2": "Landing page",
+    "3": "Design inspiration / Creative tools"
+  },
+  "dev": {
+    "2": "Feed/Home page",
+    "3": "Social media for developers"
+  },
+  "deviantart": {
+    "2": "Homepage",
+    "3": "Art community / Social media"
+  },
+  "deviantart_login": {
+    "2": "Login page",
+    "3": "Art community / Social media"
+  },
+  "dev_search": {
+    "2": "Topic/category page",
+    "3": "Technology/Software Development"
+  },
+  "dictionary": {
+    "2": "Dictionary/learning page",
+    "3": "Education / Language learning"
+  },
+  "discord": {
+    "2": "Landing page",
+    "3": "Social media / Communication"
+  },
+  "doctorswithoutborders": {
+    "2": "Homepage",
+    "3": "Non-profit / Humanitarian"
+  },
+  "dopplepress": {
+    "2": "Landing page",
+    "3": "Graphic design / Printing services"
+  },
+  "dribbble": {
+    "2": "Landing page",
+    "3": "Design portfolio and networking"
+  },
+  "drift": {
+    "2": "Landing page",
+    "3": "Software as a Service (SaaS)"
+  },
+  "dropbox": {
+    "2": "Landing page",
+    "3": "Cloud storage and collaboration"
+  },
+  "duolingo": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "ebay": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "ebay_mobile": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "ecosia": {
+    "2": "Landing page",
+    "3": "Environmental technology"
+  },
+  "eiosys": {
+    "2": "Landing page",
+    "3": "Web development and digital services"
+  },
+  "elfontheshelf": {
+    "2": "DIY/crafts portal homepage",
+    "3": "Parenting / Education / DIY"
+  },
+  "encyclopedia": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "en_wikipedia_org": {
+    "2": "Homepage",
+    "3": "Education/Reference"
+  },
+  "espn_mobile": {
+    "2": "Sports news portal homepage",
+    "3": "Sports / Media"
+  },
+  "etsy": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "eventbee": {
+    "2": "Landing page",
+    "3": "Event management"
+  },
+  "eventbrite": {
+    "2": "Landing page",
+    "3": "Event ticketing"
+  },
+  "evernote": {
+    "2": "Product landing page",
+    "3": "Productivity / Software"
+  },
+  "expedia": {
+    "2": "Homepage",
+    "3": "Travel booking"
+  },
+  "explaintheasterisk": {
+    "2": "Landing page",
+    "3": "Education/Activism"
+  },
+  "exploratorium": {
+    "2": "Landing page",
+    "3": "Education/Science museum"
+  },
+  "ey": {
+    "2": "Landing page",
+    "3": "Professional services"
+  },
+  "fabiacupuncture": {
+    "2": "Service provider landing page",
+    "3": "Health and wellness"
+  },
+  "factmonster": {
+    "2": "Homepage",
+    "3": "Education"
+  },
+  "feedingamerica": {
+    "2": "Homepage",
+    "3": "Non-profit / Charity"
+  },
+  "figma": {
+    "2": "Landing page",
+    "3": "Software/Design tools"
+  },
+  "fiverr_com": {
+    "2": "Landing page",
+    "3": "Freelance marketplace"
+  },
+  "fobes_mobile": {
+    "2": "News homepage",
+    "3": "News / Media"
+  },
+  "foodnetwork": {
+    "2": "Recipe portal homepage",
+    "3": "Food / Cooking"
+  },
+  "forbesindia": {
+    "2": "Homepage",
+    "3": "Business news and media"
+  },
+  "format": {
+    "2": "Landing page",
+    "3": "Web design / Portfolio building"
+  },
+  "forum": {
+    "2": "Forum homepage",
+    "3": "Technology/Software"
+  },
+  "fs": {
+    "2": "Landing page",
+    "3": "Education/Personal development"
+  },
+  "gayandsober": {
+    "2": "Homepage",
+    "3": "Non-profit / Support Organization"
+  },
+  "github": {
+    "2": "Feed/Timeline Page",
+    "3": "Developer Collaboration Platform"
+  },
+  "glitch": {
+    "2": "Landing page",
+    "3": "Web development"
+  },
+  "goldstar": {
+    "2": "Landing page",
+    "3": "Entertainment ticketing"
+  },
+  "goodreads": {
+    "2": "Landing page",
+    "3": "Social media / Book community"
+  },
+  "goodreads_1": {
+    "2": "Landing page",
+    "3": "Social media / Community"
+  },
+  "grailed": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "greenpeace": {
+    "2": "Landing page",
+    "3": "Environmental activism"
+  },
+  "habitat": {
+    "2": "Landing page",
+    "3": "Non-profit / Humanitarian"
+  },
+  "healthline": {
+    "2": "Homepage",
+    "3": "Health and Wellness"
+  },
+  "heroinesinc": {
+    "2": "Landing page",
+    "3": "Community/Women's empowerment"
+  },
+  "history": {
+    "2": "Homepage",
+    "3": "Education/Entertainment"
+  },
+  "home": {
+    "2": "Landing page",
+    "3": "Professional services / Consulting"
+  },
+  "homesweethome": {
+    "2": "Landing page",
+    "3": "Hospitality/Travel"
+  },
+  "hopin": {
+    "2": "Landing page",
+    "3": "Event management / Technology"
+  },
+  "howstuffworks": {
+    "2": "Article page",
+    "3": "Education/Pet care"
+  },
+  "hpe": {
+    "2": "Landing page",
+    "3": "Technology / Enterprise IT"
+  },
+  "hubspot": {
+    "2": "Landing page",
+    "3": "Software as a Service (SaaS)"
+  },
+  "huffpost": {
+    "2": "Entertainment news portal homepage",
+    "3": "Entertainment / Celebrity news"
+  },
+  "ibm": {
+    "2": "Landing page",
+    "3": "Business/Technology"
+  },
+  "idigmarketing": {
+    "2": "Company/agency homepage",
+    "3": "Business / Digital services"
+  },
+  "idlewords": {
+    "2": "Blog post",
+    "3": "Science and technology"
+  },
+  "ieeexplore_ieee_org": {
+    "2": "Homepage",
+    "3": "Scientific Research and Technology"
+  },
+  "ifrc": {
+    "2": "Landing page",
+    "3": "Humanitarian/Non-profit"
+  },
+  "imdb": {
+    "2": "Homepage",
+    "3": "Entertainment"
+  },
+  "imdb_article": {
+    "2": "Movie information page",
+    "3": "Entertainment/Film database"
+  },
+  "imdb_mobile": {
+    "2": "Movie/TV portal homepage",
+    "3": "Entertainment / Media"
+  },
+  "immanuel_lodge": {
+    "2": "Landing page",
+    "3": "Hospitality and tourism"
+  },
+  "indeed_mobile": {
+    "2": "Landing page",
+    "3": "Job search / Employment"
+  },
+  "indiehackers": {
+    "2": "Homepage",
+    "3": "Technology/Entrepreneurship"
+  },
+  "intel": {
+    "2": "Landing page",
+    "3": "Technology / AI"
+  },
+  "investing": {
+    "2": "Dashboard/Homepage",
+    "3": "Financial Services"
+  },
+  "investing_article": {
+    "2": "Stock Information Page",
+    "3": "Financial/Investing"
+  },
+  "investing_mobile": {
+    "2": "Financial dashboard / Market overview",
+    "3": "Finance / Investing"
+  },
+  "investopedia": {
+    "2": "Homepage",
+    "3": "Financial education and news"
+  },
+  "inwardtravel": {
+    "2": "Landing page",
+    "3": "Outdoor recreation / Adventure sports"
+  },
+  "javaboynation": {
+    "2": "Landing page",
+    "3": "E-commerce"
+  },
+  "jhatkaa": {
+    "2": "Landing page",
+    "3": "Non-profit / Activism"
+  },
+  "jhatkaa_join": {
+    "2": "Petition page",
+    "3": "Environmental activism"
+  },
+  "joncookingclass": {
+    "2": "Landing page",
+    "3": "Food and tourism"
+  },
+  "jstor": {
+    "2": "Landing page",
+    "3": "Education / Academic research"
+  },
+  "kaggle_com": {
+    "2": "Landing page",
+    "3": "Technology/Education"
+  },
+  "ketto": {
+    "2": "Landing page",
+    "3": "Crowdfunding"
+  },
+  "khanacademy": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "kiva": {
+    "2": "Landing page",
+    "3": "Microfinance / Social impact"
+  },
+  "kottke": {
+    "2": "Blog post",
+    "3": "Film and photography"
+  },
+  "krop": {
+    "2": "Landing page",
+    "3": "Web design / Creative services"
+  },
+  "last_fm": {
+    "2": "Landing page",
+    "3": "Music streaming and social networking"
+  },
+  "launchdarkly": {
+    "2": "Landing page",
+    "3": "Software development"
+  },
+  "leanlabs": {
+    "2": "Product landing page",
+    "3": "SaaS / Marketing automation"
+  },
+  "lek": {
+    "2": "Homepage",
+    "3": "Consulting"
+  },
+  "linear": {
+    "2": "Landing page",
+    "3": "Software development"
+  },
+  "linkedin": {
+    "2": "Landing page",
+    "3": "Education / Professional development"
+  },
+  "lobste": {
+    "2": "Feed/Homepage",
+    "3": "Technology News Aggregator"
+  },
+  "lonelyplanet": {
+    "2": "Landing page",
+    "3": "Travel and tourism"
+  },
+  "lonelyplanet_mobile": {
+    "2": "Travel guide portal homepage",
+    "3": "Travel / Lifestyle"
+  },
+  "ma": {
+    "2": "Blog post",
+    "3": "Technology/Software"
+  },
+  "majlislaw": {
+    "2": "Homepage/Landing page",
+    "3": "Non-profit/Social services"
+  },
+  "markmanson": {
+    "2": "Landing page",
+    "3": "Personal development"
+  },
+  "masterclass": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "matthewstrom": {
+    "2": "Personal website homepage",
+    "3": "Professional portfolio"
+  },
+  "mckinsey": {
+    "2": "Landing page",
+    "3": "Business consulting"
+  },
+  "medium": {
+    "2": "Landing page",
+    "3": "Content publishing platform"
+  },
+  "meetup": {
+    "2": "Landing page",
+    "3": "Social networking"
+  },
+  "memberful": {
+    "2": "Landing page",
+    "3": "SaaS (Software as a Service)"
+  },
+  "memberships": {
+    "2": "Status page",
+    "3": "Education"
+  },
+  "memberstack": {
+    "2": "Landing page",
+    "3": "SaaS (Software as a Service)"
+  },
+  "memorialsnewyork": {
+    "2": "Landing page",
+    "3": "Culture/History"
+  },
+  "metafilter": {
+    "2": "Blog homepage",
+    "3": "Community forum"
+  },
+  "microsoft": {
+    "2": "Homepage",
+    "3": "Technology/Software"
+  },
+  "milaap": {
+    "2": "Landing page",
+    "3": "Crowdfunding"
+  },
+  "miro": {
+    "2": "Landing page",
+    "3": "Productivity software"
+  },
+  "mit": {
+    "2": "Homepage",
+    "3": "Education and Research"
+  },
+  "motherteresa": {
+    "2": "Homepage",
+    "3": "Religious/Charitable Organization"
+  },
+  "mozilla": {
+    "2": "Homepage/Landing page",
+    "3": "Web development education"
+  },
+  "mozilla_article": {
+    "2": "Documentation page",
+    "3": "Web development"
+  },
+  "myartindy": {
+    "2": "Landing page",
+    "3": "Education"
+  },
+  "nasa": {
+    "2": "Live event page",
+    "3": "Space exploration"
+  },
+  "nationalgeographic": {
+    "2": "Homepage",
+    "3": "Media/Publishing"
+  },
+  "nationwide": {
+    "2": "Insurance provider homepage",
+    "3": "Insurance / Financial services"
+  },
+  "nature": {
+    "2": "Homepage",
+    "3": "Scientific publishing and news"
+  },
+  "nav": {
+    "2": "Blog post / Podcast episode list",
+    "3": "Education / Science"
+  },
+  "ncase": {
+    "2": "Personal portfolio/landing page",
+    "3": "Education/Interactive media"
+  },
+  "neilpatel": {
+    "2": "Agency homepage / Service landing page",
+    "3": "Digital marketing / Business services"
+  },
+  "nera": {
+    "2": "Landing page",
+    "3": "Professional services / Economic consulting"
+  },
+  "netflix": {
+    "2": "Landing page",
+    "3": "Entertainment streaming"
+  },
+  "newegg": {
+    "2": "E-commerce homepage",
+    "3": "Technology retail"
+  },
+  "newslaundry": {
+    "2": "News homepage",
+    "3": "News media"
+  },
+  "nike": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "notion": {
+    "2": "Login page",
+    "3": "Productivity/Collaboration platform"
+  },
+  "npr_mobile": {
+    "2": "News portal homepage",
+    "3": "News / Media"
+  },
+  "nutrime": {
+    "2": "Booking page",
+    "3": "Health and wellness"
+  },
+  "nytimes": {
+    "2": "News portal homepage",
+    "3": "News / Media"
+  },
+  "oakhousedistillery": {
+    "2": "Homepage",
+    "3": "Food and Beverage"
+  },
+  "old_reddit_com": {
+    "2": "Homepage",
+    "3": "Social media"
+  },
+  "oliverwyman": {
+    "2": "Landing page",
+    "3": "Business consulting"
+  },
+  "opencourseware": {
+    "2": "Homepage",
+    "3": "Education"
+  },
+  "opencourseware_search": {
+    "2": "Course page",
+    "3": "Education"
+  },
+  "oracle": {
+    "2": "Homepage",
+    "3": "Technology/Enterprise Software"
+  },
+  "osf_io": {
+    "2": "Landing page",
+    "3": "Education/Research"
+  },
+  "ourworldindata": {
+    "2": "Landing page",
+    "3": "Education/Research"
+  },
+  "overreacted": {
+    "2": "Blog homepage",
+    "3": "Technology/Programming"
+  },
+  "oxfam": {
+    "2": "Landing page",
+    "3": "Non-profit / Humanitarian aid"
+  },
+  "paulgraham": {
+    "2": "Homepage",
+    "3": "Technology/Startup"
+  },
+  "peachybbies": {
+    "2": "Product information page",
+    "3": "E-commerce / Education"
+  },
+  "pewresearch": {
+    "2": "Homepage",
+    "3": "Research and Analysis"
+  },
+  "pipsnacks": {
+    "2": "Product category page",
+    "3": "E-commerce (specialty food)"
+  },
+  "plaid": {
+    "2": "Landing page",
+    "3": "Financial technology (fintech)"
+  },
+  "podia": {
+    "2": "Landing page",
+    "3": "E-commerce / Digital business tools"
+  },
+  "portfolio": {
+    "2": "Landing page",
+    "3": "Software/Creative tools"
+  },
+  "pretix": {
+    "2": "Landing page",
+    "3": "Event management software"
+  },
+  "private_tour": {
+    "2": "Landing page",
+    "3": "Tourism"
+  },
+  "producthunt": {
+    "2": "Product listing page",
+    "3": "Tech product discovery and launch platform"
+  },
+  "pubmed_ncbi_nlm_nih_gov": {
+    "2": "Homepage",
+    "3": "Medical research"
+  },
+  "pwc": {
+    "2": "Landing page",
+    "3": "Professional services"
+  },
+  "quora": {
+    "2": "Landing page",
+    "3": "Social media / Knowledge sharing"
+  },
+  "rainforest-alliance": {
+    "2": "Landing page",
+    "3": "Environmental conservation"
+  },
+  "readymag": {
+    "2": "Landing page",
+    "3": "Web development / Design tools"
+  },
+  "redcross": {
+    "2": "Homepage",
+    "3": "Non-profit / Humanitarian"
+  },
+  "reddit": {
+    "2": "Home page",
+    "3": "Social media"
+  },
+  "replit": {
+    "2": "Landing page",
+    "3": "Software development"
+  },
+  "researchgate": {
+    "2": "Landing page",
+    "3": "Academic research and networking"
+  },
+  "retool": {
+    "2": "Landing page",
+    "3": "Software development / AI"
+  },
+  "ribbonfarm": {
+    "2": "Blog post",
+    "3": "Personal blog / Thought leadership"
+  },
+  "rogerebert": {
+    "2": "Homepage",
+    "3": "Entertainment/Film"
+  },
+  "rolandberger": {
+    "2": "Homepage",
+    "3": "Management Consulting"
+  },
+  "rottentomatoes": {
+    "2": "Movie/TV ranking and review homepage",
+    "3": "Entertainment / Media"
+  },
+  "salesforce": {
+    "2": "Landing page",
+    "3": "Software as a Service (SaaS)"
+  },
+  "science_error": {
+    "2": "404 Error Page",
+    "3": "Scientific Publishing"
+  },
+  "selvanashvini": {
+    "2": "Landing page",
+    "3": "Tourism/Travel"
+  },
+  "semanticscholar": {
+    "2": "Landing page",
+    "3": "Education/Research"
+  },
+  "seths": {
+    "2": "Blog post",
+    "3": "Business/Marketing"
+  },
+  "shopify": {
+    "2": "Landing page",
+    "3": "E-commerce"
+  },
+  "shutterfly": {
+    "2": "E-commerce product catalog",
+    "3": "Retail / Personalized gifts"
+  },
+  "siemens": {
+    "2": "Landing page",
+    "3": "Technology / Engineering"
+  },
+  "siteinspire": {
+    "2": "Gallery/Portfolio Page",
+    "3": "Design/Creative Industry"
+  },
+  "sive": {
+    "2": "Personal website homepage",
+    "3": "Personal branding"
+  },
+  "skillshare": {
+    "2": "Landing page",
+    "3": "Education (Online learning)"
+  },
+  "slack": {
+    "2": "Landing page",
+    "3": "Business communication and collaboration"
+  },
+  "slashdot": {
+    "2": "News aggregation homepage",
+    "3": "Technology news and community"
+  },
+  "smashingmagazine": {
+    "2": "Blog homepage",
+    "3": "Web development education"
+  },
+  "somethingawful": {
+    "2": "Forum homepage",
+    "3": "Online community/discussion forum"
+  },
+  "soundcloud_com": {
+    "2": "Landing page",
+    "3": "Music streaming and sharing"
+  },
+  "spectrum": {
+    "2": "Product feature page",
+    "3": "Software development"
+  },
+  "spline": {
+    "2": "Landing page",
+    "3": "Design software"
+  },
+  "springer": {
+    "2": "Homepage",
+    "3": "Academic publishing"
+  },
+  "squaredot": {
+    "2": "Agency homepage / Insights page",
+    "3": "B2B marketing / Business services"
+  },
+  "stackexchange": {
+    "2": "Homepage",
+    "3": "Q&A / Community Forum"
+  },
+  "stackoverflow": {
+    "2": "Questions listing page",
+    "3": "Technology/Programming"
+  },
+  "stackoverflow_search": {
+    "2": "Question and Answer Page",
+    "3": "Developer Community / Q&A"
+  },
+  "strategyand": {
+    "2": "Homepage",
+    "3": "Business consulting"
+  },
+  "studentsforlife": {
+    "2": "Landing page",
+    "3": "Advocacy/Activism"
+  },
+  "substack": {
+    "2": "Home page",
+    "3": "Social media / Content sharing"
+  },
+  "super": {
+    "2": "Landing page",
+    "3": "Web development / SaaS"
+  },
+  "support_google_com": {
+    "2": "Landing page",
+    "3": "Technology support"
+  },
+  "support_microsoft_com": {
+    "2": "Landing page",
+    "3": "Technology support and services"
+  },
+  "sxsw": {
+    "2": "Landing page",
+    "3": "Events and entertainment"
+  },
+  "tally": {
+    "2": "Landing page",
+    "3": "Software as a Service (SaaS)"
+  },
+  "tapatalk": {
+    "2": "Landing page",
+    "3": "Social media / Community management"
+  },
+  "target": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "techcrunch_mobile": {
+    "2": "Sports news portal homepage",
+    "3": "Sports / Media"
+  },
+  "ted": {
+    "2": "Error page",
+    "3": "Education/Technology"
+  },
+  "thebeacontoday": {
+    "2": "About page",
+    "3": "Education/Student media"
+  },
+  "thecollinswedding": {
+    "2": "Homepage",
+    "3": "Wedding Planning"
+  },
+  "thefwa": {
+    "2": "Landing page",
+    "3": "Healthcare technology"
+  },
+  "themeforest": {
+    "2": "Product detail page",
+    "3": "E-commerce / Web development"
+  },
+  "thequint": {
+    "2": "Homepage",
+    "3": "News and media"
+  },
+  "theverge_mobile": {
+    "2": "Gaming news portal homepage",
+    "3": "Gaming / Media"
+  },
+  "ticketleap": {
+    "2": "Landing page",
+    "3": "Event management / Ticketing"
+  },
+  "ticketmaster": {
+    "2": "Homepage",
+    "3": "Entertainment ticketing"
+  },
+  "tourismrichmondhill": {
+    "2": "Landing page",
+    "3": "Tourism"
+  },
+  "tripit": {
+    "2": "Landing page",
+    "3": "Travel technology"
+  },
+  "typeform": {
+    "2": "Product landing page",
+    "3": "SaaS / Productivity"
+  },
+  "udemy": {
+    "2": "Homepage",
+    "3": "Education / E-learning"
+  },
+  "ukgov": {
+    "2": "Homepage",
+    "3": "Government"
+  },
+  "ukgov_article": {
+    "2": "Service directory page",
+    "3": "Government services"
+  },
+  "unicef": {
+    "2": "Landing page",
+    "3": "Non-profit / Humanitarian"
+  },
+  "unsplash": {
+    "2": "Landing page",
+    "3": "Photography/Stock imagery"
+  },
+  "usagov": {
+    "2": "Homepage",
+    "3": "Government services"
+  },
+  "usagov_article": {
+    "2": "Contact page",
+    "3": "Government services"
+  },
+  "vercel": {
+    "2": "Landing page",
+    "3": "Cloud computing / AI development"
+  },
+  "visualcapitalist": {
+    "2": "Landing page",
+    "3": "Business/Finance media"
+  },
+  "waitbutwhy": {
+    "2": "Blog post",
+    "3": "Humor/Lifestyle"
+  },
+  "walmart": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "wayfair": {
+    "2": "Homepage",
+    "3": "E-commerce"
+  },
+  "webmd_mobile": {
+    "2": "Lifestyle magazine homepage",
+    "3": "Lifestyle / Wellness"
+  },
+  "weddinggownalterations": {
+    "2": "Landing page",
+    "3": "Wedding services"
+  },
+  "who": {
+    "2": "Homepage",
+    "3": "Healthcare/Public Health"
+  },
+  "wikihow": {
+    "2": "Parenting portal homepage",
+    "3": "Parenting / Community"
+  },
+  "wikipedia": {
+    "2": "Landing page",
+    "3": "Education/Reference"
+  },
+  "wikipedia_mobile": {
+    "2": "Encyclopedia homepage",
+    "3": "Education / Reference"
+  },
+  "worldwildlife": {
+    "2": "Landing page",
+    "3": "Non-profit / Environmental conservation"
+  },
+  "yandex": {
+    "2": "Homepage",
+    "3": "Search engine"
+  },
+  "ycombinator": {
+    "2": "News aggregation page",
+    "3": "Technology news and discussion"
+  },
+  "zapier": {
+    "2": "Landing page",
+    "3": "Software as a Service (SaaS)"
+  },
+  "zappos": {
+    "2": "E-commerce homepage",
+    "3": "Retail / Fashion"
+  },
+  "zenhabits": {
+    "2": "Blog post",
+    "3": "Personal development"
+  },
+  "zionadventurephotog": {
+    "2": "Blog homepage",
+    "3": "Travel and adventure"
+  }
+}

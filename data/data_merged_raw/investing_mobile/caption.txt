@@ -1,0 +1,5 @@
+1. Providing real-time stock prices, market news, and financial data to help users monitor investments and stay informed about market trends.
+
+2. Financial dashboard / Market overview
+
+3. Finance / Investing

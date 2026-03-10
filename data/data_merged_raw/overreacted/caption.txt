@@ -1,0 +1,11 @@
+1. To showcase blog posts about programming and technology topics, targeting developers and tech enthusiasts interested in React, JSON, and other related subjects.
+
+2. Blog homepage
+
+3. Technology/Programming
+
+4. (a) Clear, bold post titles in pink
+(b) Consistent date formatting for each post
+(c) Brief post descriptions or taglines
+(d) Simple, clean layout with plenty of white space
+(e) Minimalist header with blog name and author byline

@@ -1,0 +1,6 @@
+Purpose: To inform users that the requested page does not exist and guide them back to the main site, targeting Science readers and researchers who encountered a broken link or mistyped URL.
+요청한 페이지가 존재하지 않음을 사용자에게 알리고, 깨진 링크나 잘못 입력된 URL을 접한 과학 독자 및 연구자들을 위해 메인 사이트로 안내합니다.
+Page Type: 404 Error Page
+404 오류 페이지
+Domain: Scientific Publishing
+과학 출판

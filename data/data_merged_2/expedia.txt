@@ -1,0 +1,6 @@
+Purpose: To help travelers easily search and book accommodations, flights, and other travel services for their trips
+여행자들이 여행을 위한 숙소, 항공편 및 기타 여행 서비스를 쉽게 검색하고 예약할 수 있도록 돕기 위해
+Page Type: Homepage
+홈페이지
+Domain: Travel booking
+여행 예약

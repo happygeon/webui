@@ -1,0 +1,20 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "html-has-lang",
+      "help": "<html> element must have a lang attribute",
+      "count": 1
+    },
+    {
+      "id": "link-name",
+      "help": "Links must have discernible text",
+      "count": 6
+    },
+    {
+      "id": "list",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "count": 3
+    }
+  ]
+}

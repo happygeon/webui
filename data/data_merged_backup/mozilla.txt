@@ -1,0 +1,3 @@
+1. To provide comprehensive resources and documentation for web developers, focusing on CSS, HTML, and JavaScript technologies since 2005.
+2. Homepage/Landing page
+3. Web development education

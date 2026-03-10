@@ -1,0 +1,6 @@
+Purpose: To provide a gateway to Wikipedia's free encyclopedia content in multiple languages, allowing users to easily access and search for information across different language versions.
+여러 언어로 된 위키피디아의 무료 백과사전 콘텐츠에 대한 게이트웨이를 제공하여 사용자가 다양한 언어 버전에서 정보를 쉽게 접근하고 검색할 수 있도록 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Education/Reference
+교육/참고

@@ -1,0 +1,142 @@
+**Thought:** The current HTML document does not include any landmark elements or a level-one heading, which are required by the WCAG guidelines for better navigation and user experience. The absence of these elements can make it difficult for screen readers and users with disabilities to navigate the site effectively.
+
+**Action:** To address the issues, we will add a `<main>` element with a `role="main"` attribute and a level-one heading (`<h1>`) that accurately describes the content of the page. These elements will serve as landmarks and help improve accessibility.
+
+**Observation:** After applying the fixes, the HTML document should conform to the WCAG requirements, providing clear navigation points for both assistive technologies and human users.
+
+Here is the modified code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khan Academy | Free Online Courses, Lessons & Practice</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-lg p-4">
+    <nav class="container mx-auto flex justify-between items-center">
+      <div>
+        <a href="#" class="text-xl font-bold text-black">Khan Academy</a>
+      </div>
+      <div class="hidden md:flex space-x-4">
+        <button class="bg-blue-500 text-white px-4 py-2 rounded">Explore</button>
+        <ul class="flex space-x-4">
+          <li><a href="#">Math: Pre-K - 8th grade</a></li>
+          <li><a href="#">Math: Get ready courses</a></li>
+          <li><a href="#">Math: high school & college</a></li>
+          <li><a href="#">Test prep</a></li>
+          <li><a href="#">Economics</a></li>
+          <li><a href="#">Science</a></li>
+          <li><a href="#">Computing</a></li>
+          <li><a href="#">Reading & language arts</a></li>
+          <li><a href="#">Life skills</a></li>
+          <li><a href="#">Social studies</a></li>
+          <li><a href="#">Partner courses</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main role="main" class="container mx-auto mt-10">
+    <h1 class="text-4xl font-bold mb-4">Welcome to Khan Academy</h1>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div>
+        <img src="https://cdn.kastatic.org/images/lohp/hero_student_collage_US_2x.png" alt="Hero Image" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="space-y-4">
+        <p class="text-lg">We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Start here</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Why Khan Academy Works -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold mb-6 text-center">Why Khan Academy works</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold">Personalized learning</h3>
+        <p>Students practice at their own pace, filling gaps in understanding and accelerating learning.</p>
+      </div>
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold">Trusted content</h3>
+        <p>Khan Academy’s library covers math, science, and more, always free for learners and teachers.</p>
+      </div>
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold">Tools to empower teachers</h3>
+        <p>Teachers can identify gaps in understanding and tailor instruction to meet student needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentiate Your Classroom -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div>
+        <img src="https://cdn.kastatic.org/images/lohp/faces_collage_2@2x.png" alt="Faces Collage" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-3xl font-bold mb-4">Differentiate your classroom and engage every student.</h2>
+        <p>90% of US teachers using Khan Academy find it effective.</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Teachers, start here</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Learn Anything -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div>
+        <img src="https://cdn.kastatic.org/images/lohp/laptop_collage@2x.png" alt="Laptop Collage" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-3xl font-bold mb-4">You can learn anything.</h2>
+        <p>Build a solid understanding in math, science, and more.</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learners, start here</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="container mx-auto mt-20 bg-gray-100 p-8 rounded-lg text-center">
+    <blockquote class="text-lg font-medium mb-4">
+      "I come from a poor family. I used to fear mathematics. But now, I love mathematics because of Khan Academy."
+    </blockquote>
+    <footer class="text-sm italic">— Anjali, India</footer>
+  </section>
+
+  <!-- Donate Section -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <div class="flex flex-col lg:flex-row justify-center items-center space-y-4 lg:space-y-0 lg:space-x-8">
+      <div>
+        <img src="https://cdn.kastatic.org/images/lohp/math-unicorn-donate-collage.png" alt="Donate Collage" class="w-full h-auto rounded-lg">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-3xl font-bold mb-4">Every child deserves the chance to learn.</h2>
+        <p>617 million children lack basic math and reading skills. We need your help to change this.</p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Give them the chance</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Today -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold mb-6 text-center">Join Khan Academy today</h2>
+    <ul class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <li><a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learners</a></li>
+      <li><a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Teachers</a></li>
+      <li><a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Parents</a></li>
+      <li><a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Give today</a></li>
+    </ul>
+  </section>
+
+  <!-- Key Supporters -->
+  <section class="container mx-auto mt-20 bg-white p-8 rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold mb-6 text-center">Key supporters</h2>
+    <div class="flex

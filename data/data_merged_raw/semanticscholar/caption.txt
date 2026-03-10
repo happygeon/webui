@@ -1,0 +1,11 @@
+1. To provide a free, AI-powered research tool for searching and accessing scientific literature, aimed at researchers, academics, and students.
+
+2. Landing page
+
+3. Education/Research
+
+4. (a) Large, prominent search bar for finding scientific papers
+(b) Clear navigation menu with key sections like "About", "Product", "API", etc.
+(c) Call-to-action buttons for signing up, creating an account, and getting started
+(d) Information cards highlighting key features like the API and Semantic Reader
+(e) Dark blue color scheme with gold accents for a professional, academic look

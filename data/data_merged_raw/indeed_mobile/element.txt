@@ -1,0 +1,9 @@
+(a) Prominent brand logo in the header for immediate recognition.
+
+(b) Intuitive navigation bar with concise menu options for easy access.
+
+(c) Encouraging call-to-action button, "Get Started," for user engagement.
+
+(d) Accessible "Sign in" link in a visible location.
+
+(e) Search bar with a clear placeholder text for straightforward job search functionality.

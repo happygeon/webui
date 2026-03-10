@@ -1,0 +1,128 @@
+**Thought:** The current HTML document includes a `<main>` element with a role of `main`, but it contains multiple nested elements within it, including headers and other content. This can lead to confusion for assistive technologies because they might interpret these nested elements as part of the main content when they are actually meant to be separate sections or headers.
+
+**Action:** Ensure that the `<main>` element contains only the primary content of the page and move any non-primary content outside of it. Additionally, add appropriate headings to clearly define the structure of the content.
+
+**Modified Code:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making government services easier to find | USAGov</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/themes/custom/usagov/images/Favicon_USAGov.png" rel="icon"/>
+    <link href="/themes/custom/usagov/images/Favicon_USAGov.png" rel="apple-touch-icon-precomposed"/>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="/themes/custom/usagov/images/favicon-57.png" alt="U.S Flag" class="w-12 h-12"/>
+            <p class="text-sm">An official website of the United States government</p>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/" class="hover:text-blue-600">Home</a></li>
+                    <li><a href="#" class="hover:text-blue-600">All Topics &amp; Services</a></li>
+                    <li><a href="#" class="hover:text-blue-600">The U.S. and its government</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Complaints</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Disability Services</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Disasters &amp; Emergencies</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Education</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Government Benefits</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Health</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Housing Help</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Immigration &amp; Citizenship</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Jobs, Labor Laws &amp; Unemployment</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Laws &amp; Legal Issues</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Military &amp; Veterans</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Money &amp; Credit</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Scams &amp; Fraud</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Small Business</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Taxes</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Travel</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Voting &amp; Elections</a></li>
+                    <li><a href="#" class="hover:text-blue-600">Life Events</a></li>
+                    <li><a href="#" class="hover:text-blue-600">About USAGov</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main" class="container mx-auto py-6">
+        <h1 class="text-4xl font-bold mb-4">Making government services easier to find</h1>
+        <p class="mb-6">USA.gov helps you locate and understand government benefits and programs.</p>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">How do I...</h2>
+            <ul class="list-disc list-inside mb-6">
+                <li><a href="#" class="hover:text-blue-600">Get or renew a passport</a></li>
+                <li><a href="#" class="hover:text-blue-600">Find unclaimed money</a></li>
+                <li><a href="#" class="hover:text-blue-600">Find how to get a REAL ID</a></li>
+                <li><a href="#" class="hover:text-blue-600">File for unemployment benefits</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">Government benefits and financial assistance</h2>
+            <p class="mb-4">Discover government benefits you may be eligible for and learn how to apply.</p>
+            <a href="#" role="button" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Find benefits</a>
+        </section>
+
+        <section>
+            <h2 class="text-2xl font-semibold mb-4">All Topics &amp; Services</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">The U.S. and its government</h3>
+                        <p class="text-gray-600">Learn about U.S. laws, history, and more.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Complaints</h3>
+                        <p class="text-gray-600">File complaints involving government agencies and services.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Disability services</h3>
+                        <p class="text-gray-600">Find benefits and programs for people with disabilities.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Disasters &amp; Emergencies</h3>
+                        <p class="text-gray-600">Learn about disaster assistance and benefits.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Education</h3>
+                        <p class="text-gray-600">Learn about Federal Student Aid and education programs.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Government Benefits</h3>
+                        <p class="text-gray-600">Find programs that help pay for food, housing, and health care.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Health</h3>
+                        <p class="text-gray-600">Get information about health insurance and medical bills.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Housing Help</h3>
+                        <p class="text-gray-600">Learn about rental assistance and emergency housing.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="block p-4 bg-white border rounded shadow hover:bg-gray-50">
+                        <h3 class="text-xl font-semibold mb-2">Immigration &amp; Citizenship</h3>
+                        <p class="text-gray-

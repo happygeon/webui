@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Online Forum</title>
+        <style>
+            /* Add necessary CSS styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+
+            .sticky-nav {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 0;
+                background-color: #333;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .forum {
+                padding: 20px;
+            }
+
+            .thread {
+                margin: 10px 0;
+                border: 1px solid #ddd;
+                padding: 10px;
+            }
+
+            .thread-title {
+                font-weight: bold;
+            }
+
+            .nested-comments {
+                margin-left: 20px;
+                border-left: 2px dashed #ccc;
+                padding-left: 10px;
+            }
+
+            .collapsible {
+                cursor: pointer;
+            }
+
+            .content {
+                display: none;
+                overflow: hidden;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="sticky-nav">
+            Sticky Navigation Bar
+        </div>
+        <div class="forum">
+            <div class="thread collapsible">
+                <div class="thread-title">Thread Title 1</div>
+                <div class="content">
+                    <div>Thread content goes here...</div>
+                    <div class="nested-comments">
+                        <div>Comment 1</div>
+                        <div class="nested-comments">
+                            <div>Reply to Comment 1</div>
+                        </div>
+                        <div>Comment 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="thread collapsible">
+                <div class="thread-title">Thread Title 2</div>
+                <div class="content">
+                    <div>Thread content goes here...</div>
+                    <div class="nested-comments">
+                        <div>Comment 1</div>
+                        <div class="nested-comments">
+                            <div>Reply to Comment 1</div>
+                        </div>
+                        <div>Comment 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Add necessary JavaScript
+            document.addEventListener('DOMContentLoaded', function() {
+                var collapsibles = document.getElementsByClassName('collapsible');
+                for (var i = 0; i < collapsibles.length; i++) {
+                    collapsibles[i].addEventListener('click', function() {
+                        this.classList.toggle('active');
+                        var content = this.querySelector('.content');
+                        if (content.style.display === 'block') {
+                            content.style.display = 'none';
+                        } else {
+                            content.style.display = 'block';
+                        }
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

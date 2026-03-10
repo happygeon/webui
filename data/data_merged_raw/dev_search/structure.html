@@ -1,0 +1,3953 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Playwright Web Testing &amp; Automation Framework 🎭 - DEV Community
+  </title>
+  <link href="https://dev.to/t/playwright" rel="canonical"/>
+  <link href="https://media2.dev.to/dynamic/image/width=32,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="icon" type="image/x-icon"/>
+  <link href="https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="apple-touch-icon"/>
+  <link href="https://media2.dev.to/dynamic/image/width=152,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="apple-touch-icon" sizes="152x152"/>
+  <link href="https://media2.dev.to/dynamic/image/width=180,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://media2.dev.to/dynamic/image/width=167,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="apple-touch-icon" sizes="167x167"/>
+  <link href="https://media2.dev.to/dynamic/image/width=192,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="icon" sizes="192x192"/>
+  <link href="https://media2.dev.to/dynamic/image/width=128,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F8j7kvp660rqzt99zui8e.png" rel="icon" sizes="128x128"/>
+  <link href="https://dev.to/open-search.xml" rel="search" title="DEV Community" type="application/opensearchdescription+xml"/>
+ </head>
+ <body>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <header>
+   <span tabindex="-1">
+   </span>
+   <a href="#main-content">
+    Skip to content
+   </a>
+   <div>
+    <span>
+     <button>
+      <svg height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <title>
+        Navigation menu
+       </title>
+       <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z">
+       </path>
+      </svg>
+     </button>
+    </span>
+    <a href="/">
+     <img alt="DEV Community" src="https://media2.dev.to/dynamic/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"/>
+    </a>
+    <div>
+     <form accept-charset="UTF-8" action="/search" method="get" role="search">
+      <input name="utf8" type="hidden" value="✓"/>
+      <div>
+       <div>
+        <input autocomplete="off" name="q" placeholder="Search..." type="text"/>
+        <button type="submit">
+         <svg focusable="false" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0111 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 01-1.969 5.617zm-2.006-.742A6.977 6.977 0 0018 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 004.875-1.975l.15-.15z">
+          </path>
+         </svg>
+        </button>
+        <a href="https://www.algolia.com/developers/?utm_source=devto&amp;utm_medium=referral" rel="noopener noreferrer" target="_blank">
+         Powered by
+         <svg height="24" viewbox="0 0 500 500.34" width="24" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+          </defs>
+          <path d="M250,0C113.38,0,2,110.16,.03,246.32c-2,138.29,110.19,252.87,248.49,253.67,42.71,.25,83.85-10.2,120.38-30.05,3.56-1.93,4.11-6.83,1.08-9.52l-23.39-20.74c-4.75-4.22-11.52-5.41-17.37-2.92-25.5,10.85-53.21,16.39-81.76,16.04-111.75-1.37-202.04-94.35-200.26-206.1,1.76-110.33,92.06-199.55,202.8-199.55h202.83V407.68l-115.08-102.25c-3.72-3.31-9.43-2.66-12.43,1.31-18.47,24.46-48.56,39.67-81.98,37.36-46.36-3.2-83.92-40.52-87.4-86.86-4.15-55.28,39.65-101.58,94.07-101.58,49.21,0,89.74,37.88,93.97,86.01,.38,4.28,2.31,8.28,5.53,11.13l29.97,26.57c3.4,3.01,8.8,1.17,9.63-3.3,2.16-11.55,2.92-23.6,2.07-35.95-4.83-70.39-61.84-127.01-132.26-131.35-80.73-4.98-148.23,58.18-150.37,137.35-2.09,77.15,61.12,143.66,138.28,145.36,32.21,.71,62.07-9.42,86.2-26.97l150.36,133.29c6.45,5.71,16.62,1.14,16.62-7.48V9.49C500,4.25,495.75,0,490.51,0H250Z">
+          </path>
+         </svg>
+         Algolia
+        </a>
+       </div>
+      </div>
+     </form>
+    </div>
+    <div>
+     <div>
+      <span>
+       <a href="https://dev.to/enter">
+        Log in
+       </a>
+      </span>
+      <a href="https://dev.to/enter?state=new-user">
+       Create account
+      </a>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div>
+   <div>
+    <header>
+     <h2>
+      DEV Community
+     </h2>
+     <button>
+      <svg height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+       <title>
+        Close
+       </title>
+       <path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636l4.95 4.95z">
+       </path>
+      </svg>
+     </button>
+    </header>
+    <div>
+    </div>
+   </div>
+   <div>
+   </div>
+  </div>
+  <div>
+  </div>
+  <div>
+   <div>
+    <div>
+    </div>
+    <div>
+     <header>
+      <div>
+       <div>
+        <div>
+         <h1>
+          Playwright Web Testing &amp; Automation Framework 🎭
+         </h1>
+         <div>
+          <div>
+           <button>
+            Follow
+           </button>
+           <button>
+            Hide
+           </button>
+          </div>
+         </div>
+        </div>
+        <p>
+         Playwright is an open-source framework for Web Testing and Automation. It enables reliable end-to-end testing for modern web apps across browsers and platforms, using one API! Playwright supports resilient testing (with features like auto-wait, web-first assertions and tracing) with powerful tooling for authoring, debugging and profiling your end-to-end tests!
+        </p>
+       </div>
+      </div>
+     </header>
+    </div>
+    <div>
+     <div>
+      <div>
+      </div>
+      <aside>
+       <div>
+        <a href="/new/playwright">
+         Create Post
+        </a>
+       </div>
+       <div>
+        <header>
+         <h4>
+          about #playwright
+         </h4>
+        </header>
+        <div>
+         <p>
+          Use this tag for posts on web testing and automation using the open-source Playwright framework.
+         </p>
+         <p>
+          Use this to share tips, insights and best practices for end-to-end testing of modern web apps!
+          <br/>
+          <br/>
+         </p>
+         <p>
+          Visit the
+          <a href="https://github.com/microsoft/playwright">
+           Playwright Repo
+          </a>
+          <br/>
+          Visit the
+          <a href="https://playwright.dev">
+           Playwright Website
+          </a>
+          <br/>
+          <br/>
+          Follow
+          <a href="https://twitter.com/playwrightweb">
+           @playwrightweb
+          </a>
+          <br/>
+          Subscribe to
+          <a href="https://www.youtube.com/channel/UC46Zj8pDH5tDosqm1gd7WTg">
+           YouTube
+          </a>
+          <br/>
+          Join the
+          <a href="https://aka.ms/playwright-slack">
+           Slack
+          </a>
+          <br/>
+          Contribute to
+          <a href="https://github.com/microsoft/playwright/discussions">
+           Discussions
+          </a>
+         </p>
+         <p>
+          Then
+          <a href="https://playwright.dev/docs/intro">
+           Get Started
+          </a>
+         </p>
+        </div>
+       </div>
+       <div>
+        <div>
+         0 Posts Published
+        </div>
+       </div>
+      </aside>
+     </div>
+     <main>
+      <header>
+       <h1>
+        Posts
+       </h1>
+       <button type="button">
+        <div>
+         <svg height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           Left menu
+          </title>
+          <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z">
+          </path>
+         </svg>
+        </div>
+       </button>
+       <div>
+        <div>
+         👋
+         <a href="/enter">
+          Sign in
+         </a>
+         for the ability to sort posts by
+         <strong>
+          relevant
+         </strong>
+         ,
+         <strong>
+          latest
+         </strong>
+         , or
+         <strong>
+          top
+         </strong>
+         .
+        </div>
+       </div>
+       <button type="button">
+        <div>
+         <svg height="24" role="img" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <title>
+           Right menu
+          </title>
+          <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z">
+          </path>
+         </svg>
+        </div>
+       </button>
+      </header>
+      <div>
+       <div>
+        <a href="https://dev.to/calderbughunter/what-makes-playwright-framework-unique-for-automation-2apm">
+         What Makes Playwright Framework Unique for Automation?
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/calderbughunter">
+             <img alt="calderbughunter profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2810382%2Fdaf2d49c-26a9-4b30-8d46-e56f7492f76d.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/calderbughunter">
+              Calder Hayes
+             </a>
+             <div>
+              <button>
+               Calder Hayes
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/calderbughunter">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2810382%2Fdaf2d49c-26a9-4b30-8d46-e56f7492f76d.jpg"/>
+                  </span>
+                  <span>
+                   Calder Hayes
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/calderbughunter/what-makes-playwright-framework-unique-for-automation-2apm">
+             <time datetime="2025-06-23T12:28:18Z" title="2025년 6월 23일 월요일 오후 9:28:18">
+              Jun 23
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/calderbughunter/what-makes-playwright-framework-unique-for-automation-2apm">
+            What Makes Playwright Framework Unique for Automation?
+           </a>
+          </h2>
+          <div>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/ai">
+            <span>
+             #
+            </span>
+            ai
+           </a>
+           <a href="/t/webdev">
+            <span>
+             #
+            </span>
+            webdev
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/calderbughunter/what-makes-playwright-framework-unique-for-automation-2apm">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               5
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/calderbughunter/what-makes-playwright-framework-unique-for-automation-2apm#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             5 min read
+            </small>
+            <button title="Save post What Makes Playwright Framework Unique for Automation? to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/day-6-how-i-organize-and-scale-playwright-tests-2nnl">
+         Day 6: How I Organize and Scale Playwright Tests
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-6-how-i-organize-and-scale-playwright-tests-2nnl">
+             <time datetime="2025-06-23T15:17:11Z" title="2025년 6월 24일 화요일 오전 12:17:11">
+              Jun 23
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/day-6-how-i-organize-and-scale-playwright-tests-2nnl">
+            Day 6: How I Organize and Scale Playwright Tests
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/typescript">
+            <span>
+             #
+            </span>
+            typescript
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-6-how-i-organize-and-scale-playwright-tests-2nnl#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post Day 6: How I Organize and Scale Playwright Tests to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/day-5-debugging-playwright-tests-tips-2cb8">
+         Day 5: Debugging Playwright Tests - Tips
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-5-debugging-playwright-tests-tips-2cb8">
+             <time datetime="2025-06-20T14:03:37Z" title="2025년 6월 20일 금요일 오후 11:03:37">
+              Jun 20
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/day-5-debugging-playwright-tests-tips-2cb8">
+            Day 5: Debugging Playwright Tests - Tips
+           </a>
+          </h2>
+          <div>
+           <a href="/t/qa">
+            <span>
+             #
+            </span>
+            qa
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-5-debugging-playwright-tests-tips-2cb8#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post Day 5: Debugging Playwright Tests - Tips to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/quangto/playwright-locator-handling-complex-ui-elements-with-ease-2pj6">
+         Playwright Locator – Handling Complex UI Elements with Ease
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/quangto">
+             <img alt="quangto profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F859636%2F1f08d5e6-4309-41a9-a811-ce43fb7c43a8.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/quangto">
+              QuangTo
+             </a>
+             <div>
+              <button>
+               QuangTo
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/quangto">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F859636%2F1f08d5e6-4309-41a9-a811-ce43fb7c43a8.jpeg"/>
+                  </span>
+                  <span>
+                   QuangTo
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/quangto/playwright-locator-handling-complex-ui-elements-with-ease-2pj6">
+             <time datetime="2025-06-17T04:18:12Z" title="2025년 6월 17일 화요일 오후 1:18:12">
+              Jun 17
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/quangto/playwright-locator-handling-complex-ui-elements-with-ease-2pj6">
+            Playwright Locator – Handling Complex UI Elements with Ease
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/locator">
+            <span>
+             #
+            </span>
+            locator
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/quangto/playwright-locator-handling-complex-ui-elements-with-ease-2pj6">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/quangto/playwright-locator-handling-complex-ui-elements-with-ease-2pj6#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             1 min read
+            </small>
+            <button title="Save post Playwright Locator – Handling Complex UI Elements with Ease to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/lisa_smith_d28ab25baf68ad/why-test-engineers-are-choosing-playwright-in-2025-1b81">
+         Why Test Engineers Are Choosing Playwright in 2025
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/lisa_smith_d28ab25baf68ad">
+             <img alt="lisa_smith_d28ab25baf68ad profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3210053%2F3c77de04-1b29-4b16-b6ff-028831b21f76.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/lisa_smith_d28ab25baf68ad">
+              Lisa Smith
+             </a>
+             <div>
+              <button>
+               Lisa Smith
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/lisa_smith_d28ab25baf68ad">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3210053%2F3c77de04-1b29-4b16-b6ff-028831b21f76.png"/>
+                  </span>
+                  <span>
+                   Lisa Smith
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/lisa_smith_d28ab25baf68ad/why-test-engineers-are-choosing-playwright-in-2025-1b81">
+             <time datetime="2025-06-13T16:23:24Z" title="2025년 6월 14일 토요일 오전 1:23:24">
+              Jun 13
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/lisa_smith_d28ab25baf68ad/why-test-engineers-are-choosing-playwright-in-2025-1b81">
+            Why Test Engineers Are Choosing Playwright in 2025
+           </a>
+          </h2>
+          <div>
+           <a href="/t/test">
+            <span>
+             #
+            </span>
+            test
+           </a>
+           <a href="/t/engineers">
+            <span>
+             #
+            </span>
+            engineers
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/lisa_smith_d28ab25baf68ad/why-test-engineers-are-choosing-playwright-in-2025-1b81">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/lisa_smith_d28ab25baf68ad/why-test-engineers-are-choosing-playwright-in-2025-1b81#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post Why Test Engineers Are Choosing Playwright in 2025 to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-216g">
+         ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/vishnuvardhanreddy">
+             <img alt="vishnuvardhanreddy profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3238313%2F2009f7a9-4747-45a3-b23a-6c0e8ad3b08f.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/vishnuvardhanreddy">
+              VISHNU VARDHAN REDDY
+             </a>
+             <div>
+              <button>
+               VISHNU VARDHAN REDDY
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/vishnuvardhanreddy">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3238313%2F2009f7a9-4747-45a3-b23a-6c0e8ad3b08f.png"/>
+                  </span>
+                  <span>
+                   VISHNU VARDHAN REDDY
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-216g">
+             <time datetime="2025-06-02T06:56:50Z" title="2025년 6월 2일 월요일 오후 3:56:50">
+              Jun 2
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-216g">
+            ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works
+           </a>
+          </h2>
+          <div>
+           <a href="/t/python">
+            <span>
+             #
+            </span>
+            python
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/403">
+            <span>
+             #
+            </span>
+            403
+           </a>
+           <a href="/t/opensource">
+            <span>
+             #
+            </span>
+            opensource
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-216g">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-216g#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-4dpp">
+         ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/vishnuvardhanreddy">
+             <img alt="vishnuvardhanreddy profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3238313%2F2009f7a9-4747-45a3-b23a-6c0e8ad3b08f.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/vishnuvardhanreddy">
+              VISHNU VARDHAN REDDY
+             </a>
+             <div>
+              <button>
+               VISHNU VARDHAN REDDY
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/vishnuvardhanreddy">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3238313%2F2009f7a9-4747-45a3-b23a-6c0e8ad3b08f.png"/>
+                  </span>
+                  <span>
+                   VISHNU VARDHAN REDDY
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-4dpp">
+             <time datetime="2025-06-02T06:57:53Z" title="2025년 6월 2일 월요일 오후 3:57:53">
+              Jun 2
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-4dpp">
+            ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works
+           </a>
+          </h2>
+          <div>
+           <a href="/t/opensource">
+            <span>
+             #
+            </span>
+            opensource
+           </a>
+           <a href="/t/python">
+            <span>
+             #
+            </span>
+            python
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/devtools">
+            <span>
+             #
+            </span>
+            devtools
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/vishnuvardhanreddy/scrapesome-effortless-web-scraping-for-javascript-heavy-sites-the-developer-friendly-scraper-4dpp#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post ScrapeSome: Effortless Web Scraping for JavaScript Heavy Sites — The Developer Friendly Scraper That Just Works to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/day-3-mastering-playwright-test-syntax-and-common-functionsplaywright-5fi7">
+         Day 3: Mastering Playwright Test Syntax and Common Functions playwright
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-3-mastering-playwright-test-syntax-and-common-functionsplaywright-5fi7">
+             <time datetime="2025-06-17T14:07:48Z" title="2025년 6월 17일 화요일 오후 11:07:48">
+              Jun 17
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/day-3-mastering-playwright-test-syntax-and-common-functionsplaywright-5fi7">
+            Day 3: Mastering Playwright Test Syntax and Common Functions playwright
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/qa">
+            <span>
+             #
+            </span>
+            qa
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-3-mastering-playwright-test-syntax-and-common-functionsplaywright-5fi7#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             1
+             <span>
+              comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             4 min read
+            </small>
+            <button title="Save post Day 3: Mastering Playwright Test Syntax and Common Functions playwright to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05">
+         Generate Playwright Tests Without Code Access Using MCP and Copilot
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/debs_obrien">
+             <img alt="debs_obrien profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/debs_obrien">
+              Debbie O'Brien
+             </a>
+             <div>
+              <button>
+               Debbie O'Brien
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/debs_obrien">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+                  </span>
+                  <span>
+                   Debbie O'Brien
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05">
+             <time datetime="2025-06-18T17:58:00Z" title="2025년 6월 19일 목요일 오전 2:58:00">
+              Jun 18
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05">
+            Generate Playwright Tests Without Code Access Using MCP and Copilot
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/mcp">
+            <span>
+             #
+            </span>
+            mcp
+           </a>
+           <a href="/t/ai">
+            <span>
+             #
+            </span>
+            ai
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               10
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             4
+             <span>
+              comments
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post Generate Playwright Tests Without Code Access Using MCP and Copilot to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/day-1-introduction-to-playwright-a-modern-end-to-end-testing-framework-5b1p">
+         Day 1: Introduction to Playwright – A Modern End-to-End Testing Framework
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-1-introduction-to-playwright-a-modern-end-to-end-testing-framework-5b1p">
+             <time datetime="2025-06-15T19:50:43Z" title="2025년 6월 16일 월요일 오전 4:50:43">
+              Jun 15
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/day-1-introduction-to-playwright-a-modern-end-to-end-testing-framework-5b1p">
+            Day 1: Introduction to Playwright – A Modern End-to-End Testing Framework
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+           <a href="/t/qa">
+            <span>
+             #
+            </span>
+            qa
+           </a>
+           <a href="/t/automaton">
+            <span>
+             #
+            </span>
+            automaton
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-1-introduction-to-playwright-a-modern-end-to-end-testing-framework-5b1p#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post Day 1: Introduction to Playwright – A Modern End-to-End Testing Framework to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/nikolayadvolodkin/hiring-senior-test-automation-engineer-cet-support-3790">
+         Hiring: Senior Test Automation Engineer (CET support)
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/nikolayadvolodkin">
+             <img alt="nikolayadvolodkin profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F466971%2F28243811-e969-41e6-a3d3-eb54bd7bc6fa.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/nikolayadvolodkin">
+              Nikolay Advolodkin
+             </a>
+             <div>
+              <button>
+               Nikolay Advolodkin
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/nikolayadvolodkin">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F466971%2F28243811-e969-41e6-a3d3-eb54bd7bc6fa.jpeg"/>
+                  </span>
+                  <span>
+                   Nikolay Advolodkin
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/nikolayadvolodkin/hiring-senior-test-automation-engineer-cet-support-3790">
+             <time datetime="2025-05-11T20:14:50Z" title="2025년 5월 12일 월요일 오전 5:14:50">
+              May 11
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/nikolayadvolodkin/hiring-senior-test-automation-engineer-cet-support-3790">
+            Hiring: Senior Test Automation Engineer (CET support)
+           </a>
+          </h2>
+          <div>
+           <a href="/t/career">
+            <span>
+             #
+            </span>
+            career
+           </a>
+           <a href="/t/webdev">
+            <span>
+             #
+            </span>
+            webdev
+           </a>
+           <a href="/t/typescript">
+            <span>
+             #
+            </span>
+            typescript
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/nikolayadvolodkin/hiring-senior-test-automation-engineer-cet-support-3790#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post Hiring: Senior Test Automation Engineer (CET support) to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9">
+         What’s New in Playwright v1.52 &amp; v1.53: Fix with AI, Describable Locators, and More!
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/playwright">
+             <img alt="Playwright end to end Testing logo" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Forganization%2Fprofile_image%2F6222%2F2467899f-c222-4218-9f92-b3e3d6c1f4f5.png"/>
+            </a>
+            <a href="/debs_obrien">
+             <img alt="debs_obrien profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/debs_obrien">
+              Debbie O'Brien
+             </a>
+             <div>
+              <button>
+               Debbie O'Brien
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/debs_obrien">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+                  </span>
+                  <span>
+                   Debbie O'Brien
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+             <span>
+              <span>
+               for
+              </span>
+              <a href="/playwright">
+               Playwright end to end Testing
+              </a>
+             </span>
+            </div>
+            <a href="https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9">
+             <time datetime="2025-06-17T09:38:32Z" title="2025년 6월 17일 화요일 오후 6:38:32">
+              Jun 17
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9">
+            What’s New in Playwright v1.52 &amp; v1.53: Fix with AI, Describable Locators, and More!
+           </a>
+          </h2>
+          <div>
+           <a href="/t/webdev">
+            <span>
+             #
+            </span>
+            webdev
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/ai">
+            <span>
+             #
+            </span>
+            ai
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               3
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             2
+             <span>
+              comments
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post What’s New in Playwright v1.52 &amp; v1.53: Fix with AI, Describable Locators, and More! to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/how-ai-is-transforming-qa-automation-manual-and-performance-testing-1f0e">
+         How AI is Transforming QA: Automation, Manual, and Performance Testing
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/how-ai-is-transforming-qa-automation-manual-and-performance-testing-1f0e">
+             <time datetime="2025-06-11T22:39:58Z" title="2025년 6월 12일 목요일 오전 7:39:58">
+              Jun 11
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/how-ai-is-transforming-qa-automation-manual-and-performance-testing-1f0e">
+            How AI is Transforming QA: Automation, Manual, and Performance Testing
+           </a>
+          </h2>
+          <div>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+           <a href="/t/performance">
+            <span>
+             #
+            </span>
+            performance
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/how-ai-is-transforming-qa-automation-manual-and-performance-testing-1f0e">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/how-ai-is-transforming-qa-automation-manual-and-performance-testing-1f0e#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post How AI is Transforming QA: Automation, Manual, and Performance Testing to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/wishinfinite/playwright-tutorial-series-13ik">
+         Playwright Tutorial Series
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/wishinfinite">
+             <img alt="wishinfinite profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1212527%2F5076c062-78a1-4720-92ba-f919e8819beb.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/wishinfinite">
+              WishInfinite
+             </a>
+             <div>
+              <button>
+               WishInfinite
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/wishinfinite">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1212527%2F5076c062-78a1-4720-92ba-f919e8819beb.png"/>
+                  </span>
+                  <span>
+                   WishInfinite
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/wishinfinite/playwright-tutorial-series-13ik">
+             <time datetime="2025-06-17T15:06:46Z" title="2025년 6월 18일 수요일 오전 12:06:46">
+              Jun 17
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/wishinfinite/playwright-tutorial-series-13ik">
+            Playwright Tutorial Series
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automationtesting">
+            <span>
+             #
+            </span>
+            automationtesting
+           </a>
+           <a href="/t/qa">
+            <span>
+             #
+            </span>
+            qa
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/wishinfinite/playwright-tutorial-series-13ik">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/wishinfinite/playwright-tutorial-series-13ik#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             1
+             <span>
+              comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             1 min read
+            </small>
+            <button title="Save post Playwright Tutorial Series to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1">
+         Letting Playwright MCP Explore your site and Write your Tests
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/debs_obrien">
+             <img alt="debs_obrien profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/debs_obrien">
+              Debbie O'Brien
+             </a>
+             <div>
+              <button>
+               Debbie O'Brien
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/debs_obrien">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F212929%2F947ba7e0-41fe-464a-a4f3-abb66a3170c6.jpg"/>
+                  </span>
+                  <span>
+                   Debbie O'Brien
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1">
+             <time datetime="2025-06-18T18:29:43Z" title="2025년 6월 19일 목요일 오전 3:29:43">
+              Jun 18
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1">
+            Letting Playwright MCP Explore your site and Write your Tests
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/mcp">
+            <span>
+             #
+            </span>
+            mcp
+           </a>
+           <a href="/t/ai">
+            <span>
+             #
+            </span>
+            ai
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               94
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             22
+             <span>
+              comments
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             5 min read
+            </small>
+            <button title="Save post Letting Playwright MCP Explore your site and Write your Tests to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/denis_skvortsov/selective-test-execution-mechanism-with-playwright-using-github-actions-862">
+         Selective test execution mechanism with Playwright using GitHub Actions
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/denis_skvortsov">
+             <img alt="denis_skvortsov profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3079093%2F4fd4f610-1231-4ddd-9960-c1c424b41151.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/denis_skvortsov">
+              Denis Skvortsov
+             </a>
+             <div>
+              <button>
+               Denis Skvortsov
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/denis_skvortsov">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3079093%2F4fd4f610-1231-4ddd-9960-c1c424b41151.jpg"/>
+                  </span>
+                  <span>
+                   Denis Skvortsov
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/denis_skvortsov/selective-test-execution-mechanism-with-playwright-using-github-actions-862">
+             <time datetime="2025-05-24T09:49:04Z" title="2025년 5월 24일 토요일 오후 6:49:04">
+              May 24
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/denis_skvortsov/selective-test-execution-mechanism-with-playwright-using-github-actions-862">
+            Selective test execution mechanism with Playwright using GitHub Actions
+           </a>
+          </h2>
+          <div>
+           <a href="/t/githubactions">
+            <span>
+             #
+            </span>
+            githubactions
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/denis_skvortsov/selective-test-execution-mechanism-with-playwright-using-github-actions-862">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               1
+               <span>
+                reaction
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/denis_skvortsov/selective-test-execution-mechanism-with-playwright-using-github-actions-862#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             10 min read
+            </small>
+            <button title="Save post Selective test execution mechanism with Playwright using GitHub Actions to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/amit_singh_bisht/npm-init-playwright-2dmg">
+         npm init playwright
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/amit_singh_bisht">
+             <img alt="amit_singh_bisht profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1428074%2Fc67c12b0-9f97-46c4-a4a6-40f69789a3f2.jpg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/amit_singh_bisht">
+              Amit Singh Bisht
+             </a>
+             <div>
+              <button>
+               Amit Singh Bisht
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/amit_singh_bisht">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1428074%2Fc67c12b0-9f97-46c4-a4a6-40f69789a3f2.jpg"/>
+                  </span>
+                  <span>
+                   Amit Singh Bisht
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/amit_singh_bisht/npm-init-playwright-2dmg">
+             <time datetime="2025-06-02T09:23:38Z" title="2025년 6월 2일 월요일 오후 6:23:38">
+              Jun 2
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/amit_singh_bisht/npm-init-playwright-2dmg">
+            npm init playwright
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/e2e">
+            <span>
+             #
+            </span>
+            e2e
+           </a>
+           <a href="/t/typescript">
+            <span>
+             #
+            </span>
+            typescript
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/amit_singh_bisht/npm-init-playwright-2dmg">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               8
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/amit_singh_bisht/npm-init-playwright-2dmg#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             4 min read
+            </small>
+            <button title="Save post npm init playwright to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-cicd-2cbm">
+         🚀 Building Playwright Framework Step By Step - Implementing CI/CD
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/idavidov13">
+             <img alt="idavidov13 profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/idavidov13">
+              idavidov13
+             </a>
+             <div>
+              <button>
+               idavidov13
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/idavidov13">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+                  </span>
+                  <span>
+                   idavidov13
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-cicd-2cbm">
+             <time datetime="2025-06-02T05:43:00Z" title="2025년 6월 2일 월요일 오후 2:43:00">
+              Jun 2
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-cicd-2cbm">
+            🚀 Building Playwright Framework Step By Step - Implementing CI/CD
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/tutorial">
+            <span>
+             #
+            </span>
+            tutorial
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-cicd-2cbm">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               12
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-cicd-2cbm#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             6 min read
+            </small>
+            <button title="Save post 🚀 Building Playwright Framework Step By Step - Implementing CI/CD to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/wishinfinite/unlock-reliable-test-automation-with-these-4-essential-playwright-locators-2mdf">
+         Unlock Reliable Test Automation with These 4 Essential Playwright Locators!
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/wishinfinite">
+             <img alt="wishinfinite profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1212527%2F5076c062-78a1-4720-92ba-f919e8819beb.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/wishinfinite">
+              WishInfinite
+             </a>
+             <div>
+              <button>
+               WishInfinite
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/wishinfinite">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F1212527%2F5076c062-78a1-4720-92ba-f919e8819beb.png"/>
+                  </span>
+                  <span>
+                   WishInfinite
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/wishinfinite/unlock-reliable-test-automation-with-these-4-essential-playwright-locators-2mdf">
+             <time datetime="2025-06-01T14:16:33Z" title="2025년 6월 1일 일요일 오후 11:16:33">
+              Jun 1
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/wishinfinite/unlock-reliable-test-automation-with-these-4-essential-playwright-locators-2mdf">
+            Unlock Reliable Test Automation with These 4 Essential Playwright Locators!
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/automationtesting">
+            <span>
+             #
+            </span>
+            automationtesting
+           </a>
+           <a href="/t/softwaretesting">
+            <span>
+             #
+            </span>
+            softwaretesting
+           </a>
+           <a href="/t/sdetqa">
+            <span>
+             #
+            </span>
+            sdetqa
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/wishinfinite/unlock-reliable-test-automation-with-these-4-essential-playwright-locators-2mdf#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             1 min read
+            </small>
+            <button title="Save post Unlock Reliable Test Automation with These 4 Essential Playwright Locators! to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6">
+         🧪 Building Playwright Framework Step By Step - Implementing API Tests
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/idavidov13">
+             <img alt="idavidov13 profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/idavidov13">
+              idavidov13
+             </a>
+             <div>
+              <button>
+               idavidov13
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/idavidov13">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+                  </span>
+                  <span>
+                   idavidov13
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6">
+             <time datetime="2025-06-01T05:45:00Z" title="2025년 6월 1일 일요일 오후 2:45:00">
+              Jun 1
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6">
+            🧪 Building Playwright Framework Step By Step - Implementing API Tests
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/tutorial">
+            <span>
+             #
+            </span>
+            tutorial
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               7
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             5 min read
+            </small>
+            <button title="Save post 🧪 Building Playwright Framework Step By Step - Implementing API Tests to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-fixtures-32bc">
+         🔌 Building Playwright Framework Step By Step - Implementing API Fixtures
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/idavidov13">
+             <img alt="idavidov13 profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/idavidov13">
+              idavidov13
+             </a>
+             <div>
+              <button>
+               idavidov13
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/idavidov13">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+                  </span>
+                  <span>
+                   idavidov13
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-fixtures-32bc">
+             <time datetime="2025-05-30T21:00:00Z" title="2025년 5월 31일 토요일 오전 6:00:00">
+              May 30
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-fixtures-32bc">
+            🔌 Building Playwright Framework Step By Step - Implementing API Fixtures
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/tutorial">
+            <span>
+             #
+            </span>
+            tutorial
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-fixtures-32bc">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               5
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-api-fixtures-32bc#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             5 min read
+            </small>
+            <button title="Save post 🔌 Building Playwright Framework Step By Step - Implementing API Fixtures to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/avin_singhal/powerful-reporting-with-allure-playwright-4o9d">
+         Powerful Reporting with Allure + Playwright
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/avin_singhal">
+             <img alt="avin_singhal profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2802128%2F87d9ae8b-e08b-4835-ae6b-37cc002f8b70.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/avin_singhal">
+              avin singhal
+             </a>
+             <div>
+              <button>
+               avin singhal
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/avin_singhal">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2802128%2F87d9ae8b-e08b-4835-ae6b-37cc002f8b70.png"/>
+                  </span>
+                  <span>
+                   avin singhal
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/avin_singhal/powerful-reporting-with-allure-playwright-4o9d">
+             <time datetime="2025-04-26T17:14:44Z" title="2025년 4월 27일 일요일 오전 2:14:44">
+              Apr 26
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/avin_singhal/powerful-reporting-with-allure-playwright-4o9d">
+            Powerful Reporting with Allure + Playwright
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/allure">
+            <span>
+             #
+            </span>
+            allure
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/tutorial">
+            <span>
+             #
+            </span>
+            tutorial
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/avin_singhal/powerful-reporting-with-allure-playwright-4o9d#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post Powerful Reporting with Allure + Playwright to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/shiva_shanker_dec82951917/the-7-hour-bug-hunt-that-taught-me-everything-about-asyncawait-6m">
+         The 7-Hour Bug Hunt That Taught Me Everything About Async/Await
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/shiva_shanker_dec82951917">
+             <img alt="shiva_shanker_dec82951917 profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3222309%2Fb70457bd-b9e0-4b67-96df-5d4f20ecb21b.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/shiva_shanker_dec82951917">
+              shiva shanker
+             </a>
+             <div>
+              <button>
+               shiva shanker
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/shiva_shanker_dec82951917">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3222309%2Fb70457bd-b9e0-4b67-96df-5d4f20ecb21b.png"/>
+                  </span>
+                  <span>
+                   shiva shanker
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/shiva_shanker_dec82951917/the-7-hour-bug-hunt-that-taught-me-everything-about-asyncawait-6m">
+             <time datetime="2025-05-30T17:00:58Z" title="2025년 5월 31일 토요일 오전 2:00:58">
+              May 30
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/shiva_shanker_dec82951917/the-7-hour-bug-hunt-that-taught-me-everything-about-asyncawait-6m">
+            The 7-Hour Bug Hunt That Taught Me Everything About Async/Await
+           </a>
+          </h2>
+          <div>
+           <a href="/t/javascript">
+            <span>
+             #
+            </span>
+            javascript
+           </a>
+           <a href="/t/react">
+            <span>
+             #
+            </span>
+            react
+           </a>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/webdev">
+            <span>
+             #
+            </span>
+            webdev
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/shiva_shanker_dec82951917/the-7-hour-bug-hunt-that-taught-me-everything-about-asyncawait-6m#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             <span>
+              Add Comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             3 min read
+            </small>
+            <button title="Save post The 7-Hour Bug Hunt That Taught Me Everything About Async/Await to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-ui-tests-3n88">
+         🎭 Building Playwright Framework Step By Step - Implementing UI Tests
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/idavidov13">
+             <img alt="idavidov13 profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/idavidov13">
+              idavidov13
+             </a>
+             <div>
+              <button>
+               idavidov13
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/idavidov13">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F2895129%2F3d1fb20c-e41d-4450-8104-eee46a4a6b79.jpeg"/>
+                  </span>
+                  <span>
+                   idavidov13
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-ui-tests-3n88">
+             <time datetime="2025-05-30T05:23:00Z" title="2025년 5월 30일 금요일 오후 2:23:00">
+              May 30
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-ui-tests-3n88">
+            🎭 Building Playwright Framework Step By Step - Implementing UI Tests
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/testing">
+            <span>
+             #
+            </span>
+            testing
+           </a>
+           <a href="/t/automation">
+            <span>
+             #
+            </span>
+            automation
+           </a>
+           <a href="/t/tutorial">
+            <span>
+             #
+            </span>
+            tutorial
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-ui-tests-3n88">
+             <div>
+              <span dir="rtl">
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+               </span>
+               <span>
+                <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+               </span>
+              </span>
+              <span>
+               5
+               <span>
+                reactions
+               </span>
+              </span>
+             </div>
+            </a>
+            <a href="https://dev.to/idavidov13/building-playwright-framework-step-by-step-implementing-ui-tests-3n88#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             2
+             <span>
+              comments
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             5 min read
+            </small>
+            <button title="Save post 🎭 Building Playwright Framework Step By Step - Implementing UI Tests to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a href="https://dev.to/ramamallika_kadali_49a08f/day-2-deep-dive-into-playwright-test-runner-and-configurationplaywright-2hd0">
+         Day 2: Deep Dive into Playwright Test Runner and Configuration playwright
+        </a>
+        <div>
+         <div>
+          <div>
+           <div>
+            <a href="/ramamallika_kadali_49a08f">
+             <img alt="ramamallika_kadali_49a08f profile" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+            </a>
+           </div>
+           <div>
+            <div>
+             <a href="/ramamallika_kadali_49a08f">
+              RamaMallika Kadali
+             </a>
+             <div>
+              <button>
+               RamaMallika Kadali
+              </button>
+              <div>
+               <div>
+                <div>
+                 <a href="/ramamallika_kadali_49a08f">
+                  <span>
+                   <img alt="" loading="lazy" src="https://media2.dev.to/dynamic/image/width=90,height=90,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F3254702%2F6d688f31-762d-4e81-a24c-794b0f4efa02.png"/>
+                  </span>
+                  <span>
+                   RamaMallika Kadali
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <button>
+                  Follow
+                 </button>
+                </div>
+                <div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-2-deep-dive-into-playwright-test-runner-and-configurationplaywright-2hd0">
+             <time datetime="2025-06-16T20:23:48Z" title="2025년 6월 17일 화요일 오전 5:23:48">
+              Jun 16
+             </time>
+             <span>
+             </span>
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <h2>
+           <a href="https://dev.to/ramamallika_kadali_49a08f/day-2-deep-dive-into-playwright-test-runner-and-configurationplaywright-2hd0">
+            Day 2: Deep Dive into Playwright Test Runner and Configuration playwright
+           </a>
+          </h2>
+          <div>
+           <a href="/t/playwright">
+            <span>
+             #
+            </span>
+            playwright
+           </a>
+           <a href="/t/qa">
+            <span>
+             #
+            </span>
+            qa
+           </a>
+           <a href="/t/cicd">
+            <span>
+             #
+            </span>
+            cicd
+           </a>
+           <a href="/t/ai">
+            <span>
+             #
+            </span>
+            ai
+           </a>
+          </div>
+          <div>
+           <div>
+            <a href="https://dev.to/ramamallika_kadali_49a08f/day-2-deep-dive-into-playwright-test-runner-and-configurationplaywright-2hd0#comments">
+             <svg height="24" role="img" width="24" xmlns="http://www.w3.org/2000/svg">
+              <title>
+               Comments
+              </title>
+              <path d="M10.5 5h3a6 6 0 110 12v2.625c-3.75-1.5-9-3.75-9-8.625a6 6 0 016-6zM12 15.5h1.5a4.501 4.501 0 001.722-8.657A4.5 4.5 0 0013.5 6.5h-3A4.5 4.5 0 006 11c0 2.707 1.846 4.475 6 6.36V15.5z">
+              </path>
+             </svg>
+             1
+             <span>
+              comment
+             </span>
+            </a>
+           </div>
+           <div>
+            <small>
+             2 min read
+            </small>
+            <button title="Save post Day 2: Deep Dive into Playwright Test Runner and Configuration playwright to reading list" type="button">
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75zM16.5 6h-9v11.574l4.5-2.82 4.5 2.82V6z">
+               </path>
+              </svg>
+             </span>
+             <span>
+              <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+               <path d="M6.75 4.5h10.5a.75.75 0 01.75.75v14.357a.375.375 0 01-.575.318L12 16.523l-5.426 3.401A.375.375 0 016 19.607V5.25a.75.75 0 01.75-.75z">
+               </path>
+              </svg>
+             </span>
+            </button>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+       </div>
+       <div>
+       </div>
+      </div>
+      <div>
+       loading...
+      </div>
+     </main>
+     <div>
+      <div>
+      </div>
+      <aside>
+       <div>
+        <header>
+         <h4>
+          trending guides/resources
+         </h4>
+        </header>
+        <div>
+         <div>
+          <a href="/debs_obrien/letting-playwright-mcp-explore-your-site-and-write-your-tests-mf1">
+           Letting Playwright MCP Explore your site and Write your Tests
+          </a>
+          <a href="/debs_obrien/generate-playwright-tests-without-code-access-using-mcp-and-copilot-2m05">
+           Generate Playwright Tests Without Code Access Using MCP and Copilot
+          </a>
+          <a href="/playwright/catch-missing-await-calls-in-playwright-tests-with-eslint-5fid">
+           Catch Missing `await` Calls in Playwright Tests with ESLint
+          </a>
+          <a href="/aws-builders/implementing-nova-act-mcp-server-on-ecs-fargate-1368">
+           Implementing Nova Act MCP Server on ECS Fargate
+          </a>
+          <a href="/playwright/whats-new-in-playwright-v152-v153-fix-with-ai-describable-locators-and-more-dl9">
+           What’s New in Playwright v1.52 &amp; v1.53: Fix with AI, Describable Locators, and More!
+          </a>
+          <a href="/idavidov13/one-file-to-rule-them-all-cursor-windsurf-and-vs-code-hh2">
+           📃One file to rule them all: ➡️Cursor, 🏄🏻Windsurf, and 🆚VS Code
+          </a>
+          <a href="/idavidov13/explore-generating-tests-with-playwright-mcp-server-and-claude-4-sonnet-and-claude-4-opus-33">
+           Explore generating tests with Playwright MCP Server and Claude 4 Sonnet and Claude 4 Opus
+          </a>
+          <a href="/idavidov13/playwright-framework-step-by-step-setup-design-pattern-4b9i">
+           🏗️ Building Playwright Framework Step By Step - Setup Design Pattern
+          </a>
+          <a href="/shubham-theqa/battle-of-the-testing-tools-playwright-cypress-and-testgrid-compared-3fa3">
+           Battle of the Testing Tools: Playwright, Cypress, and TestGrid Compared
+          </a>
+          <a href="/denis_skvortsov/practical-use-of-cursor-and-mcp-playwright-in-test-automation-ac4">
+           Practical use of Cursor and MCP Playwright in test automation
+          </a>
+          <a href="/skptricks_93/playwright-tutorial-with-examples-1eii">
+           Playwright Tutorial With Examples
+          </a>
+          <a href="/sasoqa/from-zero-to-playwright-building-a-qa-starter-kit-for-automation-testing-a80">
+           From Zero to Playwright: Building a QA Starter Kit for Automation Testing
+          </a>
+          <a href="/idavidov13/explore-generating-tests-with-playwright-mcp-server-and-gpt-41-401m">
+           Explore generating tests with Playwright MCP Server and GPT-4.1
+          </a>
+          <a href="/idavidov13/building-playwright-framework-step-by-step-implementing-api-tests-5cp6">
+           🧪 Building Playwright Framework Step By Step - Implementing API Tests
+          </a>
+          <a href="/idavidov13/building-playwright-framework-step-by-step-create-user-snippets-319h">
+           🎨 Building Playwright Framework Step By Step - Create User Snippets
+          </a>
+          <a href="/sebastianclavijo/the-test-drama-cypress-vs-playwright-control-your-tests-part-2-tags-test-filters-3kh2">
+           The Test Drama: Cypress vs Playwright - Control Your Tests (Part 2): TAGS &amp; TEST FILTERS
+          </a>
+          <a href="/ronika_kashyap/step-by-step-using-cotester-for-ai-test-automation-1a3m">
+           Step-by-Step: Using CoTester for AI Test Automation
+          </a>
+          <a href="/mechcloud_academy/selenium-vs-puppeteer-vs-playwright-choosing-the-right-tool-for-web-automation-5el">
+           Selenium vs Puppeteer vs Playwright: Choosing the Right Tool for Web Automation
+          </a>
+          <a href="/aws-builders/how-i-used-nova-act-to-find-the-best-hotel-deals-for-aws-reinvent-2025-ma8">
+           How I Used Nova-Act to find the Best Hotel Deals for AWS re:Invent 2025
+          </a>
+          <a href="/gulshanjha0/what-is-headless-browsing-13n3">
+           What is Headless Browsing?
+          </a>
+         </div>
+        </div>
+       </div>
+      </aside>
+     </div>
+    </div>
+    <div>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div>
+    <div>
+     <div>
+      <p>
+       💎 DEV Diamond Sponsors
+      </p>
+      <p>
+       Thank you to our Diamond Sponsors for supporting the DEV Community
+      </p>
+      <div>
+       <div>
+        <a href="https://aistudio.google.com/?utm_source=partner&amp;utm_medium=partner&amp;utm_campaign=FY25-Global-DEVpartnership-sponsorship-AIS&amp;utm_content=-&amp;utm_term=-&amp;bb=146443" rel="noopener noreferrer" target="_blank">
+         <img alt="Google AI - Official AI Model and Platform Partner" height="472" loading="lazy" src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fxjlyhbdqehj3akhz166w.png" width="2048"/>
+        </a>
+        <p>
+         Google AI is the official AI Model and Platform Partner of DEV
+        </p>
+       </div>
+       <div>
+        <a href="https://neon.tech/?ref=devto&amp;bb=146443" rel="noopener noreferrer" target="_blank">
+         <img alt="Neon - Official Database Partner" height="596" loading="lazy" src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbnl88cil6afxzmgwrgtt.png" width="2286"/>
+        </a>
+        <p>
+         Neon is the official database partner of DEV
+        </p>
+       </div>
+       <div>
+        <a href="https://www.algolia.com/developers/?utm_source=devto&amp;utm_medium=referral&amp;bb=146443" rel="noopener noreferrer" target="_blank">
+         <img alt="Algolia - Official Search Partner" height="596" loading="lazy" src="https://media2.dev.to/dynamic/image/width=880%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fv30ephnolfvnlwgwm0yz.png" width="2286"/>
+        </a>
+        <p>
+         Algolia is the official search partner of DEV
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <p>
+     <a href="/">
+      DEV Community
+     </a>
+     — A space to discuss and keep up software development and manage your software career
+    </p>
+    <ul>
+     <li>
+      <a href="/">
+       Home
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/readinglist">
+       Reading List
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/tags">
+       Tags
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/about">
+       About
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/contact">
+       Contact
+      </a>
+      <span>
+      </span>
+     </li>
+    </ul>
+    <ul>
+     <li>
+      <a href="/code-of-conduct">
+       Code of Conduct
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/privacy">
+       Privacy Policy
+      </a>
+      <span>
+      </span>
+     </li>
+     <li>
+      <a href="/terms">
+       Terms of use
+      </a>
+      <span>
+      </span>
+     </li>
+    </ul>
+    <div>
+     <p>
+      Built on
+      <a href="https://www.forem.com" rel="noopener" target="_blank">
+       Forem
+      </a>
+      — the
+      <a href="https://dev.to/t/opensource" rel="noopener" target="_blank">
+       open source
+      </a>
+      software that powers
+      <a href="https://dev.to" rel="noopener" target="_blank">
+       DEV
+      </a>
+      and other inclusive communities.
+     </p>
+     <p>
+      Made with love and
+      <a href="https://dev.to/t/rails" rel="noopener" target="_blank">
+       Ruby on Rails
+      </a>
+      . DEV Community
+      <span title="copyright">
+       ©
+      </span>
+      2016 - 2025.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <div>
+   <div>
+   </div>
+  </div>
+  <div>
+   <div>
+    <figure>
+     <img alt="DEV Community" loading="lazy" src="https://media2.dev.to/dynamic/image/width=190,height=,fit=scale-down,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fwalhydbusoe2o1pzxfwj.png"/>
+    </figure>
+    <div>
+     <p>
+      We're a blogging-forward open source social network where we learn from one another
+     </p>
+    </div>
+    <div>
+     <a href="/enter">
+      Log in
+     </a>
+     <a href="/enter?state=new-user">
+      Create account
+     </a>
+    </div>
+   </div>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <div>
+   <img height="18" src="https://assets.dev.to/assets/sparkle-heart-5f9bee3767e18deb1bb725290cb151c25234768a0e9a2bd39370c382d02920cf.svg" width="18"/>
+   <img height="18" src="https://assets.dev.to/assets/multi-unicorn-b44d6f8c23cdd00964192bedc38af3e82463978aa611b4365bd33a0f1f4f3e97.svg" width="18"/>
+   <img height="18" src="https://assets.dev.to/assets/exploding-head-daceb38d627e6ae9b730f36a1e390fca556a4289d5a41abb2c35068ad3e2c4b5.svg" width="18"/>
+   <img height="18" src="https://assets.dev.to/assets/raised-hands-74b2099fd66a39f2d7eed9305ee0f4553df0eb7b4f11b01b6b1b499973048fe5.svg" width="18"/>
+   <img height="18" src="https://assets.dev.to/assets/fire-f60e7a582391810302117f987b22a8ef04a2fe0df7e3258a5f49332df1cec71e.svg" width="18"/>
+  </div>
+  <iframe src="https://forem.com/auth_pass/iframe">
+  </iframe>
+  <div>
+  </div>
+ </body>
+</html>

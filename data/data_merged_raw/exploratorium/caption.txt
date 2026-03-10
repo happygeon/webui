@@ -1,0 +1,11 @@
+1. To attract visitors to the Exploratorium science museum by showcasing its interactive and imaginative exhibits, encouraging ticket purchases and donations.
+
+2. Landing page
+
+3. Education/Science museum
+
+4. (a) Clear, prominent navigation menu
+(b) Large, engaging hero text overlaid on full-width image
+(c) Prominent "Buy Tickets" and "Donate" call-to-action buttons
+(d) "Plan Your Visit" button for easy access to visitor information
+(e) Search functionality in the top-right corner

@@ -1,0 +1,11 @@
+1. To attract and engage front-end developers and designers by showcasing CodePen's features as an online coding platform and social development environment.
+
+2. Landing page
+
+3. Web development / Technology
+
+4. (a) Large, bold headline emphasizing the platform's main value proposition
+(b) Code editor preview showcasing HTML, CSS, and JavaScript functionality
+(c) Colorful, abstract design elements to create visual interest
+(d) Clear call-to-action button for signing up
+(e) Navigation menu with key features and sections of the platform

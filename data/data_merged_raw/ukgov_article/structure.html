@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>
+   Sign in to a service - GOV.UK
+  </title>
+  <link href="/assets/static/favicon-f54816fc15997bd42cd90e4c50b896a1fc098c0c32957d4e5effbfa9f9b35e53.ico" rel="icon" sizes="48x48"/>
+  <link href="/assets/static/favicon-50144c9d83e59584c45b249ad9e9abfdd23689876c33f28457df13bbdd9c8688.svg" rel="icon" sizes="any" type="image/svg+xml"/>
+  <link color="#0b0c0c" href="/assets/static/govuk-icon-mask-cdf4265165f8d7f9eec54aa2c1dfbb3d8b6d297c5d7919f0313e0836a5804bb6.svg" rel="mask-icon"/>
+  <link href="/assets/static/govuk-icon-180-d2d7399ff2ba05372b6b2018cc67053e458a748cceea1a550d804dbec401e3ed.png" rel="apple-touch-icon"/>
+  <link href="/search/opensearch.xml" rel="search" title="Search" type="application/opensearchdescription+xml"/>
+ </head>
+ <body>
+  <div role="region">
+   <div>
+    <div>
+     <div>
+      <h2 hidden="">
+       Cookies on GOV.UK
+      </h2>
+      <div tabindex="-1">
+       <div hidden="">
+        <p>
+         We use some essential cookies to make this website work.
+        </p>
+        <p>
+         We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.
+        </p>
+        <p>
+         We also use cookies set by other sites to help us deliver content from their services.
+        </p>
+       </div>
+       <p>
+        You have accepted additional cookies.
+        <span>
+         You can
+         <a href="https://www.gov.uk/help/cookies">
+          change your cookie settings
+         </a>
+         at any time.
+        </span>
+       </p>
+       <p hidden="">
+        You have rejected additional cookies.
+        <span>
+         You can
+         <a href="https://www.gov.uk/help/cookies">
+          change your cookie settings
+         </a>
+         at any time.
+        </span>
+       </p>
+      </div>
+     </div>
+    </div>
+    <div hidden="">
+     <button type="submit">
+      Accept additional cookies
+     </button>
+     <button type="submit">
+      Reject additional cookies
+     </button>
+     <a href="https://www.gov.uk/help/cookies">
+      View cookies
+     </a>
+    </div>
+    <div>
+     <button>
+      Hide this message
+     </button>
+    </div>
+   </div>
+  </div>
+  <a href="#content">
+   Skip to main content
+  </a>
+  <header>
+   <div>
+    <div>
+     <div>
+      <a href="https://www.gov.uk">
+       <svg focusable="false" height="30" role="img" viewbox="0 0 148 30" width="148" xmlns="http://www.w3.org/2000/svg">
+        <title>
+         GOV.UK
+        </title>
+        <path d="M22.6 10.4c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4m-5.9 6.7c-.9.4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4m10.8-3.7c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s0 2-1 2.4m3.3 4.8c-1 .4-2-.1-2.4-1-.4-.9.1-2 1-2.4.9-.4 2 .1 2.4 1s-.1 2-1 2.4M17 4.7l2.3 1.2V2.5l-2.3.7-.2-.2.9-3h-3.4l.9 3-.2.2c-.1.1-2.3-.7-2.3-.7v3.4L15 4.7c.1.1.1.2.2.2l-1.3 4c-.1.2-.1.4-.1.6 0 1.1.8 2 1.9 2.2h.7c1-.2 1.9-1.1 1.9-2.1 0-.2 0-.4-.1-.6l-1.3-4c-.1-.2 0-.2.1-.3m-7.6 5.7c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s0 2 1 2.4m-5 3c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s.1 2 1 2.4m-3.2 4.8c.9.4 2-.1 2.4-1 .4-.9-.1-2-1-2.4-.9-.4-2 .1-2.4 1s0 2 1 2.4m14.8 11c4.4 0 8.6.3 12.3.8 1.1-4.5 2.4-7 3.7-8.8l-2.5-.9c.2 1.3.3 1.9 0 2.7-.4-.4-.8-1.1-1.1-2.3l-1.2 4c.7-.5 1.3-.8 2-.9-1.1 2.5-2.6 3.1-3.5 3-1.1-.2-1.7-1.2-1.5-2.1.3-1.2 1.5-1.5 2.1-.1 1.1-2.3-.8-3-2-2.3 1.9-1.9 2.1-3.5.6-5.6-2.1 1.6-2.1 3.2-1.2 5.5-1.2-1.4-3.2-.6-2.5 1.6.9-1.4 2.1-.5 1.9.8-.2 1.1-1.7 2.1-3.5 1.9-2.7-.2-2.9-2.1-2.9-3.6.7-.1 1.9.5 2.9 1.9l.4-4.3c-1.1 1.1-2.1 1.4-3.2 1.4.4-1.2 2.1-3 2.1-3h-5.4s1.7 1.9 2.1 3c-1.1 0-2.1-.2-3.2-1.4l.4 4.3c1-1.4 2.2-2 2.9-1.9-.1 1.5-.2 3.4-2.9 3.6-1.9.2-3.4-.8-3.5-1.9-.2-1.3 1-2.2 1.9-.8.7-2.3-1.2-3-2.5-1.6.9-2.2.9-3.9-1.2-5.5-1.5 2-1.3 3.7.6 5.6-1.2-.7-3.1 0-2 2.3.6-1.4 1.8-1.1 2.1.1.2.9-.3 1.9-1.5 2.1-.9.2-2.4-.5-3.5-3 .6 0 1.2.3 2 .9l-1.2-4c-.3 1.1-.7 1.9-1.1 2.3-.3-.8-.2-1.4 0-2.7l-2.9.9C1.3 23 2.6 25.5 3.7 30c3.7-.5 7.9-.8 12.3-.8m28.3-11.6c0 .9.1 1.7.3 2.5.2.8.6 1.5 1 2.2.5.6 1 1.1 1.7 1.5.7.4 1.5.6 2.5.6.9 0 1.7-.1 2.3-.4s1.1-.7 1.5-1.1c.4-.4.6-.9.8-1.5.1-.5.2-1 .2-1.5v-.2h-5.3v-3.2h9.4V28H55v-2.5c-.3.4-.6.8-1 1.1-.4.3-.8.6-1.3.9-.5.2-1 .4-1.6.6s-1.2.2-1.8.2c-1.5 0-2.9-.3-4-.8-1.2-.6-2.2-1.3-3-2.3-.8-1-1.4-2.1-1.8-3.4-.3-1.4-.5-2.8-.5-4.3s.2-2.9.7-4.2c.5-1.3 1.1-2.4 2-3.4.9-1 1.9-1.7 3.1-2.3 1.2-.6 2.6-.8 4.1-.8 1 0 1.9.1 2.8.3.9.2 1.7.6 2.4 1s1.4.9 1.9 1.5c.6.6 1 1.3 1.4 2l-3.7 2.1c-.2-.4-.5-.9-.8-1.2-.3-.4-.6-.7-1-1-.4-.3-.8-.5-1.3-.7-.5-.2-1.1-.2-1.7-.2-1 0-1.8.2-2.5.6-.7.4-1.3.9-1.7 1.5-.5.6-.8 1.4-1 2.2-.3.8-.4 1.9-.4 2.7zM71.5 6.8c1.5 0 2.9.3 4.2.8 1.2.6 2.3 1.3 3.1 2.3.9 1 1.5 2.1 2 3.4s.7 2.7.7 4.2-.2 2.9-.7 4.2c-.4 1.3-1.1 2.4-2 3.4-.9 1-1.9 1.7-3.1 2.3-1.2.6-2.6.8-4.2.8s-2.9-.3-4.2-.8c-1.2-.6-2.3-1.3-3.1-2.3-.9-1-1.5-2.1-2-3.4-.4-1.3-.7-2.7-.7-4.2s.2-2.9.7-4.2c.4-1.3 1.1-2.4 2-3.4.9-1 1.9-1.7 3.1-2.3 1.2-.5 2.6-.8 4.2-.8zm0 17.6c.9 0 1.7-.2 2.4-.5s1.3-.8 1.7-1.4c.5-.6.8-1.3 1.1-2.2.2-.8.4-1.7.4-2.7v-.1c0-1-.1-1.9-.4-2.7-.2-.8-.6-1.6-1.1-2.2-.5-.6-1.1-1.1-1.7-1.4-.7-.3-1.5-.5-2.4-.5s-1.7.2-2.4.5-1.3.8-1.7 1.4c-.5.6-.8 1.3-1.1 2.2-.2.8-.4 1.7-.4 2.7v.1c0 1 .1 1.9.4 2.7.2.8.6 1.6 1.1 2.2.5.6 1.1 1.1 1.7 1.4.6.3 1.4.5 2.4.5zM88.9 28 83 7h4.7l4 15.7h.1l4-15.7h4.7l-5.9 21h-5.7zm28.8-3.6c.6 0 1.2-.1 1.7-.3.5-.2 1-.4 1.4-.8.4-.4.7-.8.9-1.4.2-.6.3-1.2.3-2v-13h4.1v13.6c0 1.2-.2 2.2-.6 3.1s-1 1.7-1.8 2.4c-.7.7-1.6 1.2-2.7 1.5-1 .4-2.2.5-3.4.5-1.2 0-2.4-.2-3.4-.5-1-.4-1.9-.9-2.7-1.5-.8-.7-1.3-1.5-1.8-2.4-.4-.9-.6-2-.6-3.1V6.9h4.2v13c0 .8.1 1.4.3 2 .2.6.5 1 .9 1.4.4.4.8.6 1.4.8.6.2 1.1.3 1.8.3zm13-17.4h4.2v9.1l7.4-9.1h5.2l-7.2 8.4L148 28h-4.9l-5.5-9.4-2.7 3V28h-4.2V7zm-27.6 16.1c-1.5 0-2.7 1.2-2.7 2.7s1.2 2.7 2.7 2.7 2.7-1.2 2.7-2.7-1.2-2.7-2.7-2.7z">
+        </path>
+       </svg>
+      </a>
+     </div>
+    </div>
+    <nav>
+     <h2>
+      Navigation menu
+     </h2>
+     <div>
+      <div>
+       <div>
+        <a hidden="hidden" href="/browse">
+         <span>
+          Menu
+         </span>
+        </a>
+        <button type="button">
+         <span>
+          Menu
+         </span>
+        </button>
+       </div>
+       <div>
+        <button type="button">
+         <span>
+          Search GOV.UK
+         </span>
+         <svg fill="none" focusable="false" height="27" viewbox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3">
+          </circle>
+          <line stroke="currentColor" stroke-width="3" x1="17.8668" x2="26.4475" y1="17.3587" y2="25.9393">
+          </line>
+         </svg>
+         <span focusable="false">
+          ×
+         </span>
+        </button>
+        <a hidden="hidden" href="/search">
+         <span>
+          Search GOV.UK
+         </span>
+         <svg fill="none" focusable="false" height="27" viewbox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3">
+          </circle>
+          <line stroke="currentColor" stroke-width="3" x1="17.8668" x2="26.4475" y1="17.3587" y2="25.9393">
+          </line>
+         </svg>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div hidden="hidden">
+      <div>
+       <div>
+        <div>
+         <h3>
+          Services and information
+         </h3>
+         <ul>
+          <li>
+           <a href="https://www.gov.uk/browse/benefits">
+            Benefits
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/births-deaths-marriages">
+            Births, death, marriages and care
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/business">
+            Business and self-employed
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/childcare-parenting">
+            Childcare and parenting
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/citizenship">
+            Citizenship and living in the UK
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/justice">
+            Crime, justice and the law
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/disabilities">
+            Disabled people
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/driving">
+            Driving and transport
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/education">
+            Education and learning
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/employing-people">
+            Employing people
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/environment-countryside">
+            Environment and countryside
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/housing-local-services">
+            Housing and local services
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/tax">
+            Money and tax
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/abroad">
+            Passports, travel and living abroad
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/visas-immigration">
+            Visas and immigration
+           </a>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/browse/working">
+            Working, jobs and pensions
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <h3>
+          Government activity
+         </h3>
+         <ul>
+          <li>
+           <a href="https://www.gov.uk/government/organisations">
+            Departments
+           </a>
+           <p>
+            Departments, agencies and public bodies
+           </p>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/search/news-and-communications">
+            News
+           </a>
+           <p>
+            News stories, speeches, letters and notices
+           </p>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/search/guidance-and-regulation">
+            Guidance and regulation
+           </a>
+           <p>
+            Detailed guidance, regulations and rules
+           </p>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/search/research-and-statistics">
+            Research and statistics
+           </a>
+           <p>
+            Reports, analysis and official statistics
+           </p>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/search/policy-papers-and-consultations">
+            Policy papers and consultations
+           </a>
+           <p>
+            Consultations and strategy
+           </p>
+          </li>
+          <li>
+           <a href="https://www.gov.uk/search/transparency-and-freedom-of-information-releases">
+            Transparency
+           </a>
+           <p>
+            Data, Freedom of Information releases and corporate reports
+           </p>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div hidden="hidden">
+      <div>
+       <h3>
+        Search
+       </h3>
+       <div>
+        <div>
+         <form action="https://www.gov.uk/search/all" method="get" role="search">
+          <div>
+           <div>
+            <label for="search-main-a68004c7">
+             Search GOV.UK
+            </label>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div role="status">
+                </div>
+                <div role="status">
+                </div>
+               </div>
+               <input autocomplete="off" name="keywords" placeholder="" role="combobox" type="search"/>
+               <ul role="listbox">
+               </ul>
+               <span>
+                When search suggestions are available use up and down arrows to review and enter to select. Touch device users, explore by touch or with swipe gestures.
+               </span>
+              </div>
+             </div>
+             <div>
+              <button enterkeyhint="search" type="submit">
+               Search
+               <svg fill="none" focusable="false" height="27" viewbox="0 0 27 27" width="27" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3">
+                </circle>
+                <line stroke="currentColor" stroke-width="3" x1="17.8668" x2="26.4475" y1="17.3587" y2="25.9393">
+                </line>
+               </svg>
+              </button>
+             </div>
+            </div>
+           </div>
+          </div>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <div>
+   <div>
+   </div>
+  </div>
+  <div>
+   <div>
+    <div>
+     <nav>
+      <ol>
+       <li>
+        <a href="/">
+         Home
+        </a>
+       </li>
+      </ol>
+     </nav>
+    </div>
+   </div>
+   <main role="main">
+    <span>
+    </span>
+    <div>
+     <div>
+      <div>
+       <h1>
+        Sign in to a service
+       </h1>
+      </div>
+      <p>
+       Choose the service you want to sign in to.
+      </p>
+      <div>
+       <div>
+        At the moment, there are separate accounts for signing in to different government services.
+       </div>
+      </div>
+      <div>
+       <div>
+        <h2>
+         Sign in to one of the most viewed services
+        </h2>
+       </div>
+       <ul>
+        <li>
+         <div>
+          <a href="/log-in-register-hmrc-online-services">
+           HMRC services
+          </a>
+         </div>
+         <p>
+          Sign in to use tax services including self-assessment.
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/sign-in-universal-credit">
+           Universal Credit
+          </a>
+         </div>
+         <p>
+          See and update your Universal credit claim.
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/sign-in-visa">
+           How to sign in to continue your visa application
+          </a>
+         </div>
+         <p>
+          Find out how to sign in to complete a visa application you’ve started
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/view-prove-immigration-status">
+           View and prove your immigration status
+          </a>
+         </div>
+         <p>
+          View your immigration status online or prove your status to others.
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/email/manage">
+           Manage your GOV.UK email subscriptions
+          </a>
+         </div>
+         <p>
+          Sign in to manage the emails you get about GOV.UK pages you’re interested in.
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/student-finance-register-login">
+           Student finance login
+          </a>
+         </div>
+         <p>
+          Manage your student finance and account details.
+         </p>
+        </li>
+        <li>
+         <div>
+          <a href="/check-state-pension">
+           Check your State Pension forecast
+          </a>
+         </div>
+         <p>
+          Find out how much State Pension you could get and when.
+         </p>
+        </li>
+       </ul>
+      </div>
+      <div>
+       <h2>
+        If the service you’re looking for is not listed
+       </h2>
+      </div>
+      <p>
+       If you’re looking for a different service, you can search for it.
+      </p>
+      <form action="/search/all" method="GET" role="search">
+       <input name="content_purpose_supergroup[]" type="hidden" value="services"/>
+       <input name="content_purpose_supergroup[]" type="hidden" value="guidance_and_regulation"/>
+       <div>
+        <label for="input-a7a6f9cc">
+         Search GOV.UK for a service
+        </label>
+        <span>
+        </span>
+        <input name="keywords" spellcheck="false" type="search"/>
+       </div>
+       <button type="submit">
+        Search
+       </button>
+      </form>
+     </div>
+    </div>
+   </main>
+  </div>
+  <div>
+   <div>
+    <div tabindex="-1">
+     <div>
+      <div>
+       <div>
+        <h2>
+         Is this page useful?
+        </h2>
+        <ul>
+         <li hidden="">
+          <a hidden="hidden" href="/contact/govuk" role="button">
+           Maybe
+          </a>
+         </li>
+         <li>
+          <button>
+           Yes
+           <span>
+            this page is useful
+           </span>
+          </button>
+         </li>
+         <li>
+          <button>
+           No
+           <span>
+            this page is not useful
+           </span>
+          </button>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div hidden="" role="alert">
+       Thank you for your feedback
+      </div>
+      <div>
+       <button>
+        Report a problem with this page
+       </button>
+      </div>
+     </div>
+    </div>
+    <form action="https://www.gov.uk/contact/govuk/problem_reports" hidden="" method="post">
+     <div>
+      <div>
+       <div hidden="" tabindex="-1">
+       </div>
+       <input name="url" type="hidden" value="https://www.gov.uk/sign-in?continue=/search"/>
+       <h3>
+        Help us improve GOV.UK
+       </h3>
+       <p>
+        Don’t include personal or financial information like your National Insurance number or credit card details.
+       </p>
+       <div>
+        <label for="giraffe">
+         This field is for robots only. Please leave blank
+        </label>
+        <input autocomplete="off" name="giraffe" pattern=".{0}" tabindex="-1" type="text"/>
+       </div>
+       <div>
+        <label for="textarea-4c2be3bd">
+         What were you doing?
+        </label>
+        <textarea name="what_doing" rows="3" spellcheck="true"></textarea>
+       </div>
+       <div>
+        <label for="textarea-9b32722f">
+         What went wrong?
+        </label>
+        <textarea name="what_wrong" rows="3" spellcheck="true"></textarea>
+       </div>
+       <button type="submit">
+        Send
+       </button>
+       <button>
+        Cancel
+       </button>
+      </div>
+     </div>
+     <input name="javascript_enabled" type="hidden" value="true"/>
+     <input name="referrer" type="hidden" value="unknown"/>
+     <input name="timer" type="hidden" value="0"/>
+    </form>
+    <div hidden="">
+     <div>
+      <div>
+       <div hidden="" tabindex="-1">
+       </div>
+       <h3>
+        Help us improve GOV.UK
+       </h3>
+       <p>
+        To help us improve GOV.UK, we’d like to know more about your visit today.
+        <a href="https://www.smartsurvey.co.uk/s/gov-uk-banner/?c=/sign-in" rel="noopener noreferrer external" target="_blank">
+         Please fill in this survey (opens in a new tab
+         <noscript>
+          and requires JavaScript
+         </noscript>
+         )
+        </a>
+        .
+       </p>
+       <button>
+        Cancel
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <div>
+    <div>
+     <div>
+      <h2>
+       Services and information
+      </h2>
+      <ul>
+       <li>
+        <a href="https://www.gov.uk/browse/benefits">
+         Benefits
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/births-deaths-marriages">
+         Births, death, marriages and care
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/business">
+         Business and self-employed
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/childcare-parenting">
+         Childcare and parenting
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/citizenship">
+         Citizenship and living in the UK
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/justice">
+         Crime, justice and the law
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/disabilities">
+         Disabled people
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/driving">
+         Driving and transport
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/education">
+         Education and learning
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/employing-people">
+         Employing people
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/environment-countryside">
+         Environment and countryside
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/housing-local-services">
+         Housing and local services
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/tax">
+         Money and tax
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/abroad">
+         Passports, travel and living abroad
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/visas-immigration">
+         Visas and immigration
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/browse/working">
+         Working, jobs and pensions
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h2>
+       Government activity
+      </h2>
+      <ul>
+       <li>
+        <a href="https://www.gov.uk/government/organisations">
+         Departments
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/search/news-and-communications">
+         News
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/search/guidance-and-regulation">
+         Guidance and regulation
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/search/research-and-statistics">
+         Research and statistics
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/search/policy-papers-and-consultations">
+         Policy papers and consultations
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/search/transparency-and-freedom-of-information-releases">
+         Transparency
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/government/how-government-works">
+         How government works
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/government/get-involved">
+         Get involved
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+    <hr/>
+    <div>
+     <div>
+      <h2>
+       Support links
+      </h2>
+      <ul>
+       <li>
+        <a href="https://www.gov.uk/help">
+         Help
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/help/privacy-notice">
+         Privacy
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/help/cookies">
+         Cookies
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/help/accessibility-statement">
+         Accessibility statement
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/contact">
+         Contact
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/help/terms-conditions">
+         Terms and conditions
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/cymraeg" lang="cy">
+         Rhestr o Wasanaethau Cymraeg
+        </a>
+       </li>
+       <li>
+        <a href="https://www.gov.uk/government/organisations/government-digital-service">
+         Government Digital Service
+        </a>
+       </li>
+      </ul>
+      <svg focusable="false" height="17" viewbox="0 0 483.2 195.7" width="41" xmlns="http://www.w3.org/2000/svg">
+       <path d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" fill="currentColor">
+       </path>
+      </svg>
+      <span>
+       All content is available under the
+       <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">
+        Open Government Licence v3.0
+       </a>
+       , except where otherwise stated
+      </span>
+     </div>
+     <div>
+      <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+       © Crown copyright
+      </a>
+     </div>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

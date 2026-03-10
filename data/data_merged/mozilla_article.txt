@@ -1,0 +1,6 @@
+Purpose: To provide comprehensive documentation and reference for CSS grid layout to web developers and designers
+CSS 그리드 레이아웃에 대한 포괄적인 문서와 참고 자료를 웹 개발자와 디자이너에게 제공하기 위해
+Page Type: Documentation page
+문서 페이지
+Domain: Web development
+웹 개발

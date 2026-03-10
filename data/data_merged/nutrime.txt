@@ -1,0 +1,6 @@
+Purpose: To allow users to book nutrition and wellness consultations and packages, targeting health-conscious individuals seeking personalized dietary advice and plans.
+   사용자가 개인화된 식이 조언과 계획을 찾는 건강에 민감한 개인을 대상으로 영양 및 웰니스 상담과 패키지를 예약할 수 있도록 허용합니다.
+Page Type: Booking page
+   예약 페이지
+Domain: Health and wellness
+   건강 및 웰니스

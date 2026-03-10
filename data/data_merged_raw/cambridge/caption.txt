@@ -1,0 +1,11 @@
+1. To showcase the University of Cambridge's research, education offerings, and campus life to prospective students, researchers, and the general public.
+
+2. Homepage
+
+3. Education
+
+4. (a) Clear navigation menu with search functionality
+(b) Featured research highlights and news stories
+(c) Prominent calls-to-action for undergraduate and postgraduate programs
+(d) Grid layout showcasing different aspects of university life
+(e) Social media integration and follow buttons

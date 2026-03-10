@@ -1,0 +1,11 @@
+1. To provide a platform for podcast episodes featuring interviews with physicist David Deutsch, targeting an audience interested in physics, philosophy, and scientific theories.
+
+2. Blog post / Podcast episode list
+
+3. Education / Science
+
+4. (a) Clear navigation menu with podcast platforms (Apple, Google, Spotify, etc.)
+(b) Episode titles and descriptions for easy browsing
+(c) Podcast duration and release date information
+(d) "Get podcast" dropdown menu for each episode
+(e) "More" link to expand episode descriptions

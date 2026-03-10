@@ -1,0 +1,13 @@
+Caption given UI screenshot with
+1. Main purpose and intent of the UI, regarding the target audience and actual use case.
+2. Page type of the UI, such as a landing page, blog post, product page, etc. (in short-answer format)
+3. Domain of the UI, such as e-commerce, social media, education, etc. (in short-answer format)
+4. Top 5 important visual elements in the UI design, that are crucial for more user engagement and usability. But you should EXCLUDE any elements about the EXACT IMAGES in the UI.
+
+Answer format (no extra explanation, just one newline after each answer):
+1. <Purpose/Intent>
+2. <Page Type>
+3. <Domain>
+4. (a) <Element (a)>
+(b) <Element (b)>
+(c) <Element (c)>

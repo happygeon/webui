@@ -1,0 +1,6 @@
+Purpose: To provide a centralized platform for browsing and purchasing theatre tickets in Brisbane, catering to theatre enthusiasts and event-goers looking for local performances.
+브리즈번에서 극장 티켓을 탐색하고 구매할 수 있는 중앙 집중식 플랫폼을 제공하여 지역 공연을 찾는 극장 애호가와 이벤트 참석자를 대상으로 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Entertainment ticketing
+엔터테인먼트 티켓팅

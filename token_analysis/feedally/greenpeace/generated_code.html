@@ -1,0 +1,101 @@
+**Thought:** The current HTML document lacks a single `main` landmark and does not include a level-one heading. These elements are crucial for improving accessibility and user experience.
+
+**Action:** I will add a `main` landmark and ensure there is at least one level-one heading in the document.
+
+**Observation:** After applying these changes, the document should meet the requirements specified in the accessibility report.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Greenpeace: Collective Action for Global Change</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc;
+            color: #333;
+        }
+    .hero {
+            background-image: url('greenpeace-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+    .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+    .hero p {
+            font-size: 1.5rem;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+    .cta-button {
+            @apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full;
+        }
+    .features {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+    .feature {
+            @apply flex items-center mb-6;
+        }
+    .feature img {
+            @apply mr-4;
+        }
+    .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="container mx-auto">
+            <h1>Join Greenpeace: Collective Action for Global Change</h1>
+            <p>Together, we can make a difference in protecting our planet.</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </header>
+    <main role="main" class="features container mx-auto">
+        <h1>Our Mission</h1>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 feature">
+                <img src="earth.png" alt="Earth icon">
+                <h3>Protect Our Planet</h3>
+                <p>We work to preserve biodiversity, stop climate change, and protect natural resources.</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 feature">
+                <img src="people.png" alt="People icon">
+                <h3>Empower Communities</h3>
+                <p>We support local communities and empower them to take action on environmental issues.</p>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 feature">
+                <img src="planet.png" alt="Planet icon">
+                <h3>Educate and Advocate</h3>
+                <p>We educate people about the importance of environmental stewardship and advocate for policy changes.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Greenpeace. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+This code now includes a single `main` landmark (`<main role="main">`) and ensures that the page contains a level-one heading (`<h1>`), addressing the issues raised in the accessibility report.

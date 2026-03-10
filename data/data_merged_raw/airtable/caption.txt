@@ -1,0 +1,11 @@
+1. To introduce and promote Airtable's AI-powered app building platform to potential users, emphasizing quick and business-oriented app creation.
+
+2. Landing page
+
+3. Software development / Productivity
+
+4. (a) Clear, bold headline highlighting the key value proposition
+(b) Prominent "Sign up for free" call-to-action button
+(c) Interactive demo showcasing the app creation process
+(d) Navigation menu for easy access to different sections
+(e) Testimonials or examples of what others are building with the platform

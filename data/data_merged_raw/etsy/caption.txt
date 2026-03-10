@@ -1,0 +1,8 @@
+1. To showcase and promote personalized, handmade products to consumers seeking unique, custom-made items for themselves or as gifts.
+2. Homepage
+3. E-commerce
+4. (a) Clear, prominent search bar for easy product discovery
+(b) Navigation menu with categories for organized browsing
+(c) Featured product banner with call-to-action button
+(d) Wishlist and shopping cart icons for convenient user actions
+(e) Featured interests section with clickable category tiles

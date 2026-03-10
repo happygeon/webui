@@ -1,0 +1,11 @@
+1. To provide free, comprehensive encyclopedic information to a global audience of knowledge seekers and contributors
+
+2. Homepage
+
+3. Education/Reference
+
+4. (a) Clear navigation menu and search bar at the top
+(b) Featured article section with summary and image
+(c) "In the news" section with current events
+(d) "On this day" section highlighting historical events
+(e) Language options and sister project links at the bottom

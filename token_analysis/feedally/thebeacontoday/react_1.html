@@ -1,0 +1,91 @@
+### Thought:
+The accessibility report indicates two primary issues:
+1. The document lacks a single `main` landmark.
+2. The page does not contain a level-one heading.
+
+To resolve these issues, we need to add a `main` landmark and ensure that there is at least one level-one heading in the document.
+
+### Action:
+1. Add a `main` landmark by wrapping the main content within a `<main>` element.
+2. Ensure that the document contains a level-one heading by adding an `<h1>` element either in the `<header>` or as part of the main content.
+
+### Observation:
+We will verify if these changes resolve the issues without altering the original structure and functionality of the page.
+
+### Corrected HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Beacon Today</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .focus-visible {
+            outline: 2px solid #1a202c;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">The Beacon Today</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500 focus-visible">About</a></li>
+                    <li><a href="#staff" class="hover:text-blue-500 focus-visible">Staff</a></li>
+                    <li><a href="#reporters" class="hover:text-blue-500 focus-visible">Reporters</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-8">
+        <section id="about" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Welcome to The Beacon Today</h2>
+            <p>The Beacon Today is a student-run news organization at Palm Beach Atlantic University dedicated to providing accurate, timely, and engaging news coverage.</p>
+        </section>
+
+        <section id="staff" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Meet Our Staff</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Example Staff Member -->
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <img src="path-to-staff-member-image.jpg" alt="John Doe" class="w-full h-48 object-cover rounded-t-lg" />
+                    <h3 class="text-xl font-semibold mt-2">John Doe</h3>
+                    <p class="text-gray-600">Editor-in-Chief</p>
+                    <p class="mt-2">John has been with The Beacon Today since its inception in 2020. He holds a degree in Journalism from PBAU and is passionate about fostering a platform for diverse voices.</p>
+                </div>
+                <!-- Add more staff members as needed -->
+            </div>
+        </section>
+
+        <section id="reporters" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Our Reporters</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Example Reporter -->
+                <div class="bg-white p-4 shadow rounded-lg">
+                    <img src="path-to-reporter-image.jpg" alt="Jane Smith" class="w-full h-48 object-cover rounded-t-lg" />
+                    <h3 class="text-xl font-semibold mt-2">Jane Smith</h3>
+                    <p class="text-gray-600">Reporter</p>
+                    <p class="mt-2">Jane covers local events and features. She graduated from PBAU with a major in Public Relations and has won several awards for her work.</p>
+                </div>
+                <!-- Add more reporters as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-md p-4 text-center">
+        <p>&copy; 2023 The Beacon Today. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+In this corrected version:
+- A `<main>` element wraps around the main content, providing a single `main` landmark.
+- An `<h1>` element is added within the `<header>` to meet the requirement of having at least one level-one heading. This helps in better identifying the main purpose of the page.

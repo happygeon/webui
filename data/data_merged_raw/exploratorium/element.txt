@@ -1,0 +1,9 @@
+(a) Interactive main navigation menu
+
+(b) Prominent call-to-action buttons (Buy Tickets, Donate)
+
+(c) Engaging background imagery with overlay text
+
+(d) Search feature for easy accessibility
+
+(e) Clear and concise header structure

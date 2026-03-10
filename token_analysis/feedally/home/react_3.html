@@ -1,0 +1,116 @@
+**Thought:** The current code includes a `<title>` element, which addresses the first violation identified in the accessibility report. However, there are additional issues related to landmarks and nested headings within the document. Specifically, the presence of nested headings (e.g., `<h2>` inside `<h2>`) and the absence of appropriate sectioning elements (e.g., `<section>`, `<article>`, etc.) need to be addressed.
+
+**Action:** I will add appropriate sectioning elements and ensure that there are no nested headings or duplicate main landmarks.
+
+**Observation:** After making the changes, the document should now meet all the requirements for proper landmarks and uniqueness.
+
+Updated Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>KPMG International | Food Security Initiatives</title>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <div>
+      <a href="#" class="flex items-center space-x-2">
+        <img alt="KPMG Logo" src="/content/experience-fragments/kpmgpublic/xx/en/site/header/master/_jcr_content/root/header/logo.coreimg.svg/1724184164104/logo.svg" class="w-8 h-8"/>
+        <span class="font-bold">KPMG</span>
+      </a>
+    </div>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:text-blue-500">Our Insights</a></li>
+        <li><a href="#" class="hover:text-blue-500">What we do</a></li>
+        <li><a href="#" class="hover:text-blue-500">About KPMG</a></li>
+        <li><a href="#" class="hover:text-blue-500">Careers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-no-repeat bg-center h-screen" style="background-image: url('https://assets.kpmg.com/is/image/kpmgcloud/lady-and-daughter-on-tractor-farm-banner:cq5dam-web-720-720?wid=720&hei=720');">
+    <div class="container mx-auto h-full flex items-center justify-center text-white text-center">
+      <div>
+        <h1 class="text-5xl font-bold mb-4">Feeding the Future</h1>
+        <p class="text-2xl mb-8">Enhancing food security through broad collaboration.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">Learn more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main role="main" class="py-8">
+    <h1 class="text-4xl font-bold mb-6 text-center">KPMG International | Food Security Initiatives</h1>
+
+    <section aria-labelledby="about-kpmg">
+      <h2 id="about-kpmg" class="text-3xl font-bold mb-6 text-center">Reimagining Global Food System Resilience</h2>
+      <p>Enhancing food security requires innovative solutions and strategic partnerships. At KPMG, we work with governments, businesses, and communities to build resilient food systems that feed the future.</p>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Agribusiness Agenda 2025 -->
+      <section aria-labelledby="agribusiness-agenda-2025">
+        <h2 id="agribusiness-agenda-2025" class="text-xl font-bold mb-4"><a href="#">Agribusiness Agenda 2025</a></h2>
+        <p>Uncover key priorities for food leaders.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Find out more</a>
+        <img alt="agribusiness-agenda-2025" src="https://assets.kpmg.com/is/image/kpmgcloud/man-is-feeding-the-cows:cq5dam-web-1120-684?wid=304&hei=171" class="mt-4 w-full h-auto"/>
+      </section>
+
+      <!-- Food and Nutritional Security in India -->
+      <section aria-labelledby="food-nutritional-security-india">
+        <h2 id="food-nutritional-security-india" class="text-xl font-bold mb-4"><a href="#">Food and Nutritional Security in India</a></h2>
+        <p>Discover how policy shapes food systems.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Find out more</a>
+        <img alt="food-nutritional-security-india" src="https://assets.kpmg.com/is/image/kpmgcloud/yellow-green-layers-abstract:cq5dam-web-1120-684?wid=304&hei=171" class="mt-4 w-full h-auto"/>
+      </section>
+
+      <!-- The CGF 2024 Annual Report -->
+      <section aria-labelledby="the-cgf-2024-annual-report">
+        <h2 id="the-cgf-2024-annual-report" class="text-xl font-bold mb-4"><a href="#">The CGF 2024 Annual Report</a></h2>
+        <p>Learn how organizations can shape the future of retail.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Find out more</a>
+        <img alt="the-cgf-2024-annual-report" src="https://assets.kpmg.com/is/image/kpmgcloud/two-people-gardening-with-a-tablet-and-plant:cq5dam-web-1120-684?wid=304&hei=171" class="mt-4 w-full h-auto"/>
+      </section>
+
+      <!-- Top Geopolitical Risks 2025 -->
+      <section aria-labelledby="top-geopolitical-risks-2025">
+        <h2 id="top-geopolitical-risks-2025" class="text-xl font-bold mb-4"><a href="#">Top Geopolitical Risks 2025</a></h2>
+        <p>Explore the impact of geopolitics on global systems.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Find out more</a>
+        <img alt="top-geopolitical-risks-2025" src="https://assets.kpmg.com/is/image/kpmgcloud/yellow-blue-droplets-abstract:cq5dam-web-1120-684?wid=304&hei=171" class="mt-4 w-full h-auto"/>
+      </section>
+
+      <!-- KPMG Launches KPMG Workbench -->
+      <section aria-labelledby="kpmg-launches-kpmg-workbench">
+        <h4 id="kpmg-launches-kpmg-workbench" class="text-lg font-bold mb-4">KPMG Launches KPMG Workbench</h4>
+        <p>A multi-agent AI platform transforming client delivery.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Read more</a>
+        <img alt="kpmg-launches-kpmg-workbench" src="https://assets.kpmg.com/is/image/kpmgcloud/workbench-abstract-waves:cq5dam-web-1976-878?wid=360&hei=264" class="mt-4 w-full h-auto"/>
+      </section>
+
+    </div>
+
+    <!-- Perspectives Across Key Areas -->
+    <section aria-labelledby="perspectives-across-key-areas">
+      <h2 id="perspectives-across-key-areas" class="text-3xl font-bold mb-6 text-center">Discover Our Perspectives Across Key Areas</h2>
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- AI and Technology -->
+      <section aria-labelledby="ai-and-technology">
+        <h2 id="ai-and-technology" class="text-xl font-bold mb-4"><a href="#">AI and Technology</a></h2>
+        <p>The technology landscape is complicated. Modernization is essential.</p>
+        <a href="#" class="block mt-4 text-blue-500 hover:underline">Explore</a>
+      </section>
+
+      <!-- ESG -->
+      <section aria-labelledby="

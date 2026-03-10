@@ -1,0 +1,11 @@
+1. To showcase and provide access to interactive educational content for curious and playful individuals interested in exploring topics like anxiety, trust, and learning through play.
+
+2. Personal portfolio/landing page
+
+3. Education/Interactive media
+
+4. (a) Cartoon avatar and friendly introduction
+(b) Clear navigation menu with blog, FAQ, and donation links
+(c) Newsletter and RSS subscription options
+(d) Grid layout showcasing interactive projects
+(e) Consistent use of playful typography and color scheme

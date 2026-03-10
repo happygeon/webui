@@ -1,0 +1,110 @@
+Your corrections address the identified issues by adding a `<main>` tag and ensuring there is at least one `<h1>` element within it. Here’s the final corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Corner - Recipe Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .focus-visible:focus {
+            outline: 2px solid #1e40af;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Cooking Corner</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#recipes" class="hover:text-blue-500">Recipes</a></li>
+                    <li><a href="#tips" class="hover:text-blue-500">Cooking Tips</a></li>
+                    <li><a href="#ideas" class="hover:text-blue-500">Meal Ideas</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-10">
+        <section id="hero" class="container mx-auto max-w-4xl bg-white rounded-lg shadow-md p-6">
+            <h1 class="text-4xl font-extrabold mb-4">Welcome to Cooking Corner!</h1>
+            <p class="text-xl mb-6">Inspire your meals with our delicious recipes, practical cooking tips, and exciting meal ideas.</p>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus-visible">Get Started</button>
+        </section>
+
+        <section id="recipes" class="container mx-auto mt-10">
+            <h2 class="text-3xl font-semibold mb-4">Featured Recipes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="recipe1.jpg" alt="Recipe 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">Spaghetti Carbonara</h3>
+                        <p class="text-gray-600">A classic Italian dish made with eggs, pancetta, cheese, and spaghetti.</p>
+                        <a href="#" class="mt-4 block text-blue-500 hover:text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <!-- Add more recipe cards as needed -->
+            </div>
+        </section>
+
+        <section id="tips" class="container mx-auto mt-10">
+            <h2 class="text-3xl font-semibold mb-4">Cooking Tips</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">How to Blanch Vegetables</h3>
+                        <p class="text-gray-600">Learn how to blanch vegetables for crisp and colorful side dishes.</p>
+                        <a href="#" class="mt-4 block text-blue-500 hover:text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <!-- Add more tip articles as needed -->
+            </div>
+        </section>
+
+        <section id="ideas" class="container mx-auto mt-10">
+            <h2 class="text-3xl font-semibold mb-4">Meal Ideas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <div class="p-4">
+                        <h3 class="text-xl font-medium mb-2">Weeknight Pasta Night</h3>
+                        <p class="text-gray-600">Quick and easy pasta dishes that can be ready in under 30 minutes.</p>
+                        <a href="#" class="mt-4 block text-blue-500 hover:text-blue-600">Read More</a>
+                    </div>
+                </article>
+                <!-- Add more meal idea articles as needed -->
+            </div>
+        </section>
+
+        <section id="contact" class="container mx-auto mt-10">
+            <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input type="text" id="name" name="name" required class="border border-gray-300 px-3 py-2 rounded w-full">
+
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" required class="border border-gray-300 px-3 py-2 rounded w-full">
+
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" required class="border border-gray-300 px-3 py-2 rounded w-full"></textarea>
+
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus-visible">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-md p-4 text-center mt-10">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Cooking Corner. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+This HTML now includes a `<main>` tag to encapsulate the primary content of the page and ensures there is a single `<h1>` heading inside it, resolving all the violations reported in the accessibility assessment.

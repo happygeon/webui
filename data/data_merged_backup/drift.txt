@@ -1,0 +1,3 @@
+1. To inform Drift customers about the migration of Drift's website to Salesloft and guide them on how to access their accounts and resources through the new platform.
+2. Landing page
+3. Software as a Service (SaaS)

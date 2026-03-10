@@ -1,0 +1,28 @@
+**Thought:** The accessibility report indicates that the `<html>` element is missing a `lang` attribute. This attribute is critical for specifying the language of the content, which aids assistive technologies in understanding the text correctly.
+
+**Action:** To address this violation, we will add the `lang` attribute to the `<html>` element.
+
+Modified Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Page</title>
+</head>
+<body>
+    <header role="banner">
+        <h1>Main Heading</h1>
+    </header>
+    <main role="main">
+        <!-- Main content goes here -->
+    </main>
+    <footer role="contentinfo">
+        <!-- Footer content goes here -->
+    </footer>
+</body>
+</html>
+```
+
+**Observation:** After adding the `lang="en"` attribute to the `<html>` element, the document now meets the requirement specified in the accessibility report. The `lang` attribute clearly identifies the language of the content as English, which enhances accessibility for screen readers and other assistive technologies.

@@ -1,0 +1,50 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "ui_reasoning_v1.01",
+  "dataset_size": 17676751,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/smirki/UI_REASONING_v1.01@3884d702ac8b8582f5eb7563080edfebd141f53e/chats.parquet": {
+      "num_bytes": 5588071,
+      "checksum": null
+    }
+  },
+  "download_size": 5588071,
+  "features": {
+    "id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reasoning": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "answer": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 23264822,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 17676751,
+      "num_examples": 773,
+      "dataset_name": "ui_reasoning_v1.01"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

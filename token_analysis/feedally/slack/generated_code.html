@@ -1,0 +1,177 @@
+The provided HTML code already includes a `<main>` element and a level-one heading (`<h1>`), so it meets the requirements of the accessibility report. Therefore, no further changes are necessary.
+
+Here is the final HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack - Transforming Team Collaboration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .bg-gradient-custom {
+            background: linear-gradient(90deg, #7C3AED, #FF375F);
+        }
+     .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 768px) {
+         .hero-content h1 {
+                font-size: 2rem;
+            }
+         .hero-content p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+        <div class="logo">
+            <img src="path/to/slack-logo.png" alt="Slack Logo" class="h-8">
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="text-gray-700 hover:text-blue-600">Features</a></li>
+                <li><a href="#integrations" class="text-gray-700 hover:text-blue-600">Integrations</a></li>
+                <li><a href="#pricing" class="text-gray-700 hover:text-blue-600">Pricing</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="login-btn" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Login</button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero bg-gradient-custom py-24">
+            <div class="container mx-auto text-white hero-content text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-shadow-custom mb-4">Transform your team's communication.</h1>
+                <p class="text-xl md:text-2xl mb-8">Effortlessly collaborate, manage tasks, and integrate with AI agents using Slack.</p>
+                <button id="signup-btn" class="bg-white text-black py-2 px-6 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign Up Free</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 text-center">Key Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="feature-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Real-time Messaging</h3>
+                        <p class="mb-4">Chat in real-time with your team members.</p>
+                        <img src="path/to/messaging-icon.svg" alt="Messaging Icon" class="w-16 h-16 mx-auto">
+                    </div>
+                    <div class="feature-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Task Management</h3>
+                        <p class="mb-4">Assign and track tasks efficiently.</p>
+                        <img src="path/to/task-management-icon.svg" alt="Task Management Icon" class="w-16 h-16 mx-auto">
+                    </div>
+                    <div class="feature-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">AI Agents</h3>
+                        <p class="mb-4">Integrate AI agents for automated responses and support.</p>
+                        <img src="path/to/ai-agent-icon.svg" alt="AI Agent Icon" class="w-16 h-16 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrations Section -->
+        <section id="integrations" class="py-12 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 text-center">Integrations</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="integration-card bg-white shadow-md p-6 text-center">
+                        <img src="path/to/google-calendar-icon.svg" alt="Google Calendar Integration" class="w-20 h-20 mx-auto">
+                        <p class="mt-4">Google Calendar</p>
+                    </div>
+                    <div class="integration-card bg-white shadow-md p-6 text-center">
+                        <img src="path/to/slides-icon.svg" alt="Google Slides Integration" class="w-20 h-20 mx-auto">
+                        <p class="mt-4">Google Slides</p>
+                    </div>
+                    <div class="integration-card bg-white shadow-md p-6 text-center">
+                        <img src="path/to/jira-icon.svg" alt="Jira Integration" class="w-20 h-20 mx-auto">
+                        <p class="mt-4">Jira</p>
+                    </div>
+                    <div class="integration-card bg-white shadow-md p-6 text-center">
+                        <img src="path/to/github-icon.svg" alt="GitHub Integration" class="w-20 h-20 mx-auto">
+                        <p class="mt-4">GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 text-center">Pricing</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="price-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Free Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$0/month</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>Up to 5 users</li>
+                            <li>Basic messaging features</li>
+                            <li>Unlimited public channels</li>
+                        </ul>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign Up</button>
+                    </div>
+                    <div class="price-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Professional Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$10/month/user</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>All Free Plan features</li>
+                            <li>Advanced task management tools</li>
+                            <li>Priority customer support</li>
+                        </ul>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign Up</button>
+                    </div>
+                    <div class="price-card bg-white shadow-md p-6 text-center">
+                        <h3 class="text-xl font-bold mb-4">Enterprise Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$20/month/user</p>
+                        <ul class="list-disc list-inside mb-4">
+                            <li>All Professional Plan features</li>
+                            <li>Custom branding options</li>
+                            <li>24/7 dedicated support</li>
+                        </ul>
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-semibold mb-8 text-center">Get Started Today</h2>
+                <form action="#" method="post" class="flex flex-col max-w-md mx-auto">
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                    <input type="text" id="name" name="name" required class="border border-gray-300 rounded-md p-2 mb-4 focus:outline-none focus:border-blue-500">
+                    
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="border border-gray-300 rounded-md p-2 mb-4 focus:outline-none focus:border-blue-500">
+                    
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="border border-gray-300 rounded-md p-2 mb-4 focus:outline-none focus:border-blue-500"></textarea>
+                    
+                    <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-white text-center">
+        <p>&copy; 2023 Slack Inc. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add JavaScript for modal functionality or other interactivity if needed
+    </script>
+</body>
+</html>
+```

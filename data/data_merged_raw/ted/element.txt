@@ -1,0 +1,5 @@
+(a) Prominent heading with clear apology  
+(b) Friendly explanatory text for user guidance  
+(c) Visually accessible search bar with placeholder text  
+(d) Subtle indication of error code for context  
+(e) Helpful navigation links for user redirection

@@ -1,0 +1,9 @@
+(a) Welcoming Navigation Bar with Sign In/Register Options
+
+(b) Prominent eBay Logo with Home Link
+
+(c) Interactive Search Bar with Advanced Search Option
+
+(d) Accessible Daily Deals Link
+
+(e) Clear Help & Contact Link

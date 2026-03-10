@@ -1,0 +1,6 @@
+Purpose: To provide web developers and designers with articles, resources, and information on various front-end development topics.
+웹 개발자와 디자이너에게 다양한 프론트엔드 개발 주제에 대한 기사, 자료 및 정보를 제공하기 위해.
+Page Type: Blog homepage
+블로그 홈페이지
+Domain: Web development education
+웹 개발 교육

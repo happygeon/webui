@@ -1,0 +1,11 @@
+1. To provide news, opinion pieces, and analysis on current events to an Indian audience, encouraging engagement through membership
+
+2. Homepage
+
+3. News and media
+
+4. (a) Prominent call-to-action buttons for membership signup
+(b) Clear navigation menu with categorized content sections
+(c) Featured article banners with eye-catching headlines
+(d) Video content section with thumbnail previews
+(e) Footer with additional navigation links and social media icons

@@ -1,0 +1,6 @@
+Purpose: To provide a platform for podcast episodes featuring interviews with physicist David Deutsch, targeting an audience interested in physics, philosophy, and scientific theories.
+물리학자 데이비드 도이치와의 인터뷰를 포함한 팟캐스트 에피소드를 위한 플랫폼을 제공하여 물리학, 철학 및 과학 이론에 관심이 있는 청중을 대상으로 합니다.
+Page Type: Blog post / Podcast episode list
+블로그 게시물 / 팟캐스트 에피소드 목록
+Domain: Education / Science
+교육 / 과학

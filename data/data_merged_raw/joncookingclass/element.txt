@@ -1,0 +1,9 @@
+(a) Intuitive Navigation Bar: A clean and organized horizontal layout that facilitates easy access to major sections like Home, About, and Book Now.
+
+(b) Prominent Call-to-Action Buttons: Boldly styled, ensuring clear visibility and encouraging immediate action for booking.
+
+(c) Engaging Imagery Placement: Enhances visual appeal and context, placed strategically to draw attention.
+
+(d) Clear Contact Information: Readily available for user convenience, increasing trust and usability.
+
+(e) Descriptive Header Section: Clearly communicates the main purpose and brand identity immediately upon entering.

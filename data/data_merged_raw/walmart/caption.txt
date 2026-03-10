@@ -1,0 +1,11 @@
+1. To provide Walmart customers with an easy-to-navigate online shopping experience, showcasing various product categories, deals, and services.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Clear and prominent search bar at the top
+(b) Navigation menu with department categories
+(c) Grid layout of promotional banners and product categories
+(d) Shopping cart icon with item count
+(e) Location selector for pickup or delivery options

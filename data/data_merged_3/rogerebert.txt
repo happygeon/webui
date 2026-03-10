@@ -1,0 +1,6 @@
+Purpose: A movie review and recommendation website for film enthusiasts to discover, rate, and discuss movies across various genres and time periods.
+영화 애호가들이 다양한 장르와 시대의 영화를 발견하고 평가하며 토론할 수 있는 영화 리뷰 및 추천 웹사이트입니다.
+Page Type: Homepage
+홈페이지
+Domain: Entertainment/Film
+엔터테인먼트/영화

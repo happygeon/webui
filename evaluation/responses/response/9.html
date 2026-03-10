@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Car Dealership</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .vehicle-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 10px;
+            }
+            .vehicle {
+                border: 1px solid #ccc;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .specs {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Car Dealership</h1>
+        <div>
+            <!-- Responsive Vehicle Grid -->
+            <div class="vehicle-grid">
+                <div class="vehicle" onclick="toggleSpecs(this)">
+                    <h2>Car Model 1</h2>
+                    <div class="specs">
+                        <p>Specification details...</p>
+                    </div>
+                </div>
+                <div class="vehicle" onclick="toggleSpecs(this)">
+                    <h2>Car Model 2</h2>
+                    <div class="specs">
+                        <p>Specification details...</p>
+                    </div>
+                </div>
+                <!-- Add more vehicles as needed -->
+            </div>
+        </div>
+        <script>
+            function toggleSpecs(element) {
+                var specs = element.querySelector('.specs');
+                if (specs.style.display === 'none' || specs.style.display === '') {
+                    specs.style.display = 'block';
+                } else {
+                    specs.style.display = 'none';
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,154 @@
+The provided HTML code already includes a `<main>` element that wraps around the primary content of the page and contains a level-one heading (`<h1>`). Therefore, the recommendations from the accessibility report have been fully addressed.
+
+Here is the complete, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate - Your Ultimate Productivity Partner</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+     .focus-visible:focus {
+            outline: 2px solid #60a5fa;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-700">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">TaskMate</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+                    <li><a href="#pricing" class="hover:text-blue-500">Pricing</a></li>
+                    <li><a href="#testimonials" class="hover:text-blue-500">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-gradient-to-br from-teal-500 via-green-500 to-blue-500 text-white py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl font-extrabold sm:text-5xl md:text-6xl">Unlock productivity unleash potential</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg sm:text-xl md:text-2xl">Effortlessly manage your tasks, notes, and projects with TaskMate.</p>
+                <button class="mt-6 px-4 py-2 bg-white text-teal-500 hover:bg-teal-100 rounded-full transition duration-300">Get Started for Free</button>
+            </div>
+        </section>
+
+        <section id="features" class="py-12 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Key Features</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-teal-500">
+                            <path d="M12 2L2 22h20L12 2z"/>
+                        </svg>
+                        <h3 class="text-lg font-semibold mt-4">Task Management</h3>
+                        <p class="mt-2">Organize your daily tasks with ease using our intuitive task list feature.</p>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-teal-500">
+                            <path d="M17 12h-4v4h4v-4zm-5 0h-4v4h4v-4zM5 5h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v2h14V7H5zm7 12h2v2h-2zm0-4h2v2h-2zM19 4h-2v2h2V4zM19 10h-2v2h2V10zM19 20h-2v-2h2v2zM7 14h10v2H7zM7 18h10v2H7z"/>
+                        </svg>
+                        <h3 class="text-lg font-semibold mt-4">Note Taking</h3>
+                        <p class="mt-2">Capture ideas instantly with our simple note-taking tool.</p>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-teal-500">
+                            <path d="M17 20v-2H7v2h10zM7 10h10v2H7zM7 4v2H5V4h2zM19 4h-2v2h2V4zM19 10h-2v2h2V10zM19 20h-2v-2h2v2zM7 14h10v2H7zM7 18h10v2H7z"/>
+                        </svg>
+                        <h3 class="text-lg font-semibold mt-4">Collaboration</h3>
+                        <p class="mt-2">Work together seamlessly with real-time collaboration features.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Pricing Plans</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-teal-500">Basic</h3>
+                        <p class="mt-4">$9/month</p>
+                        <ul class="mt-6">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Unlimited Tasks</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Basic Notes</li>
+                            <li class="flex items-center opacity-50 cursor-not-allowed"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Real-Time Collaboration</li>
+                        </ul>
+                        <button class="mt-6 px-4 py-2 bg-teal-500 text-white hover:bg-teal-600 rounded-full transition duration-300 w-full">Select Plan</button>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg border-t-4 border-teal-500">
+                        <h3 class="text-xl font-semibold text-teal-500">Pro</h3>
+                        <p class="mt-4">$19/month</p>
+                        <ul class="mt-6">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Unlimited Tasks</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Unlimited Notes</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Real-Time Collaboration</li>
+                        </ul>
+                        <button class="mt-6 px-4 py-2 bg-teal-500 text-white hover:bg-teal-600 rounded-full transition duration-300 w-full">Select Plan</button>
+                    </div>
+                    <div class="bg-white shadow-md p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-teal-500">Enterprise</h3>
+                        <p class="mt-4">$29/month</p>
+                        <ul class="mt-6">
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Unlimited Tasks</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Unlimited Notes</li>
+                            <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-2"><path d="M5 13h4v6H5v-6zm7 0h4v6h-4v-6zM13 16v-2h4v2h-4zM5 10h4v6H5v-6zM13 10v2h4v-2h-4zM5 4h4v6H5V4zm7 0h4v6h-4V4zM13 4v2h4V4h-4z"/></svg>Real-Time Collaboration</li>
+                        </ul>
+                        <button class="mt-6 px-4 py-2 bg-teal-500 text-white hover:bg-teal-600 rounded-full transition duration-300 w-full">Select Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-12 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">What Our Customers Say</h2>
+                <div class="flex flex-col items-center">
+                    <blockquote class="max-w-prose text-center text-gray-700 italic">
+                        "TaskMate has transformed my workflow! I can now stay organized and productive like never before."
+                    </blockquote>
+                    <cite>- Jane Doe, Marketing Manager</cite>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
+                <form action="#" method="post" class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="3" required class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-teal-500 text-white py-2 px-4 rounded-full focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-teal-500 hover:bg-teal-600">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-4 text-center text-gray-700">
+        <p>&copy; 2023 TaskMate. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This code now meets the requirements specified in the accessibility report, including the use of a `<main>` element and a level-one heading.

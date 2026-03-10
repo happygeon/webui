@@ -1,0 +1,3 @@
+1. Showcasing a collection of recipes, meal ideas, and cooking guides to inspire users in the kitchen and help with meal planning.
+2. Recipe portal homepage
+3. Food / Cooking

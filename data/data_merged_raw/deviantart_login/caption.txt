@@ -1,0 +1,11 @@
+1. To encourage users to join and log into DeviantArt, the largest online art community, by highlighting its benefits and providing easy login options.
+
+2. Login page
+
+3. Art community / Social media
+
+4. (a) Clear and prominent "Log In" header
+(b) Simple username input field
+(c) "Keep me logged in" checkbox for user convenience
+(d) Bright, eye-catching "Next" button
+(e) Alternative login options (Google, Apple, Facebook) for quick access

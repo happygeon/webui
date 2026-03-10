@@ -1,0 +1,155 @@
+**Thought:** The accessibility report indicates two primary issues:
+1. The document lacks a main landmark (WCAG 2.1 Success Criterion 1.3.1).
+2. The page does not contain a level-one heading (WCAG 2.1 Success Criterion 1.3.1).
+
+To address these issues, we need to add a `<main>` element with the `role="main"` attribute and ensure there is a level-one heading.
+
+**Action:** Add the missing `<main>` element and a level-one heading (`<h1>`) at the beginning of the document.
+
+**Observation:** Verify if the fixes resolve the issues without altering the existing functionality.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Corner - Recipes, Meal Ideas & Guides</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .focus-ring {
+            outline: 2px solid #6366f1;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-700">
+    <header class="bg-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Cooking Corner</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#recipes" class="hover:text-blue-500">Recipes</a></li>
+                    <li><a href="#guides" class="hover:text-blue-500">Guides</a></li>
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="py-6">
+        <h1>Cooking Corner - Your Ultimate Food Resource</h1>
+        <section id="hero" class="bg-gray-200 py-12 text-center">
+            <h2 class="text-4xl font-semibold">Welcome to Cooking Corner!</h2>
+            <p class="mt-4 text-xl">Inspire your kitchen with our collection of delicious recipes, meal ideas, and cooking guides.</p>
+        </section>
+
+        <section id="features" class="py-8 container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">Why Choose Cooking Corner?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 mx-auto"><path d="M19 7H5v14h14V7zM16 19H8V9h8v10zm-2-2h2v2h-2z"/></svg>
+                    <h3 class="text-xl font-semibold mt-4">Easy Recipes</h3>
+                    <p>Simple recipes for every skill level.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 mx-auto"><path d="M12 2L2 22h20L12 2z"/></svg>
+                    <h3 class="text-xl font-semibold mt-4">Meal Planning</h3>
+                    <p>Plan meals that fit your schedule and dietary needs.</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12 h-12 mx-auto"><path d="M12 2L2 22h20L12 2z"/></svg>
+                    <h3 class="text-xl font-semibold mt-4">Expert Guides</h3>
+                    <p>Learn tips and tricks from experienced chefs.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recipes" class="py-8 container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">Popular Recipes</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <img src="recipe-image-1.jpg" alt="Grilled Salmon Salad" class="w-full rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Grilled Salmon Salad</h3>
+                        <p class="mt-2">A light and healthy meal option.</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="View Recipe">View Recipe</button>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <img src="recipe-image-2.jpg" alt="Vegetable Stir-Fry" class="w-full rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Vegetable Stir-Fry</h3>
+                        <p class="mt-2">A flavorful dish perfect for dinner.</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="View Recipe">View Recipe</button>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <img src="recipe-image-3.jpg" alt="Peanut Butter Banana Sandwich" class="w-full rounded-t-lg">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold">Peanut Butter Banana Sandwich</h3>
+                        <p class="mt-2">A quick and easy snack or breakfast option.</p>
+                        <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="View Recipe">View Recipe</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="guides" class="py-8 container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">Cooking Guides</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold">How to Cook Perfectly Roasted Chicken</h3>
+                    <p class="mt-2">Step-by-step guide to roasting chicken like a pro.</p>
+                    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="Read Guide">Read Guide</button>
+                </article>
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold">DIY Bread Making</h3>
+                    <p class="mt-2">Learn how to make fresh bread at home.</p>
+                    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="Read Guide">Read Guide</button>
+                </article>
+                <article class="bg-white rounded-lg p-6 shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold">Healthy Eating Tips</h3>
+                    <p class="mt-2">Get advice on eating healthier.</p>
+                    <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500" aria-label="Read Guide">Read Guide</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="py-8 container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">About Us</h2>
+            <p>We are passionate about food and cooking. Our mission is to inspire you to cook more and eat better. Join us in exploring the world of flavors and culinary delights.</p>
+        </section>
+
+        <section id="contact" class="py-8 container mx-auto">
+            <h2 class="text-3xl font-semibold mb-6">Get in Touch</h2>
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded focus:outline-none focus:ring focus:ring-blue-500">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-white py-4 text-center">
+        <p>&copy; 2023 Cooking Corner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+This update ensures that the document now has a single main landmark and contains a level-one heading, thus meeting the requirements identified in the accessibility report.

@@ -1,0 +1,6 @@
+Purpose: To provide a sign-in interface for users to access membership content, offering multiple authentication options for convenience and security.
+사용자가 멤버십 콘텐츠에 접근할 수 있도록 로그인 인터페이스를 제공하며, 편의성과 보안을 위해 여러 인증 옵션을 제공합니다.
+Page Type: Login page
+로그인 페이지
+Domain: Productivity/Collaboration platform
+생산성/협업 플랫폼

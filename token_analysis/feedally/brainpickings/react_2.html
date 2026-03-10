@@ -1,0 +1,89 @@
+### Corrected HTML Code:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera Rubin: Pioneering Astronomer and Her Legacy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability */
+     .custom-focus {
+            outline: 2px solid #007BFF;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-lg p-4 flex justify-between items-center">
+        <div class="text-2xl font-bold">Science Inspires</div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-blue-500">Home</a></li>
+                <li><a href="#" class="hover:text-blue-500">Blog</a></li>
+                <li><a href="#" class="hover:text-blue-500">About</a></li>
+                <li><button id="donateBtn" aria-label="Donate to support our mission" class="bg-blue-500 text-white px-4 py-2 rounded custom-focus">Donate</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-6 px-4" role="main">
+        <h1 class="text-3xl font-extrabold mb-4">Vera Rubin: Pioneering Astronomer and Her Legacy</h1>
+        <article>
+            <section>
+                <h2 class="text-2xl font-semibold mb-3">Early Life and Education</h2>
+                <p> Rubin was born on February 28, 1928, in Washington D.C., and showed early interest in science. She earned her Bachelor of Arts degree from Vassar College in 1949 and later a Master’s degree in Astronomy from Georgetown University in 1954.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-3">Career Highlights</h2>
+                <p>Despite facing discrimination as a woman in a male-dominated field, Rubin persevered. She joined the Carnegie Institution for Science in 1959 and spent most of her career there. Her observations led to the discovery of galactic rotation curves, which suggested that galaxies contain more mass than can be accounted for by visible matter, thus providing strong evidence for dark matter.</p>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-3">Legacy</h2>
+                <p> Rubin's work has had a profound impact on our understanding of the universe. Her findings continue to guide astronomical research today, and she remains a role model for women in science. In recognition of her contributions, she received numerous awards, including the National Medal of Science in 1993.</p>
+            </section>
+        </article>
+
+        <!-- Donation Form Modal -->
+        <div id="donationModal" class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center hidden">
+            <form class="bg-white p-8 rounded shadow-lg w-full max-w-md" aria-labelledby="donationModalLabel" aria-modal="true">
+                <h2 id="donationModalLabel" class="text-2xl font-bold mb-4">Support Science Inspires</h2>
+                <label for="amount" class="block text-sm font-medium mb-2">Amount:</label>
+                <input type="number" id="amount" name="amount" min="1" class="w-full border p-2 rounded mb-4" required>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded custom-focus w-full">Donate Now</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg text-center py-4 mt-8">
+        <p>&copy; 2023 Science Inspires. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for opening and closing donation modal
+        const donateBtn = document.getElementById('donateBtn');
+        const donationModal = document.getElementById('donationModal');
+
+        donateBtn.addEventListener('click', () => {
+            donationModal.classList.toggle('hidden');
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target === donationModal) {
+                donationModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+```
+
+In this corrected version, the `<main>` element now includes a `role="main"` attribute to clearly identify it as the main content section of the page. Additionally, the existing `<h1>` heading at the beginning of the article satisfies the requirement for a level-one heading. These changes address the issues identified in the accessibility report while maintaining the overall structure and functionality of the webpage.

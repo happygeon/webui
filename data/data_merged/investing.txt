@@ -1,0 +1,6 @@
+Purpose: Provide real-time financial market data, news, and analysis to investors, traders, and finance professionals
+투자자, 트레이더 및 금융 전문가에게 실시간 금융 시장 데이터, 뉴스 및 분석을 제공합니다.
+Page Type: Dashboard/Homepage
+대시보드/홈페이지
+Domain: Financial Services
+금융 서비스

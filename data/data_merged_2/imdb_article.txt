@@ -1,0 +1,6 @@
+Purpose: To provide detailed information about the movie "Inception: The Cobol Job" and engage users with ratings, reviews, and related content
+영화 "인셉션: 더 코볼 작업"에 대한 자세한 정보를 제공하고 사용자와 평점, 리뷰 및 관련 콘텐츠로 소통하기 위해
+Page Type: Movie information page
+영화 정보 페이지
+Domain: Entertainment/Film database
+엔터테인먼트/영화 데이터베이스

@@ -1,0 +1,77 @@
+**Thought:** The accessibility report indicates that the page should contain a level-one heading. Currently, the `<main>` element contains a `<h2>` heading instead of a `<h1>`. This violates the WCAG requirement for a level-one heading at the beginning of the document.
+
+**Action:** Replace the `<h2>` inside the `<main>` element with a `<h1>` to meet the WCAG compliance requirements.
+
+**Observation:** After making the change, I will verify if the page now includes a level-one heading and if the overall accessibility has improved.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Abdaal - Productivity & Life Advice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer base {
+            body {
+                background-color: #f9fafb;
+                font-family: 'Arial', sans-serif;
+            }
+          .hero-image {
+                width: 100%;
+                height: auto;
+            }
+          .cta-button {
+                background-color: #0ea5e9;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+          .cta-button:hover {
+                background-color: #0d96db;
+            }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <header role="banner" class="mb-8">
+        <h1 class="text-4xl font-bold text-center">Ali Abdaal</h1>
+        <p class="text-lg text-center mb-4">Unlocking productivity and finding meaning in life.</p>
+    </header>
+
+    <main role="main" class="max-w-md mx-auto text-center">
+        <img src="https://example.com/ali-abdaal.jpg" alt="Ali Abdaal smiling" class="rounded-full w-48 h-48 mb-6 hero-image" aria-label="Image of Ali Abdaal">
+        <h1 class="text-2xl font-semibold">Welcome!</h1>
+        <p class="text-gray-700 mb-4">Join millions of people around the world who've found productivity and meaning in life through Ali's advice.</p>
+        <form action="/subscribe" method="post" role="form" class="space-y-4">
+            <label for="email" class="block text-sm font-medium text-gray-700">Enter your email:</label>
+            <input id="email" name="email" type="email" required placeholder="your.email@example.com" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+
+            <button type="submit" class="cta-button">Subscribe Now</button>
+        </form>
+        <p class="mt-4">By subscribing, you agree to receive emails from us about productivity tips and life advice. We promise to keep your information private and secure.</p>
+    </main>
+
+    <footer role="contentinfo" class="mt-8">
+        <p>&copy; 2023 Ali Abdaal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+### Explanation of Changes:
+1. **Level-One Heading (`<h1>`)**: Replaced the `<h2>` inside the `<main>` element with a `<h1>` to ensure there is a level-one heading at the beginning of the document.
+
+This change addresses the following WCAG issue:
+- `page-has-heading-one`: Ensures that the page contains a level-one heading.
+
+The original functionality and structure of the webpage remain intact while meeting the necessary accessibility standards.

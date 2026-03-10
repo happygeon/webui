@@ -1,0 +1,8 @@
+1. To inform engineers about Industrial Foundation Models (IFMs) and their potential to revolutionize engineering work through AI technology
+2. Landing page
+3. Technology / Engineering
+4. (a) Clear and prominent headline
+(b) Descriptive subheading explaining the topic
+(c) "Learn more" call-to-action button
+(d) Navigation menu with search, language, and login options
+(e) "News & Stories" section showcasing related content

@@ -1,0 +1,6 @@
+Purpose: Providing vocabulary definitions, language learning tools, and quizzes to help users expand their English vocabulary and language skills.
+   사용자들이 영어 어휘와 언어 능력을 확장할 수 있도록 어휘 정의, 언어 학습 도구 및 퀴즈를 제공합니다.
+Page Type: Dictionary/learning page
+   사전/학습 페이지
+Domain: Education / Language learning
+   교육 / 언어 학습

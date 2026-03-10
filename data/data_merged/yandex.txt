@@ -1,0 +1,6 @@
+Purpose: To provide a centralized search and services platform for users to access various Yandex products and features easily
+사용자가 다양한 Yandex 제품과 기능에 쉽게 접근할 수 있도록 중앙 집중식 검색 및 서비스 플랫폼을 제공하기 위해
+Page Type: Homepage
+홈페이지
+Domain: Search engine
+검색 엔진

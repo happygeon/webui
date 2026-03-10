@@ -1,0 +1,8 @@
+1. To provide a centralized search and services platform for users to access various Yandex products and features easily
+2. Homepage
+3. Search engine
+4. (a) Large, prominent search bar
+(b) Colorful icons for different Yandex services
+(c) Clean, minimalist design with ample white space
+(d) Weather widget displaying current temperature
+(e) "Log in" button in the top right corner

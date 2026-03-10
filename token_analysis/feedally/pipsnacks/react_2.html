@@ -1,0 +1,116 @@
+The provided HTML code now includes the necessary elements to meet the WCAG guidelines, specifically addressing the issues of missing main landmarks and a level-one heading. Here is the final version of the HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Snacks - Healthy Treats for Every Taste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+     .navbar {
+            background-color: #007BFF;
+            color: white;
+            padding: 1rem 0;
+        }
+     .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+     .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 2rem;
+        }
+     .product-card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            max-width: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+     .product-image {
+            height: 200px;
+            object-fit: cover;
+        }
+     .product-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 1rem 0.5rem;
+        }
+     .product-description {
+            font-size: 0.9rem;
+            margin: 0.5rem 0.5rem;
+        }
+     .product-price {
+            font-size: 1.1rem;
+            color: #007BFF;
+            margin: 0.5rem 0.5rem;
+        }
+     .add-to-cart-btn {
+            background-color: #28A745;
+            border: none;
+            border-radius: 0.5rem;
+            color: white;
+            cursor: pointer;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+        }
+     .add-to-cart-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1>Popcorn Snacks - Healthy Treats for Every Taste</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main role="main">
+        <div class="product-container">
+            <div class="product-card">
+                <img src="popcorn1.jpg" alt="Organic Popcorn" class="product-image">
+                <h2 class="product-title">Organic Popcorn</h2>
+                <p class="product-description">Taste like your favorite movie popcorn without any artificial flavors or preservatives.</p>
+                <span class="product-price">$3.99</span>
+                <button class="add-to-cart-btn" aria-label="Add Organic Popcorn to cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="popcorn2.jpg" alt="Non-GMO Popcorn" class="product-image">
+                <h2 class="product-title">Non-GMO Popcorn</h2>
+                <p class="product-description">Enjoy the buttery goodness of our non-GMO popcorn, crafted from the finest kernels.</p>
+                <span class="product-price">$4.49</span>
+                <button class="add-to-cart-btn" aria-label="Add Non-GMO Popcorn to cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="popcorn3.jpg" alt="Gluten-Free Popcorn" class="product-image">
+                <h2 class="product-title">Gluten-Free Popcorn</h2>
+                <p class="product-description">Perfect for those with gluten sensitivities, our popcorn is free from any gluten-containing ingredients.</p>
+                <span class="product-price">$4.99</span>
+                <button class="add-to-cart-btn" aria-label="Add Gluten-Free Popcorn to cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+```
+
+**Observation:** The addition of the `<header>` element with `role="banner"` and the `<main>` element with `role="main"` ensures that the page has a clear and logical structure. This makes it easier for screen readers to navigate the content and improves overall accessibility. The presence of the `<h1>` heading also provides important context about the page's topic.

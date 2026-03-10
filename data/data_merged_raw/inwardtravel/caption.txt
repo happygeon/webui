@@ -1,0 +1,11 @@
+1. To showcase and promote outdoor adventure challenges, encouraging users to participate in various activities and connect with nature.
+
+2. Landing page
+
+3. Outdoor recreation / Adventure sports
+
+4. (a) Grid layout of challenge thumbnails with "View" buttons
+(b) Prominent brand logos of sponsors/partners
+(c) "Challenge yourself" headline to motivate users
+(d) Contact form for user engagement
+(e) Newsletter subscription option at the bottom

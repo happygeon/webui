@@ -1,0 +1,11 @@
+1. To inform users that the requested page does not exist and guide them back to the main site, targeting Science readers and researchers who encountered a broken link or mistyped URL.
+
+2. 404 Error Page
+
+3. Scientific Publishing
+
+4. (a) Large "404" error message
+(b) Clear explanatory text about the missing page
+(c) "BACK TO HOME" button for easy navigation
+(d) Navigation menu at the top of the page
+(e) Footer with links to related Science publications and resources

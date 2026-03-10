@@ -1,0 +1,6 @@
+Purpose: To encourage users to join and log into DeviantArt, the largest online art community, by highlighting its benefits and providing easy login options.
+사용자들이 DeviantArt에 가입하고 로그인하도록 장려하기 위해, 그 이점을 강조하고 쉬운 로그인 옵션을 제공합니다.
+Page Type: Login page
+로그인 페이지
+Domain: Art community / Social media
+아트 커뮤니티 / 소셜 미디어

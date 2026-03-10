@@ -1,0 +1,23 @@
+[
+  {"url": "https://www.eiosys.com/", "category": "tech", "purpose": "main page"},
+  {"url": "https://www.thegoldenbalance.com/", "category": "portfolio", "purpose": "main page"},
+  {"url": "https://www.investopedia.com/", "category": "informational", "purpose": "main page"},
+  {"url": "https://www.history.com/", "category": "informational", "purpose": "main page"},
+  {"url": "https://majlislaw.com/", "category": "community", "purpose": "main page"},
+  {"url": "https://www.forbesindia.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://www.business-standard.com/topic/magazine", "category": "news", "purpose": "main page"},
+  {"url": "https://www.epw.in/", "category": "news", "purpose": "main page"},
+  {"url": "https://www.newslaundry.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://www.thequint.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://www.livemint.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://act.jhatkaa.org/campaigns/join-friends-of-ladakh?_gl=...", "category": "petition", "purpose": "main page"},
+  {"url": "https://jhatkaa.org/", "category": "petition", "purpose": "main page"},
+  {"url": "https://studentsforlife.org/", "category": "community", "purpose": "main page"},
+  {"url": "https://www.rogerebert.com/", "category": "entertainment", "purpose": "main page"},
+  {"url": "https://curlytales.com/", "category": "travel", "purpose": "main page"},
+  {"url": "https://www.edsheeran.com/#tour", "category": "blog", "purpose": "main page"},
+  {"url": "https://www.motherteresa.org/", "category": "community", "purpose": "main page"},
+  {"url": "https://peachybbies.com/pages/slime-care", "category": "informational", "purpose": "main page"},
+  {"url": "https://crowdfunding.milaap.org/crowdfunding/?utm_source=...", "category": "community", "purpose": "main page"},
+  {"url": "https://www.ketto.org/", "category": "community", "purpose": "main page"}
+]

@@ -1,0 +1,11 @@
+1. To introduce the staff and reporters of The Beacon Today, a student-run news organization at Palm Beach Atlantic University, providing information about their roles and backgrounds.
+
+2. About page
+
+3. Education/Student media
+
+4. (a) Clear hierarchical structure with sections for Staff, Reporters, and Faculty Advisor
+(b) Consistent layout and design for each team member's profile
+(c) Navigation menu at the top for easy access to different sections of the website
+(d) Logo and branding elements to reinforce the organization's identity
+(e) Footer with social media links and newsletter subscription form for engagement

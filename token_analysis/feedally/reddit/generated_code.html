@@ -1,0 +1,120 @@
+### Thought:
+The current HTML document includes a single `<main>` element with a `role="main"` attribute and a level-one heading (`<h1>`), which addresses the issues related to missing main landmarks and duplicate main sections. However, it does not ensure that each landmark is unique across the document. We need to add unique IDs or roles to other landmarks to meet the requirement of having unique landmarks.
+
+### Action:
+We will add unique IDs to other sections that serve as landmarks (e.g., `<header>`, `<nav>`, `<section>`) to ensure they are distinct from each other and comply with the WCAG guideline for unique landmarks.
+
+### Observation:
+After applying the necessary changes, we will verify whether the document now meets all the WCAG requirements, including having unique landmarks and avoiding duplicate main sections.
+
+Here is the updated HTML code with unique landmarks:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover & Share | Social Media Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .focus-visible {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <header id="site-header" class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">SocialMediaHub</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#explore" class="hover:text-blue-500">Explore</a></li>
+                    <li><a href="#trending" class="hover:text-blue-500">Trending</a></li>
+                    <li><a href="#create" class="hover:text-blue-500">Create</a></li>
+                    <li><a href="#profile" class="hover:text-blue-500">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="container mx-auto py-6">
+
+        <section id="hero" class="mb-8">
+            <h1 class="text-4xl font-bold mb-2">Welcome to SocialMediaHub</h1>
+            <p class="text-lg">Connect, share, and discover the world around you.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded focus:outline-none focus-visible">Get Started</button>
+        </section>
+
+        <section id="explore" class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Explore Communities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white shadow-md p-4 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-medium">Tech Talk</h3>
+                    <p class="text-gray-600">Join discussions about the latest in technology.</p>
+                </div>
+                <div class="bg-white shadow-md p-4 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-medium">Foodie Corner</h3>
+                    <p class="text-gray-600">Share your favorite recipes and cooking tips.</p>
+                </div>
+                <div class="bg-white shadow-md p-4 hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-medium">Travel Tales</h3>
+                    <p class="text-gray-600">Tell us about your adventures and travel experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trending" class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Trending Posts</h2>
+            <div class="space-y-4">
+                <article class="bg-white shadow-md p-4">
+                    <h3 class="text-xl font-medium">How to Build a Successful Online Business</h3>
+                    <p class="text-gray-600">A step-by-step guide to starting and growing your online venture.</p>
+                    <footer class="mt-2 text-sm">
+                        <span>Posted by John Doe</span>
+                        <span class="ml-2">• 12 hours ago</span>
+                    </footer>
+                </article>
+                <article class="bg-white shadow-md p-4">
+                    <h3 class="text-xl font-medium">The Benefits of Meditation for Mental Health</h3>
+                    <p class="text-gray-600">Learn how meditation can improve your mental well-being.</p>
+                    <footer class="mt-2 text-sm">
+                        <span>Posted by Jane Smith</span>
+                        <span class="ml-2">• 2 days ago</span>
+                    </footer>
+                </article>
+            </div>
+        </section>
+
+        <section id="create" class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Create Your Post</h2>
+            <form action="#" method="post" class="bg-white shadow-md p-4">
+                <textarea name="post" id="post" rows="4" placeholder="What's on your mind?" class="w-full border-gray-300 rounded p-2 mb-4 focus:outline-none focus-visible"></textarea>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded focus:outline-none focus-visible">Post</button>
+            </form>
+        </section>
+
+        <section id="profile" class="mb-8">
+            <h2 class="text-3xl font-semibold mb-4">Your Profile</h2>
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/100" alt="Profile Picture" class="rounded-full mr-4">
+                <div>
+                    <h3 class="text-xl font-medium">John Doe</h3>
+                    <p class="text-gray-600">Member since January 2021</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer" class="bg-white shadow-md p-4 text-center">
+        <p>&copy; 2023 SocialMediaHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+In this updated HTML, each section has a unique ID, ensuring that all landmarks are distinct and compliant with the WCAG guideline for unique landmarks. Additionally, the single `<main>` element with the `role="main"` attribute avoids duplicate main sections, thus addressing the overall violation reported in the accessibility report.

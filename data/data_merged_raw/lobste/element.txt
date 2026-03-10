@@ -1,0 +1,9 @@
+(a) Intuitive Navigation Bar: The straightforward navigation links at the top enhance accessibility and user flow, encouraging exploration.
+
+(b) Prominent Headlines: Bold and direct titles in the article list immediately capture attention, improving content discoverability.
+
+(c) User Avatars: Small but clear imagery next to posts adds a personal touch, fostering community engagement and recognition.
+
+(d) Time Stamps and Comment Count: Concise timing and comment details offer contextual relevance, aiding decision-making on recent content.
+
+(e) Organized Content Tags: Clear labeling of topics per post promotes easier content filtering and thematic exploration.

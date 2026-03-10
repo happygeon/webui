@@ -1,0 +1,23 @@
+[
+  {"url": "https://neilpatel.com/", "category": "consulting", "purpose": "main page"},
+  {"url": "https://idigmarketing.com/", "category": "consulting", "purpose": "main page"},
+  {"url": "https://www.indiamart.com/", "category": "ecommerce", "purpose": "main page"},
+  {"url": "https://www.pipsnacks.com/", "category": "shopping", "purpose": "main page"},
+  {"url": "https://elfontheshelf.com/", "category": "entertainment", "purpose": "main page"},
+  {"url": "https://www.buzzfeed.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://evernote.com/ko-kr", "category": "productivity", "purpose": "main page"},
+  {"url": "https://themeforest.net/item/pile-an-uncoventional-wordpress-portfolio-theme/8989183?ref=pixelgrade&clickthrough_id=1393746720&redirect_back=true", "category": "portfolio", "purpose": "main page"},
+  {"url": "https://www.huffpost.com/", "category": "news", "purpose": "main page"},
+  {"url": "https://www.express.com/", "category": "shopping", "purpose": "main page"},
+  {"url": "https://www.nationwide.com/", "category": "finance", "purpose": "main page"},
+  {"url": "https://www.squaredot.agency/", "category": "consulting", "purpose": "main page"},
+  {"url": "https://www.zappos.com/", "category": "ecommerce", "purpose": "main page"},
+  {"url": "https://abc.com/", "category": "entertainment", "purpose": "main page"},
+  {"url": "https://www.leanlabs.com/", "category": "consulting", "purpose": "main page"},
+  {"url": "https://www.etsy.com/", "category": "ecommerce", "purpose": "main page"},
+  {"url": "https://www.typeform.com/", "category": "tech", "purpose": "main page"},
+  {"url": "https://www.shutterfly.com/", "category": "shopping", "purpose": "main page"},
+  {"category":"news","url":"https://www.cnn.com", "purpose": "main page"},
+  {"category":"news","url":"https://www.bbc.com", "purpose": "main page"},
+  {"category":"business","url":"https://www.forbes.com", "purpose": "main page"}
+]

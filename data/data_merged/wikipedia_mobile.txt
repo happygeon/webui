@@ -1,0 +1,6 @@
+Purpose: Providing a free, collaborative encyclopedia with articles, featured content, and resources to help users learn and explore a wide range of topics.
+사용자들이 다양한 주제를 배우고 탐구할 수 있도록 돕는 기사, 추천 콘텐츠 및 리소스를 포함한 무료 협업 백과사전을 제공합니다.
+Page Type: Encyclopedia homepage
+백과사전 홈페이지
+Domain: Education / Reference
+교육 / 참고자료

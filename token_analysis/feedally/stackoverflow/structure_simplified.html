@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Newest Questions - Stack Overflow</title>
+    <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196" rel="shortcut icon"/>
+    <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" rel="apple-touch-icon"/>
+</head>
+<body>
+    <aside role="dialog">
+        <h1>
+            <img alt="site logo" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/icon-48.png?v=b7e36f88ff92"/>
+            <strong>Join Stack Overflow</strong>
+        </h1>
+        <form action="/users/signup" method="POST">
+            <button type="submit">Sign up with Google</button>
+            <button type="submit">Sign up with GitHub</button>
+            <h1>OR</h1>
+            <label for="signup-modal-email">Email</label>
+            <input name="email" type="text" maxlength="100"/>
+            <label for="signup-modal-password">Password</label>
+            <input name="password" type="password" placeholder="8+ characters (at least 1 letter & 1 number)"/>
+            <button type="submit">Sign up</button>
+        </form>
+        <div>
+            Already have an account? <a href="/users/login">Log in</a>
+        </div>
+    </aside>
+    <header>
+        <a href="#content">Skip to main content</a>
+        <a href="https://stackoverflow.com">Stack Overflow</a>
+        <nav>
+            <ol>
+                <li><a href="https://stackoverflow.com">current community</a></li>
+                <li><a href="https://stackoverflow.com/help">help</a></li>
+                <li><a href="https://chat.stackoverflow.com/?tab=site&host=stackoverflow.com">chat</a></li>
+                <li><a href="https://meta.stackoverflow.com">Meta Stack Overflow</a></li>
+                <li><a href="https://stackoverflow.com/users/login">Log in</a></li>
+                <li><a href="https://stackoverflow.com/users/signup">Sign up</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h1>Newest Questions</h1>
+        <a href="/questions/ask">Ask Question</a>
+        <div>24,222,244 questions</div>
+        <div>
+            <a href="/questions?tab=Newest">Newest</a>
+            <a href="/questions?tab=Active">Active</a>
+            <a href="/questions?tab=Bounties">Bountied <span>31</span></a>
+            <a href="/questions?tab=Unanswered">Unanswered</a>
+            <button type="button">More</button>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Filter by</legend>
+                <label><input type="checkbox" value="NoAnswers"/> No answers</label>
+                <label><input type="checkbox" value="NoAcceptedAnswer"/> No accepted answer</label>
+                <label><input type="checkbox" value="Bounty"/> Has bounty</label>
+                <label>Days old <input type="number" min="1"/></label>
+            </fieldset>
+            <fieldset>
+                <legend>Sorted by</legend>
+                <label><input type="radio" name="sortId" value="Newest" checked/> Newest</label>
+                <label><input type="radio" name="sortId" value="RecentActivity"/> Recent activity</label>
+            </fieldset>
+            <button type="submit">Apply filter</button>
+        </form>
+        <div>
+            <div>
+                <div title="Score of -2"><span>-2</span> votes</div>
+                <div title="0 answers"><span>0</span> answers</div>
+                <div title="9 views"><span>9</span> views</div>
+            </div>
+            <h3><a href="/questions/79677906/how-to-scrape-multiple-html-elements-from-within-a-td-cell">How to scrape multiple HTML elements from within a &lt;td&gt; cell</a></h3>
+            <div>from bs4 import BeautifulSoup...</div>
+            <div>
+                <ul>
+                    <li><a href="/questions/tagged/beautifulsoup" rel="tag">beautifulsoup</a></li>
+                </ul>
+                <div>
+                    <a href="/users/30882006/elementalbot">
+                        <img alt="ElementalBot's user avatar" src="https://www.gravatar.com/avatar/782242d3d9b09463389214abf745561a?s=32&d=identicon&r=PG" width="16"/>
+                    </a>
+                    <div>
+                        <a href="/users/30882006/elementalbot">ElementalBot</a>
+                        <span title="reputation score">1</span>
+                    </div>
+                    <time>asked <span title="2025-06-24 16:19:34Z">4 mins ago</span></time>
+                </div>
+            </div>
+        </div>
+        <!-- Additional questions would follow the same structure -->
+    </main>
+    <footer>
+        <div>
+            <a href="https://stackoverflow.com">Stack Overflow</a>
+            <nav>
+                <ul>
+                    <li><a href="/questions">Questions</a></li>
+                    <li><a href="/help">Help</a></li>
+                    <li><a href="https://chat.stackoverflow.com/?tab=site&host=stackoverflow.com">Chat</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/help/licensing">CC BY-SA</a>.</p>
+        </div>
+    </footer>
+</body>
+</html>

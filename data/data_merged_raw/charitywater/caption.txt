@@ -1,0 +1,11 @@
+1. To encourage donations for clean water projects in rural communities by presenting a clear plan and donation options to potential donors.
+
+2. Donation page
+
+3. Charity/Non-profit
+
+4. (a) Clear, bold headline stating the purpose ("The plan? Crystal clear.")
+(b) Concise explanation of the donation impact and goals
+(c) Prominent "GIVE" button in the header
+(d) Donation amount options with toggle between one-time and monthly giving
+(e) Large, yellow "JOIN TODAY" call-to-action button

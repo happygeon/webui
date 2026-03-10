@@ -1,0 +1,6 @@
+Purpose: To introduce and promote Cargo, a site builder for designers and artists, highlighting its features for showcasing work and connecting with clients.
+디자이너와 아티스트를 위한 사이트 빌더인 Cargo를 소개하고 홍보하며, 작업을 전시하고 클라이언트와 연결하는 기능을 강조합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Web development / Design
+웹 개발 / 디자인

@@ -1,0 +1,10 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "html-has-lang",
+      "help": "<html> element must have a lang attribute",
+      "count": 1
+    }
+  ]
+}

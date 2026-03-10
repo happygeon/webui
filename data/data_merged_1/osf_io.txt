@@ -1,0 +1,6 @@
+Purpose: To introduce and promote OSF (Open Science Framework) as a free, open platform for managing research, enabling collaboration, and discovering public research to academic researchers and scientists.
+연구를 관리하고 협업을 가능하게 하며, 학술 연구자와 과학자들에게 공개 연구를 발견할 수 있는 무료 오픈 플랫폼으로 OSF(오픈 사이언스 프레임워크)를 소개하고 홍보합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Education/Research
+교육/연구

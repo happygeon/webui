@@ -1,0 +1,11 @@
+1. To provide a centralized platform for UniFi users to access support, documentation, and community discussions about networking and security products.
+
+2. Support forum homepage
+
+3. Technology (Networking)
+
+4. (a) Clear navigation menu with main sections
+(b) Search bar for easy access to specific topics
+(c) AI-powered question assistant for user support
+(d) Categorized sections for different product lines and topics
+(e) Recent community posts with user avatars and engagement metrics

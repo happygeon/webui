@@ -1,0 +1,10 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "aria-allowed-role",
+      "help": "ARIA role should be appropriate for the element",
+      "count": 3
+    }
+  ]
+}

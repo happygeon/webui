@@ -1,0 +1,6 @@
+Purpose: To provide a platform for technology enthusiasts and professionals to share and discuss news, stories, and opinions on various tech-related topics.
+기술 애호가와 전문가들이 다양한 기술 관련 주제에 대한 뉴스, 이야기 및 의견을 공유하고 논의할 수 있는 플랫폼을 제공하기 위해.
+Page Type: News aggregation homepage
+뉴스 집계 홈페이지
+Domain: Technology news and community
+기술 뉴스 및 커뮤니티

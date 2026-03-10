@@ -1,0 +1,6 @@
+Purpose: To introduce and promote Zapier's AI orchestration platform to potential users, emphasizing its ease of use and efficiency in building AI workflows without technical complexity.
+잠재 사용자에게 Zapier의 AI 오케스트레이션 플랫폼을 소개하고 홍보하여 기술적 복잡성 없이 AI 워크플로를 구축하는 데 있어 사용의 용이성과 효율성을 강조합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Software as a Service (SaaS)
+서비스로서의 소프트웨어 (SaaS)

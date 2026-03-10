@@ -1,0 +1,6 @@
+Purpose: To provide an easy-to-use platform for users to search and purchase tickets for various entertainment events, catering to event-goers looking for concerts, sports, arts, theater, comedy, and family events.
+사용자들이 다양한 엔터테인먼트 이벤트의 티켓을 검색하고 구매할 수 있는 사용하기 쉬운 플랫폼을 제공하여 콘서트, 스포츠, 예술, 극장, 코미디 및 가족 이벤트를 찾는 이벤트 참석자들을 위한 것입니다.
+Page Type: Homepage
+홈페이지
+Domain: Entertainment ticketing
+엔터테인먼트 티켓팅

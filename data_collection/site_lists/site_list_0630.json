@@ -1,0 +1,6 @@
+[
+    {"url": "https://idigmarketing.com/", "category": "consulting", "purpose": "main page"},
+    {"url": "https://www.shutterfly.com/", "category": "shopping", "purpose": "main page"},
+    {"url": "https://www.zappos.com/", "category": "ecommerce", "purpose": "main page"},
+    {"category": "book", "url": "https://www.bookbub.com/ebook-deals/free-ebooks", "purpose": "free ebooks"}
+]

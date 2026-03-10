@@ -1,0 +1,9 @@
+(a) Prominent header with logo and navigation buttons
+
+(b) Engaging hero image under header
+
+(c) Clear and inviting search bar
+
+(d) Concise main heading for site purpose
+
+(e) Quick access links for login and registration

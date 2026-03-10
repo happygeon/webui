@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Ecommerce</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        nav button:hover {
+            background-color: #777;
+        }
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #666;
+            min-width: 150px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        nav ul ul li {
+            display: block;
+        }
+        nav ul ul li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+        nav ul ul li a:hover {
+            background-color: #777;
+        }
+        main {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Coffee Shop</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <button onclick="toggleMenu('coffeeMenu')">Coffee</button>
+                <ul id="coffeeMenu" style="display:none;">
+                    <li><a href="#">Espresso</a></li>
+                    <li><a href="#">Latte</a></li>
+                    <li><a href="#">Cappuccino</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleMenu('teaMenu')">Tea</button>
+                <ul id="teaMenu" style="display:none;">
+                    <li><a href="#">Green Tea</a></li>
+                    <li><a href="#">Black Tea</a></li>
+                    <li><a href="#">Herbal Tea</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleMenu('accessoriesMenu')">Accessories</button>
+                <ul id="accessoriesMenu" style="display:none;">
+                    <li><a href="#">Coffee Mugs</a></li>
+                    <li><a href="#">Grinders</a></li>
+                    <li><a href="#">Filters</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <p>Explore our wide range of coffee products.</p>
+    </main>
+    <script>
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

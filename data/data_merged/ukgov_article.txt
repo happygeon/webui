@@ -1,0 +1,6 @@
+Purpose: To provide UK citizens and residents with a centralized portal to access various government services and sign in to their accounts
+   영국 시민과 거주자에게 다양한 정부 서비스에 접근하고 계정에 로그인할 수 있는 중앙 포털을 제공하기 위해
+Page Type: Service directory page
+   서비스 디렉토리 페이지
+Domain: Government services
+   정부 서비스

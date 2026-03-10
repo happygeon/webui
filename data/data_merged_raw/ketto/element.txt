@@ -1,0 +1,9 @@
+(a) Prominent header displaying the website's brand name in a clear, bold style.
+
+(b) Navigation menu with concise links such as "Browse Fundraisers" and "Start A Fundraiser" showcasing straightforward navigation.
+
+(c) Interactive call-to-action button “Start a Fundraiser for FREE” that stands out to encourage user participation.
+
+(d) Engaging imagery featuring beneficiaries, adding a relatable human element to the site.
+
+(e) Highlighted statistics section like "0% Platform Fee" emphasizing transparency and trust to potential users.

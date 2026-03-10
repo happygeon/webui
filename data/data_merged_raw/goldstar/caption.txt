@@ -1,0 +1,11 @@
+1. To provide a centralized platform for browsing and purchasing theatre tickets in Brisbane, catering to theatre enthusiasts and event-goers looking for local performances.
+
+2. Landing page
+
+3. Entertainment ticketing
+
+4. (a) Large, prominent headline clearly stating the site's purpose
+(b) Featured event carousel with eye-catching visuals and brief descriptions
+(c) "All events in Brisbane" section with multiple event listings and save options
+(d) Search bar for easy navigation
+(e) Location dropdown menu for selecting different cities

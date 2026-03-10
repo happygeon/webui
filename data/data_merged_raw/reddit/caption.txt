@@ -1,0 +1,11 @@
+1. To provide a platform for users to discover, share, and discuss diverse content across various topics and communities
+
+2. Home page
+
+3. Social media
+
+4. (a) Navigation sidebar with topic categories
+(b) Content feed with image/video posts and text
+(c) Upvote/downvote buttons for user engagement
+(d) Comment sections for discussion
+(e) Popular communities sidebar for discovery

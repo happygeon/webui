@@ -1,0 +1,77 @@
+**Thought:** The current HTML document does not include a `<main>` element with a `role="main"` attribute, which is essential for identifying the main content of the page. Additionally, it lacks a level-one heading (`<h1>`), which is crucial for SEO and user navigation.
+
+**Action:** Add a `<main>` element with a `role="main"` attribute and ensure there is at least one level-one heading on the page.
+
+**Observation:** After making these changes, the document will comply with the identified issues.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandex Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .focus-visible:focus {
+            outline: 2px solid #1a73e8;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Yandex</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="/search" class="hover:text-blue-500 focus-visible">Поиск</a></li>
+                    <li><a href="/mail" class="hover:text-blue-500 focus-visible">Почта</a></li>
+                    <li><a href="/disk" class="hover:text-blue-500 focus-visible">Диск</a></li>
+                    <li><a href="/translate" class="hover:text-blue-500 focus-visible">Переводчик</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="container mx-auto py-6">
+        <section class="max-w-lg mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Свободный поиск и многое другое на Yandex!</h1>
+            <p class="mb-6">Настройте поисковые запросы, используйте переводчик, храните файлы в Диске и многое другое.</p>
+            <form action="/search" method="get" class="flex space-x-4">
+                <input type="text" id="search" name="q" placeholder="Введите запрос..." class="w-full px-4 py-2 border rounded focus:outline-none focus:border-blue-500" required>
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus-visible">Искать</button>
+            </form>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <article class="bg-white p-4 rounded shadow-sm hover:shadow-lg transition-shadow">
+                <h2 class="text-xl font-bold mb-2"><a href="/search" class="hover:text-blue-500 focus-visible">Поиск</a></h2>
+                <p>Быстрый и точный поиск информации в интернете.</p>
+            </article>
+            <article class="bg-white p-4 rounded shadow-sm hover:shadow-lg transition-shadow">
+                <h2 class="text-xl font-bold mb-2"><a href="/mail" class="hover:text-blue-500 focus-visible">Почта</a></h2>
+                <p>Удобная почтовая система с возможностью отправки и получения сообщений.</p>
+            </article>
+            <article class="bg-white p-4 rounded shadow-sm hover:shadow-lg transition-shadow">
+                <h2 class="text-xl font-bold mb-2"><a href="/disk" class="hover:text-blue-500 focus-visible">Диск</a></h2>
+                <p>Хранение файлов в облаке с возможностью доступа из любого места.</p>
+            </article>
+            <article class="bg-white p-4 rounded shadow-sm hover:shadow-lg transition-shadow">
+                <h2 class="text-xl font-bold mb-2"><a href="/translate" class="hover:text-blue-500 focus-visible">Переводчик</a></h2>
+                <p>Бесплатный онлайн-переводчик текста на различные языки.</p>
+            </article>
+            <!-- Additional services can be added here -->
+        </section>
+    </main>
+
+    <footer class="bg-white p-4 text-center">
+        <p>&copy; 2023 Yandex. Все права защищены.</p>
+    </footer>
+</body>
+</html>
+```
+
+This update ensures that the HTML document now meets the requirements specified in the accessibility report by adding a main landmark and a level-one heading.

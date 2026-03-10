@@ -1,0 +1,6 @@
+Purpose: To showcase blog posts about programming and technology topics, targeting developers and tech enthusiasts interested in React, JSON, and other related subjects.
+프로그래밍 및 기술 주제에 대한 블로그 게시물을 선보이며, React, JSON 및 기타 관련 주제에 관심이 있는 개발자와 기술 애호가를 대상으로 합니다.
+Page Type: Blog homepage
+블로그 홈페이지
+Domain: Technology/Programming
+기술/프로그래밍

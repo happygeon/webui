@@ -1,0 +1,11 @@
+1. To provide UK citizens and residents with a centralized portal to access various government services and sign in to their accounts
+
+2. Service directory page
+
+3. Government services
+
+4. (a) Clear, prominent page title "Sign in to a service"
+(b) List of most viewed services with brief descriptions
+(c) Search bar for finding additional services
+(d) Organized footer with links to various government departments and topics
+(e) Feedback section asking if the page is useful

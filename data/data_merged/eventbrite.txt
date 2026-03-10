@@ -1,0 +1,6 @@
+Purpose: To help users discover and purchase tickets for various events in Seoul, with a focus on Pride celebrations and diverse event categories.
+사용자가 서울에서 다양한 이벤트의 티켓을 발견하고 구매할 수 있도록 돕기 위해, 프라이드 축제와 다양한 이벤트 카테고리에 중점을 둡니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Event ticketing
+이벤트 티켓팅

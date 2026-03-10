@@ -1,0 +1,6 @@
+Purpose: To inform Drift customers about the migration of Drift's website to Salesloft and guide them on how to access their accounts and resources through the new platform.
+드리프트 고객에게 드리프트 웹사이트가 세일즈로프트로 이전됨을 알리고 새로운 플랫폼을 통해 계정 및 리소스에 접근하는 방법을 안내합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Software as a Service (SaaS)
+서비스로서의 소프트웨어 (SaaS)

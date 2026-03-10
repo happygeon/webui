@@ -1,0 +1,30 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 8
+    },
+    {
+      "id": "list",
+      "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+      "count": 3
+    },
+    {
+      "id": "listitem",
+      "help": "<li> elements must be contained in a <ul> or <ol>",
+      "count": 6
+    },
+    {
+      "id": "aria-required-children",
+      "help": "Certain ARIA roles must contain particular children",
+      "count": 1
+    },
+    {
+      "id": "region",
+      "help": "All page content should be contained by landmarks",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+The provided HTML code now includes a `main` landmark with `role="main"` and a level-one heading (`<h1>`), thus resolving the accessibility violations reported. Below is the final, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Refugee Day | IFRC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .bg-refugee {
+            background-color: #f0e6d2; /* Light khaki for a warm tone */
+        }
+     .text-refugee {
+            color: #8b4513; /* Saddle brown for a deep, earthy tone */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans leading-relaxed">
+
+<header class="bg-refugee py-24 px-6 sm:px-12 lg:px-24">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center">
+        <h1 class="text-5xl md:text-6xl font-bold text-center text-refugee mb-6">World Refugee Day</h1>
+        <p class="text-xl text-center mb-12">Join us in celebrating the resilience and strength of refugees around the world.</p>
+        <a href="#about" class="bg-red-600 text-white px-6 py-3 rounded-full hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Learn More</a>
+    </div>
+</header>
+
+<main role="main">
+    <section id="about" class="py-24 px-6 sm:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center space-y-12">
+            <h2 class="text-4xl font-bold text-center">About IFRC</h2>
+            <p class="text-lg text-center">The International Federation of Red Cross and Red Crescent Societies (IFRC) is the world’s largest humanitarian network, providing assistance to people affected by crises worldwide.</p>
+            <img src="https://example.com/ifrc-logo.png" alt="IFRC Logo" class="w-48 h-48 mx-auto">
+        </div>
+    </section>
+
+    <section id="donate" class="py-24 px-6 sm:px-12 lg:px-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center space-y-12">
+            <h2 class="text-4xl font-bold text-center">Support Us</h2>
+            <p class="text-lg text-center">Every donation helps provide life-saving aid, education, and shelter to refugees.</p>
+            <form action="#" method="post" class="flex flex-col items-center space-y-6">
+                <input type="number" id="amount" name="amount" placeholder="Enter amount" class="border p-2 w-full rounded-md" required>
+                <button type="submit" class="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">Donate Now</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="volunteer" class="py-24 px-6 sm:px-12 lg:px-24 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col items-center justify-center space-y-12">
+            <h2 class="text-4xl font-bold text-center">Volunteer</h2>
+            <p class="text-lg text-center">Become part of our global network of volunteers helping refugees across the globe.</p>
+            <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Apply to Volunteer</a>
+        </div>
+    </section>
+</main>
+
+<footer class="py-12 px-6 sm:px-12 lg:px-24 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center space-y-6">
+        <p class="text-lg text-center">© 2023 IFRC. All rights reserved.</p>
+        <nav class="flex space-x-4">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </nav>
+    </div>
+</footer>
+
+</body>
+</html>
+```
+
+This code ensures that the document meets the accessibility standards outlined in the WCAG, specifically addressing the need for a single main landmark and proper use of headings.

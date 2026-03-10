@@ -1,0 +1,11 @@
+1. To provide a centralized help center for Google users to find assistance with various Google products and services
+
+2. Landing page
+
+3. Technology support
+
+4. (a) Large search bar for describing issues
+(b) Grid of product icons for quick navigation
+(c) Clean, minimalist design with ample white space
+(d) Prominent "How can we help you?" headline
+(e) Footer with additional support resources and account options

@@ -1,6 +1,26 @@
+# Environment
+.env
+.venv/
+venv/
+
+# Python
 __pycache__/
-uicoder/
-notebook_uicoder/
-test_0/
-test_1/
-test_2/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Chromedriver
+data_collection/chromedriver-win64/
+
+# Large model files
+*.pt
+*.bin
+*.safetensors

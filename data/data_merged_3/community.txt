@@ -1,0 +1,6 @@
+Purpose: To provide a centralized platform for UniFi users to access support, documentation, and community discussions about networking and security products.
+UniFi 사용자가 네트워킹 및 보안 제품에 대한 지원, 문서 및 커뮤니티 토론에 접근할 수 있는 중앙 집중식 플랫폼을 제공하기 위해.
+Page Type: Support forum homepage
+지원 포럼 홈페이지
+Domain: Technology (Networking)
+기술 (네트워킹)

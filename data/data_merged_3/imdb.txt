@@ -1,0 +1,6 @@
+Purpose: To provide movie and TV show information, trailers, and recommendations to entertainment enthusiasts
+영화 및 TV 쇼 정보, 예고편, 추천을 엔터테인먼트 애호가에게 제공하기 위해
+Page Type: Homepage
+홈페이지
+Domain: Entertainment
+엔터테인먼트

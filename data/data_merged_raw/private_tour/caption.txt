@@ -1,0 +1,11 @@
+1. To promote and provide information about private tours in Berlin, targeting tourists interested in exploring the city's history and culture with a local guide.
+
+2. Landing page
+
+3. Tourism
+
+4. (a) Clear navigation menu with Home, About My Tours, Tours, Contact, and Blog sections
+(b) Prominent "Welcome to Berlin!" headline
+(c) Tripadvisor rating and review section
+(d) "To the tours" call-to-action button
+(e) Berlin skyline silhouette at the bottom of the page

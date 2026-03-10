@@ -1,0 +1,6 @@
+Purpose: To provide music discovery and tracking for music enthusiasts, allowing users to explore trending artists, tracks, and global listening trends.
+음악 애호가를 위한 음악 발견 및 추적을 제공하여 사용자가 트렌드 아티스트, 트랙 및 글로벌 청취 트렌드를 탐색할 수 있도록 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Music streaming and social networking
+음악 스트리밍 및 소셜 네트워킹

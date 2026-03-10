@@ -1,0 +1,15 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "landmark-complementary-is-top-level",
+      "help": "Aside should not be contained in another landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-unique",
+      "help": "Ensures landmarks are unique",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>visual studio code - Why is my Windows C++ VSCode project failing to compile when I use functionality from the standard library &lt;random&gt;? - Stack Overflow</title>
+  <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196" rel="shortcut icon"/>
+</head>
+<body>
+  <header>
+    <a href="https://stackoverflow.com">Stack Overflow</a>
+    <nav>
+      <a href="/questions">Questions</a>
+      <a href="/help">Help</a>
+      <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com">Chat</a>
+    </nav>
+  </header>
+  <main>
+    <h1>
+      <a href="/questions/79677945/why-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality">
+        Why is my Windows C++ VSCode project failing to compile when I use functionality from the standard library &lt;random&gt;?
+      </a>
+    </h1>
+    <div>
+      <div>
+        <span>Asked</span>
+        <time datetime="2025-06-24 16:50:16Z">today</time>
+      </div>
+      <div>
+        <span>Modified</span>
+        <a href="?lastactivity" title="2025-06-24 16:51:25Z">today</a>
+      </div>
+      <div>
+        <span>Viewed</span>
+        5 times
+      </div>
+    </div>
+    <div>
+      <p>I've set up a basic C++ project on VSCode on Windows. My main.cpp program looks like this:</p>
+      <pre><code>#include &lt;random&gt;
+
+using namespace std;
+
+int main() {
+  default_random_engine generator;
+  uniform_int_distribution&lt;int&gt; distribution(0, 10);
+  printf("%d", distribution(generator));
+  return 1;
+}
+</code></pre>
+      <p>However, when I compile and run this program, I get the error:</p>
+      <pre><code>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2321): error C2440: 'static_cast': cannot convert from 'std::mersenne_twister_engine&lt;unsigned int,32,624,397,31,2567483615,11,4294967295,7,2636928640,15,4022730752,18,1812433253&gt;' to 'unsigned int'...
+</code></pre>
+      <p>Is there an easy way of specifying that vscode should use a different version of the standard library? What can I do to use the functionality in my project?</p>
+    </div>
+    <div>
+      <ul>
+        <li><a href="/questions/tagged/c%2b%2b" rel="tag">c++</a></li>
+        <li><a href="/questions/tagged/visual-studio-code" rel="tag">visual-studio-code</a></li>
+        <li><a href="/questions/tagged/clang" rel="tag">clang</a></li>
+        <li><a href="/questions/tagged/std" rel="tag">std</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Related questions</h2>
+      <div>
+        <a href="https://stackoverflow.com/questions/62363671/warning-message-when-calling-a-class-member-function-inside-another-as-a-thread?rq=2">Warning message when calling a class member function inside another as a thread</a>
+      </div>
+      <div>
+        <a href="https://stackoverflow.com/questions/76170143/how-to-implement-is-comparable-trait-that-will-correctly-check-stdmap-with-non?rq=2">How to implement is_comparable trait that will correctly check std::map with non-comparable value_type?</a>
+      </div>
+      <div>
+        <a href="https://stackoverflow.com/questions/47766329/c-making-a-thread-and-passing-object-by-reference?rq=2">C++ Making a thread and passing Object by reference</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Site design / logo © 2025 Stack Exchange Inc; user contributions licensed under <a href="https://stackoverflow.com/help/licensing">CC BY-SA</a>.</p>
+  </footer>
+</body>
+</html>

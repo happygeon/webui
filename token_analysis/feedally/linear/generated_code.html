@@ -1,0 +1,155 @@
+Your approach to addressing the color contrast issues is sound, but let's refine it further to ensure that all elements meet the WCAG 2.1 AA guidelines for color contrast. Specifically, we need to ensure that the contrast ratios are at least 4.5:1 for normal text and 3:1 for large text.
+
+Here is the revised HTML code with improved color contrast:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear - Plan & Build Products with Ease</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+       .focus-visible {
+            outline: 2px solid #1e40af;
+            outline-offset: 2px;
+        }
+        /* Ensuring sufficient color contrast */
+       .bg-white.text-gray-700,
+       .bg-gray-100.text-black,
+       .bg-gray-500.text-white,
+       .bg-gradient-to-br.from-blue-500.via-purple-500.to-pink-500.text-white {
+            @apply text-black; /* Change text color to black for better contrast */
+        }
+       .bg-blue-500.text-white,
+       .bg-green-500.text-white,
+       .bg-red-500.text-white {
+            @apply text-white; /* Ensure text remains white for consistency */
+        }
+       .bg-gradient-to-br.from-blue-500.via-purple-500.to-pink-500.text-white {
+            @apply text-white; /* Ensure text remains white for better contrast */
+        }
+        button.bg-blue-500.text-white {
+            @apply bg-blue-500 text-white hover:bg-blue-600; /* Ensure hover state has high enough contrast */
+        }
+        button.bg-white.text-blue-500 {
+            @apply bg-white text-blue-500 hover:bg-blue-100; /* Ensure hover state has high enough contrast */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+<header class="bg-white shadow-lg py-4 px-6 flex items-center justify-between">
+    <div class="text-2xl font-bold">Linear</div>
+    <nav>
+        <ul class="flex space-x-4">
+            <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+            <li><a href="#pricing" class="hover:text-blue-500">Pricing</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container mx-auto px-6 py-16 max-w-screen-lg">
+    <section class="text-center mb-16">
+        <h1 class="text-4xl font-extrabold mb-4">Welcome to Linear</h1>
+        <p class="text-xl mb-8">The ultimate tool for planning and building products.</p>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded-full focus-visible">Get Started Free</button>
+    </section>
+
+    <section id="features" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Key Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <svg class="w-10 h-10 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                <h3 class="text-xl font-semibold mb-2">Task Management</h3>
+                <p>Efficiently organize tasks and projects.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <svg class="w-10 h-10 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
+                <p>Work together in real-time with team members.</p>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg">
+                <svg class="w-10 h-10 text-blue-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-3-2v2m5-4v2m3-2v2m-9 4h12a2 2 0 010 4h-12a2 2 0 010-4zm0-6h12a2 2 0 010 4h-12a2 2 0 010-4zm0-6h12a2 2 0 010 4h-12a2 2 0 010-4z"></path></svg>
+                <h3 class="text-xl font-semibold mb-2">Reporting</h3>
+                <p>Generate detailed reports and insights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Pricing</h2>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <div class="bg-white p-6 shadow-md rounded-lg w-full md:w-1/3">
+                <h3 class="text-xl font-semibold mb-2">Free</h3>
+                <p class="text-gray-500 mb-4">For individuals and small teams.</p>
+                <ul class="list-disc list-inside text-sm text-gray-600">
+                    <li>Up to 5 users</li>
+                    <li>Basic task management</li>
+                    <li>Limited collaboration features</li>
+                </ul>
+                <button class="bg-blue-500 text-white px-6 py-3 rounded-full mt-4 focus-visible">Sign Up</button>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg w-full md:w-1/3 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white">
+                <h3 class="text-xl font-semibold mb-2">Pro</h3>
+                <p class="text-gray-500 mb-4">For growing teams.</p>
+                <ul class="list-disc list-inside text-sm text-white">
+                    <li>Unlimited users</li>
+                    <li>Advanced task management</li>
+                    <li>Enhanced collaboration tools</li>
+                    <li>Detailed reporting</li>
+                </ul>
+                <button class="bg-white text-blue-500 px-6 py-3 rounded-full mt-4 focus-visible">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="mb-16">
+        <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+        <form action="#" method="post" class="space-y-4">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full focus-visible">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer class="bg-gray-800 text-white py-4 px-6">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2023 Linear. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior:'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+```
+
+### Key Changes:
+1. **Ensured Text Contrast on Gradients**: Added `@apply text-white` to `.bg-gradient-to-br.from-blue-500.via-purple-500.to-pink-500.text-white` to maintain white text on the gradient background.
+2. **Hover States**: Adjusted hover states for buttons to ensure they meet the color contrast requirements.
+
+These changes should address the color contrast issues while maintaining the original design integrity.

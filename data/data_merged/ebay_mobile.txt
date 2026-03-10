@@ -1,0 +1,6 @@
+Purpose: To provide an easy-to-use mobile interface for eBay's online marketplace, allowing users to browse, search, and purchase a wide variety of products across multiple categories.
+사용자가 여러 카테고리에서 다양한 제품을 탐색하고 검색하며 구매할 수 있도록 eBay의 온라인 마켓플레이스를 위한 사용하기 쉬운 모바일 인터페이스를 제공하기 위해.
+Page Type: Homepage
+홈페이지
+Domain: E-commerce
+전자상거래

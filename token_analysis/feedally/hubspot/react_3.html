@@ -1,0 +1,137 @@
+### Thought:
+The provided HTML code includes ARIA roles to enhance accessibility but lacks proper heading structures and a single main landmark. These issues violate the guidelines for document structure and navigation.
+
+### Action:
+I will add a level-one heading to the `<main>` element to satisfy the requirement of having at least one level-one heading on the page. Additionally, I will ensure that the `<main>` section has a role of `main` to indicate it as the primary content area.
+
+### Observation:
+After making these changes, I will verify if the document now contains a single main landmark and a level-one heading, and if the original functionality remains unchanged.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubSpot - Unify Operations, Boost ROI, Enhance Satisfaction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary-color: #7AB8F5;
+            --secondary-color: #FFD64C;
+            --background-light: #FFFFFF;
+            --background-dark: #333333;
+            --text-dark: #000000;
+            --text-light: #FFFFFF;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+       .hero {
+            background-image: url('hubspot-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-light);
+            text-align: center;
+        }
+       .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+       .hero p {
+            font-size: 1.2rem;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+       .features {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+       .feature-item {
+            margin: 2rem 0;
+        }
+       .cta-button {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+       .cta-button:hover {
+            background-color: darken(var(--primary-color), 10%);
+        }
+        @media (max-width: 768px) {
+           .hero h1 {
+                font-size: 2.5rem;
+            }
+           .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header role="banner" class="bg-white shadow-lg">
+        <div class="container mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between space-x-4">
+                <a href="#" class="text-xl font-bold">HubSpot</a>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-primary-color">Features</a></li>
+                    <li><a href="#" class="hover:text-primary-color">Pricing</a></li>
+                    <li><a href="#" class="hover:text-primary-color">Blog</a></li>
+                    <li><a href="#" class="hover:text-primary-color">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main role="main" class="hero bg-cover bg-no-repeat bg-center">
+        <div class="container mx-auto">
+            <h1 class="font-bold text-4xl mb-4">Unify Operations, Boost ROI, Enhance Satisfaction</h1>
+            <p class="text-lg mb-8">Experience the power of AI in your business with HubSpot’s all-in-one customer platform.</p>
+            <button class="cta-button" aria-label="Get Started with HubSpot">Get Started Today</button>
+        </div>
+    </main>
+    <section role="region" class="features bg-white py-8">
+        <div class="container mx-auto text-center">
+            <h2 class="font-bold text-2xl mb-4">Why Choose HubSpot?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-item">
+                    <img src="ai-icon.png" alt="AI Icon" class="w-16 h-16 mb-4">
+                    <h3 class="font-semibold mb-2">AI-Powered Solutions</h3>
+                    <p>Empower your team with intelligent tools designed to streamline processes and improve efficiency.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="unified-platform-icon.png" alt="Unified Platform Icon" class="w-16 h-16 mb-4">
+                    <h3 class="font-semibold mb-2">All-In-One Platform</h3>
+                    <p>Unite your sales, marketing, and service efforts under one roof, driving greater productivity and collaboration.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="customer-success-icon.png" alt="Customer Success Icon" class="w-16 h-16 mb-4">
+                    <h3 class="font-semibold mb-2">Enhanced Customer Experience</h3>
+                    <p>Deliver exceptional support and engagement to boost customer satisfaction and loyalty.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer role="contentinfo" class="bg-black text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 HubSpot. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+### Changes Made:
+1. **Added Level-One Heading**: Added a `<h1>` element inside the `<main>` section to meet the requirement of having at least one level-one heading.
+2. **Main Landmark Role**: Ensured that the `<main>` section has a role of `main`.
+
+These changes address the identified accessibility issues by ensuring the document has a single main landmark and a level-one heading, while maintaining the original functionality of the webpage.

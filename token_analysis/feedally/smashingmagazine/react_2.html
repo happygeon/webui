@@ -1,0 +1,128 @@
+The current HTML code already includes a `<main>` element with the `role="main"` attribute, which addresses the "landmark-one-main" violation. However, it does not include a level-one heading (`<h1>`) as recommended by the "page-has-heading-one" violation. Let's add an appropriate level-one heading to the document.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Insights - Front-End News & Resources</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .focus-ring {
+            outline: none;
+            box-shadow: 0 0 0 2px #6366f1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="logo.png" alt="Web Dev Insights Logo" class="h-10 w-10 rounded-full">
+                <a href="/" class="text-xl font-bold">Web Dev Insights</a>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="#articles" class="hover:text-blue-500 focus-ring focus:outline-none">Articles</a></li>
+                <li><a href="#resources" class="hover:text-blue-500 focus-ring focus:outline-none">Resources</a></li>
+                <li><a href="#about" class="hover:text-blue-500 focus-ring focus:outline-none">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-500 focus-ring focus:outline-none">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen" style="background-image: url('hero.jpg');">
+        <div class="container mx-auto h-full flex justify-center items-center text-white text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Web Dev Insights</h1>
+            <p class="text-lg md:text-xl mb-8">Stay updated with the latest in front-end development.</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus-ring focus:outline-none">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Main Content Landmark -->
+    <main role="main" class="py-12">
+        <!-- Page Title -->
+        <h1 class="sr-only">Web Development Insights</h1>
+
+        <!-- Articles Section -->
+        <section id="articles" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">Latest Articles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Article Card -->
+                    <article class="bg-white shadow-md p-6 rounded-lg overflow-hidden">
+                        <img src="article1.jpg" alt="Article Thumbnail" class="w-full h-48 object-cover mb-4">
+                        <h3 class="text-xl font-bold mb-2">The Future of JavaScript</h3>
+                        <p class="text-gray-600 mb-4">Explore how JavaScript is evolving and impacting modern web development...</p>
+                        <a href="/article/1" class="text-blue-500 hover:text-blue-600 focus-ring focus:outline-none">Read More</a>
+                    </article>
+                    <!-- Additional Article Cards... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="bg-gray-50 py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">Useful Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Resource Card -->
+                    <div class="bg-white shadow-md p-6 rounded-lg overflow-hidden">
+                        <h3 class="text-xl font-bold mb-2">CSS Grid Tutorial</h3>
+                        <p class="text-gray-600 mb-4">A comprehensive guide to mastering CSS Grid for layout...</p>
+                        <a href="/resource/css-grid-tutorial" class="text-blue-500 hover:text-blue-600 focus-ring focus:outline-none">View Resource</a>
+                    </div>
+                    <!-- Additional Resource Cards... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">About Us</h2>
+                <p class="text-lg mb-8">We're passionate about sharing knowledge and helping developers grow in their field...</p>
+                <a href="/about" class="text-blue-500 hover:text-blue-600 focus-ring focus:outline-none">Learn More</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus-ring focus:outline-none">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Web Dev Insights. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+**Observation:** The addition of a hidden `<h1>` tag with the `class="sr-only"` ensures that screen readers will announce the title of the page, addressing the "page-has-heading-one" violation without affecting the visible UI.

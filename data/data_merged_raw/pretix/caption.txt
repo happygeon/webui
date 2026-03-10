@@ -1,0 +1,11 @@
+1. To showcase and promote a comprehensive ticketing software solution for event organizers, highlighting its features and benefits for managing events from start to finish.
+
+2. Landing page
+
+3. Event management software
+
+4. (a) Clear and prominent headline describing the product's main benefit
+(b) Navigation menu with key sections (Features, Products, Pricing, News)
+(c) Visual representation of key features using icons and labels
+(d) Call-to-action buttons ("All features" and "Create your first ticket shop")
+(e) Bulleted list of main product benefits and capabilities

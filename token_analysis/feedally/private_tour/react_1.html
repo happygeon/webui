@@ -1,0 +1,103 @@
+**Thought:** The current HTML document does not include a `<main>` element with the `role="main"` attribute, which is essential for identifying the main content of the page. Additionally, there is no level-one heading (`<h1>`) in the document, which is crucial for SEO and user understanding.
+
+**Action:** I will add a `<main>` element with the `role="main"` attribute and ensure it contains the primary content of the page. I will also add a level-one heading at the beginning of the document.
+
+**Observation:** After making these changes, the document should comply with the identified WCAG guidelines.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berlin Private Tours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .focus-visible:focus {
+            outline: 2px solid #069;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans leading-relaxed">
+    <header class="bg-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-xl font-bold">Berlin Private Tours</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500 focus-visible">About Us</a></li>
+                    <li><a href="#services" class="hover:text-blue-500 focus-visible">Services</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 focus-visible">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="py-12">
+        <section id="hero" class="bg-cover bg-center h-screen flex items-center justify-center text-white">
+            <div class="container max-w-md text-center">
+                <h1 class="text-4xl font-extrabold mb-4">Explore Berlin with Local Expertise</h1>
+                <p class="mb-8">Join our private tours to delve into Berlin’s rich history and vibrant culture.</p>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus-visible">Book Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="py-8">
+            <div class="container max-w-4xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-6">About Us</h2>
+                <p>We are dedicated to providing you with unforgettable private tours of Berlin. Our knowledgeable guides will take you through the city's most iconic landmarks and hidden gems, offering insights into its fascinating past and present.</p>
+            </div>
+        </section>
+
+        <section id="services" class="py-8 bg-gray-200">
+            <div class="container max-w-4xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-6">Our Services</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <li class="bg-white p-6 rounded shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">History Tour</h3>
+                        <p>Discover the stories behind Berlin's most famous sites.</p>
+                    </li>
+                    <li class="bg-white p-6 rounded shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Culture Tour</h3>
+                        <p>Explore the arts, music, and cuisine that make Berlin unique.</p>
+                    </li>
+                    <li class="bg-white p-6 rounded shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Customized Tours</h3>
+                        <p>Create your perfect tour based on your interests.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="py-8 bg-white">
+            <div class="container max-w-4xl mx-auto">
+                <h2 class="text-3xl font-semibold mb-6">Get In Touch</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded focus-visible">Send</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Berlin Private Tours. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```

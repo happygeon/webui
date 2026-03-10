@@ -1,0 +1,5622 @@
+<html data-mutiny-loaded="true" lang="en">
+ <head>
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
+  <noscript>
+  </noscript>
+  <title>
+   LaunchDarkly: Feature Flags, Feature Management, and Experimentation
+  </title>
+  <img alt="" border="0" height="1" src="https://x.adroll.com/attribution/trigger?fpc=0149c85b5977cf81b0171aad8cae6bd4&amp;advertisable_eid=S3EHVDRTKFDW5GXCENVHAH&amp;conversion_type=PageView&amp;conversion_value=0.00&amp;currency=USC&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F" width="1"/>
+  <div style="width: 1px; height: 1px; display: inline; position: absolute;">
+   <img alt="" height="1" src="https://d.adroll.com/cm/b/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/bombora/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/experian/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/g/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/index/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/l/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/n/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/o/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/outbrain/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/pubmatic/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/taboola/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/triplelift/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+   <img alt="" height="1" src="https://d.adroll.com/cm/x/out?adroll_fpc=0149c85b5977cf81b0171aad8cae6bd4-1750833648257&amp;flg=1&amp;pv=61133431384.52858&amp;arrfrr=https%3A%2F%2Flaunchdarkly.com%2F&amp;advertisable=S3EHVDRTKFDW5GXCENVHAH" style="border-style:none;" width="1"/>
+  </div>
+  <div style="width: 1px; height: 1px; display: inline; position: absolute;">
+  </div>
+ </head>
+ <body class="noOverflowX">
+  <div>
+   <div>
+    <div>
+     <p>
+      This website uses cookies.
+     </p>
+    </div>
+    <div>
+     <p>
+      We use cookies to personalise content and ads, to provide social media features and to analyse our traffic. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services.
+     </p>
+     <p>
+      For more information about our cookies, please see our
+      <a>
+       privacy policy
+      </a>
+      . To change your cookie preferences,
+      <a>
+       click here
+      </a>
+      .
+     </p>
+    </div>
+    <div>
+     <a>
+      OK
+     </a>
+     <a>
+      Deny all
+     </a>
+    </div>
+   </div>
+   <div>
+    <div>
+     <img alt="LaunchDarkly Logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/e817b6e5-1d6b-41e4-a1d2-ab75b57365a8_icon-launchdarkly-dark.svg"/>
+     <h3>
+      Set cookie preference
+     </h3>
+    </div>
+    <div>
+     <div>
+      <div>
+       <div>
+        Necessary (78)
+       </div>
+       <form>
+        <input/>
+       </form>
+       <div>
+        <p>
+         Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.
+        </p>
+       </div>
+      </div>
+      <div>
+       <table>
+        <thead>
+         <tr>
+          <th>
+           Name
+          </th>
+          <th>
+           Provider
+          </th>
+          <th>
+           Purpose
+          </th>
+          <th>
+           Maximum Storage Duration
+          </th>
+          <th>
+           Type
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           __Host-airtable-session
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Contains a specific ID for the current session. This is necessary for running the website correctly.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __Host-airtable-session.sig
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Contains a specific ID for the current session. This is necessary for running the website correctly.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __stripe_mid
+          </td>
+          <td>
+           <a>
+            Stripe
+           </a>
+          </td>
+          <td>
+           This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __stripe_sid
+          </td>
+          <td>
+           <a>
+            Stripe
+           </a>
+          </td>
+          <td>
+           This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           AWSALBTG
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.
+          </td>
+          <td>
+           7 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           AWSALBTGCORS
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Registers which server-cluster is serving the visitor. This is used in context with load balancing, in order to optimize user experience.
+          </td>
+          <td>
+           7 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           brw
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Detects and logs potential errors on third-party provided functions on the website.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           login-status-p
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           This cookie is necessary for the login function on the website.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           object(#-#-##:#:#.#)
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Holds the users timezone.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __cf_bm [x8]
+          </td>
+          <td>
+           <a>
+            Codepen
+           </a>
+           <br/>
+           g2.com
+           <br/>
+           <a>
+            G2Crowd
+           </a>
+           <br/>
+           <a>
+            LaunchDarkly
+           </a>
+           <br/>
+           qualified.com
+           <br/>
+           <a>
+            Twitter Inc.
+           </a>
+           <br/>
+           <a>
+            Vimeo
+           </a>
+          </td>
+          <td>
+           This cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __cfruid
+          </td>
+          <td>
+           <a>
+            Codepen
+           </a>
+          </td>
+          <td>
+           This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cf_clearance [x2]
+          </td>
+          <td>
+           <a>
+            Codepen
+           </a>
+           <br/>
+           <a>
+            Fewer &amp; Faster
+           </a>
+          </td>
+          <td>
+           This cookie is used to distinguish between humans and bots.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           test_cookie
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Used to check if the user's browser supports cookies.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gh_sess
+          </td>
+          <td>
+           <a>
+            Github
+           </a>
+          </td>
+          <td>
+           Preserves users states across page requests.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           logged_in
+          </td>
+          <td>
+           <a>
+            Github
+           </a>
+          </td>
+          <td>
+           Registers whether the user is logged in. This allows the website owner to make parts of the website inaccessible, based on the user's log-in status.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           BIGipServer#
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Used to distribute traffic to the website on several servers in order to optimise response times.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           CookieConsent [x2]
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+           <br/>
+           <a>
+            Cookiebot
+           </a>
+          </td>
+          <td>
+           Stores the user's cookie consent state for the current domain
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ar_debug
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Checks whether a technical debugger-cookie is present.
+          </td>
+          <td>
+           3 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           @@scroll#
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __mp_opt_in_out_#
+          </td>
+          <td>
+           cdn.mxpnl.com
+          </td>
+          <td>
+           Stores the user's cookie consent state for the current domain
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __q_domainTest
+          </td>
+          <td>
+           js.qualified.com
+          </td>
+          <td>
+           Used in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __q_state_BN8NXAwRcuN5KnVd
+          </td>
+          <td>
+           js.qualified.com
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           10 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __tld__
+          </td>
+          <td>
+           <a>
+            Segment
+           </a>
+          </td>
+          <td>
+           Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_flagsA
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           This cookie serves multiple purposes; it determines whether the user has submitted any forms, performed cross-domain migration or has made any tracking opt-out choices.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_nA
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_pendingA
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_uid
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ce.cch
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Stores the user's cookie consent state for the current domain
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ce.s
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _CEFT
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           This cookie is used by the website’s operator in context with multi-variate testing. This is a tool used to combine or change content on the website. This allows the website to find the best variation/edition of the site.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ga [x3]
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+          </td>
+          <td>
+           2 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ga_# [x3]
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Used by Google Analytics to collect data on the number of times a user has visited the website as well as dates for the first and most recent visit.
+          </td>
+          <td>
+           2 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gcl_au [x2]
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.
+          </td>
+          <td>
+           3 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gd_session
+          </td>
+          <td>
+           j.6sc.co
+          </td>
+          <td>
+           Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gd_visitor
+          </td>
+          <td>
+           j.6sc.co
+          </td>
+          <td>
+           Collects visitor data related to the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded, with the purpose of displaying targeted ads.
+          </td>
+          <td>
+           2 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gid [x2]
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Registers a unique ID that is used to generate statistical data on how the visitor uses the website.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _hjSession_#
+          </td>
+          <td>
+           <a>
+            Hotjar
+           </a>
+          </td>
+          <td>
+           Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _hjSessionUser_#
+          </td>
+          <td>
+           <a>
+            Hotjar
+           </a>
+          </td>
+          <td>
+           Collects statistics on the visitor's visits to the website, such as the number of visits, average time spent on the website and what pages have been read.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _mkto_trk
+          </td>
+          <td>
+           <a>
+            Marketo
+           </a>
+          </td>
+          <td>
+           Contains data on visitor behaviour and website interaction. This is used in context with the email marketing service Marketo.com, which allows the website to target visitors via email.
+          </td>
+          <td>
+           2 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _rdt_uuid
+          </td>
+          <td>
+           <a>
+            Reddit
+           </a>
+          </td>
+          <td>
+           Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
+          </td>
+          <td>
+           3 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetsid
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetvid
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           amplitude_#
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Registers statistical data on users' behaviour on the website. Used for internal analytics by the website operator.
+          </td>
+          <td>
+           10 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           amplitude_cookie_test
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Detects whether partner data synchronization is functioning and currently running - This function sends user data between third-party advertisement companies for the purpose of targeted advertisements.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           amplitude_id_#
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+          </td>
+          <td>
+           10 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ce_successful_csp_check [x2]
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+           <br/>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Detects whether user behaviour tracking should be active on the website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cebs
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Tracks the individual sessions on the website, allowing the website to compile statistical data from multiple visits. This data can also be used to create leads for marketing purposes.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           debug
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           This cookie is used to detect errors on the website - this information is sent to the website's support staff in order to optimize the visitor's experience on the website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           dmn_chk_#
+          </td>
+          <td>
+           prod.ferndocs.com
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ld:#:#
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ld:#:$diagnostics
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Used to monitor website performance for statistical purposes.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ld:$anonUserId
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Used to deliver anonymous user details when authorising applications on the website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           pfjs%3Acookies
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Used to check if the user's browser supports cookies.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           li_gc
+          </td>
+          <td>
+           <a>
+            LinkedIn
+           </a>
+          </td>
+          <td>
+           Stores the user's cookie consent state for the current domain
+          </td>
+          <td>
+           180 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           lidc
+          </td>
+          <td>
+           <a>
+            LinkedIn
+           </a>
+          </td>
+          <td>
+           Used by the social networking service, LinkedIn, for tracking the use of embedded services.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           m
+          </td>
+          <td>
+           <a>
+            Stripe
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ab
+          </td>
+          <td>
+           <a>
+            m.stripe.com
+           </a>
+          </td>
+          <td>
+           This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _mf
+          </td>
+          <td>
+           <a>
+            m.stripe.com
+           </a>
+          </td>
+          <td>
+           This cookie is necessary for making credit card transactions on the website. The service is provided by Stripe.com which allows online transactions without storing any credit card information.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           id
+          </td>
+          <td>
+           <a>
+            m.stripe.com
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ce_asset_waiting
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           This cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           sc_anonymous_id
+          </td>
+          <td>
+           widget.sndcdn.com
+          </td>
+          <td>
+           Used in context with the 3D-view-function on the website.
+          </td>
+          <td>
+           10 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _cfuvid
+          </td>
+          <td>
+           <a>
+            Vimeo
+           </a>
+          </td>
+          <td>
+           This cookie is a part of the services provided by Cloudflare - Including load-balancing, deliverance of website content and serving DNS connection for website operators.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div>
+      <div>
+       <div>
+        Preferences (4)
+       </div>
+       <form>
+        <input/>
+       </form>
+       <div>
+        <p>
+         Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.
+        </p>
+       </div>
+      </div>
+      <div>
+       <table>
+        <thead>
+         <tr>
+          <th>
+           Name
+          </th>
+          <th>
+           Provider
+          </th>
+          <th>
+           Purpose
+          </th>
+          <th>
+           Maximum Storage Duration
+          </th>
+          <th>
+           Type
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           internal/page_view
+          </td>
+          <td>
+           <a>
+            Airtable
+           </a>
+          </td>
+          <td>
+           Stores data entered with a form so that when you return to the website you don't have to fill in the data again.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           adroll#adroll
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Stores the user's cookie consent state for the current domain
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           IndexedDB
+          </td>
+         </tr>
+         <tr>
+          <td>
+           wistia-video-progress-#
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Contains a timestamp for the website’s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           1
+          </td>
+          <td>
+           <a>
+            m.stripe.com
+           </a>
+          </td>
+          <td>
+           This cookie is used in conjunction with the payment window - The cookie is necessary for making secure transactions on the website.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div>
+      <div>
+       <div>
+        Statistics (20)
+       </div>
+       <form>
+        <input/>
+       </form>
+       <div>
+        <p>
+         Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.
+        </p>
+       </div>
+      </div>
+      <div>
+       <table>
+        <thead>
+         <tr>
+          <th>
+           Name
+          </th>
+          <th>
+           Provider
+          </th>
+          <th>
+           Purpose
+          </th>
+          <th>
+           Maximum Storage Duration
+          </th>
+          <th>
+           Type
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           amplitude_unsent_#
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           amplitude_unsent_identify_#
+          </td>
+          <td>
+           cdn.amplitude.com
+          </td>
+          <td>
+           Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ajs_anonymous_id
+          </td>
+          <td>
+           prod.ferndocs.com
+          </td>
+          <td>
+           This cookie is used to count how many times a website has been visited by different visitors - this is done by assigning the visitor an ID, so the visitor does not get registered twice.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _octo
+          </td>
+          <td>
+           <a>
+            Github
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _ce.clock_data
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _dd_s
+          </td>
+          <td>
+           www.datadoghq-browser-agent.com
+          </td>
+          <td>
+           Registers the website's speed and performance. This function can be used in context with statistics and load-balancing.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ajs_anonymous_id
+          </td>
+          <td>
+           <a>
+            Segment
+           </a>
+          </td>
+          <td>
+           This cookie is used to identify a specific visitor - this information is used to identify the number of specific visitors on a website.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb%3Atest
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on the user's visits to the website, such as the number of visits, average time spent on the website and what pages have been loaded with the purpose of generating reports for optimising the website content.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cebsp_
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           dd_cookie_test_#
+          </td>
+          <td>
+           www.datadoghq-browser-agent.com
+          </td>
+          <td>
+           Registers data on visitors' website-behaviour. This is used for internal analysis and website optimization.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           wistia
+          </td>
+          <td>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Used by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ce_fvd [x2]
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+           <br/>
+           <a>
+            LaunchDarkly
+           </a>
+          </td>
+          <td>
+           Collects data on the user’s navigation and behavior on the website. This is used to compile statistical reports and heatmaps for the website owner.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cetabid
+          </td>
+          <td>
+           <a>
+            CrazyEgg
+           </a>
+          </td>
+          <td>
+           Sets a unique ID for the session. This allows the website to obtain data on visitor behaviour for statistical purposes.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _secure_speakerd_session
+          </td>
+          <td>
+           <a>
+            Fewer &amp; Faster
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           14 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           g2tracking
+          </td>
+          <td>
+           <a>
+            G2Crowd
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           barometric[idfa]
+          </td>
+          <td>
+           <a>
+            Claritas
+           </a>
+          </td>
+          <td>
+           Tracks user interaction with the website’s community feature for segmentation purposes and in order to compile statistical reports on how the website is being used.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           personalization_id
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           This cookie is set by Twitter - The cookie allows the visitor to share content from the website onto their Twitter profile.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           vuid
+          </td>
+          <td>
+           <a>
+            Vimeo
+           </a>
+          </td>
+          <td>
+           Collects data on the user's visits to the website, such as which pages have been read.
+          </td>
+          <td>
+           2 years
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           number(#)
+          </td>
+          <td>
+           <a>
+            Soundcloud
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+     <div>
+      <div>
+       <div>
+        Marketing (68)
+       </div>
+       <form>
+        <input/>
+       </form>
+       <div>
+        <p>
+         Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.
+        </p>
+       </div>
+      </div>
+      <div>
+       <table>
+        <thead>
+         <tr>
+          <th>
+           Name
+          </th>
+          <th>
+           Provider
+          </th>
+          <th>
+           Purpose
+          </th>
+          <th>
+           Maximum Storage Duration
+          </th>
+          <th>
+           Type
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           rp.gif
+          </td>
+          <td>
+           <a>
+            Reddit
+           </a>
+          </td>
+          <td>
+           Necessary for the implementation of the Reddit.com's share-button function.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           v1/beacon/img.gif
+          </td>
+          <td>
+           b.6sc.co
+          </td>
+          <td>
+           Used in context with Account-Based-Marketing (ABM). The cookie registers data such as IP-addresses, time spent on the website and page requests for the visit. This is used for retargeting of multiple users rooting from the same IP-addresses. ABM usually facilitates B2B marketing purposes.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetsid
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetsid_exp
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Contains the expiry-date for the cookie with corresponding name.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetvid
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Used to track visitors on multiple websites, in order to present relevant advertisement based on the visitor's preferences.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _uetvid_exp
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Contains the expiry-date for the cookie with corresponding name.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           MR
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           7 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           MSPTC
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           This cookie registers data on the visitor. The information is used to optimize advertisement relevance.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           MUID
+          </td>
+          <td>
+           <a>
+            Microsoft
+           </a>
+          </td>
+          <td>
+           Used widely by Microsoft as a unique user ID. The cookie enables user tracking by synchronising the ID across many Microsoft domains.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _BUID
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __mpq_#_#
+          </td>
+          <td>
+           prod.ferndocs.com
+          </td>
+          <td>
+           Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ajs_user_id
+          </td>
+          <td>
+           <a>
+            Segment
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cp_session
+          </td>
+          <td>
+           <a>
+            Codepen
+           </a>
+          </td>
+          <td>
+           Registers user behaviour and navigation on the website, and any interaction with active campaigns. This is used for optimizing advertisement and for efficient retargeting.
+          </td>
+          <td>
+           3 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           lastExternalReferrer
+          </td>
+          <td>
+           <a>
+            Meta Platforms, Inc.
+           </a>
+          </td>
+          <td>
+           Detects how the user reached the website by registering their last URL-address.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           lastExternalReferrerTime
+          </td>
+          <td>
+           <a>
+            Meta Platforms, Inc.
+           </a>
+          </td>
+          <td>
+           Detects how the user reached the website by registering their last URL-address.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           topicsLastReferenceTime
+          </td>
+          <td>
+           <a>
+            Meta Platforms, Inc.
+           </a>
+          </td>
+          <td>
+           Collects data on the user across websites - This data is used to make advertisement more relevant.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           IDE
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           NID
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.
+          </td>
+          <td>
+           6 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           pagead/1p-conversion/#/
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           pagead/1p-user-list/#
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Tracks if the user has shown interest in specific products or events across multiple websites and detects how the user navigates between sites. This is used for measurement of advertisement efforts and facilitates payment of referral-fees between websites.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           collect
+          </td>
+          <td>
+           prod.ferndocs.com
+          </td>
+          <td>
+           Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __adroll_consent_params
+          </td>
+          <td>
+           <a>
+            Adroll Group
+           </a>
+          </td>
+          <td>
+           Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_dfsA
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on visitors' preferences and behaviour on the website - This information is used make content and advertisement more relevant to the specific visitor.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _biz_kvpA
+          </td>
+          <td>
+           <a>
+            Bizible
+           </a>
+          </td>
+          <td>
+           Collects data on user visits to the website, such as what pages have been accessed. The registered data is used to categorise the user's interest and demographic profiles in terms of resales for targeted marketing.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _fbp
+          </td>
+          <td>
+           <a>
+            Meta Platforms, Inc.
+           </a>
+          </td>
+          <td>
+           Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers.
+          </td>
+          <td>
+           3 months
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gat
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ajs_user_id
+          </td>
+          <td>
+           <a>
+            Segment
+           </a>
+          </td>
+          <td>
+           This cookie is used to collect data on the visitor's behavior on the website - this information can be used to assign the visitor to a visitor segment, based on common preferences.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb_anonymous_id
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb_group_id
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on visitors. This information is used to assign visitors into segments, making website advertisement more efficient.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb_user_id
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           mp_#_mixpanel
+          </td>
+          <td>
+           cdn.mxpnl.com
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           bcookie
+          </td>
+          <td>
+           <a>
+            LinkedIn
+           </a>
+          </td>
+          <td>
+           Used by the social networking service, LinkedIn, for tracking the use of embedded services.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           rack.session
+          </td>
+          <td>
+           <a>
+            Clearbit
+           </a>
+          </td>
+          <td>
+           Used in context with video-advertisement. The cookie limits the number of times a user is shown the same advertisement. The cookie is also used to ensure relevance of the video-advertisement to the specific user.
+          </td>
+          <td>
+           7 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _/ad/75aa344edeef4dbfa3b3dd7cb5f40e6f/pixel
+          </td>
+          <td>
+           <a>
+            Quora
+           </a>
+          </td>
+          <td>
+           Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           adroll_flgs
+          </td>
+          <td>
+           <a>
+            Adroll Group
+           </a>
+          </td>
+          <td>
+           Presents the user with relevant content and advertisement. The service is provided by third-party advertisement hubs, which facilitate real-time bidding for advertisers.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           1/i/adsct [x2]
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           Pixel Tracker
+          </td>
+         </tr>
+         <tr>
+          <td>
+           muc_ads
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           Collects data on user behaviour and interaction in order to optimize the website and make advertisement on the website more relevant.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           barometric[cuid]
+          </td>
+          <td>
+           <a>
+            Claritas
+           </a>
+          </td>
+          <td>
+           Collects data on visitors. This information is used to assign visitors into segments, making website advertisement more efficient.
+          </td>
+          <td>
+           1 year
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           guest_id
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           Collects data related to the user's visits to the website, such as the number of visits, average time spent on the website and which pages have been loaded, with the purpose of personalising and improving the Twitter service.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           guest_id_ads
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           guest_id_marketing
+          </td>
+          <td>
+           <a>
+            Twitter Inc.
+           </a>
+          </td>
+          <td>
+           Collects information on user behaviour on multiple websites. This information is used in order to optimize the relevance of advertisement on the website.
+          </td>
+          <td>
+           400 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _w_session
+          </td>
+          <td>
+           <a>
+            Wistia
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           14 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           _gcl_ls
+          </td>
+          <td>
+           <a>
+            Google
+           </a>
+          </td>
+          <td>
+           Tracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb_group_properties
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           cb_user_traits
+          </td>
+          <td>
+           x.clearbitjs.com
+          </td>
+          <td>
+           Collects data on visitor behaviour from multiple websites, in order to present more relevant advertisement - This also allows the website to limit the number of times that they are shown the same advertisement.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           #-#
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           __Secure-ROLLOUT_TOKEN
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           180 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           iU5q-!O9@$
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           LAST_RESULT_ENTRY_KEY
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           LogsDatabaseV2:V#||LogsRequestsStore
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           IndexedDB
+          </td>
+         </tr>
+         <tr>
+          <td>
+           nextId
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           remote_sid
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Necessary for the implementation and functionality of YouTube video-content on the website.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           requests
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ServiceWorkerLogsDatabase#SWHealthLog
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Necessary for the implementation and functionality of YouTube video-content on the website.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           IndexedDB
+          </td>
+         </tr>
+         <tr>
+          <td>
+           TESTCOOKIESENABLED
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           1 day
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           VISITOR_INFO1_LIVE
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Tries to estimate the users' bandwidth on pages with integrated YouTube videos.
+          </td>
+          <td>
+           180 days
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           YSC
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Registers a unique ID to keep statistics of what videos from YouTube the user has seen.
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTTP Cookie
+          </td>
+         </tr>
+         <tr>
+          <td>
+           ytidb::LAST_RESULT_ENTRY_KEY
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           YtIdbMeta#databases
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Used to track user’s interaction with embedded content.
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           IndexedDB
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-player-user-settings
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Pending
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-cast-available
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-cast-installed
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-connected-devices
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-device-id
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Persistent
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-fast-check-period
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-session-app
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+         <tr>
+          <td>
+           yt-remote-session-name
+          </td>
+          <td>
+           <a>
+            YouTube
+           </a>
+          </td>
+          <td>
+           Stores the user's video player preferences using embedded YouTube video
+          </td>
+          <td>
+           Session
+          </td>
+          <td>
+           HTML Local Storage
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div>
+     <div>
+      <a>
+       Allow selected
+      </a>
+      <a>
+       Allow all
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <iframe>
+  </iframe>
+  <iframe>
+  </iframe>
+  <div>
+   <div>
+    <section>
+     <a>
+      <div>
+       <p>
+        <div>
+         <p>
+          Join our upcoming Tech Talk on June 26 to explore your new normal for shipping using Guarded Releases.
+         </p>
+        </div>
+       </p>
+      </div>
+      <span>
+       Register now
+       <svg>
+        <path>
+        </path>
+       </svg>
+      </span>
+     </a>
+    </section>
+    <header>
+     <nav>
+      <div>
+       <div>
+        <a>
+         LaunchDarkly
+        </a>
+       </div>
+       <div>
+        <a>
+         Get a demo
+        </a>
+       </div>
+       <input/>
+       <div>
+       </div>
+       <div>
+        <a>
+         LaunchDarkly
+        </a>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           <div>
+            <span>
+             Platform
+            </span>
+            <svg>
+             <path>
+             </path>
+            </svg>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <p>
+                  LaunchDarkly Platform
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                   </div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="Release Automation" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aCQJEidWJ-7kSC2w_icon--guarded-release-x24.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                      <span>
+                       Release Automation
+                      </span>
+                     </div>
+                     <p>
+                      Monitor and de-risk.
+                     </p>
+                    </div>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                   </div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="Experimentation" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aCQJESdWJ-7kSC2v_icon--experimentation-x24.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                      <span>
+                       Experimentation
+                      </span>
+                     </div>
+                     <p>
+                      Make data-driven decisions.
+                     </p>
+                    </div>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                   </div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="Feature Flags" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aCQJEydWJ-7kSC2x_icon--release-management-x24.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                      <span>
+                       Feature Flags
+                      </span>
+                     </div>
+                     <p>
+                      Scale great release processes.
+                     </p>
+                    </div>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                   </div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="Product Analytics" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aCPw5idWJ-7kSCzW_icon--product-analytics-green.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                      <span>
+                       Product Analytics
+                      </span>
+                     </div>
+                     <p>
+                      Measure feature impact.
+                     </p>
+                    </div>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                   </div>
+                   <div>
+                    <div>
+                     <div>
+                      <img alt="AI Engineering" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aCQJECdWJ-7kSC2u_icon--ai-x24.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                      <span>
+                       AI Engineering
+                      </span>
+                     </div>
+                     <p>
+                      Make innovative AI products.
+                     </p>
+                    </div>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <p>
+                  Overview
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Platform overview" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/266b2e0a-ebe2-497f-9cde-69d986bafd69_platform-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Platform overview
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Feature lifecycle management" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/2e91cf1f-b2e2-4f0c-901e-e972a5480f5b_lifecycle-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Feature lifecycle management
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Integrations" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/b46b5688-b78f-480e-92fc-0a8a57d3abbc_partners-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Integrations
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Governance" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/880016dd-0bf4-411d-9672-a96bf5614520_shield-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Governance
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Automation" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z8n8MBsAHJWomM-2_icon--new-automation.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Automation
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Platform architecture" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z8n8MRsAHJWomM-3_icon--new-platform-architecture.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Platform architecture
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Feature flags" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/0e0f9f0b-b4c5-47f5-b094-b2eb46974b83_toggle-icon-black.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Feature flags
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Launchdarkly vs in-house" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/f07fc585-60fb-4022-a242-396bec14be6c_vs-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Launchdarkly vs in-house
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div>
+           <div>
+            <span>
+             Solutions
+            </span>
+            <svg>
+             <path>
+             </path>
+            </svg>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <p>
+                  By Team
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Developers" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/20ba409b-7c55-4cdd-ae22-5cc5491ca91d_sdk-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Developers
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="DevOps &amp; SRE" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z8n8MRsAHJWomM-3_icon--new-platform-architecture.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     DevOps &amp; SRE
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Mobile apps" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/2f8b910d-3675-4939-b0b7-8aa2f3ddf300_mobile-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Mobile apps
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Product managers" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/27d32d46-412c-4dae-b870-d0c67df71fa8_product-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Product managers
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <p>
+                  By Industry
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Financial services" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/243d4462-b86a-435c-bac9-9116ae7c1e6e_financial-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Financial services
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Retail &amp; eCommerce" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZraFx0aF0TcGI1dz_topnav-retail-icon-black.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Retail &amp; eCommerce
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Healthcare" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/67f7f859-5f67-4b24-8b88-a7a51f9f79ea_healthcare-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Healthcare
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Manufacturing &amp; logistics" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsULfkaF0TcGJIVe_icon--manu-logistics.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Manufacturing &amp; logistics
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="U.S. government" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/978b0bb0-2370-406b-9e28-03be5443d1c7_government-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     U.S. government
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Media &amp; entertainment" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsULf0aF0TcGJIVf_icon--media-entertainment.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Media &amp; entertainment
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="High tech" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZpGP-x5LeNNTxICS_memory-icon-black.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     High tech
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Travel &amp; hospitality" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZtteuBoQrfVKlzlz_travel-topnav-icon-dark.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Travel &amp; hospitality
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div>
+           <div>
+            <span>
+             Resources
+            </span>
+            <svg>
+             <path>
+             </path>
+            </svg>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <p>
+                  Learn
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Blog" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/c8b5a33b-9e79-43e0-931d-4bdb156d2502_bookmark-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Blog
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Guides &amp; ebooks" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/8f9f7db4-76b9-4931-897f-9cf686a37d20_book-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Guides &amp; ebooks
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Events &amp; webinars" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/1c122906-f11d-4afc-9d4e-f702b5161aeb_events-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Events &amp; webinars
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Videos" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZzZr-q8jQArT048N_icon--toggle-tv.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Videos
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <p>
+                  Success
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Academy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/e1175670-68eb-4bf4-b3bd-d25f30a9bef1_education-hat-icon-black.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Academy
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Customer stories" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/9b2772dd-e57a-4c12-95be-8314bdc6d274_studies-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Customer stories
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Success program" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/140ee706-f25d-428f-82e9-83a847b05c11_compass-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Success program
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Professional services" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z8ojYRsAHJWomNNp_icon--shooting-star.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Professional services
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Partners" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/fb282731-2d2b-4419-8afd-5addb2a045aa_services-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Partners
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <p>
+                  Get Help
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <span>
+                     Help center
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <span>
+                     Request support
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <a>
+               <img alt="banner" src="https://images.prismic.io/launchdarkly-marketingsite/aFGaWLNJEFaPYCV6_TechTalk-TopNavPromoBanner-Resources-631x60-25-06-27.png?ixlib=gatsbyFP&amp;auto=format%2Ccompress&amp;fit=max"/>
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div>
+           <div>
+            <span>
+             Developers
+            </span>
+            <svg>
+             <path>
+             </path>
+            </svg>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <p>
+                  Resources
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="Developer hub" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z8op6xsAHJWomNPo_icon--hub.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Developer hub
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Docs" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/2ceabb68-55e8-4057-b5f7-01e0b11195c7_docs-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Docs
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Community" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/65be8a89-43a8-42dd-ad75-93979b31499d_heart-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Community
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Set up SDKs" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/8761b842-b569-45cf-909f-ed0e4c9e1ef4_integrations-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Set up SDKs
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="API references" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3dae4d8b-d74d-45f7-88b4-b5c8b9788cf8_settings-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     API references
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="Power analysis calculator" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZvsDT7VsGrYSwK80_calculator-icon-topnav-menu-dark.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     Power analysis calculator
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <p>
+                  Workflow
+                 </p>
+                 <div>
+                  <a>
+                   <div>
+                    <img alt="APIs" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3dae4d8b-d74d-45f7-88b4-b5c8b9788cf8_settings-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     APIs
+                    </span>
+                   </div>
+                  </a>
+                  <a>
+                   <div>
+                    <img alt="SDKs" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3dae4d8b-d74d-45f7-88b4-b5c8b9788cf8_settings-icon.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+                    <span>
+                     SDKs
+                    </span>
+                   </div>
+                  </a>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div>
+           <a>
+            Pricing
+           </a>
+          </div>
+         </div>
+        </div>
+        <div>
+         <div>
+          <a>
+           <span>
+            Sign In
+           </span>
+          </a>
+          <a>
+           <span>
+            Sandbox
+           </span>
+          </a>
+          <a>
+           Get a demo
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </nav>
+    </header>
+    <main>
+     <div>
+      <div>
+       <section>
+        <div>
+         <div>
+          <h1>
+           The platform for software teams to build successful products
+          </h1>
+          <p>
+           Release automation, feature flags, experimentation &amp; analytics, and AI engineering—on a single platform—so you can ship faster, learn faster, and stay in control.
+          </p>
+          <div>
+           <a>
+            Get a demo
+           </a>
+           <a>
+            Free trial
+           </a>
+          </div>
+         </div>
+        </div>
+       </section>
+       <section>
+        <div>
+         <div>
+          <div>
+           <ul>
+            <li>
+             <a>
+              <img alt="Release Automation" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-SaQ3dAxsiBv842_icon--guarded-releases.svg"/>
+              <span>
+               Release Automation
+              </span>
+             </a>
+            </li>
+            <li>
+             <a>
+              <img alt="Feature Flags" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eLHdAxsiBwTZH_tab-icon--release-management.svg"/>
+              <span>
+               Feature Flags
+              </span>
+             </a>
+            </li>
+            <li>
+             <a>
+              <img alt="Experimentation &amp; Analytics" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eK3dAxsiBwTZG_tab-icon--experimentation.svg"/>
+              <span>
+               Experimentation &amp; Analytics
+              </span>
+             </a>
+            </li>
+            <li>
+             <a>
+              <img alt="AI Engineering" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9SkZTiBA97Gigrh_icon--ai-new.svg"/>
+              <span>
+               AI Engineering
+              </span>
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <div>
+            <div>
+             <div>
+              <img alt="Release Automation" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-SaQ3dAxsiBv842_icon--guarded-releases.svg"/>
+              <span>
+               Release Automation
+              </span>
+             </div>
+             <h3>
+              Proactively monitor and mitigate risk.
+             </h3>
+             <p>
+              Identify and automatically remediate performance problems before they become customer issues.
+             </p>
+             <a>
+              Explore Release Automation
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div>
+             <video>
+              <source/>
+             </video>
+             <img alt="Proactively monitor and mitigate risk." src="https://images.prismic.io/launchdarkly-marketingsite/Z_QZPXdAxsiBwarf_tab-img--GuardedReleaseUI.png?auto=format,compress"/>
+            </div>
+            <img alt="background blur" class="styles-module--mobileBlur--d7112" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eRndAxsiBwTZL_guardedreleasesblur.svg"/>
+           </div>
+           <div>
+            <div>
+             <div>
+              <img alt="Feature Flags" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eLHdAxsiBwTZH_tab-icon--release-management.svg"/>
+              <span>
+               Feature Flags
+              </span>
+             </div>
+             <h3>
+              Control what ships.
+             </h3>
+             <p>
+              Release safely, target precisely, and ship quickly with flags built for scale and performance.
+             </p>
+             <a>
+              Explore Feature Flags
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div>
+             <video>
+              <source/>
+             </video>
+             <img alt="Control what ships." src="https://images.prismic.io/launchdarkly-marketingsite/Z_QZPndAxsiBwarg_tab-img--ReleasePipeline.png?auto=format,compress"/>
+            </div>
+            <img alt="background blur" class="styles-module--mobileBlur--d7112" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eR3dAxsiBwTZM_releaseblur.svg"/>
+           </div>
+           <div>
+            <div>
+             <div>
+              <img alt="Experimentation &amp; Analytics" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eK3dAxsiBwTZG_tab-icon--experimentation.svg"/>
+              <span>
+               Experimentation &amp; Analytics
+              </span>
+             </div>
+             <h3>
+              Remove barriers to experimentation.
+             </h3>
+             <p>
+              Seamlessly unify feature delivery and experimentation in a platform engineers love.
+             </p>
+             <a>
+              Explore Experimentation
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+             <a>
+              Explore Product Analytics
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div>
+             <video>
+              <source/>
+             </video>
+             <img alt="Remove barriers to experimentation." src="https://images.prismic.io/launchdarkly-marketingsite/Z_QZPHdAxsiBware_tab-img--ExperimentationUI.png?auto=format,compress"/>
+            </div>
+            <img alt="background blur" class="styles-module--mobileBlur--d7112" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eRXdAxsiBwTZK_experimentationblur.svg"/>
+           </div>
+           <div>
+            <div>
+             <div>
+              <img alt="AI Engineering" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9SkZTiBA97Gigrh_icon--ai-new.svg"/>
+              <span>
+               AI Engineering
+              </span>
+             </div>
+             <h3>
+              Bring AI apps to market faster.
+             </h3>
+             <p>
+              Iterate quickly on prompts and model configurations — without redeploying.
+             </p>
+             <a>
+              Explore AI Engineering
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+            </div>
+            <div>
+             <video>
+              <source/>
+             </video>
+             <img alt="Bring AI apps to market faster." src="https://images.prismic.io/launchdarkly-marketingsite/Z_QZPHdAxsiBward_tab-img--AIConfigsUI.png?auto=format,compress"/>
+            </div>
+            <img alt="background blur" class="styles-module--mobileBlur--d7112" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eRHdAxsiBwTZJ_aiblur.svg"/>
+           </div>
+          </div>
+         </div>
+         <img alt="Proactively monitor and mitigate risk. blur" class="styles-module--bgBlur--d22fb" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8eRndAxsiBwTZL_guardedreleasesblur.svg"/>
+         <img alt="background blur" class="styles-module--bgBlurStatic--e22ec" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z-8LLXdAxsiBwTUE_bg-glow--homepage-hero.svg"/>
+        </div>
+       </section>
+       <section>
+        <div>
+         <p>
+          Trusted by 5,500+ customers, from startups to enterprise
+         </p>
+        </div>
+        <div>
+         <div>
+          <ul>
+           <li>
+            <img alt="gopro" class="logo--gopro" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrubjEaF0TcGI515_gopro-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="volvo" class="logo--volvo" src="https://images.prismic.io/launchdarkly-marketingsite/fe61863c-f42b-4180-8d0d-891a0cbe77f3_Volvo.png?ixlib=gatsbyFP&amp;auto=format%2Ccompress&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="ally" class="logo--ally" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZklLQyol0Zci9Q1r_ally-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hawaiian airlines" class="logo--hawaiian-airlines" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/66757ad2-3566-44cd-81d8-de808ff9ca2d_hawaiian-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="gm" class="logo--gm" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkTiBA97Gir3V_gm-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hashicorp" class="logo--hashicorp" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkjiBA97Gir3W_hashicorp-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hulu" class="logo--hulu" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/85d817e9-53b4-4ae3-b1ce-c90d2af757d6_hulu-logo.svg"/>
+           </li>
+           <li>
+            <img alt="samsara" class="logo--samsara" src="https://images.prismic.io/launchdarkly-marketingsite/ZlXxIqWtHYXtT3Em_samsara-logo-white.png?auto=format,compress"/>
+           </li>
+           <li>
+            <img alt="nationwide" class="logo--nationwide" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aAf8nfIqRLdaBfDG_logo--nationwide-white.svg"/>
+           </li>
+           <li>
+            <img alt="gopro" class="logo--gopro" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrubjEaF0TcGI515_gopro-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="volvo" class="logo--volvo" src="https://images.prismic.io/launchdarkly-marketingsite/fe61863c-f42b-4180-8d0d-891a0cbe77f3_Volvo.png?ixlib=gatsbyFP&amp;auto=format%2Ccompress&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="ally" class="logo--ally" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZklLQyol0Zci9Q1r_ally-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hawaiian airlines" class="logo--hawaiian-airlines" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/66757ad2-3566-44cd-81d8-de808ff9ca2d_hawaiian-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="gm" class="logo--gm" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkTiBA97Gir3V_gm-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hashicorp" class="logo--hashicorp" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkjiBA97Gir3W_hashicorp-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hulu" class="logo--hulu" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/85d817e9-53b4-4ae3-b1ce-c90d2af757d6_hulu-logo.svg"/>
+           </li>
+           <li>
+            <img alt="samsara" class="logo--samsara" src="https://images.prismic.io/launchdarkly-marketingsite/ZlXxIqWtHYXtT3Em_samsara-logo-white.png?auto=format,compress"/>
+           </li>
+           <li>
+            <img alt="nationwide" class="logo--nationwide" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aAf8nfIqRLdaBfDG_logo--nationwide-white.svg"/>
+           </li>
+           <li>
+            <img alt="gopro" class="logo--gopro" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrubjEaF0TcGI515_gopro-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="volvo" class="logo--volvo" src="https://images.prismic.io/launchdarkly-marketingsite/fe61863c-f42b-4180-8d0d-891a0cbe77f3_Volvo.png?ixlib=gatsbyFP&amp;auto=format%2Ccompress&amp;fit=max"/>
+           </li>
+           <li>
+            <img alt="ally" class="logo--ally" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZklLQyol0Zci9Q1r_ally-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hawaiian airlines" class="logo--hawaiian-airlines" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/66757ad2-3566-44cd-81d8-de808ff9ca2d_hawaiian-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="gm" class="logo--gm" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkTiBA97Gir3V_gm-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hashicorp" class="logo--hashicorp" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z9tUkjiBA97Gir3W_hashicorp-logo-white.svg"/>
+           </li>
+           <li>
+            <img alt="hulu" class="logo--hulu" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/85d817e9-53b4-4ae3-b1ce-c90d2af757d6_hulu-logo.svg"/>
+           </li>
+           <li>
+            <img alt="samsara" class="logo--samsara" src="https://images.prismic.io/launchdarkly-marketingsite/ZlXxIqWtHYXtT3Em_samsara-logo-white.png?auto=format,compress"/>
+           </li>
+           <li>
+            <img alt="nationwide" class="logo--nationwide" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/aAf8nfIqRLdaBfDG_logo--nationwide-white.svg"/>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </section>
+       <section>
+        <div>
+         <div>
+          <div>
+           <img alt="Built for developers." src="https://images.prismic.io/launchdarkly-marketingsite/aD80r7h8WN-LVjfS_icon--large--square-bracket.png?auto=format,compress"/>
+           <h3>
+            Built for developers.
+           </h3>
+           <p>
+            Seamlessly built into your workflow — not bolted onto it.
+           </p>
+           <ul>
+            <li>
+             <span>
+              35+ native SDKs
+             </span>
+            </li>
+            <li>
+             <span>
+              CLI support &amp; IDE plugins
+             </span>
+            </li>
+            <li>
+             <span>
+              80+ integrations
+             </span>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <img alt="Backed by data." src="https://images.prismic.io/launchdarkly-marketingsite/aD80rrh8WN-LVjfR_icon--large--bar-graph.png?auto=format,compress"/>
+           <h3>
+            Backed by data.
+           </h3>
+           <p>
+            Make better product decisions — with real-time signal.
+           </p>
+           <ul>
+            <li>
+             <span>
+              Full-stack experimentation
+             </span>
+            </li>
+            <li>
+             <span>
+              Feature-level metrics
+             </span>
+            </li>
+            <li>
+             <span>
+              Built-in analytics
+             </span>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <img alt="Trusted in production." src="https://images.prismic.io/launchdarkly-marketingsite/aD80sLh8WN-LVjfT_icon--large--toggle.png?auto=format,compress"/>
+           <h3>
+            Trusted in production.
+           </h3>
+           <p>
+            Delivering for the most demanding teams when it counts — in production.
+           </p>
+           <ul>
+            <li>
+             <span>
+              40 trillion daily evaluations
+             </span>
+            </li>
+            <li>
+             <span>
+              Sub-200ms flag updates
+             </span>
+            </li>
+            <li>
+             <span>
+              Automated rollbacks without redeploys
+             </span>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </section>
+       <section>
+        <div>
+         <div>
+          <a>
+           <div>
+            <div>
+             <p>
+              What's new
+             </p>
+             <h3>
+              Galaxy ‘25 recap
+             </h3>
+             <p>
+              Guarded Releases, AI Configs, Product Analytics, and more.
+             </p>
+             <span>
+              Learn more
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </span>
+            </div>
+           </div>
+          </a>
+          <a>
+           <div>
+            <div>
+             <p>
+              Announcing
+             </p>
+             <h3>
+              Product Analytics
+             </h3>
+             <p>
+              Eliminate guesswork by analyzing user behavior.
+             </p>
+             <span>
+              Learn more
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </span>
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </section>
+       <section>
+        <div>
+         <h2>
+          Huge impact, at
+          <span>
+          </span>
+          an incredible scale.
+         </h2>
+         <div>
+          <div>
+           <h3>
+            84%
+           </h3>
+           <p>
+            more frequent deployments.
+           </p>
+          </div>
+          <div>
+           <h3>
+            48%
+           </h3>
+           <p>
+            increase in software reliability.
+           </p>
+          </div>
+          <div>
+           <h3>
+            63%
+           </h3>
+           <p>
+            less time spent on pre-production testing and debugging.
+           </p>
+          </div>
+          <div>
+           <h3>
+            11 quadrillion
+           </h3>
+           <p>
+            flag evaluations in production-like environments. Yes, quadrillion.
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+       <div>
+        <section>
+         <div>
+          <div>
+           <div>
+            <p>
+             Developer First
+            </p>
+            <h2>
+             Implement LaunchDarkly in just 5 minutes.
+            </h2>
+            <p>
+             With a few lines of code, you can integrate your app and toggle your first feature flag on.
+            </p>
+            <div>
+             <a>
+              Explore Docs
+             </a>
+             <a>
+              Start free trial
+              <svg>
+               <path>
+               </path>
+              </svg>
+             </a>
+            </div>
+           </div>
+           <div>
+            <div>
+             <div>
+             </div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  JavaScript
+                 </a>
+                </div>
+                <div>
+                 <a>
+                  Python
+                 </a>
+                </div>
+                <div>
+                 <a>
+                  iOS (Swift)
+                 </a>
+                </div>
+                <div>
+                 <a>
+                  React
+                 </a>
+                </div>
+               </div>
+               <div>
+                <pre><code><span>import</span> <span>*</span> <span>as</span> LaunchDarkly <span>from</span> <span>"launchdarkly-js-client-sdk"</span>
+
+<span>const</span> context <span>=</span> <span>{</span>
+  <span>kind</span><span>:</span> <span>"user"</span><span>,</span>
+  <span>key</span><span>:</span> <span>"context-key-123abc"</span><span>,</span>
+  <span>name</span><span>:</span> <span>"anonymous"</span>
+<span>}</span><span>;</span>
+
+<span>const</span> client <span>=</span> LaunchDarkly<span>.</span><span>initialize</span><span>(</span><span>"&lt;add your client-side key as an env variable&gt;"</span><span>,</span> context<span>)</span><span>;</span></code></pre>
+                <a>
+                 <span>
+                  Copied!
+                 </span>
+                 <img alt="copy icon" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZkKKakFLKBtrW1aV_icon--copy-gray.svg"/>
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <div>
+           <a>
+            <div>
+             <h5>
+              35+ languages and frameworks
+             </h5>
+             <p>
+              Mobile, front-end, server, and edge SDKs to add feature management and experimentation to any environment.
+             </p>
+            </div>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </a>
+           <a>
+            <div>
+             <h5>
+              Quickstart
+             </h5>
+             <p>
+              Follow our in-app guided tutorial to get started with your first flag implementation in less than 5 minutes!
+             </p>
+            </div>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </a>
+           <a>
+            <div>
+             <h5>
+              CLI &amp; IDE Integrations
+             </h5>
+             <p>
+              Set up and manage LaunchDarkly directly from the command line, or IDE of your choice.
+             </p>
+            </div>
+            <svg>
+             <path>
+             </path>
+            </svg>
+           </a>
+          </div>
+         </div>
+        </section>
+        <div>
+         <div>
+          <div>
+           <div>
+            <ul>
+             <li>
+              <a>
+               <img alt="Android logo" class="android" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/117d4883-1b1d-43ee-9e88-5b92ad1ea691_logo-android.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C/C++ (Server) logo" class="c/c++-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/41cbc553-31d1-487f-a230-c195160a1ff4_logo-c-lang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C# logo" class="c#" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/ca7d8f45-f515-42ea-ab74-0b75375d9d4d_logo-csharp.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Cloudflare logo" class="cloudflare" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/a512d10d-6c7a-43cf-be47-9a17a412b266_cloudflare-square.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Electron logo" class="electron" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e001f062-4e49-4d0c-bc6a-8b128c3ebd44_logo-electron.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Erlang logo" class="erlang" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f89b0ccb-2978-4ccc-8ae6-bc7f290e61e3_logo-erlang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Flutter logo" class="flutter" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f081f1ba-40ab-4bb5-8876-9ebab4cb47d0_logo-flutter.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Gatsby logo" class="gatsby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/aa13f506-1365-4e96-9afb-0691fe197ba9_logo-gatsby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Go logo" class="go" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/db1bc7d4-e2ad-44dd-bafc-4399d71022f6_go-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Haskell logo" class="haskell" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/42b42b8b-a2b4-435f-a823-f3373fe29bd9_logo-haskell.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="iOS logo" class="ios" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/292319ee-a96e-4019-93c1-39c9502b9af1_ios-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Java logo" class="java" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8fb07bbf-2393-47cd-96bf-5e8ad58566fe_logo-java.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Javscript logo" class="javscript" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/708f6caa-7c40-41d7-8fd4-f92eb172b7b2_logo-javascript.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Kotlin logo" class="kotlin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/0746be11-8ea3-432e-b229-e34939ee7827_sdk-icon--kotlin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Lua logo" class="lua" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/473531c2-82a5-4773-b75d-4857d5a654a3_lua-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Client) logo" class=".net-(client)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Server) logo" class=".net-(server)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Node.JS (Server) logo" class="node.js-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/85772fbe-7f91-4f66-88e0-7570451500bc_logo-nodejs.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Php logo" class="php" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/974a672b-f5aa-4b7d-a4c2-40974c13ac8b_logo-php.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Python logo" class="python" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b389a550-b92f-4601-846e-b17f483fe402_logo-python.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="React logo" class="react" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e12656b4-0ea1-448a-b901-35ca8784bd57_logo-react.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Remix logo" class="remix" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/c26d5658-bc53-41e5-9b1d-e9425b2841c9_remix-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Roku logo" class="roku" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8ac1e169-641e-4eff-a542-785770363635_logo-roku.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Ruby logo" class="ruby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/844252e7-cd65-4251-b276-1a098bf4bf56_logo-ruby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Rust logo" class="rust" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ed95d1f3-3f39-49b5-a38c-2a671ef4b6d9_rust-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Salesforce logo" class="salesforce" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/94052459-3607-493c-b5cb-3b95bba1f710_logo-salesforce.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Solidjs logo" class="solidjs" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3d53de01-ee67-4b77-9966-c9938959bad2_solidjs-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Svelte logo" class="svelte" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/b553c2e2-375a-4e7e-96f1-425162a10c17_svelte-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Swift logo" class="swift" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/09b0a3a0-3527-4514-beb5-152ed86b6fa6_logo-swift.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vercel logo" class="vercel" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/7cdfde89-5cda-465c-a612-cb0167f4da7c_vercel-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vue logo" class="vue" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/46ad2b0f-3742-4225-a52f-2282a1a36500_vue-logo-with-edge.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Xamarin logo" class="xamarin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b9653164-4f23-4128-93b0-971ce190b0a6_logo-xamarin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Android logo" class="android" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/117d4883-1b1d-43ee-9e88-5b92ad1ea691_logo-android.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C/C++ (Server) logo" class="c/c++-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/41cbc553-31d1-487f-a230-c195160a1ff4_logo-c-lang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C# logo" class="c#" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/ca7d8f45-f515-42ea-ab74-0b75375d9d4d_logo-csharp.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Cloudflare logo" class="cloudflare" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/a512d10d-6c7a-43cf-be47-9a17a412b266_cloudflare-square.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Electron logo" class="electron" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e001f062-4e49-4d0c-bc6a-8b128c3ebd44_logo-electron.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Erlang logo" class="erlang" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f89b0ccb-2978-4ccc-8ae6-bc7f290e61e3_logo-erlang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Flutter logo" class="flutter" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f081f1ba-40ab-4bb5-8876-9ebab4cb47d0_logo-flutter.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Gatsby logo" class="gatsby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/aa13f506-1365-4e96-9afb-0691fe197ba9_logo-gatsby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Go logo" class="go" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/db1bc7d4-e2ad-44dd-bafc-4399d71022f6_go-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Haskell logo" class="haskell" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/42b42b8b-a2b4-435f-a823-f3373fe29bd9_logo-haskell.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="iOS logo" class="ios" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/292319ee-a96e-4019-93c1-39c9502b9af1_ios-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Java logo" class="java" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8fb07bbf-2393-47cd-96bf-5e8ad58566fe_logo-java.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Javscript logo" class="javscript" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/708f6caa-7c40-41d7-8fd4-f92eb172b7b2_logo-javascript.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Kotlin logo" class="kotlin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/0746be11-8ea3-432e-b229-e34939ee7827_sdk-icon--kotlin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Lua logo" class="lua" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/473531c2-82a5-4773-b75d-4857d5a654a3_lua-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Client) logo" class=".net-(client)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Server) logo" class=".net-(server)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Node.JS (Server) logo" class="node.js-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/85772fbe-7f91-4f66-88e0-7570451500bc_logo-nodejs.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Php logo" class="php" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/974a672b-f5aa-4b7d-a4c2-40974c13ac8b_logo-php.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Python logo" class="python" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b389a550-b92f-4601-846e-b17f483fe402_logo-python.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="React logo" class="react" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e12656b4-0ea1-448a-b901-35ca8784bd57_logo-react.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Remix logo" class="remix" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/c26d5658-bc53-41e5-9b1d-e9425b2841c9_remix-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Roku logo" class="roku" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8ac1e169-641e-4eff-a542-785770363635_logo-roku.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Ruby logo" class="ruby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/844252e7-cd65-4251-b276-1a098bf4bf56_logo-ruby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Rust logo" class="rust" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ed95d1f3-3f39-49b5-a38c-2a671ef4b6d9_rust-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Salesforce logo" class="salesforce" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/94052459-3607-493c-b5cb-3b95bba1f710_logo-salesforce.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Solidjs logo" class="solidjs" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3d53de01-ee67-4b77-9966-c9938959bad2_solidjs-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Svelte logo" class="svelte" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/b553c2e2-375a-4e7e-96f1-425162a10c17_svelte-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Swift logo" class="swift" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/09b0a3a0-3527-4514-beb5-152ed86b6fa6_logo-swift.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vercel logo" class="vercel" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/7cdfde89-5cda-465c-a612-cb0167f4da7c_vercel-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vue logo" class="vue" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/46ad2b0f-3742-4225-a52f-2282a1a36500_vue-logo-with-edge.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Xamarin logo" class="xamarin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b9653164-4f23-4128-93b0-971ce190b0a6_logo-xamarin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Android logo" class="android" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/117d4883-1b1d-43ee-9e88-5b92ad1ea691_logo-android.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C/C++ (Server) logo" class="c/c++-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/41cbc553-31d1-487f-a230-c195160a1ff4_logo-c-lang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="C# logo" class="c#" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/ca7d8f45-f515-42ea-ab74-0b75375d9d4d_logo-csharp.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Cloudflare logo" class="cloudflare" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/a512d10d-6c7a-43cf-be47-9a17a412b266_cloudflare-square.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Electron logo" class="electron" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e001f062-4e49-4d0c-bc6a-8b128c3ebd44_logo-electron.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Erlang logo" class="erlang" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f89b0ccb-2978-4ccc-8ae6-bc7f290e61e3_logo-erlang.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Flutter logo" class="flutter" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/f081f1ba-40ab-4bb5-8876-9ebab4cb47d0_logo-flutter.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Gatsby logo" class="gatsby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/aa13f506-1365-4e96-9afb-0691fe197ba9_logo-gatsby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Go logo" class="go" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/db1bc7d4-e2ad-44dd-bafc-4399d71022f6_go-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Haskell logo" class="haskell" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/42b42b8b-a2b4-435f-a823-f3373fe29bd9_logo-haskell.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="iOS logo" class="ios" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/292319ee-a96e-4019-93c1-39c9502b9af1_ios-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Java logo" class="java" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8fb07bbf-2393-47cd-96bf-5e8ad58566fe_logo-java.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Javscript logo" class="javscript" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/708f6caa-7c40-41d7-8fd4-f92eb172b7b2_logo-javascript.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Kotlin logo" class="kotlin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/0746be11-8ea3-432e-b229-e34939ee7827_sdk-icon--kotlin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Lua logo" class="lua" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/473531c2-82a5-4773-b75d-4857d5a654a3_lua-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Client) logo" class=".net-(client)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt=".NET (Server) logo" class=".net-(server)" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/da4b0df4-44ce-4daa-8470-bed6bdcfcc39_net-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Node.JS (Server) logo" class="node.js-(server)" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/85772fbe-7f91-4f66-88e0-7570451500bc_logo-nodejs.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Php logo" class="php" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/974a672b-f5aa-4b7d-a4c2-40974c13ac8b_logo-php.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Python logo" class="python" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b389a550-b92f-4601-846e-b17f483fe402_logo-python.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="React logo" class="react" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/e12656b4-0ea1-448a-b901-35ca8784bd57_logo-react.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Remix logo" class="remix" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/c26d5658-bc53-41e5-9b1d-e9425b2841c9_remix-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Roku logo" class="roku" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/8ac1e169-641e-4eff-a542-785770363635_logo-roku.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Ruby logo" class="ruby" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/844252e7-cd65-4251-b276-1a098bf4bf56_logo-ruby.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Rust logo" class="rust" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ed95d1f3-3f39-49b5-a38c-2a671ef4b6d9_rust-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Salesforce logo" class="salesforce" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/94052459-3607-493c-b5cb-3b95bba1f710_logo-salesforce.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Solidjs logo" class="solidjs" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/3d53de01-ee67-4b77-9966-c9938959bad2_solidjs-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Svelte logo" class="svelte" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/b553c2e2-375a-4e7e-96f1-425162a10c17_svelte-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Swift logo" class="swift" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/09b0a3a0-3527-4514-beb5-152ed86b6fa6_logo-swift.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vercel logo" class="vercel" loading="lazy" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/7cdfde89-5cda-465c-a612-cb0167f4da7c_vercel-logo.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Vue logo" class="vue" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/46ad2b0f-3742-4225-a52f-2282a1a36500_vue-logo-with-edge.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+             <li>
+              <a>
+               <img alt="Xamarin logo" class="xamarin" loading="lazy" src="https://images.prismic.io/launchdarkly-marketingsite/b9653164-4f23-4128-93b0-971ce190b0a6_logo-xamarin.png?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+              </a>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </div>
+       <section>
+        <div>
+         <div>
+          <div>
+           <h2>
+            Innovate like the best with LaunchDarkly
+           </h2>
+           <div>
+            <a>
+             Customer stories
+            </a>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div>
+           <div>
+            <ul>
+             <li>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  <img alt="Paramount" class="styles-module--desktopImage--483d7" src="https://images.prismic.io/launchdarkly-marketingsite/Z_bmTOvxEdbNO0DO_new-case-slider-img--paramount.png?auto=format,compress"/>
+                  <img alt="Paramount" class="styles-module--tabletImage--743c0" src="https://images.prismic.io/launchdarkly-marketingsite/Z_hDiOvxEdbNO4Pj_new-case-slider-img--tablet--paramount.png?auto=format,compress"/>
+                  <span>
+                   Read story
+                   <svg>
+                    <path>
+                    </path>
+                   </svg>
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <h3>
+                  Paramount improves developer productivity 100X.
+                 </h3>
+                 <div>
+                  <h3>
+                   6-7
+                  </h3>
+                  <p>
+                   deployments per day
+                  </p>
+                 </div>
+                 <p>
+                  / /
+                 </p>
+                 <p>
+                  The ability to ship and merge code to environments safely without wincing every time we hit the ‘deploy’ button has been huge for us.
+                 </p>
+                 <a>
+                  Read more
+                  <svg>
+                   <path>
+                   </path>
+                  </svg>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <div>
+                  <img alt="paramount" class="styles-module--logoImg--2dd15 styles-module--active--c03d2" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1vEaF0TcGJEvJ_carousel-logo--paramount.svg"/>
+                 </div>
+                 <div>
+                  <img alt="ccp games" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1ukaF0TcGJEvH_carousel-logo--ccp.svg"/>
+                 </div>
+                 <div>
+                  <img alt="dior" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5aUaF0TcGI1Ba_dior-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="bayer" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5Z0aF0TcGI1BY_bayer-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="hp" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5a0aF0TcGI1Bc_hp-logo-white-carousel.svg"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </li>
+             <li>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  <img alt="CCP Games" class="styles-module--desktopImage--483d7" src="https://images.prismic.io/launchdarkly-marketingsite/Z_bmSevxEdbNO0DL_new-case-slider-img--ccp.png?auto=format,compress"/>
+                  <img alt="CCP Games" class="styles-module--tabletImage--743c0" src="https://images.prismic.io/launchdarkly-marketingsite/Z_hDhevxEdbNO4Pe_new-case-slider-img--tablet--ccp.png?auto=format,compress"/>
+                  <span>
+                   Read story
+                   <svg>
+                    <path>
+                    </path>
+                   </svg>
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <h3>
+                  CCP Games creates self-serve experimentation.
+                 </h3>
+                 <div>
+                  <h3>
+                   Increased
+                  </h3>
+                  <p>
+                   player session times of happier users
+                  </p>
+                 </div>
+                 <p>
+                  / /
+                 </p>
+                 <p>
+                  LaunchDarkly has enabled self-serve experimentation. You don’t have to be a data scientist to run valid, actionable experiments. This is unbelievably powerful.
+                 </p>
+                 <a>
+                  Read more
+                  <svg>
+                   <path>
+                   </path>
+                  </svg>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <div>
+                  <img alt="paramount" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1vEaF0TcGJEvJ_carousel-logo--paramount.svg"/>
+                 </div>
+                 <div>
+                  <img alt="ccp games" class="styles-module--logoImg--2dd15 styles-module--active--c03d2" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1ukaF0TcGJEvH_carousel-logo--ccp.svg"/>
+                 </div>
+                 <div>
+                  <img alt="dior" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5aUaF0TcGI1Ba_dior-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="bayer" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5Z0aF0TcGI1BY_bayer-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="hp" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5a0aF0TcGI1Bc_hp-logo-white-carousel.svg"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </li>
+             <li>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  <img alt="Dior" class="styles-module--desktopImage--483d7" src="https://images.prismic.io/launchdarkly-marketingsite/Z_bmSuvxEdbNO0DM_new-case-slider-img--dior.png?auto=format,compress"/>
+                  <img alt="Dior" class="styles-module--tabletImage--743c0" src="https://images.prismic.io/launchdarkly-marketingsite/Z_hDhuvxEdbNO4Pf_new-case-slider-img--tablet--dior.png?auto=format,compress"/>
+                  <span>
+                   Read story
+                   <svg>
+                    <path>
+                    </path>
+                   </svg>
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <h3>
+                  Dior shortens time to market from 15 minutes to instant updates.
+                 </h3>
+                 <div>
+                  <h3>
+                   &lt; Zero
+                  </h3>
+                  <p>
+                   minutes to release
+                  </p>
+                 </div>
+                 <p>
+                  / /
+                 </p>
+                 <p>
+                  LaunchDarkly allowed us to progressively deliver features with confidence, creating a safety net for developers.
+                 </p>
+                 <a>
+                  Read more
+                  <svg>
+                   <path>
+                   </path>
+                  </svg>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <div>
+                  <img alt="paramount" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1vEaF0TcGJEvJ_carousel-logo--paramount.svg"/>
+                 </div>
+                 <div>
+                  <img alt="ccp games" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1ukaF0TcGJEvH_carousel-logo--ccp.svg"/>
+                 </div>
+                 <div>
+                  <img alt="dior" class="styles-module--logoImg--2dd15 styles-module--active--c03d2" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5aUaF0TcGI1Ba_dior-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="bayer" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5Z0aF0TcGI1BY_bayer-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="hp" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5a0aF0TcGI1Bc_hp-logo-white-carousel.svg"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </li>
+             <li>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  <img alt="Bayer" class="styles-module--desktopImage--483d7" src="https://images.prismic.io/launchdarkly-marketingsite/Z_bmSOvxEdbNO0DK_new-case-slider-img--bayer.png?auto=format,compress"/>
+                  <img alt="Bayer" class="styles-module--tabletImage--743c0" src="https://images.prismic.io/launchdarkly-marketingsite/Z_hDhOvxEdbNO4Pb_new-case-slider-img--tablet--bayer.png?auto=format,compress"/>
+                  <span>
+                   Read story
+                   <svg>
+                    <path>
+                    </path>
+                   </svg>
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <h3>
+                  Bayer’s digital farming arm improves reliability for critical apps.
+                 </h3>
+                 <div>
+                  <h3>
+                   Improved
+                  </h3>
+                  <p>
+                   MTTR for mobile apps
+                  </p>
+                 </div>
+                 <p>
+                  / /
+                 </p>
+                 <p>
+                  I can change a flag status in LaunchDarkly and see it reflected in our mobile apps instantly. I’ll pay for that any day.
+                 </p>
+                 <a>
+                  Read more
+                  <svg>
+                   <path>
+                   </path>
+                  </svg>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <div>
+                  <img alt="paramount" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1vEaF0TcGJEvJ_carousel-logo--paramount.svg"/>
+                 </div>
+                 <div>
+                  <img alt="ccp games" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1ukaF0TcGJEvH_carousel-logo--ccp.svg"/>
+                 </div>
+                 <div>
+                  <img alt="dior" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5aUaF0TcGI1Ba_dior-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="bayer" class="styles-module--logoImg--2dd15 styles-module--active--c03d2" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5Z0aF0TcGI1BY_bayer-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="hp" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5a0aF0TcGI1Bc_hp-logo-white-carousel.svg"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </li>
+             <li>
+              <div>
+               <div>
+                <div>
+                 <a>
+                  <img alt="HP" class="styles-module--desktopImage--483d7" src="https://images.prismic.io/launchdarkly-marketingsite/Z_bmS-vxEdbNO0DN_new-case-slider-img--hp.png?auto=format,compress"/>
+                  <img alt="HP" class="styles-module--tabletImage--743c0" src="https://images.prismic.io/launchdarkly-marketingsite/Z_hDh-vxEdbNO4Ph_new-case-slider-img--tablet--hp.png?auto=format,compress"/>
+                  <span>
+                   Read story
+                   <svg>
+                    <path>
+                    </path>
+                   </svg>
+                  </span>
+                 </a>
+                </div>
+                <div>
+                 <h3>
+                  HP standardizes and scales releases with LaunchDarkly.
+                 </h3>
+                 <div>
+                  <h3>
+                   98%
+                  </h3>
+                  <p>
+                   decrease in deploy time
+                  </p>
+                 </div>
+                 <p>
+                  / /
+                 </p>
+                 <p>
+                  The team can switch back to a feature behavior without doing code changes.
+                 </p>
+                 <a>
+                  Read more
+                  <svg>
+                   <path>
+                   </path>
+                  </svg>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <div>
+                  <img alt="paramount" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1vEaF0TcGJEvJ_carousel-logo--paramount.svg"/>
+                 </div>
+                 <div>
+                  <img alt="ccp games" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZsO1ukaF0TcGJEvH_carousel-logo--ccp.svg"/>
+                 </div>
+                 <div>
+                  <img alt="dior" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5aUaF0TcGI1Ba_dior-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="bayer" class="styles-module--logoImg--2dd15" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5Z0aF0TcGI1BY_bayer-logo-white-carousel.svg"/>
+                 </div>
+                 <div>
+                  <img alt="hp" class="styles-module--logoImg--2dd15 styles-module--active--c03d2" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZrY5a0aF0TcGI1Bc_hp-logo-white-carousel.svg"/>
+                 </div>
+                </div>
+               </div>
+              </div>
+             </li>
+            </ul>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <section>
+        <div>
+         <div>
+          <a>
+           <div>
+            <p>
+             Now available
+            </p>
+            <h4>
+             Warehouse Native Experimentation with Snowflake
+            </h4>
+            <span>
+             Learn more
+             <svg>
+              <path>
+              </path>
+             </svg>
+            </span>
+           </div>
+           <div>
+            <img alt="snowflake x ld" class="styles-module--img--db95a" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z_WPKXdAxsiBwdYf_banner-img-Integrationhero-Snowflake.svg"/>
+           </div>
+          </a>
+          <a>
+           <div>
+            <p>
+             Award winning
+            </p>
+            <h4>
+             Spring 2025 G2 Grid® Report Leader in Feature Management
+            </h4>
+            <span>
+             Learn more
+             <svg>
+              <path>
+              </path>
+             </svg>
+            </span>
+           </div>
+           <div>
+            <img alt="G2 Badge" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z_BXCHdAxsiBwWpp_bg-img--g2-banner.svg"/>
+           </div>
+          </a>
+         </div>
+        </div>
+       </section>
+       <div>
+        <section>
+         <div>
+          <div>
+           <div>
+            <h2>
+             De-risk every release.
+            </h2>
+            <div>
+             <div>
+              <a>
+               Get a demo
+              </a>
+              <a>
+               Free trial
+              </a>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </section>
+        <img alt="Background blue blur" class="styles-module--bgBlur--e1305" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/Z0410pbqstJ9794y_new-home-bottom-cta.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+       </div>
+      </div>
+     </div>
+    </main>
+    <footer>
+     <div>
+      <div>
+       <div>
+        <img alt="logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/55e60ac7-069b-43ae-a469-dcefbdf66037_launchdarkly-logo.svg"/>
+       </div>
+       <div>
+        <img alt="email icon" class="styles-module--emailIcon--9d585" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/705aab8f-1e5b-4c86-806d-e71b25f96a06_email-icon.svg"/>
+        <p>
+         Inboxes love LaunchDarkly.
+        </p>
+        <p>
+         Make sure you get all the content, tips, and news you can use.
+        </p>
+        <div>
+         <p>
+          Work email
+         </p>
+         <span>
+          Yes, send me emails.
+         </span>
+        </div>
+       </div>
+       <div>
+        <div>
+         <a>
+          <p>
+           twitter
+          </p>
+          <img alt="small twitter logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/b4508c29-da0c-4e9b-bcae-205a95a6ba5d_logo--x-twitter.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+         </a>
+         <a>
+          <p>
+           YouTube
+          </p>
+          <img alt="small YouTube logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/276be984-0bd0-44ed-9e32-44a21a0c4fac_icon-youtube.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+         </a>
+         <a>
+          <p>
+           LinkedIn
+          </p>
+          <img alt="small LinkedIn logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/8b512fb1-6ecc-4e7f-bfe2-368f1a29898b_icon-LinkedIn.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+         </a>
+         <a>
+          <p>
+           Discord
+          </p>
+          <img alt="small Discord logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/ZpaT7h5LeNNTxNRX_discord-logo-white.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+         </a>
+         <a>
+          <p>
+           Instagram
+          </p>
+          <img alt="small Instagram logo" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/8b8446e4-02c7-468e-bb32-79d0432dd1d0_instagram-icon-small.svg?ixlib=gatsbyFP&amp;auto=compress%2Cformat&amp;fit=max"/>
+         </a>
+        </div>
+        <p>
+         ©
+         <!-- -->
+         2025
+         <!-- -->
+         Catamorphic Co.
+        </p>
+       </div>
+      </div>
+      <div>
+       <div>
+        <p>
+         Support
+        </p>
+        <ul>
+         <li>
+          <a>
+           Support home
+          </a>
+         </li>
+         <li>
+          <a>
+           Request Support
+          </a>
+         </li>
+         <li>
+          <a>
+           Professional Services
+          </a>
+         </li>
+         <li>
+          <a>
+           Documentation
+          </a>
+         </li>
+         <li>
+          <a>
+           Status
+          </a>
+         </li>
+         <li>
+          <a>
+           Do not Sell or Share my Personal Information
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div>
+        <p>
+         Why Us
+        </p>
+        <ul>
+         <li>
+          <a>
+           ROI of Feature Management
+          </a>
+         </li>
+         <li>
+          <a>
+           Economic Impact of LaunchDarkly
+          </a>
+         </li>
+         <li>
+          <a>
+           How LaunchDarkly works
+          </a>
+         </li>
+         <li>
+          <a>
+           Trust &amp; Security
+          </a>
+         </li>
+         <li>
+          <a>
+           LaunchDarkly vs. Competitors
+          </a>
+         </li>
+         <li>
+          <a>
+           LaunchDarkly on AWS
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div>
+        <p>
+         Company
+        </p>
+        <ul>
+         <li>
+          <a>
+           About Us
+          </a>
+         </li>
+         <li>
+          <a>
+           Careers
+          </a>
+         </li>
+         <li>
+          <a>
+           Media &amp; Analysts
+          </a>
+         </li>
+         <li>
+          <a>
+           Partner Program
+          </a>
+         </li>
+         <li>
+          <a>
+           Terms &amp; Policies
+          </a>
+         </li>
+         <li>
+          <a>
+           Contact Us
+          </a>
+         </li>
+         <li>
+          <a>
+           Community
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+      <div>
+       <img alt="email icon" class="styles-module--emailIcon--9d585" src="https://launchdarkly-marketingsite.cdn.prismic.io/launchdarkly-marketingsite/705aab8f-1e5b-4c86-806d-e71b25f96a06_email-icon.svg"/>
+       <p>
+        Inboxes love LaunchDarkly.
+       </p>
+       <p>
+        Make sure you get all the content, tips, and news you can use.
+       </p>
+       <div>
+        <div>
+         <form>
+          <div>
+           <div>
+            <div>
+            </div>
+            <div>
+             <label>
+              <div>
+               *
+              </div>
+             </label>
+             <div>
+             </div>
+             <input/>
+             <span>
+             </span>
+             <div>
+             </div>
+            </div>
+            <div>
+            </div>
+           </div>
+           <div>
+           </div>
+          </div>
+          <div>
+           <div>
+            <div>
+            </div>
+            <div>
+             <label>
+              <div>
+               *
+              </div>
+              maplesyrup:
+             </label>
+             <div>
+             </div>
+             <input/>
+             <span>
+             </span>
+             <div>
+             </div>
+            </div>
+            <div>
+            </div>
+           </div>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <input/>
+           <div>
+           </div>
+          </div>
+          <div>
+           <span>
+            <button>
+             Yes, send me emails
+            </button>
+           </span>
+          </div>
+          <input/>
+          <input/>
+         </form>
+        </div>
+       </div>
+      </div>
+     </div>
+    </footer>
+   </div>
+   <div>
+   </div>
+  </div>
+  <iframe>
+  </iframe>
+  <img alt="" height="1" src="https://trkn.us/pixel/conv/ppt=18760;g=sitewide;gid=43749;ord=6527579516161.019;v=120" width="1"/>
+  <iframe>
+  </iframe>
+  <img height="1" src="https://t.co/1/i/adsct?bci=4&amp;dv=Asia%2FSeoul%26en-US%2Cen%26Google%20Inc.%26Win32%26255%261792%261120%268%2624%261792%261037%260%26na&amp;eci=3&amp;event=%7B%7D&amp;event_id=d25e572d-5290-4f18-9baf-b6e46dde25a9&amp;integration=gtm&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=8fcff160-3898-461d-8aaf-fd15a1492fbb&amp;tw_document_href=https%3A%2F%2Flaunchdarkly.com%2F&amp;tw_iframe_status=0&amp;txn_id=nw8h2&amp;type=javascript&amp;version=2.3.33" style="display: none;" width="1"/>
+  <img height="1" src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;dv=Asia%2FSeoul%26en-US%2Cen%26Google%20Inc.%26Win32%26255%261792%261120%268%2624%261792%261037%260%26na&amp;eci=3&amp;event=%7B%7D&amp;event_id=d25e572d-5290-4f18-9baf-b6e46dde25a9&amp;integration=gtm&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=8fcff160-3898-461d-8aaf-fd15a1492fbb&amp;tw_document_href=https%3A%2F%2Flaunchdarkly.com%2F&amp;tw_iframe_status=0&amp;txn_id=nw8h2&amp;type=javascript&amp;version=2.3.33" style="display: none;" width="1"/>
+  <div>
+   <img alt="" height="0" id="batBeacon679395915209" src="https://bat.bing.com/action/0?ti=17559899&amp;tm=gtm002&amp;Ver=2&amp;mid=69322fe9-4a79-4db6-aad1-4cf9fc8f1938&amp;bo=2&amp;sid=51e942b0518f11f0b8ba19066c8d704d&amp;vid=51e945e0518f11f0a433df0927fc19d6&amp;vids=1&amp;msclkid=N&amp;gtm_tag_source=1&amp;pi=918639831&amp;lg=en-US&amp;sw=1792&amp;sh=1120&amp;sc=24&amp;tl=LaunchDarkly%3A%20Feature%20Flags,%20Feature%20Management,%20and%20Experimentation&amp;p=https%3A%2F%2Flaunchdarkly.com%2F&amp;r=&amp;lt=990&amp;evt=pageLoad&amp;sv=1&amp;asc=G&amp;cdb=AQIT&amp;rn=493373" style="width: 0px; height: 0px; display: none; visibility: hidden;" width="0"/>
+  </div>
+  <img alt="" src="https://cdn.bizible.com/ipv?_biz_r=&amp;_biz_h=-708744073&amp;_biz_u=9bfff0fb0e4b49f1c3b36b9fdbef1970&amp;_biz_l=https%3A%2F%2Flaunchdarkly.com%2F&amp;_biz_t=1750833644908&amp;_biz_i=LaunchDarkly%3A%20Feature%20Flags%2C%20Feature%20Management%2C%20and%20Experimentation&amp;_biz_n=0&amp;rnd=244875&amp;cdn_o=a&amp;_biz_z=1750833644909" style="display: none;"/>
+  <img alt="" src="https://cdn.bizibly.com/u?_biz_u=9bfff0fb0e4b49f1c3b36b9fdbef1970&amp;_biz_l=https%3A%2F%2Flaunchdarkly.com%2F&amp;_biz_t=1750833644913&amp;_biz_i=LaunchDarkly%3A%20Feature%20Flags%2C%20Feature%20Management%2C%20and%20Experimentation&amp;rnd=272135&amp;cdn_o=a&amp;_biz_z=1750833644913" style="display: none;"/>
+  <iframe>
+  </iframe>
+  <img alt="Cookiebot session tracker icon loaded" data-cookieconsent="ignore" id="CookiebotSessionPixel" src="https://imgsct.cookiebot.com/1.gif?dgi=a9e2be18-730c-4afe-89dc-251a408727a0" style="display: none;"/>
+  <div>
+   <div>
+    <button>
+     <svg>
+      <g>
+       <circle>
+       </circle>
+       <path>
+       </path>
+      </g>
+     </svg>
+    </button>
+    <div>
+    </div>
+   </div>
+   <div>
+   </div>
+  </div>
+  <div>
+  </div>
+  <img alt="" src="https://cdn.bizible.com/u?mapType=mkto&amp;mapValue=id%3A850-KKH-319%26token%3A_mch-launchdarkly.com-76bed477b9cfa0de73fbcd5d1d35fbd1&amp;_biz_u=9bfff0fb0e4b49f1c3b36b9fdbef1970&amp;_biz_l=https%3A%2F%2Flaunchdarkly.com%2F&amp;_biz_t=1750833644914&amp;_biz_i=LaunchDarkly%3A%20Feature%20Flags%2C%20Feature%20Management%2C%20and%20Experimentation&amp;_biz_n=1&amp;rnd=47417&amp;cdn_o=a&amp;_biz_z=1750833647858" style="display: none;"/>
+  <iframe>
+  </iframe>
+  <form>
+  </form>
+  <iframe>
+  </iframe>
+  <iframe>
+  </iframe>
+ </body>
+ <iframe id="ce_proto_iframe" style="display: none;" title="CrazyEgg Tracking iframe">
+ </iframe>
+</html>

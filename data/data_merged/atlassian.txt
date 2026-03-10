@@ -1,0 +1,6 @@
+Purpose: To promote and facilitate sign-up for Atlassian's new Jira software, targeting teams and professionals looking for project management and collaboration tools.
+   아틀라시안의 새로운 지라 소프트웨어에 대한 가입을 촉진하고 용이하게 하여 프로젝트 관리 및 협업 도구를 찾는 팀과 전문가를 대상으로 합니다.
+Page Type: Landing page
+   랜딩 페이지
+Domain: Software/Project Management
+   소프트웨어/프로젝트 관리

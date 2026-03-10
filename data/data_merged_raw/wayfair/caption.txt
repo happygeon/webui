@@ -1,0 +1,11 @@
+1. To showcase and sell a variety of home furnishings and decor items, particularly highlighting Adirondack chairs, to consumers looking to enhance their living spaces.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Clear, prominent search bar for easy product discovery
+(b) Large, eye-catching hero banner showcasing featured products
+(c) Navigation menu with product categories and brands
+(d) Shopping cart icon for easy access to checkout
+(e) "Sale" and "Closeout" tags to highlight discounted items

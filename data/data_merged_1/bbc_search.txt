@@ -1,0 +1,6 @@
+Purpose: To provide news and information on war-related topics to BBC website visitors, encouraging account creation for personalized access
+전쟁 관련 주제에 대한 뉴스와 정보를 BBC 웹사이트 방문자에게 제공하여 개인화된 접근을 위한 계정 생성을 장려합니다.
+Page Type: News aggregation page
+뉴스 집계 페이지
+Domain: News media
+뉴스 미디어

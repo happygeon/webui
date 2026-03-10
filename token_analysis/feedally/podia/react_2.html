@@ -1,0 +1,255 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podia - All-In-One Platform for Solo Business Owners</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+     .focus-ring {
+            outline: none;
+            box-shadow: 0 0 0 2px #007bff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center flex-shrink-0">
+                    <img class="h-8 w-auto" src="podia-logo.png" alt="Podia Logo">
+                </div>
+                <div class="hidden md:block space-x-10">
+                    <a href="#" class="hover:text-blue-600">Features</a>
+                    <a href="#" class="hover:text-blue-600">Pricing</a>
+                    <a href="#" class="hover:text-blue-600">Resources</a>
+                    <a href="#" class="hover:text-blue-600">About</a>
+                </div>
+                <div class="hidden md:block">
+                    <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:ring ring-offset-current ring-white focus-ring">
+                        Start Free Trial
+                    </button>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out">Features</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out">Pricing</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out">Resources</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-100 transition duration-150 ease-in-out">About</a>
+            </div>
+            <div class="pt-4 pb-3 border-t border-gray-200">
+                <button type="button" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded text-base font-medium focus:outline-none focus:ring ring-offset-current ring-white focus-ring">Start Free Trial</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="py-32 text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                    Simplify your digital presence with Podia
+                </h1>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-300 sm:mt-5 sm:max-w-3xl sm:text-lg md:mt-6 lg:text-xl xl:max-w-4xl">
+                    Boost your e-commerce game and grow your business with our all-in-one platform.
+                </p>
+                <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center">
+                    <div class="rounded-md shadow">
+                        <a href="#"
+                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                            Start Free Trial
+                        </a>
+                    </div>
+                    <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+                        <a href="#"
+                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-blue-100 md:py-4 md:text-lg md:px-10">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Features Section -->
+        <section class="bg-white py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        What We Offer
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                        Discover how Podia can help you streamline your digital operations.
+                    </p>
+                </div>
+                <div class="mt-12 grid gap-5 max-w-lg mx-auto md:grid-cols-2 lg:grid-cols-3">
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="px-6 py-5">
+                            <div class="flex items-center justify-center h-12 w-12 bg-blue-600 rounded-lg">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                                </svg>
+                            </div>
+                            <h3 class="mt-4 text-xl font-medium text-gray-900">
+                                Website Builder
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Create and manage your website easily.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="px-6 py-5">
+                            <div class="flex items-center justify-center h-12 w-12 bg-blue-600 rounded-lg">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h4a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm0 2h4"/>
+                                </svg>
+                            </div>
+                            <h3 class="mt-4 text-xl font-medium text-gray-900">
+                                Online Store
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Sell products directly from your website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-lg shadow-lg">
+                        <div class="px-6 py-5">
+                            <div class="flex items-center justify-center h-12 w-12 bg-blue-600 rounded-lg">
+                                <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a2 2 0 011.948.686l5.412 5.41A2 2 0 0121 13a2 2 0 01-2 2H7a2 2 0 01-2-2z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H7a2 2 0 01-2-2v-2z"/>
+                                </svg>
+                            </div>
+                            <h3 class="mt-4 text-xl font-medium text-gray-900">
+                                Email Marketing
+                            </h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Engage with customers through targeted emails.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-gray-100 py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        What Our Customers Say
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+                        See why thousands of businesses trust Podia.
+                    </p>
+                </div>
+                <div class="mt-12">
+                    <blockquote class="mx-auto max-w-prose text-gray-800 lg:mx-0 lg:max-w-2xl">
+                        <p class="mt-6">
+                            "Podia has been a lifesaver for my small business. Their platform is so user-friendly and comprehensive."
+                        </p>
+                        <footer class="mt-3 text-right text-base font-medium text-gray-900">
+                            Jane Doe, Small Business Owner
+                        </footer>
+                    </blockquote>
+                    <blockquote class="mt-6 mx-auto max-w-prose text-gray-800 lg:mx-0 lg:max-w-2xl">
+                        <p class="mt-6">
+                            "I've tried many platforms, but Podia stands out. It's efficient and integrates well with other services."
+                        </p>
+                        <footer class="mt-3 text-right text-base font-medium text-gray-900">
+                            John Smith, E-commerce Specialist
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-blue-600 py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                        Ready to Boost Your Business?
+                    </h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-lg text-white sm:mt-4">
+                        Sign up now for a free trial and see the difference for yourself.
+                    </p>
+                    <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center">
+                        <div class="rounded-md shadow">
+                            <a href="#"
+                               class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10">
+                                Start Free Trial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <div class="text-center sm:text-left">
+                    <a href="#" class="block text-white text-base font-medium hover:text-gray-300">
+                        Podia
+                    </a>
+                    <p class="mt-1 text-gray-400 text-sm">
+                        © 2023 Podia Inc. All rights reserved.
+                    </p>
+                </div>
+                <div class="mt-8 sm:mt-0 sm:flex sm:space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">Facebook</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2L2 22h20L12 2z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">Twitter</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1C7.1 10.86 4 13 4 16c0 3 2.5 5.5 6 6v1a4.48 4.48 0 007.86-3 10.9 10.9 0 013.14-1.53V14l4-4h1v8h-3v2zM10 10a4 4 0 118 0 4 4 0 01-8 0z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-300">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill="currentColor" d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3V7a5 5 0 005-5v-3z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+```

@@ -1,0 +1,6 @@
+Purpose: Providing the latest news, trending topics, and featured articles to inform and engage readers with current events and stories.
+최신 뉴스, 트렌드 주제 및 특집 기사를 제공하여 독자들이 현재 사건과 이야기로 정보를 얻고 참여할 수 있도록 합니다.
+Page Type: News homepage
+뉴스 홈페이지
+Domain: News / Media
+뉴스 / 미디어

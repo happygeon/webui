@@ -1,0 +1,11 @@
+1. To promote Salesforce's AI-powered CRM solution, Agentforce, by highlighting its benefits for improving productivity and collaboration through AI agents.
+
+2. Landing page
+
+3. Software as a Service (SaaS)
+
+4. (a) Clear and prominent call-to-action button ("Explore Agentforce")
+(b) Concise, benefit-focused headline and subheadlines
+(c) Consistent branding elements (logo, color scheme)
+(d) Navigation menu for easy site exploration
+(e) Free trial offer button in the top right corner

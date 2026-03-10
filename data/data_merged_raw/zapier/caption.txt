@@ -1,0 +1,11 @@
+1. To introduce and promote Zapier's AI orchestration platform to potential users, emphasizing its ease of use and efficiency in building AI workflows without technical complexity.
+
+2. Landing page
+
+3. Software as a Service (SaaS)
+
+4. (a) Clear, bold headline highlighting the product's main benefit
+(b) Concise subheadline explaining the product's key features
+(c) Prominent call-to-action buttons for signing up or starting free trials
+(d) Clean, minimalist design with ample white space
+(e) Contrasting color scheme (orange and white) for visual appeal and brand recognition

@@ -1,0 +1,11 @@
+1. To inform Drift customers about the migration of Drift's website to Salesloft and guide them on how to access their accounts and resources through the new platform.
+
+2. Landing page
+
+3. Software as a Service (SaaS)
+
+4. (a) Clear navigation menu with dropdown options
+(b) Prominent "Book A Call" call-to-action button
+(c) Large, attention-grabbing headline
+(d) Informative text block explaining the migration and next steps
+(e) Contrasting action buttons for logging in and learning more

@@ -1,0 +1,11 @@
+1. To showcase and discover creative work from designers, artists, and other creatives, allowing users to explore projects, find inspiration, and connect with talent.
+
+2. Gallery/Portfolio Page
+
+3. Creative Networking/Showcase
+
+4. (a) Grid layout of project thumbnails
+(b) Category filters at the top (e.g. Graphic Design, Photography)
+(c) Search bar for finding specific content
+(d) Sign-in/Sign-up options for user engagement
+(e) Footer with additional site navigation and information

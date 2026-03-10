@@ -1,0 +1,11 @@
+1. To introduce and promote Linear, a software development tool for planning and building products, targeting software developers and project managers.
+
+2. Landing page
+
+3. Software development
+
+4. (a) Clear, bold headline stating the product's purpose
+(b) Concise subheadline explaining key features
+(c) Prominent "Start building" call-to-action button
+(d) Navigation menu with key sections like Product, Resources, and Pricing
+(e) Dark mode interface design for a modern, sleek look

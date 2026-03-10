@@ -1,0 +1,9 @@
+(a) Streamlined Navigation Bar: Positioned prominently, providing intuitive access to key sections like Website, Email, and Online Store.
+
+(b) Engaging Hero Header: Bold headline and concise messaging to grab attention and convey core value proposition quickly.
+
+(c) Prominent Call-to-Action Button: Strategically placed to encourage immediate interaction with a "Start your free trial" prompt.
+
+(d) Informative Preview Cards: Visually appealing cards showcasing main offerings such as Online Store, Website, and Email Marketing.
+
+(e) Clean Logo Placement: Reinforces brand identity and grants an overall cohesive appearance to the interface.

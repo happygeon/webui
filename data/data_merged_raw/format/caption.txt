@@ -1,0 +1,11 @@
+1. To promote a portfolio builder tool for artists, enabling them to create professional portfolio websites to showcase their work and make a lasting impression.
+
+2. Landing page
+
+3. Web design / Portfolio building
+
+4. (a) Clear and prominent call-to-action button ("Start Building Today")
+(b) Large, bold headline highlighting the product's purpose
+(c) Mockup of the portfolio builder interface on a device screen
+(d) Limited time offer banner at the top to create urgency
+(e) Simple navigation menu with login and get started options

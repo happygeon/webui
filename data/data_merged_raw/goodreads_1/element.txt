@@ -1,0 +1,9 @@
+(a) Prominent navigation bar with clear categorization leading to sections such as "My Books," "Browse," and "Community," which enhances exploration.
+
+(b) Interactive dropdown menus under "Browse" and "Community" providing quick access to sub-sections like "Recommendations," "Genres," and "Groups," promoting engagement.
+
+(c) Visible search bar front and center, ensuring easy access for users wanting to find specific books quickly, improving usability.
+
+(d) Eye-catching call-to-action buttons for sign-up options with distinct choices such as "Continue with Amazon" or "Sign up with email," encouraging account creation.
+
+(e) Attention-grabbing banner image at the top with an engaging prompt to explore current popular books, stimulating initial user interest.

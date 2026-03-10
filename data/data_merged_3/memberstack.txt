@@ -1,0 +1,6 @@
+Purpose: To promote Memberstack's service for adding membership functionality to Webflow sites, targeting web developers and site owners looking to implement user accounts and subscriptions easily.
+회원 계정 및 구독을 쉽게 구현하려는 웹 개발자와 사이트 소유자를 대상으로 Webflow 사이트에 회원 기능을 추가하는 Memberstack의 서비스를 홍보합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: SaaS (Software as a Service)
+SaaS (서비스로서의 소프트웨어)

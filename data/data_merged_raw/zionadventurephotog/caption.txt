@@ -1,0 +1,11 @@
+1. To inspire and guide adventure seekers with hiking, lodging, and activity recommendations for outdoor destinations, particularly in the American Southwest.
+
+2. Blog homepage
+
+3. Travel and adventure
+
+4. (a) Clear navigation menu at the top
+(b) Categorized content sections (Hikes, Lodging, Things to Do, Adventures)
+(c) Grid layout of blog posts with enticing titles and thumbnails
+(d) Newsletter signup form in the footer
+(e) Social media follow buttons

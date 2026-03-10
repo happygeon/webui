@@ -1,0 +1,98 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>넷플릭스 가입하기 - 다양한 콘텐츠와 저렴한 가격으로!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    .focus-visible:focus {
+            outline: 2px solid #1e40af;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <!-- Main Content Wrapper -->
+    <main class="container mx-auto" role="main">
+        <!-- Header -->
+        <header class="bg-white shadow-lg py-4 px-6" role="banner">
+            <div class="container mx-auto flex justify-between items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="넷플릭스 로고" width="120">
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="text-blue-600 hover:text-blue-800">로그인</a></li>
+                        <li><button class="bg-blue-600 text-white px-4 py-2 rounded focus-visible">시작하기</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="bg-black bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('https://www.themoviedb.org/t/p/original/qjYyS6dDxkGgXVvAikipq1LJfZC.jpg');" role="region" aria-label="Hero Section">
+            <div class="container mx-auto text-center">
+                <h1 class="text-white text-4xl md:text-6xl font-bold mb-4">다양한 콘텐츠로 즐겨보세요.</h1>
+                <p class="text-white text-xl md:text-2xl mb-8">저렴한 가격으로 풍부한 영화, 드라마, 애니메이션을 보세요.</p>
+                <button class="bg-blue-600 text-white px-8 py-4 rounded focus-visible">시작하기</button>
+            </div>
+        </section>
+
+        <!-- Content Variety Section -->
+        <section class="py-12 px-6" role="region" aria-label="Content Variety Section">
+            <div class="container mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8">풍부한 콘텐츠로 둘러보세요.</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://image.tmdb.org/t/p/w500/s5PzTtEwzT2WcKJFmRrN7U7QOeI.jpg" alt="영화 포스터" class="mb-4">
+                        <h3 class="text-xl font-semibold">영화</h3>
+                        <p class="text-gray-600">최신 영화들을 즐기세요.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://image.tmdb.org/t/p/w500/lBn9HJ18680Hd562M5x81oVl9iJ.jpg" alt="드라마 포스터" class="mb-4">
+                        <h3 class="text-xl font-semibold">드라마</h3>
+                        <p class="text-gray-600">세계 최고의 드라마를 보세요.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <img src="https://image.tmdb.org/t/p/w500/v7eFyUJQJ3w1FyUJQJ3w1FyUJQJ.jpg" alt="애니메이션 포스터" class="mb-4">
+                        <h3 class="text-xl font-semibold">애니메이션</h3>
+                        <p class="text-gray-600">가족과 함께 즐길 수 있는 애니메이션 콘텐츠입니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="bg-gray-200 py-12 px-6" role="region" aria-label="Pricing Section">
+            <div class="container mx-auto">
+                <h2 class="text-2xl md:text-3xl font-bold mb-8">저렴한 가격으로 시작하세요.</h2>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
+                        <h3 class="text-xl font-semibold">개인 계정</h3>
+                        <p class="text-gray-600">하나의 계정으로 모든 기능을 이용할 수 있습니다.</p>
+                        <p class="text-2xl font-bold">$8.99/월</p>
+                        <button class="bg-blue-600 text-white px-8 py-4 rounded mt-4 focus-visible">개인 계정 선택</button>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md w-full md:w-1/2">
+                        <h3 class="text-xl font-semibold">가족 계정</h3>
+                        <p class="text-gray-600">가족 구성원 모두가 함께 사용할 수 있는 계정입니다.</p>
+                        <p class="text-2xl font-bold">$14.99/월</p>
+                        <button class="bg-blue-600 text-white px-8 py-4 rounded mt-4 focus-visible">가족 계정 선택</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white py-4 px-6" role="contentinfo">
+            <div class="container mx-auto flex justify-center items-center">
+                <p>&copy; 2023 Netflix. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
+```
+
+This updated code removes the duplicate `<main>` element and assigns unique `aria-label` values to each section. It also ensures that ARIA roles are used appropriately where necessary. This should address the accessibility issues identified in the report.

@@ -1,0 +1,5 @@
+1. Displaying a ranked list of bestselling books to help users discover and purchase popular titles, targeting readers and book buyers.
+
+2. Ranking/List page
+
+3. E-commerce

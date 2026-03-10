@@ -1,0 +1,11 @@
+1. To raise awareness and solicit donations for earthquake relief efforts in Myanmar, targeting potential donors and supporters of humanitarian aid.
+
+2. Landing page
+
+3. Non-profit / Humanitarian aid
+
+4. (a) Clear, prominent "Donate now" call-to-action button
+(b) Concise, impactful headline describing the appeal
+(c) Brief explanatory text outlining the purpose and urgency of donations
+(d) Organization logo and branding for credibility
+(e) Mobile-friendly, responsive design with hamburger menu

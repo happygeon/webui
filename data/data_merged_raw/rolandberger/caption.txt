@@ -1,0 +1,11 @@
+1. To showcase Roland Berger's consulting expertise and attract potential clients and job seekers in the management consulting industry
+
+2. Homepage
+
+3. Management Consulting
+
+4. (a) Clear navigation menu with key sections (Expertise, Insights, About, Locations, Join)
+(b) Prominent company logo and branding
+(c) Large hero image showcasing industrial/technological themes
+(d) "Our Consulting Approach" call-to-action button
+(e) Language toggle between EN and DE

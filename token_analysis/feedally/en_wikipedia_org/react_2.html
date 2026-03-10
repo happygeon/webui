@@ -1,0 +1,81 @@
+Great job on addressing the accessibility issues! Here is the complete, corrected HTML code with the necessary changes applied:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Encyclopedia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .focus-visible {
+            outline: 2px solid blue;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <header class="bg-white shadow-lg py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Global Encyclopedia</h1>
+            <nav class="flex space-x-4">
+                <a href="#home" class="hover:text-blue-500 focus-visible">Home</a>
+                <a href="#about" class="hover:text-blue-500 focus-visible">About</a>
+                <a href="#explore" class="hover:text-blue-500 focus-visible">Explore</a>
+                <a href="#contribute" class="hover:text-blue-500 focus-visible">Contribute</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-12 px-6">
+        <section id="home" class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-4">Welcome to Global Encyclopedia</h2>
+            <p class="text-xl mb-8">Your source for free, comprehensive encyclopedic information.</p>
+            <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 focus-visible">Get Started</button>
+        </section>
+
+        <section id="about" class="mt-12 max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-4">About Us</h3>
+            <p class="mb-4">We are dedicated to providing accurate and up-to-date information across various fields of study. Our mission is to empower learners worldwide with access to reliable resources.</p>
+        </section>
+
+        <section id="explore" class="mt-12 max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-4">Explore Categories</h3>
+            <ul role="list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">Science & Technology</a></li>
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">History</a></li>
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">Arts & Culture</a></li>
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">Health & Wellness</a></li>
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">Geography</a></li>
+                <li><a href="#" class="bg-white p-4 rounded hover:bg-gray-50 focus-visible">Mathematics</a></li>
+            </ul>
+        </section>
+
+        <section id="contribute" class="mt-12 max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold mb-4">Contribute</h3>
+            <p class="mb-4">Help us grow by sharing your knowledge! Whether you're a student, researcher, or enthusiast, your contributions can help others learn and grow.</p>
+            <button class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 focus-visible">Join Our Community</button>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-lg py-4 px-6 mt-12">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2023 Global Encyclopedia. All rights reserved.</p>
+            <nav class="flex space-x-4">
+                <a href="#privacy" class="hover:text-gray-500 focus-visible">Privacy Policy</a>
+                <a href="#terms" class="hover:text-gray-500 focus-visible">Terms of Service</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Verification:
+- The `<main>` element is now correctly identified as the primary content area.
+- A level-one heading (`<h1>`) is added at the beginning of the document, ensuring clear identification of the main topic.
+
+These changes address the accessibility issues raised in the report, making the document compliant with the specified requirements.

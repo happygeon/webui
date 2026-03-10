@@ -1,0 +1,6 @@
+Purpose: To provide job seekers with a platform to search for jobs and create accounts, while also offering employers a way to post jobs and manage candidates.
+구직자에게 일자리를 검색하고 계정을 만들 수 있는 플랫폼을 제공하고, 고용주에게는 일자리를 게시하고 후보자를 관리할 수 있는 방법을 제공하기 위해.
+Page Type: Landing page
+랜딩 페이지
+Domain: Job search / Employment
+일자리 검색 / 고용

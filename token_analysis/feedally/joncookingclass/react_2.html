@@ -1,0 +1,87 @@
+The provided HTML code already contains a `<main>` element and a level-one heading (`<h1>`), which means the issues reported in the accessibility report have been resolved. Therefore, no further changes are necessary.
+
+Here is the final HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jon's Carmel Market Cooking Class & Tour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .focus-ring {
+            outline: 2px solid #3498db;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <header class="bg-white shadow-lg py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Jon's Carmel Market</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#class" class="hover:text-blue-500">Cooking Class</a></li>
+                    <li><a href="#tour" class="hover:text-blue-500">Food Tour</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-cover bg-no-repeat bg-center h-screen flex items-center justify-center text-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Experience Local Delight</h2>
+                <p class="text-xl mb-8">Join Jon for a taste of Carmel!</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Sign Up Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 px-6 container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p>Jon's Carmel Market is dedicated to providing authentic and delicious culinary experiences. Our cooking classes and food tours offer a unique glimpse into the flavors of Carmel.</p>
+        </section>
+
+        <section id="class" class="py-16 px-6 bg-gray-200 container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Cooking Class</h2>
+            <p>Learn how to cook like a pro at our hands-on cooking class. Led by Jon himself, you'll master recipes and techniques while enjoying the vibrant atmosphere of Carmel Market.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Book Class</button>
+        </section>
+
+        <section id="tour" class="py-16 px-6 container mx-auto">
+            <h2 class="text-3xl font-bold mb-8">Food Tour</h2>
+            <p>Explore the local flavors of Carmel on our exciting food tour. Discover hidden gems and learn about the history behind each dish during this informative and delectable adventure.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Book Tour</button>
+        </section>
+
+        <section id="contact" class="py-16 px-6 container mx-auto bg-gray-200">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-sm font-medium">Name</label>
+                <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded focus:ring focus:outline-none focus:border-blue-500">
+                
+                <label for="email" class="block text-sm font-medium">Email</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded focus:ring focus:outline-none focus:border-blue-500">
+                
+                <label for="message" class="block text-sm font-medium">Message</label>
+                <textarea id="message" name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded focus:ring focus:outline-none focus:border-blue-500"></textarea>
+                
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-4 px-6 text-center">
+        <p>&copy; 2023 Jon's Carmel Market. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This HTML code meets all the requirements specified in the accessibility report, ensuring proper landmark usage and a clear document structure.

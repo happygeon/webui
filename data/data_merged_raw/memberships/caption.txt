@@ -1,0 +1,11 @@
+1. To inform users that the Membership Academy | Hae Park online school is currently offline and provide login access for existing customers to view their information.
+
+2. Status page
+
+3. Education
+
+4. (a) Clear, large headline stating the school's offline status
+(b) Explanatory text for existing customers
+(c) Prominent "Login" button for user action
+(d) School name and branding at the top
+(e) Platform attribution at the bottom (Teachable)

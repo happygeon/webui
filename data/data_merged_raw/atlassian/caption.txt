@@ -1,0 +1,11 @@
+1. To promote and facilitate sign-up for Atlassian's new Jira software, targeting teams and professionals looking for project management and collaboration tools.
+
+2. Landing page
+
+3. Software/Project Management
+
+4. (a) Clear and prominent sign-up form
+(b) Large, bold headline highlighting the product's value proposition
+(c) Single-click sign-up options for Google and Microsoft accounts
+(d) Icons representing different use cases (Software, Product management, Marketing, etc.)
+(e) Preview of the Jira interface showcasing its features and layout

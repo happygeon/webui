@@ -1,0 +1,51 @@
+**Thought:** The violation detected is due to nested interactive controls within the search button. This can cause confusion and difficulty for users relying on assistive technologies.
+
+**Action:** To resolve this issue, we need to separate the button and input into two distinct elements, ensuring that they are not nested.
+
+**Observation:** After making the necessary changes, we should verify that the search functionality remains intact and that the page is still accessible.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forbes Business News and Insights</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-lg py-4 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Forbes</a>
+            <nav class="flex space-x-4">
+                <a href="#news" class="hover:text-blue-500">News</a>
+                <a href="#insights" class="hover:text-blue-500">Insights</a>
+                <a href="#thought-leadership" class="hover:text-blue-500">Thought Leadership</a>
+                <div role="search" class="relative">
+                    <button aria-label="Search" class="absolute left-0 top-0 bottom-0 bg-white border-r border-gray-300 focus:border-blue-500 focus:outline-none px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </button>
+                    <input type="text" placeholder="Search" class="pl-10 pr-2 py-2 w-full bg-white border border-gray-300 focus:border-blue-500 focus:outline-none rounded-r">
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12">
+        <!--... (remaining code remains unchanged)... -->
+    </main>
+
+    <footer class="bg-white shadow-lg py-4 px-6 text-center">
+        <p>&copy; 2023 Forbes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+In this update, the search functionality is separated into a `div` with a `role="search"` attribute, containing both the button and the input. This ensures that the search controls are not nested and maintain proper accessibility.

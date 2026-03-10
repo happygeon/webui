@@ -1,0 +1,11 @@
+1. To provide an online marketplace for international shoppers to browse and purchase a wide variety of products at discounted prices, with a focus on new member benefits and daily deals.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Large welcome banner with prominent discount percentage
+(b) "Shop Now" call-to-action button
+(c) Navigation menu with categories and special sections
+(d) Search bar for easy product discovery
+(e) Product grid showcasing deals and popular items with prices, ratings, and discounts

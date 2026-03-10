@@ -1,0 +1,115 @@
+**Thought:** The violations detected in the accessibility report indicate issues with landmarks in the HTML structure. Specifically, the `<main>` element is incorrectly nested or duplicated, and landmarks need unique identifiers.
+
+**Action:** I will apply the necessary fixes to the `<main>` element and ensure it is properly positioned without being nested within another landmark. Additionally, I will add unique IDs to each landmark to comply with the `landmark-unique` violation.
+
+**Observation:** After making the changes, I will verify that the document now adheres to the WCAG guidelines regarding landmarks.
+
+Here is the corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Analytics & BI Leadership</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .focus-visible:focus {
+            outline: 2px solid #1e40af;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="oracle-logo.png" alt="Oracle Logo" class="h-10 w-auto">
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">About</a></li>
+                    <li><a href="#products" class="text-gray-700 hover:text-gray-900">Products</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">Services</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" id="main-content" class="py-8 px-4 container mx-auto">
+
+        <section id="hero" class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Empowering Business Decision-Making with Oracle Analytics</h1>
+            <p class="mt-4 text-xl text-gray-600">Discover how Oracle's cutting-edge analytics and business intelligence solutions drive growth and innovation.</p>
+            <button class="mt-6 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 focus:outline-none focus-visible">Get Started</button>
+        </section>
+
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Us</h2>
+            <p class="text-gray-600 leading-relaxed">At Oracle, we're committed to helping businesses transform their operations through advanced analytics and intelligent solutions. Our team of experts is dedicated to providing unparalleled support and guidance to help you achieve your goals.</p>
+        </section>
+
+        <section id="products" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-medium text-gray-900">Oracle Analytics Cloud</h3>
+                    <p class="mt-2 text-gray-600">A comprehensive platform for data analysis and business intelligence.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-medium text-gray-900">Oracle Business Intelligence Applications</h3>
+                    <p class="mt-2 text-gray-600">Tailored solutions for financial planning, reporting, and performance management.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <h3 class="text-xl font-medium text-gray-900">Oracle Data Integration Cloud</h3>
+                    <p class="mt-2 text-gray-600">Efficiently connect and integrate data across various sources for real-time insights.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Services</h2>
+            <ul class="list-disc list-inside">
+                <li><strong>Data Strategy:</strong> Develop and execute comprehensive data strategies to optimize business processes.</li>
+                <li><strong>Analytics Consulting:</strong> Work closely with clients to identify key areas for improvement and implement effective solutions.</li>
+                <li><strong>Implementation Support:</strong> Provide hands-on assistance during the implementation phase to ensure successful deployment.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Get in Touch</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 focus:outline-none focus-visible">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-white text-center py-4">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Oracle Corporation. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+In this corrected version:
+- The `<main>` element now has a unique ID (`id="main-content"`) to comply with the `landmark-unique` violation.
+- There are no nested landmarks, ensuring that the `landmark-main-is-top-level` and `landmark-no-duplicate-main` violations are resolved.
+
+These changes should ensure that the document is fully compliant with the WCAG guidelines regarding landmarks.

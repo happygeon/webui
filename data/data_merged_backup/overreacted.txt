@@ -1,0 +1,3 @@
+1. To showcase blog posts about programming and technology topics, targeting developers and tech enthusiasts interested in React, JSON, and other related subjects.
+2. Blog homepage
+3. Technology/Programming

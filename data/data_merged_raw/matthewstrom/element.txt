@@ -1,0 +1,9 @@
+(a) **Clean Navigation Bar:** The streamlined navigation bar enhances discoverability and ensures intuitive access to key sections such as "Writing" and "About."
+
+(b) **Personal Introduction Header:** A concise, welcoming introduction sets a professional tone, providing clear context about the designer's background and expertise.
+
+(c) **Highlighted Latest Writing Section:** Prominently displayed with engaging previews, this section encourages user interaction and ongoing engagement with the content.
+
+(d) **Strategic Use of Headers:** Well-defined headers organize information logically, aiding quick comprehension and improving readability.
+
+(e) **Subtle Imagery Cues:** Imagery supports the content subtly, adding visual interest and maintaining focus on textual information without overwhelming the design.

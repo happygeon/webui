@@ -1,0 +1,6 @@
+Purpose: To provide an introduction to computer science and Python programming for undergraduate students with little to no prior programming experience.
+프로그래밍 경험이 거의 없는 학부 학생들을 위한 컴퓨터 과학 및 파이썬 프로그래밍 소개를 제공하기 위해.
+Page Type: Course page
+강의 페이지
+Domain: Education
+교육

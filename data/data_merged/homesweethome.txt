@@ -1,0 +1,6 @@
+Purpose: To showcase and allow booking of a bed and breakfast accommodation called "HOME SWEET HOME" in Cirà d'Aunis, targeting travelers seeking a comfortable and homely stay.
+"HOME SWEET HOME"이라는 이름의 베드 앤 브렉퍼스트 숙소를 Cirà d'Aunis에서 소개하고 예약할 수 있도록 하여, 편안하고 아늑한 숙박을 원하는 여행자들을 대상으로 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Hospitality/Travel
+환대/여행

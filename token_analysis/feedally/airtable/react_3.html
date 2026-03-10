@@ -1,0 +1,136 @@
+The provided HTML code is already compliant with the WCAG requirements regarding the presence of a main landmark and a level-one heading. Here is the final, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtable - Build Business Apps with AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better readability and aesthetics */
+       .hero {
+            background-image: url('https://via.placeholder.com/1920x1080?text=AI-Powered+App+Building');
+            background-size: cover;
+            background-position: center;
+            padding: 10rem 2rem;
+            text-align: center;
+        }
+       .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+       .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+       .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+        }
+       .feature {
+            text-align: center;
+        }
+       .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+       .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+       .cta-button:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+           .hero,.features {
+                padding: 5rem 1rem;
+            }
+           .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Airtable</a>
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="hover:text-blue-500">Features</a></li>
+                <li><a href="#pricing" class="hover:text-blue-500">Pricing</a></li>
+                <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto text-white">
+        <section class="hero">
+            <h1>Build Business Apps Faster with AI</h1>
+            <p>Effortlessly create custom apps tailored to your business needs using Airtable’s AI-driven platform.</p>
+            <button class="cta-button" aria-label="Get Started with Airtable">Get Started</button>
+        </section>
+    </main>
+
+    <section id="features" class="container mx-auto my-10">
+        <h2 class="text-3xl font-bold mb-5">Why Choose Airtable?</h2>
+        <div class="features grid gap-4 md:grid-cols-3">
+            <div class="feature">
+                <img src="https://via.placeholder.com/150?text=AI" alt="AI Icon">
+                <h3>AI-Powered Automation</h3>
+                <p>Automate repetitive tasks and make data management more efficient with Airtable’s intelligent features.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150?text=Customization" alt="Customization Icon">
+                <h3>Customizable Solutions</h3>
+                <p>Create apps that perfectly fit your workflow and business processes.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/150?text=Collaboration" alt="Collaboration Icon">
+                <h3>Team Collaboration</h3>
+                <p>Work together seamlessly with real-time updates and shared access to your applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="container mx-auto my-10 bg-white rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold text-center mb-5">Pricing</h2>
+        <p class="text-center">Choose a plan that fits your team and budget.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+            <div class="plan bg-gray-200 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">Free</h3>
+                <p class="text-gray-600">Up to 5 users, limited storage</p>
+                <button class="cta-button mt-4">Sign Up Free</button>
+            </div>
+            <div class="plan bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold">$10/month</h3>
+                <p class="text-gray-600">Unlimited users, unlimited storage</p>
+                <button class="cta-button mt-4">Start Trial</button>
+            </div>
+            <div class="plan bg-gray-200 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">$20/month</h3>
+                <p class="text-gray-600">Enterprise-level support, advanced features</p>
+                <button class="cta-button mt-4">Contact Sales</button>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-black text-white py-6 container mx-auto text-center">
+        <p>&copy; 2023 Airtable Inc. All rights reserved.</p>
+        <ul class="mt-3 flex justify-center space-x-4">
+            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+```
+
+This code includes both the `<main>` landmark and a level-one heading (`<h1>`) as required by the WCAG guidelines. The structural integrity and functionality of the page remain intact.

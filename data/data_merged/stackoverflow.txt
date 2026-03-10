@@ -1,0 +1,6 @@
+Purpose: To display and allow users to browse the newest questions posted on Stack Overflow, a Q&A platform for programmers and developers to seek help and share knowledge.
+Stack Overflow에 게시된 최신 질문을 표시하고 사용자가 탐색할 수 있도록 하는 Q&A 플랫폼으로, 프로그래머와 개발자가 도움을 요청하고 지식을 공유하는 곳입니다.
+Page Type: Questions listing page
+질문 목록 페이지
+Domain: Technology/Programming
+기술/프로그래밍

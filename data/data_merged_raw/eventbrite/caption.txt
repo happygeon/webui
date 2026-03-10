@@ -1,0 +1,11 @@
+1. To help users discover and purchase tickets for various events in Seoul, with a focus on Pride celebrations and diverse event categories.
+
+2. Landing page
+
+3. Event ticketing
+
+4. (a) Search bar with location filter
+(b) Hero banner with call-to-action button
+(c) Event category icons
+(d) Navigation menu with user account options
+(e) Event browsing filters and tabs

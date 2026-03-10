@@ -1,0 +1,6 @@
+Purpose: To provide an online marketplace for buying and selling a wide variety of products, catering to both individual consumers and businesses looking to purchase or sell items.
+다양한 제품을 사고팔 수 있는 온라인 시장을 제공하여, 개인 소비자와 물품을 구매하거나 판매하려는 기업 모두를 대상으로 합니다.
+Page Type: Homepage
+홈페이지
+Domain: E-commerce
+전자상거래

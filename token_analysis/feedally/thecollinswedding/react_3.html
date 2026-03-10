@@ -1,0 +1,129 @@
+### Thought:
+The current HTML code includes a level-one heading in the header but lacks a single `main` landmark, which is necessary according to the WCAG guidelines. The `main` landmark helps screen readers and other assistive technologies identify the primary content area of the page.
+
+### Action:
+To address these issues, we will add a `<main>` element with an `id="main"` attribute and ensure it encompasses all the main content sections of the page.
+
+### Observation:
+After applying the changes, we will verify if the document now contains exactly one main landmark and if it includes a level-one heading.
+
+Here is the complete, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planning Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .focus-visible {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Wedding Planning Hub</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#services" class="hover:text-blue-500">Services</a></li>
+                    <li><a href="#resources" class="hover:text-blue-500">Resources</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main" class="container mx-auto">
+        <!-- Hero Section -->
+        <section id="hero" class="py-20 bg-cover bg-no-repeat bg-center" style="background-image: url('hero.jpg');">
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold mb-4">Your Dream Wedding</h2>
+                <p class="text-xl mb-8">Find everything you need for your perfect day.</p>
+                <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus-visible">Get Started</button>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <h3 class="text-3xl font-semibold mb-8">Our Services</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-bold mb-4">Venue Selection</h4>
+                    <p class="text-gray-700">Choose the perfect place for your special day.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-bold mb-4">Jewelry & Accessories</h4>
+                    <p class="text-gray-700">Find beautiful pieces to complement your look.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h4 class="text-2xl font-bold mb-4">Photography & Videography</h4>
+                    <p class="text-gray-700">Capture memories that will last a lifetime.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="py-20 bg-gray-50">
+            <h3 class="text-3xl font-semibold mb-8">Useful Resources</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">Budgeting Tips</h4>
+                    <p class="text-gray-700">How to plan your wedding without breaking the bank.</p>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">Invitation Ideas</h4>
+                    <p class="text-gray-700">Creative ways to invite guests to your big day.</p>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow-sm">
+                    <h4 class="text-xl font-bold mb-4">Day-of Logistics</h4>
+                    <p class="text-gray-700">A step-by-step guide to make your wedding day run smoothly.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <h3 class="text-3xl font-semibold mb-8">Get in Touch</h3>
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border rounded focus:outline-none focus-visible">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded focus:outline-none focus-visible">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border rounded focus:outline-none focus-visible"></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus-visible">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Wedding Planning Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Verification:
+- **Main Landmark:** There is now a single `main` element with the `id="main"` attribute, covering all the main content sections.
+- **Level-One Heading:** The level-one heading (`<h1>`) is already present in the header section.
+
+Both issues have been resolved, ensuring the document meets the WCAG guidelines.

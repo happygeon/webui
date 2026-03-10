@@ -1,0 +1,11 @@
+1. To provide a comprehensive online shopping experience for a wide range of products, catering to diverse customer needs and preferences.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Large, prominent search bar at the top
+(b) Rotating banner with promotional offers
+(c) Grid layout of product categories with images
+(d) Clear navigation menu with dropdown options
+(e) Footer with links to important pages and information

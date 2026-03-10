@@ -1,0 +1,25 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "document-title",
+      "help": "Documents must have <title> element to aid in navigation",
+      "count": 1
+    },
+    {
+      "id": "html-has-lang",
+      "help": "<html> element must have a lang attribute",
+      "count": 1
+    },
+    {
+      "id": "landmark-one-main",
+      "help": "Document should have one main landmark",
+      "count": 1
+    },
+    {
+      "id": "page-has-heading-one",
+      "help": "Page should contain a level-one heading",
+      "count": 1
+    }
+  ]
+}

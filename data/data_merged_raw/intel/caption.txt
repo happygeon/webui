@@ -1,0 +1,11 @@
+1. To showcase Intel's AI capabilities and solutions to businesses and developers looking to implement AI technology across various platforms and environments.
+
+2. Landing page
+
+3. Technology / AI
+
+4. (a) Clear, prominent headline emphasizing AI simplification
+(b) Navigation menu with key product categories
+(c) Explanatory subheading detailing Intel's AI offerings
+(d) "AI Solutions" call-to-action button
+(e) Download/product/specification options for more information

@@ -1,0 +1,6 @@
+Purpose: To provide a platform for developers to ask and answer programming-related questions, specifically about a C++ compilation error in this case.
+개발자들이 프로그래밍 관련 질문을 하고 답변할 수 있는 플랫폼을 제공하기 위해, 특히 이 경우 C++ 컴파일 오류에 대해.
+Page Type: Question and Answer Page
+질문 및 답변 페이지
+Domain: Developer Community / Q&A
+개발자 커뮤니티 / Q&A

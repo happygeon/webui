@@ -1,0 +1,6 @@
+Purpose: To inform users that the requested content cannot be found and guide them to search for alternative content on the TED.com website
+사용자에게 요청한 콘텐츠를 찾을 수 없음을 알리고 TED.com 웹사이트에서 대체 콘텐츠를 검색하도록 안내합니다.
+Page Type: Error page
+오류 페이지
+Domain: Education/Technology
+교육/기술

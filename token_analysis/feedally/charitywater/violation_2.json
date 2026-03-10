@@ -1,0 +1,15 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "color-contrast",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "count": 3
+    },
+    {
+      "id": "aria-allowed-role",
+      "help": "ARIA role should be appropriate for the element",
+      "count": 2
+    }
+  ]
+}

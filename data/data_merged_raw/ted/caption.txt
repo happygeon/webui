@@ -1,0 +1,11 @@
+1. To inform users that the requested content cannot be found and guide them to search for alternative content on the TED.com website
+
+2. Error page
+
+3. Education/Technology
+
+4. (a) Large, prominent "TED" logo
+(b) Clear error message explaining the issue
+(c) Search bar for finding alternative content
+(d) HTTP Error code for technical clarity
+(e) Links to homepage and help desk for further assistance

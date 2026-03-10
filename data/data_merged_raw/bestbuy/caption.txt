@@ -1,0 +1,11 @@
+1. To promote exclusive deals and savings for Best Buy Plus and Total members, encouraging customer loyalty and increased purchases.
+
+2. Landing page
+
+3. E-commerce
+
+4. (a) Clear navigation menu with categories like Top Deals, Deal of the Day, etc.
+(b) Prominent "Member Deals Days" banner with eye-catching typography
+(c) Grid layout of product offers with "Shop now" buttons
+(d) Category icons at the bottom for easy browsing
+(e) Countdown timer ("Ends Sunday") to create urgency

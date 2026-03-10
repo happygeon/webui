@@ -1,0 +1,11 @@
+1. To provide an online shopping platform for Target customers, showcasing summer and 4th of July themed products and promotions.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Clear navigation bar with search functionality
+(b) Prominent promotional banner for summer classics
+(c) Product category tiles with attractive visuals and pricing
+(d) Shopping cart icon for easy access to checkout
+(e) Location and shipping information at the top of the page

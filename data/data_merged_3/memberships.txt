@@ -1,0 +1,6 @@
+Purpose: To inform users that the Membership Academy | Hae Park online school is currently offline and provide login access for existing customers to view their information.
+사용자에게 Membership Academy | Hae Park 온라인 학교가 현재 오프라인 상태임을 알리고 기존 고객이 자신의 정보를 볼 수 있도록 로그인 접근을 제공합니다.
+Page Type: Status page
+상태 페이지
+Domain: Education
+교육

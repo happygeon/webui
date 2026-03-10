@@ -1,0 +1,35 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "landmark-banner-is-top-level",
+      "help": "Banner landmark should not be contained in another landmark",
+      "count": 2
+    },
+    {
+      "id": "landmark-contentinfo-is-top-level",
+      "help": "Contentinfo landmark should not be contained in another landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-main-is-top-level",
+      "help": "Main landmark should not be contained in another landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-no-duplicate-banner",
+      "help": "Document should not have more than one banner landmark",
+      "count": 1
+    },
+    {
+      "id": "landmark-unique",
+      "help": "Ensures landmarks are unique",
+      "count": 1
+    },
+    {
+      "id": "region",
+      "help": "All page content should be contained by landmarks",
+      "count": 1
+    }
+  ]
+}

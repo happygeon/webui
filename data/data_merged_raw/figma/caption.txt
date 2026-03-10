@@ -1,0 +1,11 @@
+1. To showcase Figma's collaborative design platform for design and development teams, emphasizing its ability to help build great products efficiently.
+
+2. Landing page
+
+3. Software/Design tools
+
+4. (a) Bold, large headline emphasizing key benefits ("Think bigger. Build faster.")
+(b) Clear call-to-action buttons ("Get started for free" and "Contact sales")
+(c) Colorful abstract design elements to showcase creativity
+(d) Product interface preview showing Figma's design capabilities
+(e) Concise subheading explaining Figma's purpose and target audience

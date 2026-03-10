@@ -1,0 +1,111 @@
+**Thought:** The updated code includes a `<main>` element containing a `<h1>` heading, which addresses two of the four violations mentioned in the accessibility report. However, there are still issues related to color contrast, duplicate landmarks, and ensuring unique landmarks.
+
+**Action:** I will address the remaining issues by:
+1. Ensuring sufficient color contrast between text and background.
+2. Correcting the placement of landmarks.
+3. Ensuring all landmarks are unique.
+
+**Observation:** After making these additional changes, I will verify if the document now fully complies with the accessibility standards.
+
+### Updated Code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amnesty International</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Language Selector -->
+  <aside class="fixed top-0 left-0 bg-white shadow-lg p-4 w-full z-50 hidden lg:block">
+    <div class="flex justify-between items-center">
+      <p>Which language would you like to use this site in?</p>
+      <button class="text-blue-500">Close</button>
+    </div>
+    <ul class="mt-4 space-y-2">
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">English</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Español</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Français</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">العربية</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">简中</a></li>
+      <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">繁中</a></li>
+    </ul>
+  </aside>
+
+  <!-- Header -->
+  <header class="container mx-auto py-6 flex justify-between items-center">
+    <a href="#">
+      <img alt="Amnesty International" src="https://www.amnesty.org/en/wp-content/uploads/2021/08/129327069-45f0fe5f-7fa9-4b09-acbb-3272541534ab-170x72.png" width="170"/>
+      <img alt="Amnesty International" src="https://www.amnesty.org/en/wp-content/uploads/2018/08/amnesty-international-logomark.jpg" width="60"/>
+    </a>
+    <nav class="hidden md:flex space-x-4">
+      <a href="#" class="hover:text-blue-500">Who We Are</a>
+      <a href="#" class="hover:text-blue-500">What We Do</a>
+      <a href="#" class="hover:text-blue-500">Countries</a>
+      <a href="#" class="hover:text-blue-500">Get Involved</a>
+      <a href="#" class="hover:text-blue-500">Latest</a>
+      <a href="#" class="hover:text-blue-500">Search</a>
+      <a href="#" class="hover:text-blue-500">Donate Now</a>
+    </nav>
+    <button class="md:hidden text-gray-500 hover:text-blue-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        <path d="M4 6h16v2H4V6zm0 5h16v2H4v-2zM4 16h16v2H4v-2z"/>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content" role="main" class="container mx-auto py-12">
+    <!-- Hero Section -->
+    <section class="text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">Civilians killed in strikes on Sumy city as Russian military increase attacks in Ukraine</h1>
+      <span class="text-gray-600">Yehor Kryvoruchko / Kordon Media</span>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-12 bg-white shadow-md rounded-lg">
+      <h2 class="text-xl md:text-2xl font-bold mb-6 text-center">Take action now and make a difference</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="p-4 border border-gray-200 rounded-lg hover:shadow-md">
+          <figure class="mb-4">
+            <img alt="" src="https://www.amnesty.org/en/wp-content/uploads/2025/06/GettyImages-2219948228-1-640x400.jpg" class="w-full h-auto rounded-lg"/>
+            <span class="block mt-2"><a href="#" class="text-blue-500 hover:underline">War Crimes and Crimes Against Humanity</a></span>
+          </figure>
+          <h3 class="text-lg font-semibold mb-2"><a href="#" class="hover:text-blue-500">Lift the blockade on Gaza and stop the genocide.</a></h3>
+          <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Act Now</a>
+        </article>
+        <article class="p-4 border border-gray-200 rounded-lg hover:shadow-md">
+          <figure class="mb-4">
+            <img alt="" src="https://www.amnesty.org/en/wp-content/uploads/2022/10/Petition-banners-1-640x400.jpg" class="w-full h-auto rounded-lg"/>
+            <span class="block mt-2"><a href="#" class="text-blue-500 hover:underline">Censorship and Freedom of Expression</a></span>
+          </figure>
+          <h3 class="text-lg font-semibold mb-2"><a href="#" class="hover:text-blue-500">Regulate the trade in policing equipment now</a></h3>
+          <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Act Now</a>
+        </article>
+        <article class="p-4 border border-gray-200 rounded-lg hover:shadow-md">
+          <figure class="mb-4">
+            <img alt="" src="https://www.amnesty.org/en/wp-content/uploads/2024/11/303705-640x400.jpg" class="w-full h-auto rounded-lg"/>
+            <span class="block mt-2"><a href="#" class="text-blue-500 hover:underline">Armed Conflict</a></span>
+          </figure>
+          <h3 class="text-lg font-semibold mb-2"><a href="#" class="hover:text-blue-500">End Israel’s genocide against Palestinians in Gaza</a></h3>
+          <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Act Now</a>
+        </article>
+        <article class="p-4 border border-gray-200 rounded-lg hover:shadow-md">
+          <figure class="mb-4">
+            <img alt="" src="https://www.amnesty.org/en/wp-content/uploads/2024/08/Amnesty-International_Maasai-Mara-640x400.jpg" class="w-full h-auto rounded-lg"/>
+            <span class="block mt-2"><a href="#" class="text-blue-500 hover:underline">Business and Human Rights</a></span>
+          </figure>
+          <h3 class="text-lg font-semibold mb-2"><a href="#" class="hover:text-blue-500">Join the Maasai’s fight for their land</a></h3>
+          <a href="#" class="inline-block px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Act Now</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-12 bg-white shadow-md rounded-lg">
+      <h2 class="text-xl md:text-2xl font-bold mb-6 text-center">We campaign for a world where human rights are enjoyed by all</h2>
+      <p class

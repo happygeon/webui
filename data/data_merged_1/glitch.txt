@@ -1,0 +1,6 @@
+Purpose: To inform Glitch users about important changes to the platform and showcase various web development tools and features available, encouraging engagement and creativity.
+Glitch 사용자에게 플랫폼의 중요한 변경 사항을 알리고 다양한 웹 개발 도구와 기능을 소개하여 참여와 창의성을 촉진합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Web development
+웹 개발

@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="https://schema.org/QAPage" lang="en">
+ <head>
+  <title>
+   visual studio code - Why is my Windows C++ VSCode project failing to compile when I use functionality from the standard library &lt;random&gt;? - Stack Overflow
+  </title>
+  <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/favicon.ico?v=ec617d715196" rel="shortcut icon"/>
+  <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" rel="apple-touch-icon"/>
+  <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" rel="image_src"/>
+  <link href="/opensearch.xml" rel="search" title="Stack Overflow" type="application/opensearchdescription+xml"/>
+  <link href="https://stackoverflow.com/questions/79677945/why-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality" rel="canonical"/>
+  <link href="/feeds/question/79677945" rel="alternate" title="Feed for question 'Why is my Windows C++ VSCode project failing to compile when I use functionality from the standard library &lt;random&gt;?'" type="application/atom+xml"/>
+  <noscript>
+  </noscript>
+  <link href="https://pagead2.googlesyndication.com/pagead/managed/dict/m202506240101/gpt" rel="compression-dictionary"/>
+ </head>
+ <body>
+  <div>
+   <aside role="dialog">
+    <div role="document">
+     <h1>
+      <div>
+       <img alt="site logo" src="https://cdn.sstatic.net/Sites/stackoverflow/Img/icon-48.png?v=b7e36f88ff92"/>
+       <span>
+        <strong>
+         Join Stack Overflow
+        </strong>
+       </span>
+      </div>
+     </h1>
+     <div>
+      <div>
+       <div>
+        <span>
+         By clicking “Sign up”, you agree to our
+         <a href="/legal/terms-of-service/public" rel="noopener noreferrer" target="_blank">
+          terms of service
+         </a>
+         and acknowledge you have read our
+         <a href="/legal/privacy-policy" rel="noopener noreferrer" target="_blank">
+          privacy policy
+         </a>
+         .
+        </span>
+       </div>
+       <div>
+        <form action="/users/signup?ssrc=undefined&amp;returnurl=https%3A%2F%2Fstackoverflow.com%2Fusers%2Fafter-signup%2Foauth-only" method="POST" target="oauth-frame">
+         <input name="fkey" type="hidden" value="04ad44db75c3bbfdffc3e1fa7bee9c40a171d3f567347048829aa195c5d6c7a6"/>
+         <input name="legalLinksShown" type="hidden" value="1"/>
+         <input name="ssrc" type="hidden"/>
+         <input name="oauth_version" type="hidden" value="2.0"/>
+         <input name="oauth_server" type="hidden"/>
+         <div>
+          <button type="submit">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18" fill="#4285F4">
+             </path>
+             <path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17" fill="#34A853">
+             </path>
+             <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18z" fill="#FBBC05">
+             </path>
+             <path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.8 4.8 0 0 1 4.48-3.3" fill="#EA4335">
+             </path>
+            </svg>
+            Sign up with Google
+           </div>
+          </button>
+          <button type="submit">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M9 1a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38l-.01-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48l-.01 2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 9 1" fill="#010101">
+             </path>
+            </svg>
+            Sign up with GitHub
+           </div>
+          </button>
+         </div>
+        </form>
+       </div>
+       <h1>
+        OR
+       </h1>
+       <form action="/users/signup?ssrc=undefined&amp;returnurl=https%3A%2F%2Fstackoverflow.com%2Fquestions%2F79677945%2Fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality" method="POST">
+        <input name="fkey" type="hidden" value="04ad44db75c3bbfdffc3e1fa7bee9c40a171d3f567347048829aa195c5d6c7a6"/>
+        <input name="legalLinksShown" type="hidden" value="1"/>
+        <input name="ssrc" type="hidden" value=""/>
+        <input name="vote" type="hidden" value=""/>
+        <input name="votehash" type="hidden" value=""/>
+        <input name="tagAction" type="hidden" value=""/>
+        <input name="tagNames" type="hidden" value=""/>
+        <input name="anonTheme" type="hidden" value=""/>
+        <div>
+         <label for="signup-modal-email">
+          Email
+         </label>
+         <div>
+          <input autocomplete="off" maxlength="100" name="email" size="30"/>
+         </div>
+        </div>
+        <div>
+         <label for="signup-modal-password">
+          Password
+         </label>
+         <div>
+          <input autocomplete="new-password" name="password" placeholder="8+ characters (at least 1 letter &amp; 1 number)" type="password"/>
+          <button type="button">
+           <svg height="18" viewbox="0 0 18 18" width="18">
+            <path d="m5.02 9.44-2.22 2.2C1.63 10.25 1 9 1 9s3-6 8.06-6q1.13.01 2.12.38L9.5 5.03 9 5a4 4 0 0 0-3.98 4.44m2.03 3.05A4 4 0 0 0 13 9q-.01-1.1-.54-2l-1.51 1.54q.05.22.05.46a2 2 0 0 1-2.44 1.95zm7.11-7.22A15 15 0 0 1 17 9s-3 6-7.94 6c-1.31 0-2.48-.4-3.5-1l-1.97 2L2 14.41 14.59 2 16 3.41z">
+            </path>
+           </svg>
+          </button>
+         </div>
+        </div>
+        <div>
+         <button name="submit-button" type="submit">
+          Sign up
+         </button>
+         <p>
+         </p>
+        </div>
+       </form>
+      </div>
+     </div>
+     <div>
+      <div>
+       Already have an account?
+       <a href="/users/login">
+        Log in
+       </a>
+      </div>
+     </div>
+     <button>
+      <svg height="18" viewbox="0 0 18 18" width="18">
+       <path d="M15 4.41 13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9z">
+       </path>
+      </svg>
+     </button>
+    </div>
+   </aside>
+  </div>
+  <div>
+   <form action="/users/auth/gcp?ssrc=google-one-tap&amp;returnurl=https%253a%252f%252fstackoverflow.com%252fquestions%252f79677945%252fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality" method="post" name="one-tap-form">
+    <input name="fKey" type="hidden" value="04ad44db75c3bbfdffc3e1fa7bee9c40a171d3f567347048829aa195c5d6c7a6"/>
+    <input name="googleIdToken" type="hidden" value=""/>
+   </form>
+  </div>
+  <div>
+  </div>
+  <div>
+  </div>
+  <header>
+   <a href="#content">
+    Skip to main content
+   </a>
+   <div>
+    <a href="#" role="menuitem">
+     <span>
+     </span>
+    </a>
+    <div>
+     <div>
+     </div>
+    </div>
+    <a href="https://stackoverflow.com">
+     <span>
+      Stack Overflow
+     </span>
+    </a>
+    <ol role="presentation">
+     <li>
+      <a href="https://stackoverflow.co/">
+       About
+      </a>
+     </li>
+     <li>
+      <button type="button">
+       Products
+      </button>
+     </li>
+     <li>
+      <a href="https://stackoverflow.co/teams/ai/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav-bar&amp;utm_content=overflowai">
+       OverflowAI
+      </a>
+     </li>
+    </ol>
+    <div role="menu">
+     <div>
+     </div>
+     <ol>
+      <li>
+       <a href="https://stackoverflow.co/teams/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=stack-overflow-for-teams">
+        <span>
+         Stack Overflow for Teams
+        </span>
+        <span>
+         Where developers &amp; technologists share private knowledge with coworkers
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="https://stackoverflow.co/advertising/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=stack-overflow-advertising">
+        <span>
+         Advertising
+        </span>
+        <span>
+         Reach devs &amp; technologists worldwide about your product, service or employer brand
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="https://stackoverflow.co/api-solutions/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=overflow-api">
+        <span>
+         Knowledge Solutions
+        </span>
+        <span>
+         Data licensing offering for businesses to build and improve AI tools and models
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="https://stackoverflow.co/labs/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=labs">
+        <span>
+         Labs
+        </span>
+        <span>
+         The future of collective knowledge sharing
+        </span>
+       </a>
+      </li>
+      <li>
+       <a href="https://stackoverflow.co/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=about-the-company">
+        About the company
+       </a>
+       <a href="https://stackoverflow.blog/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=top-nav&amp;utm_content=blog">
+        Visit the blog
+       </a>
+      </li>
+     </ol>
+    </div>
+    <form action="/search" autocomplete="off" role="search">
+     <div>
+      <input autocomplete="off" maxlength="240" name="q" placeholder="Search…" role="combobox" type="text" value=""/>
+      <svg height="18" viewbox="0 0 18 18" width="18">
+       <path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0">
+       </path>
+      </svg>
+      <div role="menu">
+       <div>
+       </div>
+       <div>
+        <div>
+         <div>
+          <div>
+           Loading…
+          </div>
+         </div>
+        </div>
+        <span>
+        </span>
+        <div>
+        </div>
+        <div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </form>
+    <nav>
+     <ol role="menubar">
+      <li role="presentation">
+       <div role="menu">
+        <div>
+         <h3>
+          <a href="https://stackoverflow.com">
+           current community
+          </a>
+         </h3>
+         <div>
+          <div>
+           <button type="button">
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M15 4.41 13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9z">
+             </path>
+            </svg>
+           </button>
+          </div>
+         </div>
+        </div>
+        <div>
+         <ul>
+          <li>
+           <div>
+            <a href="https://stackoverflow.com">
+             <div title="Stack Overflow">
+             </div>
+             <span>
+              Stack Overflow
+             </span>
+            </a>
+           </div>
+           <div>
+            <a href="https://stackoverflow.com/help">
+             help
+            </a>
+            <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com">
+             chat
+            </a>
+           </div>
+          </li>
+          <li>
+           <div>
+            <span>
+            </span>
+           </div>
+           <a href="https://meta.stackoverflow.com">
+            <div title="Meta Stack Overflow">
+            </div>
+            <span>
+             Meta Stack Overflow
+            </span>
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div>
+         <h3>
+          your communities
+         </h3>
+        </div>
+        <div>
+         <div>
+          <a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f79677945%2fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality">
+           Sign up
+          </a>
+          or
+          <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f79677945%2fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality">
+           log in
+          </a>
+          to customize your list.
+         </div>
+        </div>
+        <div>
+         <h3>
+          <a href="https://stackexchange.com/sites">
+           more stack exchange communities
+          </a>
+         </h3>
+         <a href="https://stackoverflow.blog">
+          company blog
+         </a>
+        </div>
+        <div>
+         <div>
+         </div>
+        </div>
+       </div>
+      </li>
+      <li role="none">
+       <button role="menuitem" title="Click to show search">
+        <svg height="18" viewbox="0 0 18 18" width="18">
+         <path d="m18 16.5-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0">
+         </path>
+        </svg>
+       </button>
+      </li>
+      <li role="none">
+       <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f79677945%2fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality" rel="nofollow" role="menuitem">
+        Log in
+       </a>
+      </li>
+      <li role="none">
+       <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f79677945%2fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality" rel="nofollow" role="menuitem">
+        Sign up
+       </a>
+      </li>
+     </ol>
+    </nav>
+   </div>
+  </header>
+  <div>
+   <div>
+   </div>
+   <div>
+    <div>
+     <nav>
+      <ol>
+       <li>
+        <ol>
+         <li>
+          <a href="/">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M15 10v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5H0l9-9 9 9zm-8 1v6h4v-6z">
+             </path>
+            </svg>
+            <span>
+             Home
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+          <a href="/questions">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="m4 15-3 3V4c0-1.1.9-2 2-2h12c1.09 0 2 .91 2 2v9c0 1.09-.91 2-2 2zm7.75-3.97c.72-.83.98-1.86.98-2.94 0-1.65-.7-3.22-2.3-3.83a4.4 4.4 0 0 0-3.02 0 3.8 3.8 0 0 0-2.32 3.83q0 1.93 1.03 3a3.8 3.8 0 0 0 2.85 1.07q.94 0 1.71-.34.97.66 1.06.7.34.2.7.3l.59-1.13a5 5 0 0 1-1.28-.66m-1.27-.9a5 5 0 0 0-1.5-.8l-.45.9q.5.18.98.5-.3.1-.65.11-.92 0-1.52-.68c-.86-1-.86-3.12 0-4.11.8-.9 2.35-.9 3.15 0 .9 1.01.86 3.03-.01 4.08">
+             </path>
+            </svg>
+            <span>
+             Questions
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+          <a href="/tags">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M9.24 1a3 3 0 0 0-2.12.88l-5.7 5.7a2 2 0 0 0-.38 2.31 3 3 0 0 1 .67-1.01l6-6A3 3 0 0 1 9.83 2H14a3 3 0 0 1 .79.1A2 2 0 0 0 13 1z" opacity=".4">
+             </path>
+             <path d="M9.83 3a2 2 0 0 0-1.42.59l-6 6a2 2 0 0 0 0 2.82L6.6 16.6a2 2 0 0 0 2.82 0l6-6A2 2 0 0 0 16 9.17V5a2 2 0 0 0-2-2zM12 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4">
+             </path>
+            </svg>
+            <span>
+             Tags
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+         </li>
+         <li>
+          <a href="/beta/challenges">
+           <div>
+            <div>
+             <svg height="18" viewbox="0 0 18 18" width="18">
+              <path d="M10.5 3.5 8 7.25l2 2.25L8.5 11l-3-3.5L1 14h16z">
+              </path>
+             </svg>
+            </div>
+            <span>
+             Challenges
+            </span>
+            <div>
+             <div>
+              New
+             </div>
+            </div>
+           </div>
+          </a>
+         </li>
+         <li>
+          <a href="https://chat.stackoverflow.com/rooms/259507/stack-overflow-lobby" origin:&#x27;stack="" overflow&#x27;})="" rep_bucket:&#x27;new&#x27;,="">
+           <div>
+            <div>
+             <svg height="18" viewbox="0 0 18 16" width="18">
+              <path d="M17 3C17 1.89543 16.1046 1 15 1H7C5.89543 1 5 1.89543 5 3V5C5 6.10457 5.89543 7 7 7H15C16.1046 7 17 6.10457 17 5V3ZM7 3H15V5H7V3Z">
+              </path>
+              <path d="M17 10C17 8.89543 16.1046 8 15 8H7C5.89543 8 5 8.89543 5 10V14C5 15.1046 5.89543 16 7 16H15C16.1046 16 17 15.1046 17 14V10ZM7 10H15V14H7V10Z">
+              </path>
+              <path d="M1 9C1 8.44771 1.44772 8 2 8H3C3.55228 8 4 8.44772 4 9V10C4 10.5523 3.55228 11 3 11H2C1.44772 11 1 10.5523 1 10V9Z">
+              </path>
+              <path d="M2 1C1.44772 1 1 1.44772 1 2V3C1 3.55228 1.44772 4 2 4H3C3.55228 4 4 3.55228 4 3V2C4 1.44772 3.55228 1 3 1H2Z">
+              </path>
+             </svg>
+            </div>
+           </div>
+           <span>
+            Chat
+           </span>
+          </a>
+         </li>
+         <li>
+          <a href="https://stackoverflow.blog/contributed?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=so-blog&amp;utm_content=experiment-articles">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M5 3a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h7a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm2 3a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-2 4.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m.5 1.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1 0-1M5 14.5c0-.28.22-.5.5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5">
+             </path>
+             <path d="M5.9 2h6.35A2.75 2.75 0 0 1 15 4.75v9.35c.62-.6 1-1.43 1-2.35v-7.5C16 2.45 14.54 1 12.75 1h-4.5c-.92 0-1.75.38-2.35 1" opacity=".4">
+             </path>
+            </svg>
+            <span>
+             Articles
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+          <a href="/users">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M17 14c0 .44-.45 1-1 1H9a1 1 0 0 1-1-1H2c-.54 0-1-.56-1-1 0-2.63 3-4 3-4s.23-.4 0-1c-.84-.62-1.06-.59-1-3s1.37-3 2.5-3 2.44.58 2.5 3-.16 2.38-1 3c-.23.59 0 1 0 1s1.55.71 2.42 2.09c.78-.72 1.58-1.1 1.58-1.1s.23-.4 0-1c-.84-.61-1.06-.58-1-3s1.37-3 2.5-3 2.44.59 2.5 3c.05 2.42-.16 2.39-1 3-.23.6 0 1 0 1s3 1.38 3 4">
+             </path>
+            </svg>
+            <span>
+             Users
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+         </li>
+         <li>
+          <a href="https://stackoverflow.com/jobs/companies?so_medium=stackoverflow&amp;so_source=SiteNav">
+           <div>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M10 16v-4H8v4H2V4c0-1.1.9-2 2-2h6c1.09 0 2 .91 2 2v2h2c1.09 0 2 .91 2 2v8zM4 4v2h2V4zm0 4v2h2V8zm4-4v2h2V4zm0 4v2h2V8zm-4 4v2h2v-2zm8 0v2h2v-2zm0-4v2h2V8z">
+             </path>
+            </svg>
+            <span>
+             Companies
+            </span>
+           </div>
+          </a>
+         </li>
+         <li>
+          <div>
+           <a href="javascript:void(0)" role="button">
+            <div>
+             Collectives
+            </div>
+            <div>
+             <svg height="14" viewbox="0 0 14 14" width="14">
+              <path d="M8 2H6v4H2v2h4v4h2V8h4V6H8z">
+              </path>
+             </svg>
+            </div>
+           </a>
+          </div>
+         </li>
+         <li>
+          <p>
+           Communities for your favorite technologies.
+           <a href="/collectives-all">
+            Explore all Collectives
+           </a>
+          </p>
+         </li>
+        </ol>
+       </li>
+       <li>
+        <div>
+         Teams
+        </div>
+        <div>
+         <img alt="" height="24" src="https://cdn.sstatic.net/Img/teams/teams-promo.svg?v=e507948b81bf" width="151"/>
+         <p>
+          Ask questions, find answers and collaborate at work with Stack Overflow for Teams.
+         </p>
+         <a href="https://stackoverflowteams.com/teams/create/free/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=side-bar&amp;utm_content=explore-teams">
+          Try Teams for free
+         </a>
+         <a href="https://stackoverflow.co/teams/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=side-bar&amp;utm_content=explore-teams">
+          Explore Teams
+         </a>
+        </div>
+       </li>
+       <li>
+        <a href="javascript:void(0)" role="button">
+         <div>
+          Teams
+         </div>
+         <div>
+          <svg height="14" viewbox="0 0 14 14" width="14">
+           <path d="M8 2H6v4H2v2h4v4h2V8h4V6H8z">
+           </path>
+          </svg>
+         </div>
+        </a>
+       </li>
+       <li>
+        <p>
+         Ask questions, find answers and collaborate at work with Stack Overflow for Teams.
+         <a href="https://stackoverflow.co/teams/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=side-bar&amp;utm_content=explore-teams-compact">
+          Explore Teams
+         </a>
+        </p>
+       </li>
+      </ol>
+     </nav>
+    </div>
+    <div role="menu">
+     <div>
+     </div>
+     <div>
+      <svg height="48" viewbox="0 0 48 48" width="48">
+       <path d="M25.5 7a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M14 18.25c0-.69.56-1.25 1.25-1.25h22.5c.69 0 1.25.56 1.25 1.25V37.5a1 1 0 0 1-1.6.8l-4.07-3.05a1.3 1.3 0 0 0-.75-.25H15.25c-.69 0-1.25-.56-1.25-1.25zM7 24.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0M25.5 48a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M48 24.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" opacity=".2">
+       </path>
+       <path d="M21 3.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0M24.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M0 23.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0M3.5 22a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M21 44.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0m3.5-1.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m20-23a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7M43 23.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0m-23.23-3.14a1 1 0 0 1-.13 1.4l-2.08 1.74 2.08 1.73a1 1 0 1 1-1.28 1.54l-2.42-2.02a1.63 1.63 0 0 1 0-2.5l2.42-2.02a1 1 0 0 1 1.4.13m7.6 1.41a1 1 0 1 1 1.28-1.54l2.42 2.02c.78.65.78 1.85 0 2.5l-2.42 2.02a1 1 0 1 1-1.28-1.54l2.08-1.73zM24.12 18a1 1 0 0 1 .87 1.12l-1 8a1 1 0 1 1-1.98-.24l1-8a1 1 0 0 1 1.11-.87M12.25 13C11.01 13 10 14 10 15.25v15.5c0 1.24 1 2.25 2.25 2.25h17.33q.09 0 .15.05l4.07 3.05a2 2 0 0 0 3.2-1.6V15.25c0-1.24-1-2.25-2.25-2.25zM12 15.25q.02-.23.25-.25h22.5q.23.02.25.25V34.5l-4.07-3.05q-.6-.45-1.35-.45H12.25a.25.25 0 0 1-.25-.25zm7.24-10.68a1 1 0 1 0-.48-1.94A22 22 0 0 0 2.91 17.7a1 1 0 1 0 1.92.58 20 20 0 0 1 14.4-13.72m11.06-1.65a1 1 0 0 0-.58 1.92c6.45 1.92 11.54 7 13.46 13.46a1 1 0 1 0 1.92-.58 22 22 0 0 0-14.8-14.8M4.57 28.76a1 1 0 0 0-1.94.48 22 22 0 0 0 16.13 16.13 1 1 0 1 0 .48-1.94A20 20 0 0 1 4.57 28.76m40.8.48a1 1 0 1 0-1.94-.48 20 20 0 0 1-13.72 14.41 1 1 0 0 0 .58 1.92 22 22 0 0 0 15.08-15.85">
+       </path>
+      </svg>
+      <h5>
+       Collectives™ on Stack Overflow
+      </h5>
+      <p>
+       Find centralized, trusted content and collaborate around the technologies you use most.
+      </p>
+      <a href="/collectives">
+       Learn more about Collectives
+      </a>
+     </div>
+    </div>
+    <div role="menu">
+     <div>
+     </div>
+     <div>
+      <p>
+       <strong>
+        Teams
+       </strong>
+      </p>
+      <p>
+       Q&amp;A for work
+      </p>
+      <p>
+       Connect and share knowledge within a single location that is structured and easy to search.
+      </p>
+      <a href="https://stackoverflow.co/teams/">
+       Learn more about Teams
+      </a>
+     </div>
+     <div>
+      <svg height="48" viewbox="0 0 48 48" width="48">
+       <path d="M13.5 28a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9M7 30a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1v5h11v-5a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H33v5a1 1 0 0 1-1 1H20a1 1 0 0 1-1-1v-5H8a1 1 0 0 1-1-1zm25-6.5a4.5 4.5 0 1 0 9 0 4.5 4.5 0 0 0-9 0M24.5 34a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9" opacity=".2">
+       </path>
+       <path d="M16.4 26.08A6 6 0 1 0 7.53 26C5.64 26.06 4 27.52 4 29.45V40a1 1 0 0 0 1 1h9a1 1 0 1 0 0-2h-4v-7a1 1 0 1 0-2 0v7H6v-9.55c0-.73.67-1.45 1.64-1.45H16a1 1 0 0 0 .4-1.92M12 18a4 4 0 1 1 0 8 4 4 0 0 1 0-8m16.47 14a6 6 0 1 0-8.94 0A3.6 3.6 0 0 0 16 35.5V46a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V35.5c0-1.94-1.64-3.42-3.53-3.5M20 28a4 4 0 1 1 8 0 4 4 0 0 1-8 0m-.3 6h8.6c1 0 1.7.75 1.7 1.5V45h-2v-7a1 1 0 1 0-2 0v7h-4v-7a1 1 0 1 0-2 0v7h-2v-9.5c0-.75.7-1.5 1.7-1.5M42 22c0 1.54-.58 2.94-1.53 4A3.5 3.5 0 0 1 44 29.45V40a1 1 0 0 1-1 1h-9a1 1 0 1 1 0-2h4v-7a1 1 0 1 1 2 0v7h2v-9.55A1.5 1.5 0 0 0 40.48 28H32a1 1 0 0 1-.4-1.92A6 6 0 1 1 42 22m-2 0a4 4 0 1 0-8 0 4 4 0 0 0 8 0">
+       </path>
+       <g opacity=".35">
+        <path d="M17 10a1 1 0 011-1h12a1 1 0 110 2H18a1 1 0 01-1-1m1-5a1 1 0 100 2h12a1 1 0 100-2zM14 1a1 1 0 00-1 1v12a1 1 0 001 1h5.09l4.2 4.2a1 1 0 001.46-.04l3.7-4.16H34a1 1 0 001-1V2a1 1 0 00-1-1zm1 12V3h18v10h-5a1 1 0 00-.75.34l-3.3 3.7-3.74-3.75a1 1 0 00-.71-.29z">
+        </path>
+       </g>
+      </svg>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div>
+    </div>
+    <div itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question">
+     <link href="https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon.png?v=c78bd457575a" itemprop="image"/>
+     <div>
+      <div>
+       <h1 itemprop="name">
+        <a href="/questions/79677945/why-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality">
+         Why is my Windows C++ VSCode project failing to compile when I use functionality from the standard library &lt;random&gt;?
+        </a>
+       </h1>
+       <div>
+        <div>
+         <a href="/questions/ask">
+          Ask Question
+         </a>
+        </div>
+       </div>
+      </div>
+      <div>
+       <div title="2025-06-24 16:50:16Z">
+        <span>
+         Asked
+        </span>
+        <time datetime="2025-06-24 16:50:16Z" itemprop="dateCreated">
+         today
+        </time>
+       </div>
+       <div>
+        <span>
+         Modified
+        </span>
+        <a href="?lastactivity" title="2025-06-24 16:51:25Z">
+         today
+        </a>
+       </div>
+       <div title="Viewed 5 times">
+        <span>
+         Viewed
+        </span>
+        5 times
+       </div>
+      </div>
+      <div role="main">
+       <div>
+        <div>
+         <div>
+         </div>
+         <div>
+         </div>
+        </div>
+        <div>
+         <div>
+          <div>
+           <button>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M1 12h16L9 4z">
+             </path>
+            </svg>
+           </button>
+           <div role="tooltip">
+            This question shows research effort; it is useful and clear
+            <div>
+            </div>
+           </div>
+           <input type="hidden" value="70:3:31e,16:8f5b4c949d5fb46b,10:1750783986,16:1b03981789d87582,8:79677945,9eaec0ea79b833cc496a66378b7a7a06cc071738c8e9971cfd79632be4e1b09a"/>
+           <div itemprop="upvoteCount">
+            0
+           </div>
+           <button title="This question does not show any research effort; it is unclear or not useful">
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M1 6h16l-8 8z">
+             </path>
+            </svg>
+           </button>
+           <input type="hidden" value="70:3:31e,16:d0727157842718b8,10:1750783986,16:c013c1df7dc0c0b4,8:79677945,f1d4414a2afcf8dce3fae8b6250dc61b72da1c13cdcc86d57d9b4cf62d9229d2"/>
+           <button type="button">
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M3 17V3c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v14l-6-4z">
+             </path>
+            </svg>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="m9 10.6 4 2.66V3H5v10.26zM3 17V3c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v14l-6-4z">
+             </path>
+            </svg>
+           </button>
+           <div role="tooltip">
+            Save this question.
+            <div>
+            </div>
+           </div>
+           <a href="/posts/79677945/timeline">
+            <svg height="18" viewbox="0 0 19 18" width="19">
+             <path d="M3 9a8 8 0 1 1 3.73 6.77L8.2 14.3A6 6 0 1 0 5 9l3.01-.01-4 4-4-4zm7-4h1.01L11 9.36l3.22 2.1-.6.93L10 10z">
+             </path>
+            </svg>
+           </a>
+           <div role="tooltip">
+            Show activity on this post.
+            <div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div>
+          <div itemprop="text">
+           <p>
+            I've set up a basic C++ project on VSCode on Windows. My main.cpp program looks like this:
+           </p>
+           <pre><code><span>#<span>include</span> <span>&lt;random&gt;</span></span>
+
+<span>using</span> <span>namespace</span> std;
+
+<span><span>int</span> <span>main</span><span>()</span> </span>{
+  <span>default_random_engine <span>generator</span><span>()</span></span>;
+  <span>uniform_int_distribution&lt;<span>int</span>&gt; <span>distribution</span><span>(<span>0</span>, <span>10</span>)</span></span>;
+  <span>printf</span>(<span>"%d"</span>, <span>distribution</span>(generator));
+  <span>return</span> <span>1</span>;
+}
+</code></pre>
+           <p>
+            However, when I compile and run this program, I get the error:
+           </p>
+           <pre><code>C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2321): error C2440: 'static_cast': cannot convert from 'std::mersenne_twister_engine&lt;unsigned int,32,624,397,31,2567483615,11,4294967295,7,2636928640,15,4022730752,18,1812433253&gt;' to 'unsigned int'
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2321): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2321): note: the template instantiation context (the oldest one first) is
+C:\Users\bensh\OneDrive\Documents\C++Code\Gomoku\main.cpp(59): note: see reference to function template instantiation 'int std::uniform_int_distribution&lt;int&gt;::operator ()&lt;std::default_random_engine(void)&gt;(_Engine (__cdecl &amp;))' being compiled
+        with
+        [
+            _Engine=std::default_random_engine (void)
+        ]
+C:\Users\bensh\OneDrive\Documents\C++Code\Gomoku\main.cpp(59): note: see the first reference to 'std::uniform_int_distribution&lt;int&gt;::operator ()' in 'main'
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2401): note: see reference to function template instantiation 'int std::uniform_int&lt;_Ty&gt;::operator ()&lt;_Engine&gt;(_Engine (__cdecl &amp;))' being compiled
+        with
+        [
+            _Ty=int,
+            _Engine=std::default_random_engine (void)
+        ]
+C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Tools\MSVC\14.44.35207\include\random(2277): note: see reference to function template instantiation 'int std::uniform_int&lt;_Ty&gt;::_Eval&lt;_Engine&gt;(_Engine (__cdecl &amp;),_Ty,_Ty) const' being compiled
+        with
+        [
+            _Ty=int,
+            _Engine=std::default_random_engine (void)
+        ]
+
+Build finished with error(s).
+</code></pre>
+           <p>
+            Now, I'm no expert but it looks like this is a compilation error in my standard library sources. I tried using another compiler (clang-cl) but got the same error. Is there an easy way of specifying that vscode should use a different version of the standard library?
+Or else am I wrong about the issue? What can I do to use the  functionality in my project?
+           </p>
+          </div>
+          <div>
+           <div>
+            <div>
+             <ul>
+              <li>
+               <a href="/questions/tagged/c%2b%2b" rel="tag" title="show questions tagged 'c++'">
+                c++
+               </a>
+              </li>
+              <li>
+               <a href="/questions/tagged/visual-studio-code" rel="tag" title="show questions tagged 'visual-studio-code'">
+                visual-studio-code
+               </a>
+              </li>
+              <li>
+               <a href="/questions/tagged/clang" rel="tag" title="show questions tagged 'clang'">
+                clang
+               </a>
+              </li>
+              <li>
+               <a href="/questions/tagged/std" rel="tag" title="show questions tagged 'std'">
+                std
+               </a>
+              </li>
+             </ul>
+            </div>
+           </div>
+          </div>
+          <div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <a href="/q/79677945" itemprop="url" rel="nofollow" title="Short permalink to this question">
+                 Share
+                </a>
+                <div>
+                 <div>
+                 </div>
+                 <div>
+                  <label for="share-sheet-input-se-share-sheet-0">
+                   <span>
+                    Share a link to this question
+                   </span>
+                   <span>
+                   </span>
+                  </label>
+                 </div>
+                 <div>
+                  <input readonly="" type="text"/>
+                 </div>
+                 <div>
+                  <button>
+                   Copy link
+                  </button>
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank" title="The current license for this post: CC BY-SA 4.0">
+                   CC BY-SA 4.0
+                  </a>
+                  <div>
+                  </div>
+                 </div>
+                </div>
+               </div>
+               <div>
+                <button type="button">
+                 Follow
+                 <input type="hidden" value="70:3:31e,16:3df1bfb73c937caa,10:1750783986,16:9ac48db87d1ea682,8:79677945,39132a41b2887fb31d25591075e57264a4b66caa5b6082dc8fc5f7d4e8d0aa68"/>
+                </button>
+                <div role="tooltip">
+                 Follow this question to receive notifications
+                 <div>
+                 </div>
+                </div>
+               </div>
+              </div>
+              <div>
+              </div>
+             </div>
+            </div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <a href="/posts/79677945/revisions" title="show all edits to this post">
+                 edited
+                 <span title="2025-06-24 16:51:25Z">
+                  1 min ago
+                 </span>
+                </a>
+               </div>
+              </div>
+              <div>
+               <a href="/users/44729/genpfault">
+                <div>
+                 <img alt="genpfault's user avatar" height="32" src="https://i.sstatic.net/tyWaU.png?s=64" width="32"/>
+                </div>
+               </a>
+              </div>
+              <div>
+               <a dir="auto" href="/users/44729/genpfault">
+                genpfault
+               </a>
+               <div>
+                <span dir="ltr" title="reputation score 52,259">
+                 52.3k
+                </span>
+                <span title="12 gold badges">
+                 <span>
+                 </span>
+                 <span>
+                  12
+                 </span>
+                </span>
+                <span>
+                 12 gold badges
+                </span>
+                <span title="92 silver badges">
+                 <span>
+                 </span>
+                 <span>
+                  92
+                 </span>
+                </span>
+                <span>
+                 92 silver badges
+                </span>
+                <span title="152 bronze badges">
+                 <span>
+                 </span>
+                 <span>
+                  152
+                 </span>
+                </span>
+                <span>
+                 152 bronze badges
+                </span>
+               </div>
+              </div>
+             </div>
+            </div>
+            <div>
+             <div>
+              <div>
+               <div>
+                asked
+                <span title="2025-06-24 16:50:16Z">
+                 2 mins ago
+                </span>
+               </div>
+              </div>
+              <div>
+               <a href="/users/30881987/ben-sherwin">
+                <div>
+                 <img alt="Ben Sherwin's user avatar" height="32" src="https://www.gravatar.com/avatar/d14be80fd5a3d6bb658fe8071480994d?s=64&amp;d=identicon&amp;r=PG&amp;f=y&amp;so-version=2" width="32"/>
+                </div>
+               </a>
+              </div>
+              <div itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+               <a dir="auto" href="/users/30881987/ben-sherwin" itemprop="url">
+                Ben Sherwin
+               </a>
+               <span itemprop="name">
+                Ben Sherwin
+               </span>
+               <div>
+                <span dir="ltr" title="reputation score ">
+                 1
+                </span>
+               </div>
+              </div>
+             </div>
+             <div>
+              <div>
+               <span>
+                <svg height="18" viewbox="0 0 18 18" width="18">
+                 <path d="M10.7 17c-2.3 0-3.9-2.05-5.07-3.54l-.49-.6c-.67-.8-1.59-1.63-2.4-2.36A11 11 0 0 1 1.1 8.87c-.16-.28-.15-.8.18-.96.44-.23.95-.05 1.32.24l3.5 2.75c.1.08.2-.06.13-.15-.57-.8-3.42-4.77-3.71-5.15-.49-.63-.17-1.45.68-1.45.44 0 .76.28.96.51l3.6 4.42c.08.09.23 0 .17-.1L4.41 2.96c-.64-1.1 1.13-2 1.77-.9l3.8 6.13c.07.1.22.03.18-.09A154 154 0 0 0 8.1 2.54q-.47-1.01.36-1.42c.52-.27 1.14-.07 1.47.48l3.69 8.3q.03.05.1.06a.1.1 0 0 0 .09-.07l.66-2.28c.2-.66.95-1 1.6-.81.7.18 1.09.86.89 1.5q-.5 1.9-1.09 3.77c-.58 1.86-1.03 3.33-3.11 4.4Q11.7 17 10.7 17" fill="#FFC166">
+                 </path>
+                 <path d="M14 .37a.5.5 0 0 0-.88.45l1.96 3.9a.5.5 0 0 0 .9-.45zm-1.17 2.17a.5.5 0 0 0-.91.42l.84 1.87a.5.5 0 1 0 .91-.41zm-10.6 9.74a.5.5 0 0 1 .7-.02l1.7 1.6a.5.5 0 0 1-.7.72l-1.68-1.6a.5.5 0 0 1-.02-.7m-1.39.98a.5.5 0 1 0-.68.73l3.03 2.84a.5.5 0 0 0 .68-.73z" opacity=".4">
+                 </path>
+                </svg>
+                New contributor
+               </span>
+              </div>
+              <div>
+               <div>
+               </div>
+               <a dir="auto" href="/users/30881987/ben-sherwin">
+                Ben Sherwin
+               </a>
+               is a new contributor to this site. Take care in asking for clarification, commenting, and answering.
+Check out our
+               <a href="/conduct">
+                Code of Conduct
+               </a>
+               .
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+         </div>
+         <span itemprop="commentCount">
+          1
+         </span>
+         <div>
+          <div>
+           <ul>
+            <li>
+             <div>
+              <div>
+              </div>
+             </div>
+             <div>
+              <div>
+               <span>
+                <a href="https://godbolt.org/z/KWx8T6nzh" rel="nofollow noreferrer">
+                 godbolt.org/z/KWx8T6nzh
+                </a>
+                <code>
+                 warning: empty parentheses interpreted as a function declaration [-Wvexing-parse]
+                </code>
+               </span>
+               <div>
+                –
+                <a href="/users/15649230/ahmed-aek" title="22,022 reputation">
+                 Ahmed AEK
+                </a>
+               </div>
+               <span dir="ltr">
+                <a href="#comment140538928_79677945">
+                 <span>
+                  Commented
+                 </span>
+                 <span title="2025-06-24 16:52:56Z, License: CC BY-SA 4.0">
+                  10 secs ago
+                 </span>
+                </a>
+               </span>
+              </div>
+             </div>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <a href="#" role="button" title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">
+            Add a comment
+           </a>
+           <span>
+            |
+           </span>
+           <a href="#" role="button" title="Expand to show all comments on this post">
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div>
+        </div>
+        <div>
+        </div>
+       </div>
+       <div>
+        <div>
+         Related questions
+        </div>
+        <div>
+         <div>
+          <a href="https://stackoverflow.com/questions/62363671/warning-message-when-calling-a-class-member-function-inside-another-as-a-thread?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="warning message when calling a class member function inside another as a thread">
+             warning message when calling a class member function inside another as a thread
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/76170143/how-to-implement-is-comparable-trait-that-will-correctly-check-stdmap-with-non?rq=2">
+           <div>
+            1
+           </div>
+           <div>
+            <div title="How to implement is_comparable trait that will correctly check std::map with non-comparable value_type?">
+             How to implement is_comparable trait that will correctly check std::map with non-comparable value_type?
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/47766329/c-making-a-thread-and-passing-object-by-reference?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="C++ Making a thread and passing Object by reference">
+             C++ Making a thread and passing Object by reference
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div>
+        <div>
+         Related questions
+        </div>
+        <div>
+         <div>
+          <a href="https://stackoverflow.com/questions/62363671/warning-message-when-calling-a-class-member-function-inside-another-as-a-thread?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="warning message when calling a class member function inside another as a thread">
+             warning message when calling a class member function inside another as a thread
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/76170143/how-to-implement-is-comparable-trait-that-will-correctly-check-stdmap-with-non?rq=2">
+           <div>
+            1
+           </div>
+           <div>
+            <div title="How to implement is_comparable trait that will correctly check std::map with non-comparable value_type?">
+             How to implement is_comparable trait that will correctly check std::map with non-comparable value_type?
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/47766329/c-making-a-thread-and-passing-object-by-reference?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="C++ Making a thread and passing Object by reference">
+             C++ Making a thread and passing Object by reference
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/9500588/visual-c-10-0-bug-in-stdreference-wrapper?rq=2">
+           <div>
+            14
+           </div>
+           <div>
+            <div title="Visual C++ 10.0 bug in std::reference_wrapper?">
+             Visual C++ 10.0 bug in std::reference_wrapper?
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/58791267/invoking-stdthread-with-class-operator-that-has-cwinthread-as-base-fails?rq=2">
+           <div>
+            1
+           </div>
+           <div>
+            <div title="Invoking std::thread with class operator()() that has CWinThread as base fails">
+             Invoking std::thread with class operator()() that has CWinThread as base fails
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/8792110/stdsetstring-customcomparer-cannot-use-stdfind-with?rq=2">
+           <div>
+            2
+           </div>
+           <div>
+            <div title="std::set&lt;string, CustomComparer&gt; cannot use std::find(...) with">
+             std::set&lt;string, CustomComparer&gt; cannot use std::find(...) with
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/14957359/problems-with-shared-ptrt-wrapping-a-dynamic-array?rq=2">
+           <div>
+            6
+           </div>
+           <div>
+            <div title="Problems with shared_ptr&lt;T[]&gt; wrapping a dynamic array">
+             Problems with shared_ptr&lt;T[]&gt; wrapping a dynamic array
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/68097067/cl-unknown-errors?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="CL Unknown Errors">
+             CL Unknown Errors
+            </div>
+           </div>
+          </a>
+         </div>
+         <div>
+          <a href="https://stackoverflow.com/questions/45132019/compilation-issues-in-c-while-trying-to-create-a-std-thread-by-calling-a-me?rq=2">
+           <div>
+            0
+           </div>
+           <div>
+            <div title="Compilation issues in C++ while, trying to create a std:: thread by calling a member function in another object">
+             Compilation issues in C++ while, trying to create a std:: thread by calling a member function in another object
+            </div>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+       <div>
+        <a>
+         <svg height="18" viewbox="0 0 18 18" width="18">
+          <path d="m16.01 7.43-1.4-1.41L9 11.6 3.42 6l-1.4 1.42 7 7z">
+          </path>
+         </svg>
+         Load 6 more related questions
+        </a>
+        <a>
+         <svg height="18" viewbox="0 0 18 18" width="18">
+          <path d="m16.01 10.62-1.4 1.4L9 6.45l-5.59 5.59-1.4-1.41 7-7z">
+          </path>
+         </svg>
+         Show fewer related questions
+        </a>
+       </div>
+       <div>
+        <a name="tab-top">
+        </a>
+        <div>
+         <div>
+          <div>
+           <h2>
+            <span itemprop="answerCount">
+             0
+            </span>
+           </h2>
+          </div>
+          <div>
+           <div>
+            <div>
+             <label for="answer-sort-dropdown-select-menu">
+              Sorted by:
+             </label>
+             <a href="/questions/79677945/why-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality?answertab=scoredesc#tab-top">
+              Reset to default
+             </a>
+            </div>
+            <div>
+             <select>
+              <option selected="selected" value="scoredesc">
+               Highest score (default)
+              </option>
+              <option value="trending">
+               Trending (recent votes count more)
+              </option>
+              <option value="modifieddesc">
+               Date modified (newest first)
+              </option>
+              <option value="createdasc">
+               Date created (oldest first)
+              </option>
+             </select>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+        <h2>
+         Know someone who can answer? Share a link to this
+         <a href="https://stackoverflow.com/questions/79677945/why-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality">
+          question
+         </a>
+         via
+         <a href="mailto:?subject=Stack%20Overflow%20Question&amp;body=Why%20is%20my%20Windows%20C%2b%2b%20VSCode%20project%20failing%20to%20compile%20when%20I%20use%20functionality%20from%20the%20standard%20library%20%3crandom%3e%3f%0Ahttps%3a%2f%2fstackoverflow.com%2fq%2f79677945%3fsem%3d2">
+          email
+         </a>
+         ,
+         <a href="https://twitter.com/share?url=https%3a%2f%2fstackoverflow.com%2fq%2f79677945%3fstw%3d2">
+          Twitter
+         </a>
+         , or
+         <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fstackoverflow.com%2fq%2f79677945%3fsfb%3d2">
+          Facebook
+         </a>
+         .
+        </h2>
+        <a name="new-answer">
+        </a>
+        <form action="/questions/79677945/answer/submit" method="post">
+         <input type="hidden" value="79677945"/>
+         <input name="qualityBanWarningShown" type="hidden" value="false"/>
+         <input name="referrer" type="hidden" value="https://stackoverflow.com/questions"/>
+         <input name="referrer-id" type="hidden" value="0"/>
+         <h2>
+          Your Answer
+         </h2>
+         <div>
+          <input name="stacksEditorEnabled" type="hidden" value="True"/>
+          <input name="stacksEditorView" type="hidden"/>
+          <div>
+           <textarea name="post-text"></textarea>
+           <div>
+            <div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <div>
+                  <button disabled="" type="button">
+                   <span>
+                   </span>
+                  </button>
+                 </div>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                </div>
+                <div>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                </div>
+                <div>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                </div>
+                <div>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                 <button disabled="" type="button">
+                  <span>
+                  </span>
+                 </button>
+                </div>
+                <div>
+                 <a href="#" tabindex="-1" target="_blank">
+                  <span>
+                  </span>
+                 </a>
+                </div>
+               </div>
+               <div>
+                <div>
+                 <label>
+                  <span>
+                  </span>
+                 </label>
+                 <label>
+                  <span>
+                  </span>
+                 </label>
+                </div>
+               </div>
+              </div>
+             </div>
+             <div>
+             </div>
+            </div>
+           </div>
+           <div>
+           </div>
+          </div>
+          <aside role="status">
+           <div>
+            <p>
+             Thanks for contributing an answer to Stack Overflow!
+            </p>
+            <ul>
+             <li>
+              Please be sure to
+              <em>
+               answer the question
+              </em>
+              . Provide details and share your research!
+             </li>
+            </ul>
+            <p>
+             But
+             <em>
+              avoid
+             </em>
+             …
+            </p>
+            <ul>
+             <li>
+              Asking for help, clarification, or responding to other answers.
+             </li>
+             <li>
+              Making statements based on opinion; back them up with references or personal experience.
+             </li>
+            </ul>
+            <p>
+             To learn more, see our
+             <a href="/help/how-to-answer">
+              tips on writing great answers
+             </a>
+             .
+            </p>
+           </div>
+           <button>
+            <svg height="18" viewbox="0 0 18 18" width="18">
+             <path d="M15 4.41 13.59 3 9 7.59 4.41 3 3 4.41 7.59 9 3 13.59 4.41 15 9 10.41 13.59 15 15 13.59 10.41 9z">
+             </path>
+            </svg>
+           </button>
+          </aside>
+          <div>
+           <div>
+            Draft saved
+           </div>
+           <div>
+            Draft discarded
+           </div>
+          </div>
+          <div>
+           <input name="fkey" type="hidden" value="04ad44db75c3bbfdffc3e1fa7bee9c40a171d3f567347048829aa195c5d6c7a6"/>
+           <input name="author" type="text"/>
+          </div>
+         </div>
+         <div>
+          <div>
+           <div>
+            <div>
+             <h3>
+              Sign up or
+              <a href="/users/login?ssrc=question_page&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f79677945%2fwhy-is-my-windows-c-vscode-project-failing-to-compile-when-i-use-functionality%23new-answer">
+               log in
+              </a>
+             </h3>
+             <div>
+              <svg height="18" viewbox="0 0 18 18" width="18">
+               <path d="M16.51 8H8.98v3h4.3c-.18 1-.74 1.48-1.6 2.04v2.01h2.6a7.8 7.8 0 0 0 2.38-5.88c0-.57-.05-.66-.15-1.18" fill="#4285F4">
+               </path>
+               <path d="M8.98 17c2.16 0 3.97-.72 5.3-1.94l-2.6-2a4.8 4.8 0 0 1-7.18-2.54H1.83v2.07A8 8 0 0 0 8.98 17" fill="#34A853">
+               </path>
+               <path d="M4.5 10.52a4.8 4.8 0 0 1 0-3.04V5.41H1.83a8 8 0 0 0 0 7.18z" fill="#FBBC05">
+               </path>
+               <path d="M8.98 4.18c1.17 0 2.23.4 3.06 1.2l2.3-2.3A8 8 0 0 0 1.83 5.4L4.5 7.49a4.8 4.8 0 0 1 4.48-3.3" fill="#EA4335">
+               </path>
+              </svg>
+              Sign up using Google
+             </div>
+             <div>
+              <svg height="18" viewbox="0 0 18 18" width="18">
+               <path d="M14 16v-5h2v7H2v-7h2v5z" fill="#BCBBBB">
+               </path>
+               <path d="m12.09.72-1.21.9 4.5 6.07 1.22-.9zM5 15h8v-2H5zm9.15-5.87L8.35 4.3l.96-1.16 5.8 4.83zm-7.7-1.47 6.85 3.19.63-1.37-6.85-3.2zm6.53 5L5.4 11.39l.38-1.67 7.42 1.48z" fill="#F48024">
+               </path>
+              </svg>
+              Sign up using Email and Password
+             </div>
+            </div>
+            <input name="use-facebook" type="hidden" value="false"/>
+            <input name="use-google" type="hidden" value="false"/>
+            <button type="button">
+             Submit
+            </button>
+            <div>
+             <h3>
+              Post as a guest
+             </h3>
+             <div>
+              <div>
+               <label for="display-name">
+                Name
+               </label>
+               <div>
+                <input maxlength="30" name="display-name" placeholder="" tabindex="105" type="text" value=""/>
+               </div>
+              </div>
+             </div>
+             <div>
+              <div>
+               <div>
+                <div>
+                 <label for="m-address">
+                  Email
+                 </label>
+                 <p>
+                  Required, but never shown
+                 </p>
+                </div>
+               </div>
+               <div>
+                <input name="m-address" placeholder="" size="40" tabindex="106" type="text" value=""/>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </div>
+          <noscript>
+           <h3>
+            Post as a guest
+           </h3>
+           <div>
+            <div>
+             <label for="display-name">
+              Name
+             </label>
+             <div>
+              <input maxlength="30" name="display-name" placeholder="" tabindex="105" type="text" value="">
+              </input>
+             </div>
+            </div>
+           </div>
+           <div>
+            <div>
+             <div>
+              <div>
+               <label for="m-address">
+                Email
+               </label>
+               <p>
+                Required, but never shown
+               </p>
+              </div>
+             </div>
+             <div>
+              <input name="m-address" placeholder="" size="40" tabindex="106" type="text" value="">
+              </input>
+             </div>
+            </div>
+           </div>
+          </noscript>
+         </div>
+         <div>
+          <button autocomplete="off" tabindex="120" type="submit">
+           Post Your Answer
+          </button>
+          <button>
+           Discard
+          </button>
+          <p>
+           By clicking “Post Your Answer”, you agree to our
+           <a href="https://stackoverflow.com/legal/terms-of-service/public" name="tos" target="_blank">
+            terms of service
+           </a>
+           and acknowledge you have read our
+           <a href="https://stackoverflow.com/legal/privacy-policy" name="privacy" target="_blank">
+            privacy policy
+           </a>
+           .
+           <input name="legalLinksShown" type="hidden" value="1"/>
+          </p>
+         </div>
+         <div>
+         </div>
+        </form>
+        <div>
+         <div>
+          <div>
+           <p>
+            Start asking to get answers
+           </p>
+           <p>
+            Find the answer to your question by asking.
+           </p>
+           <a href="/questions/ask">
+            Ask question
+           </a>
+          </div>
+         </div>
+         <div>
+          <div>
+           <p>
+            Explore related questions
+           </p>
+           <div>
+            <ul>
+             <li>
+              <a href="/questions/tagged/c%2b%2b" rel="tag" title="show questions tagged 'c++'">
+               c++
+              </a>
+             </li>
+             <li>
+              <a href="/questions/tagged/visual-studio-code" rel="tag" title="show questions tagged 'visual-studio-code'">
+               visual-studio-code
+              </a>
+             </li>
+             <li>
+              <a href="/questions/tagged/clang" rel="tag" title="show questions tagged 'clang'">
+               clang
+              </a>
+             </li>
+             <li>
+              <a href="/questions/tagged/std" rel="tag" title="show questions tagged 'std'">
+               std
+              </a>
+             </li>
+            </ul>
+           </div>
+           <p>
+            See similar questions with these tags.
+           </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div role="complementary">
+       <div>
+        <ul>
+         <li>
+          The Overflow Blog
+         </li>
+         <li>
+          <div>
+           <svg height="14" viewbox="0 0 14 14" width="14">
+            <path d="m2 10.12 6.37-6.43 1.88 1.88L3.88 12H2z" fill="#F1B600">
+            </path>
+            <path d="m11.1 1.71 1.13 1.12c.2.2.2.51 0 .71L11.1 4.7 9.21 2.86l1.17-1.15c.2-.2.51-.2.71 0" fill="#E87C87">
+            </path>
+           </svg>
+          </div>
+          <div>
+           <a href="https://stackoverflow.blog/2025/06/20/defending-the-realm-trust-and-safety-at-stack-overflow/?cb=1">
+            Defending the realm: Trust and safety at Stack Overflow
+           </a>
+          </div>
+         </li>
+         <li>
+          <div>
+           <svg height="14" viewbox="0 0 14 14" width="14">
+            <path d="m2 10.12 6.37-6.43 1.88 1.88L3.88 12H2z" fill="#F1B600">
+            </path>
+            <path d="m11.1 1.71 1.13 1.12c.2.2.2.51 0 .71L11.1 4.7 9.21 2.86l1.17-1.15c.2-.2.51-.2.71 0" fill="#E87C87">
+            </path>
+           </svg>
+          </div>
+          <div>
+           <a href="https://stackoverflow.blog/2025/06/24/how-to-build-your-prototypes-without-a-35-tariff/?cb=1">
+            How to build your prototypes without a 35% tariff
+           </a>
+          </div>
+         </li>
+         <li>
+          Featured on Meta
+         </li>
+         <li>
+          <div>
+           <div title="Meta Stack Exchange">
+           </div>
+          </div>
+          <div>
+           <a href="https://meta.stackexchange.com/questions/410456/thoughts-on-the-future-of-stack-exchange-site-customisation?cb=1">
+            Thoughts on the future of Stack Exchange site customisation
+           </a>
+          </div>
+         </li>
+         <li>
+          <div>
+           <div title="Meta Stack Exchange">
+           </div>
+          </div>
+          <div>
+           <a href="https://meta.stackexchange.com/questions/410718/community-asks-sprint-announcement-june-2025?cb=1">
+            Community Asks Sprint Announcement - June 2025
+           </a>
+          </div>
+         </li>
+         <li>
+          <div>
+           <div title="Meta Stack Overflow">
+           </div>
+          </div>
+          <div>
+           <a href="https://meta.stackoverflow.com/questions/433957/how-can-i-revert-the-style-layout-changes-to-comments?cb=1">
+            How can I revert the style/layout changes to comments?
+           </a>
+          </div>
+         </li>
+         <li>
+          <div>
+           <div title="Meta Stack Overflow">
+           </div>
+          </div>
+          <div>
+           <a href="https://meta.stackoverflow.com/questions/434267/2025-community-moderator-election-results?cb=1">
+            2025 Community Moderator Election Results
+           </a>
+          </div>
+         </li>
+         <li>
+          <div>
+           <div title="Meta Stack Overflow">
+           </div>
+          </div>
+          <div>
+           <a href="https://meta.stackoverflow.com/questions/421831/policy-generative-ai-e-g-chatgpt-is-banned?cb=1">
+            Policy: Generative AI (e.g., ChatGPT) is banned
+           </a>
+          </div>
+         </li>
+        </ul>
+       </div>
+       <div>
+        <div>
+         <div>
+          <iframe allow="private-state-token-redemption;attribution-reporting" frameborder="0" height="250" marginheight="0" marginwidth="0" name="" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" scrolling="no" src="https://6118a0842db0e9a47a5271a4ebe65e8d.safeframe.googlesyndication.com/safeframe/1-0-45/html/container.html" tabindex="0" title="3rd party ad content" width="300">
+          </iframe>
+         </div>
+        </div>
+        <div>
+         <button>
+          Report this ad
+         </button>
+        </div>
+       </div>
+       <div>
+        <div>
+         <div>
+         </div>
+        </div>
+        <div>
+        </div>
+       </div>
+       <div>
+       </div>
+       <div>
+        <h4>
+         <a href="https://stackexchange.com/questions?tab=hot">
+          Hot Network Questions
+         </a>
+        </h4>
+        <ul>
+         <li>
+          <div title="Philosophy Stack Exchange">
+          </div>
+          <a href="https://philosophy.stackexchange.com/questions/128202/what-exactly-is-trotskyism">
+           What exactly is Trotskyism?
+          </a>
+         </li>
+         <li>
+          <div title="Stack Overflow">
+          </div>
+          <a href="https://stackoverflow.com/questions/79674782/subtracting-a-named-vector-from-another-named-vector">
+           Subtracting a named vector from another named vector
+          </a>
+         </li>
+         <li>
+          <div title="Database Administrators Stack Exchange">
+          </div>
+          <a href="https://dba.stackexchange.com/questions/347022/dummy-statement-to-check-connection-has-to-be-supported-by-oracle-postgres">
+           Dummy statement to check connection, has to be supported by Oracle, Postgres
+          </a>
+         </li>
+         <li>
+          <div title="Mathematica Stack Exchange">
+          </div>
+          <a href="https://mathematica.stackexchange.com/questions/314196/using-the-defer-to-print-variable-name-not-value-in-a-function">
+           Using the defer@ to print variable name (not value) in a function
+          </a>
+         </li>
+         <li>
+          <div title="Signal Processing Stack Exchange">
+          </div>
+          <a href="https://dsp.stackexchange.com/questions/97951/using-different-windows-to-estimate-different-spectral-properties-of-a-peak">
+           Using different windows to estimate different spectral properties of a peak
+          </a>
+         </li>
+         <li>
+          <div title="Code Review Stack Exchange">
+          </div>
+          <a href="https://codereview.stackexchange.com/questions/297458/parallelsudokusolver-java-solving-semi-large-sudokus-via-multi-threading">
+           ParallelSudokuSolver.java: solving semi-large Sudokus via multi-threading
+          </a>
+         </li>
+         <li>
+          <div title="Biblical Hermeneutics Stack Exchange">
+          </div>
+          <a href="https://hermeneutics.stackexchange.com/questions/106364/is-shall-leave-kataleipsei-in-ephesians-531-a-command-or-a-prediction">
+           Is "shall leave/kataleipsei" in Ephesians 5:31 a command or a prediction?
+          </a>
+         </li>
+         <li>
+          <div title="Cross Validated">
+          </div>
+          <a href="https://stats.stackexchange.com/questions/667995/efficient-sampling-so-all-possibilities-are-included-in-the-sample">
+           Efficient sampling so all possibilities are included in the sample
+          </a>
+         </li>
+         <li>
+          <div title="Academia Stack Exchange">
+          </div>
+          <a href="https://academia.stackexchange.com/questions/220045/how-to-respond-when-admin-forces-you-to-provide-make-up-labs-to-students-with-un">
+           How to respond when admin forces you to provide make-up labs to students with unexcused absences?
+          </a>
+         </li>
+         <li>
+          <div title="Worldbuilding Stack Exchange">
+          </div>
+          <a href="https://worldbuilding.stackexchange.com/questions/267985/how-would-wind-be-different-in-a-hydrogen-atmosphere">
+           How Would Wind be Different in a Hydrogen Atmosphere
+          </a>
+         </li>
+         <li>
+          <div title="History of Science and Mathematics Stack Exchange">
+          </div>
+          <a href="https://hsm.stackexchange.com/questions/18657/what-does-the-title-page-illustration-of-the-1621-translation-of-diophantus-ari">
+           What does the title page illustration of the 1621 translation of Diophantus' Arithmetica represent?
+          </a>
+         </li>
+         <li>
+          <div title="English Language Learners Stack Exchange">
+          </div>
+          <a href="https://ell.stackexchange.com/questions/366855/a-good-architect-takes-into-account-the-buildings-surroundings-why-is-it-p">
+           "A good architect takes into account the building's surroundings." — Why is it possible to move the direct object to the end?
+          </a>
+         </li>
+         <li>
+          <div title="Space Exploration Stack Exchange">
+          </div>
+          <a href="https://space.stackexchange.com/questions/69474/how-many-rockets-have-been-re-engined">
+           How many rockets have been re-engined?
+          </a>
+         </li>
+         <li>
+          <div title="Unix &amp; Linux Stack Exchange">
+          </div>
+          <a href="https://unix.stackexchange.com/questions/797332/setting-mtu-size-for-performance-today">
+           setting MTU size for performance "today"?
+          </a>
+         </li>
+         <li>
+          <div title="Personal Finance &amp; Money Stack Exchange">
+          </div>
+          <a href="https://money.stackexchange.com/questions/166234/how-to-reduce-tax-liability-after-cashing-in-pension-pot-uk">
+           How to reduce tax liability after cashing in pension pot uk
+          </a>
+         </li>
+         <li>
+          <div title="Sports Stack Exchange">
+          </div>
+          <a href="https://sports.stackexchange.com/questions/30074/can-a-batter-be-caught-if-the-ball-deflects-into-the-keepers-helmet-and-they-the">
+           Can a batter be caught if the ball deflects into the keepers helmet and they then catch it?
+          </a>
+         </li>
+         <li>
+          <div title="Code Golf Stack Exchange">
+          </div>
+          <a href="https://codegolf.stackexchange.com/questions/282369/generate-a-text-shape-with-given-area-and-perimeter">
+           Generate a text shape with given area and perimeter
+          </a>
+         </li>
+         <li>
+          <div title="Electrical Engineering Stack Exchange">
+          </div>
+          <a href="https://electronics.stackexchange.com/questions/750544/how-accurate-can-circuit-simulations-be">
+           How accurate can circuit simulations be?
+          </a>
+         </li>
+         <li>
+          <div title="Electrical Engineering Stack Exchange">
+          </div>
+          <a href="https://electronics.stackexchange.com/questions/750555/is-there-a-specific-reason-to-use-not-or-gate-configuration-instead-of-using-a-n">
+           Is there a specific reason to use NOT-OR gate configuration instead of using a NAND gate
+          </a>
+         </li>
+         <li>
+          <div title="TeX - LaTeX Stack Exchange">
+          </div>
+          <a href="https://tex.stackexchange.com/questions/746703/how-to-produce-a-pdf-in-compliance-with-pdf-a-using-documentmetadata-without">
+           How to produce a PDF in compliance with PDF/A using `\DocumentMetadata` without tagging?
+          </a>
+         </li>
+         <li>
+          <div title="Law Stack Exchange">
+          </div>
+          <a href="https://law.stackexchange.com/questions/110081/obligations-based-on-disputed-assertions">
+           Obligations based on disputed assertions
+          </a>
+         </li>
+         <li>
+          <div title="Stack Overflow">
+          </div>
+          <a href="https://stackoverflow.com/questions/79675833/why-is-this-code-5-times-slower-in-c-sharp-compared-to-java">
+           Why is this code 5 times slower in C# compared to Java?
+          </a>
+         </li>
+         <li>
+          <div title="Unix &amp; Linux Stack Exchange">
+          </div>
+          <a href="https://unix.stackexchange.com/questions/797305/i-need-a-standard-way-of-expressing-as-a-wildcard-expression-a-set-of-subdirecto">
+           I need a standard way of expressing as a wildcard expression a set of subdirectories of a top level directory all with the same name
+          </a>
+         </li>
+         <li>
+          <div title="Music: Practice &amp; Theory Stack Exchange">
+          </div>
+          <a href="https://music.stackexchange.com/questions/140876/change-of-finger-on-tied-note">
+           Change of finger on tied note
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div>
+        <a href="/feeds/question/79677945" title="Feed of this question and its answers">
+         <svg height="18" viewbox="0 0 18 18" width="18">
+          <path d="M3 1a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 1.5c6.9 0 12.5 5.6 12.5 12.5H13C13 9.55 8.45 5 3 5zm0 5c4.09 0 7.5 3.41 7.5 7.5H8c0-2.72-2.28-5-5-5zm0 5c1.36 0 2.5 1.14 2.5 2.5H3z">
+          </path>
+         </svg>
+         Question feed
+        </a>
+       </div>
+       <aside role="dialog" tabindex="-1">
+        <div role="document">
+         <h1 tabindex="0">
+          Subscribe to RSS
+         </h1>
+         <div>
+          <div>
+           <label for="feed-url">
+            Question feed
+            <p>
+             To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
+            </p>
+           </label>
+          </div>
+          <div>
+           <input name="feed-url" readonly="readonly" type="text" value="https://stackoverflow.com/feeds/question/79677945"/>
+           <svg height="18" viewbox="0 0 18 18" width="18">
+            <path d="M3 1a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm0 1.5c6.9 0 12.5 5.6 12.5 12.5H13C13 9.55 8.45 5 3 5zm0 5c4.09 0 7.5 3.41 7.5 7.5H8c0-2.72-2.28-5-5-5zm0 5c1.36 0 2.5 1.14 2.5 2.5H3z">
+            </path>
+           </svg>
+          </div>
+         </div>
+         <a href="#">
+          <svg height="14" viewbox="0 0 14 14" width="14">
+           <path d="M12 3.41 10.59 2 7 5.59 3.41 2 2 3.41 5.59 7 2 10.59 3.41 12 7 8.41 10.59 12 12 10.59 8.41 7z">
+           </path>
+          </svg>
+         </a>
+        </div>
+       </aside>
+      </div>
+     </div>
+     <noscript>
+      <div>
+       <img alt="" height="0" src="/posts/79677945/ivc/1a80?prg=b8064536-0383-4d59-b33e-a2c01da3872c" width="0"/>
+      </div>
+     </noscript>
+     <div>
+      lang-cpp
+     </div>
+     <div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer role="contentinfo">
+   <div>
+    <div>
+     <a href="https://stackoverflow.com">
+      <svg height="37" viewbox="0 0 32 37" width="32">
+       <path d="M26 33v-9h4v13H0V24h4v9z" fill="#BCBBBB">
+       </path>
+       <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2zM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6zM9.1 15.2l15 7 1.4-3-15-7zm14 10.79.68-2.95-16.1-3.35L7 23zM23 30H7v-3h16z" fill="#F48024">
+       </path>
+      </svg>
+     </a>
+    </div>
+    <nav>
+     <div>
+      <h5>
+       <a href="https://stackoverflow.com">
+        Stack Overflow
+       </a>
+      </h5>
+      <ul>
+       <li>
+        <a href="/questions">
+         Questions
+        </a>
+       </li>
+       <li>
+        <a href="/help">
+         Help
+        </a>
+       </li>
+       <li>
+        <a href="https://chat.stackoverflow.com/?tab=site&amp;host=stackoverflow.com">
+         Chat
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h5>
+       <a href="https://stackoverflow.co/">
+        Products
+       </a>
+      </h5>
+      <ul>
+       <li>
+        <a href="https://stackoverflow.co/teams/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=footer&amp;utm_content=teams">
+         Teams
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.co/advertising/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=footer&amp;utm_content=advertising">
+         Advertising
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.co/advertising/employer-branding/?utm_medium=referral&amp;utm_source=stackoverflow-community&amp;utm_campaign=footer&amp;utm_content=talent">
+         Talent
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h5>
+       <a href="https://stackoverflow.co/">
+        Company
+       </a>
+      </h5>
+      <ul>
+       <li>
+        <a href="https://stackoverflow.co/">
+         About
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.co/company/press/">
+         Press
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.co/company/work-here/">
+         Work Here
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.com/legal">
+         Legal
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.com/legal/privacy-policy">
+         Privacy Policy
+        </a>
+       </li>
+       <li>
+        <a href="https://stackoverflow.com/legal/terms-of-service/public">
+         Terms of Service
+        </a>
+       </li>
+       <li>
+        <a href="/contact">
+         Contact Us
+        </a>
+       </li>
+       <li>
+        <button type="button">
+         Cookie Settings
+        </button>
+       </li>
+       <li>
+        <a href="https://stackoverflow.com/legal/cookie-policy">
+         Cookie Policy
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div>
+      <div>
+       <h5>
+        <a href="https://stackexchange.com">
+         Stack Exchange Network
+        </a>
+       </h5>
+       <ul>
+        <li>
+         <a href="https://stackexchange.com/sites#technology">
+          Technology
+         </a>
+        </li>
+        <li>
+         <a href="https://stackexchange.com/sites#culturerecreation">
+          Culture &amp; recreation
+         </a>
+        </li>
+        <li>
+         <a href="https://stackexchange.com/sites#lifearts">
+          Life &amp; arts
+         </a>
+        </li>
+        <li>
+         <a href="https://stackexchange.com/sites#science">
+          Science
+         </a>
+        </li>
+        <li>
+         <a href="https://stackexchange.com/sites#professional">
+          Professional
+         </a>
+        </li>
+        <li>
+         <a href="https://stackexchange.com/sites#business">
+          Business
+         </a>
+        </li>
+        <li>
+         <a href="https://api.stackexchange.com/">
+          API
+         </a>
+        </li>
+        <li>
+         <a href="https://data.stackexchange.com/">
+          Data
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </nav>
+    <div>
+     <ul>
+      <li>
+       <a href="https://stackoverflow.blog?blb=1">
+        Blog
+       </a>
+      </li>
+      <li>
+       <a href="https://www.facebook.com/officialstackoverflow/">
+        Facebook
+       </a>
+      </li>
+      <li>
+       <a href="https://twitter.com/stackoverflow">
+        Twitter
+       </a>
+      </li>
+      <li>
+       <a href="https://linkedin.com/company/stack-overflow">
+        LinkedIn
+       </a>
+      </li>
+      <li>
+       <a href="https://www.instagram.com/thestackoverflow">
+        Instagram
+       </a>
+      </li>
+     </ul>
+     <p>
+      <span>
+       Site design / logo © 2025 Stack Exchange Inc;
+      </span>
+      <span>
+       user contributions licensed under
+      </span>
+      <a href="https://stackoverflow.com/help/licensing">
+       CC BY-SA
+      </a>
+      <span>
+       .
+      </span>
+      <span>
+       rev 2025.6.23.29908
+      </span>
+     </p>
+    </div>
+   </div>
+  </footer>
+  <div>
+   <div>
+   </div>
+  </div>
+  <iframe height="0" src="https://www.google.com/recaptcha/api2/aframe" width="0">
+  </iframe>
+ </body>
+</html>

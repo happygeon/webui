@@ -1,0 +1,113 @@
+**Thought:** The accessibility report indicates two main issues that need to be addressed:
+
+1. **Landmark-one-main**: The document should have exactly one `main` landmark. Currently, there is no `main` element in the HTML.
+2. **Page-has-heading-one**: The page should contain at least one level-one heading (`<h1>`). The `<h1>` element is already present in the header.
+
+To resolve these issues, we will add a `main` element to wrap the main content of the page and ensure it contains the necessary structure.
+
+**Action:** Add a `main` element with the appropriate ARIA roles and attributes.
+
+**Observation:** We will verify that the fix addresses both issues without altering the existing structure or functionality.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Issues Research</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .focus-visible:focus {
+            outline: 2px solid blue;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-bold">Global Issues Research</h1>
+            <nav class="mt-2">
+                <ul role="menubar" aria-label="Main navigation" class="flex space-x-4">
+                    <li><a href="#home" role="menuitem" class="hover:text-blue-500 focus-visible">Home</a></li>
+                    <li><a href="#issues" role="menuitem" class="hover:text-blue-500 focus-visible">Issues</a></li>
+                    <li><a href="#resources" role="menuitem" class="hover:text-blue-500 focus-visible">Resources</a></li>
+                    <li><a href="#about" role="menuitem" class="hover:text-blue-500 focus-visible">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" class="py-10" role="main">
+        <section id="home" class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-semibold mb-4">Welcome to Global Issues Research</h2>
+            <p class="text-lg mb-8">Empowering you to understand and address the biggest challenges facing our world today.</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus-visible">Get Started</button>
+        </section>
+
+        <section id="issues" class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+            <h2 class="text-2xl font-semibold mb-4">Key Issues</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Climate Change</h3>
+                    <p class="text-lg">Explore resources and solutions related to climate change.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Learn More</a>
+                </li>
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Economic Inequality</h3>
+                    <p class="text-lg">Dive into data and strategies for reducing economic disparities.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Learn More</a>
+                </li>
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Healthcare Access</h3>
+                    <p class="text-lg">Find information on improving access to healthcare globally.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Learn More</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="resources" class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+            <h2 class="text-2xl font-semibold mb-4">Resources</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Books</h3>
+                    <p class="text-lg">A selection of books on various global issues.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Browse Books</a>
+                </li>
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Journals</h3>
+                    <p class="text-lg">Access scholarly articles on current global topics.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Explore Journals</a>
+                </li>
+                <li class="bg-white p-6 rounded shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2">Online Courses</h3>
+                    <p class="text-lg">Take free or paid courses to deepen your knowledge.</p>
+                    <a href="#" class="block mt-4 text-blue-500 hover:text-blue-600">Enroll in Courses</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about" class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+            <h2 class="text-2xl font-semibold mb-4">About Us</h2>
+            <p class="text-lg">We're committed to providing accurate, unbiased information to help you make informed decisions.</p>
+            <address class="mt-4">
+                Contact us at <a href="mailto:support@globalissuesresearch.org" class="text-blue-500 hover:text-blue-600">support@globalissuesresearch.org</a>
+            </address>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-md mt-10">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2023 Global Issues Research. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+**Verification:** The `main` element now wraps the main content of the page, fulfilling the requirement for a single `main` landmark. Additionally, the existing `<h1>` element remains as the top-level heading, meeting the requirement for a level-one heading. Both issues have been resolved without altering the original structure or functionality of the HTML document.

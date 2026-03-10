@@ -1,0 +1,90 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Encyclopaedia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-700 font-sans">
+
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-lg">Free Encyclopaedia</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+                    <li><a href="#articles" class="hover:text-blue-300">Articles</a></li>
+                    <li><a href="#resources" class="hover:text-blue-300">Resources</a></li>
+                    <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-6">
+        <section id="home" class="max-w-4xl mx-auto mb-8">
+            <h2 class="text-2xl font-bold mb-2">Welcome to Free Encyclopaedia</h2>
+            <p class="mb-4">Explore a vast collection of articles, resources, and more.</p>
+            <button class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500" aria-label="Search for articles or resources">Search</button>
+        </section>
+
+        <section id="featured" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="bg-white shadow-md p-4">
+                <h3 class="text-xl font-semibold mb-2">Featured Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="block mt-2 text-blue-600 hover:text-blue-500">Read More</a>
+            </article>
+            <!-- Repeat the above article structure for additional featured articles -->
+        </section>
+
+        <section id="articles" class="max-w-4xl mx-auto mb-8">
+            <h2 class="text-2xl font-bold mb-4">Latest Articles</h2>
+            <article class="bg-white shadow-md p-4 mb-4">
+                <h3 class="text-xl font-semibold mb-2">Article Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="block mt-2 text-blue-600 hover:text-blue-500">Read More</a>
+            </article>
+            <!-- Repeat the above article structure for additional articles -->
+        </section>
+
+        <section id="resources" class="max-w-4xl mx-auto mb-8">
+            <h2 class="text-2xl font-bold mb-4">Educational Resources</h2>
+            <div class="bg-white shadow-md p-4 mb-4">
+                <h3 class="text-xl font-semibold mb-2">Resource Title</h3>
+                <p>Description of the resource.</p>
+                <a href="#" class="block mt-2 text-blue-600 hover:text-blue-500">Download/Access</a>
+            </div>
+            <!-- Repeat the above resource structure for additional resources -->
+        </section>
+
+        <section id="contact" class="max-w-4xl mx-auto mb-8">
+            <h2 class="text-2xl font-bold mb-4">Get in Touch</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-500">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 text-center">
+        <p>&copy; 2023 Free Encyclopaedia. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This HTML document provides a basic structure for an encyclopedia homepage following the specified requirements. It includes header navigation, a welcome section, featured articles, latest articles, educational resources, and a contact form. The design is responsive and uses Tailwind CSS for styling. The form fields include ARIA attributes for better accessibility.

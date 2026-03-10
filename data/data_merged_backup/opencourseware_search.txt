@@ -1,0 +1,3 @@
+1. To provide an introduction to computer science and Python programming for undergraduate students with little to no prior programming experience.
+2. Course page
+3. Education

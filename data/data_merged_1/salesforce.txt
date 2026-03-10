@@ -1,0 +1,6 @@
+Purpose: To promote Salesforce's AI-powered CRM solution, Agentforce, by highlighting its benefits for improving productivity and collaboration through AI agents.
+Salesforce의 AI 기반 CRM 솔루션인 Agentforce를 홍보하여 AI 에이전트를 통한 생산성 및 협업 향상에 대한 이점을 강조합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Software as a Service (SaaS)
+서비스로서의 소프트웨어 (SaaS)

@@ -1,0 +1,6 @@
+Purpose: To provide developers with information and resources about the Playwright web testing and automation framework
+개발자에게 Playwright 웹 테스트 및 자동화 프레임워크에 대한 정보와 리소스를 제공하기 위해
+Page Type: Topic/category page
+주제/카테고리 페이지
+Domain: Technology/Software Development
+기술/소프트웨어 개발

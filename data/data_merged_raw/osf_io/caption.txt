@@ -1,0 +1,11 @@
+1. To introduce and promote OSF (Open Science Framework) as a free, open platform for managing research, enabling collaboration, and discovering public research to academic researchers and scientists.
+
+2. Landing page
+
+3. Education/Research
+
+4. (a) Clear, prominent headline highlighting the platform's main benefit
+(b) "Get started" call-to-action button
+(c) Search bar for discovering public research
+(d) Visual explanation of how OSF supports research with icons and text
+(e) Testimonial section with carousel navigation

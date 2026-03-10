@@ -1,0 +1,11 @@
+1. To help academics, researchers, and professionals find and explore relevant conferences worldwide, providing information on various events across different fields.
+
+2. Landing page
+
+3. Education/Professional Development
+
+4. (a) Clear navigation menu with categories like Conferences, Workshops, Exhibitions/Fairs
+(b) Search functionality in the top right corner
+(c) Featured conference/event cards with eye-catching images and titles
+(d) User account/profile icon for personalized experience
+(e) Browse conferences by month section with clickable date ranges

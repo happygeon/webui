@@ -1,0 +1,11 @@
+1. To direct international customers to the appropriate Best Buy website for their country, allowing them to shop and have orders shipped to their location.
+
+2. Landing page
+
+3. E-commerce
+
+4. (a) Large, clear "Choose a country" heading
+(b) Prominent country flag icons for easy selection
+(c) Language selection options in the top-right corner
+(d) Best Buy logo for brand recognition
+(e) Informative text about international shipping options

@@ -1,0 +1,11 @@
+1. To facilitate microloans to entrepreneurs in developing countries, allowing users to lend small amounts to support economic empowerment and create positive social impact globally.
+
+2. Landing page
+
+3. Microfinance / Social impact
+
+4. (a) Clear, prominent logo and navigation menu
+(b) Large, engaging headline and subheadline
+(c) Search bar for browsing loans
+(d) Call-to-action buttons (e.g. "Support Kiva", "Log in")
+(e) Category filters for different types of loan recipients

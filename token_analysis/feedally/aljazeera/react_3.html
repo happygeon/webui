@@ -1,0 +1,118 @@
+### Thought:
+The current code snippet provided does not include the full HTML document, so it's challenging to provide specific fixes without the complete context. However, based on the provided partial code, we can make some general improvements to ensure better color contrast and maintain the overall design consistency.
+
+### Action:
+1. **Ensure Text and Background Colors Meet WCAG Contrast Requirements**: Adjust the color values for text and background elements to meet the WCAG 2.1 AA requirements.
+2. **Use Tailwind CSS Utility Classes**: Tailwind CSS provides utility classes that can help in achieving the desired color contrasts efficiently.
+
+### Observation:
+After applying these fixes, we should verify that the color contrast is sufficient and that the overall design remains consistent and visually appealing.
+
+### Updated Code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breaking News, World News and Video from Al Jazeera</title>
+    <link href="/favicon_aje.ico" rel="shortcut icon"/>
+    <link href="https://www.aljazeera.com" rel="canonical"/>
+    <link href="https://www.aljazeera.com/images/logo_aje_social.png" rel="image_src"/>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .dark-mode {
+            @apply bg-black text-white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans dark-mode:bg-black dark-mode:text-white">
+
+    <header class="bg-white shadow-md dark-mode:bg-black dark-mode:shadow-none">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-700 hover:text-blue-800 dark-mode:text-white">
+                Al Jazeera
+            </a>
+            <nav class="flex space-x-4">
+                <a href="/news/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">News</a>
+                <a href="/middle-east/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">Middle East</a>
+                <a href="/tag/explainer/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">Explained</a>
+                <a href="/opinion/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">Opinion</a>
+                <a href="/sports/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">Sport</a>
+                <a href="/videos/" class="text-gray-700 hover:text-gray-800 dark-mode:text-white">Video</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 mt-6">
+        <!-- Adding a level-one heading -->
+        <h1 class="text-4xl font-extrabold mb-6 text-center">Al Jazeera News Hub</h1>
+
+        <section class="mb-6">
+            <h2 class="text-3xl font-bold mb-4">Featured Content</h2>
+            <article class="bg-white rounded-lg shadow-md overflow-hidden dark-mode:bg-gray-800 dark-mode:text-white">
+                <a href="/news/liveblog/2025/6/24/live-trump-announces-ceasefire-no-confirmation-from-israel-iran">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img src="/wp-content/uploads/2025/06/live-poster-aje-1750250701.jpg" alt="Video Poster" class="object-cover w-full h-full">
+                    </div>
+                </a>
+                <div class="px-4 py-4">
+                    <h3 class="text-xl font-semibold text-gray-900 dark-mode:text-white"><a href="/news/liveblog/2025/6/24/live-trump-announces-ceasefire-no-confirmation-from-israel-iran">Trump ‘very unhappy’ with Israel over violating ceasefire with Iran</a></h3>
+                </div>
+            </article>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">Live Updates</h2>
+            <ul class="divide-y divide-gray-200 dark-mode:divide-gray-700">
+                <li class="py-4">
+                    <span class="block text-sm text-gray-500 dark-mode:text-gray-400">Published 7 minutes ago</span>
+                    <a href="/news/liveblog/2025/6/24/live-trump-announces-ceasefire-no-confirmation-from-israel-iran?update=3797461" class="block text-base font-medium text-gray-900 hover:text-gray-700 dark-mode:text-white">
+                        After conflict, Iran likely to face ‘brutal’ nuclear negotiations
+                    </a>
+                </li>
+                <li class="py-4">
+                    <span class="block text-sm text-gray-500 dark-mode:text-gray-400">Published 17 minutes ago</span>
+                    <a href="/news/liveblog/2025/6/24/live-trump-announces-ceasefire-no-confirmation-from-israel-iran?update=3797527" class="block text-base font-medium text-gray-900 hover:text-gray-700 dark-mode:text-white">
+                        WATCH: Trump’s angry outburst over ceasefire breaches
+                    </a>
+                </li>
+                <li class="py-4">
+                    <span class="block text-sm text-gray-500 dark-mode:text-gray-400">Published 27 minutes ago</span>
+                    <a href="/news/liveblog/2025/6/24/live-trump-announces-ceasefire-no-confirmation-from-israel-iran?update=3797531" class="block text-base font-medium text-gray-900 hover:text-gray-700 dark-mode:text-white">
+                        Iran president ‘expresses regret’ to Qatar’s leader after missile strike
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="mb-6">
+            <h2 class="text-2xl font-bold mb-4">More Headlines</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <li>
+                    <a href="/news/2025/6/24/israel-iran-ceasefire-off-to-rocky-start-drawing-trumps-ire-after-fanfare" class="block bg-white p-4 rounded-lg shadow-md dark-mode:bg-gray-800 dark-mode:text-white">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="/wp-content/uploads/2025/06/2025-06-24T105200Z_279993113_RC2Y8FAS0V18_RTRMADP_3_NATO-SUMMIT-TRUMP-1750775559.jpg" alt="Israel-Iran Conflict" class="object-cover w-full h-full">
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark-mode:text-white">Israel-Iran ceasefire off to rocky start, drawing Trump’s ire after fanfare</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/news/2025/6/24/dozens-palestinians-killed-in-latest-israeli-attacks-on-aid-seekers" class="block bg-white p-4 rounded-lg shadow-md dark-mode:bg-gray-800 dark-mode:text-white">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="/wp-content/uploads/2025/06/AP25175319776135-1750755712.jpg" alt="Israeli Attacks" class="object-cover w-full h-full">
+                        </div>
+                        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark-mode:text-white">Israel kills more than 70 people in Gaza, including dozens of aid seekers</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="/news/2025/6/24/under-trump-us-strikes-on-somalia-have-doubled-since-last-year-why" class="block bg-white p-4 rounded-lg shadow-md dark-mode:bg-gray-800 dark-mode:text-white">
+                        <h3 class="text-lg font-semibold text-gray-900 dark-mode:text-white">Under Trump, US strikes on Somalia have doubled since last year. Why?</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="

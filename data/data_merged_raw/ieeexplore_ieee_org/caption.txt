@@ -1,0 +1,11 @@
+1. To provide a centralized platform for IEEE members and researchers to access scientific publications, explore technological advancements, and stay updated on upcoming conferences in various engineering fields.
+
+2. Homepage
+
+3. Scientific Research and Technology
+
+4. (a) Prominent search bar for easy access to research papers
+(b) Featured Authors section highlighting key contributors
+(c) Featured Articles showcasing important research topics
+(d) News and Updates section for latest developments
+(e) Upcoming Conferences calendar for networking opportunities

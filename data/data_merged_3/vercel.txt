@@ -1,0 +1,6 @@
+Purpose: To showcase Vercel's AI Cloud platform and attract developers to build and deploy AI applications using their tools and infrastructure
+Vercel의 AI 클라우드 플랫폼을 선보이고 개발자들이 그들의 도구와 인프라를 사용하여 AI 애플리케이션을 구축하고 배포하도록 유도하기 위해
+Page Type: Landing page
+랜딩 페이지
+Domain: Cloud computing / AI development
+클라우드 컴퓨팅 / AI 개발

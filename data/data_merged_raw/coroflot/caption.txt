@@ -1,0 +1,11 @@
+1. To connect design talent with job opportunities and employers, providing a platform for designers to showcase their work and for companies to find skilled designers.
+
+2. Landing page
+
+3. Job board / Recruitment
+
+4. (a) Clear navigation menu with key sections (Jobs, Designers, Discover, Salaries)
+(b) Large, prominent headline stating the platform's purpose
+(c) "Post a Job" call-to-action button
+(d) Grid layout showcasing various design work samples
+(e) Recent job listings with company logos and job titles

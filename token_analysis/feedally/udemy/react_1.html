@@ -1,0 +1,160 @@
+**Thought:** The current HTML document has two primary issues identified in the accessibility report:
+1. **Lack of a main landmark**: The document does not have a `<main>` element, which is essential for screen readers to identify the main content area.
+2. **Missing level-one heading**: The document lacks a level-one heading (`<h1>`), which is crucial for indicating the title or main topic of the page.
+
+To address these issues, I will add a `<main>` element and ensure there is a level-one heading at the beginning of the document.
+
+**Action:** Modify the HTML code to include the necessary landmarks and headings.
+
+**Observation:** After applying the fixes, I will verify that the document now contains exactly one `<main>` element and one `<h1>` heading.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy - Where Learning Never Ends</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .hero-image {
+            background-image: url('https://via.placeholder.com/1920x700?text=Welcome+to+Udemy');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+      .promo-card {
+            background-color: #f4f4f4;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+      .promo-card h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+      .promo-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        @media (max-width: 768px) {
+          .hero-image {
+                font-size: 2rem;
+            }
+          .promo-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Udemy</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+                    <li><a href="#courses" class="hover:text-blue-500">Courses</a></li>
+                    <li><a href="#promotions" class="hover:text-blue-500">Promotions</a></li>
+                    <li><a href="#about" class="hover:text-blue-500">About Us</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto pt-8">
+        <!-- Hero Section -->
+        <section class="hero-image">
+            <h1>Welcome to Udemy</h1>
+            <p>Your destination for online learning.</p>
+        </section>
+
+        <!-- Featured Courses Section -->
+        <section id="courses" class="py-12">
+            <h2 class="text-3xl font-bold mb-8">Featured Courses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="promo-card">
+                    <h2>Python Programming</h2>
+                    <p>Learn Python from beginner to advanced level.</p>
+                </div>
+                <div class="promo-card">
+                    <h2>Web Development Bootcamp</h2>
+                    <p>Build modern websites using HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="promo-card">
+                    <h2>Data Science Essentials</h2>
+                    <p>Gather insights with data analysis and machine learning.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section id="promotions" class="py-12 bg-gray-200">
+            <h2 class="text-3xl font-bold mb-8">Current Promotions</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="promo-card">
+                    <h2>10% Off All Courses</h2>
+                    <p>Valid until end of the month.</p>
+                </div>
+                <div class="promo-card">
+                    <h2>Free Trial Access</h2>
+                    <p>Get access to over 200 courses for free.</p>
+                </div>
+                <div class="promo-card">
+                    <h2>Summer Sale</h2>
+                    <p>Up to 50% off select courses this summer!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-12">
+            <h2 class="text-3xl font-bold mb-8">About Us</h2>
+            <p>Udemy is the world's largest marketplace for learning and teaching online. With over 15 million courses and 50 million learners worldwide, we are dedicated to helping people achieve their goals through education.</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-12 bg-gray-200">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-4 mt-12">
+        <p>&copy; 2023 Udemy Inc. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This update ensures that the document now contains a single `<main>` element wrapping the main content sections and includes a level-one heading at the start of the document, addressing both the identified accessibility issues.

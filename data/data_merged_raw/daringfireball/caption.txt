@@ -1,0 +1,11 @@
+1. To provide commentary and critique on the new macOS Tahoe Finder icon design, targeting tech-savvy Apple users and designers interested in UI/UX changes.
+
+2. Blog post
+
+3. Technology / Design
+
+4. (a) Clear navigation menu on the left side
+(b) Prominent logo and site title at the top
+(c) Large, readable text for the main content
+(d) Embedded images to illustrate the discussion topic
+(e) Contrasting color scheme (light text on dark background) for readability

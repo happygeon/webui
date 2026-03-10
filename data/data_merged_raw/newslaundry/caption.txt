@@ -1,0 +1,11 @@
+1. To provide independent news and analysis to an audience interested in Indian current affairs and politics
+
+2. News homepage
+
+3. News media
+
+4. (a) Clear navigation menu with content categories
+(b) Featured article section with large image
+(c) Latest news section with article thumbnails
+(d) Subscription and support options prominently displayed
+(e) Social media sharing buttons for easy content distribution

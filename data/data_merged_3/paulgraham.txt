@@ -1,0 +1,6 @@
+Purpose: To provide easy access to various sections of Paul Graham's website and promote startup funding opportunities to tech entrepreneurs and developers
+폴 그레이엄의 웹사이트의 다양한 섹션에 쉽게 접근할 수 있도록 하고 기술 기업가와 개발자에게 스타트업 자금 기회를 홍보하기 위해
+Page Type: Homepage
+홈페이지
+Domain: Technology/Startup
+기술/스타트업

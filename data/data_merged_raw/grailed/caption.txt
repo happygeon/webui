@@ -1,0 +1,8 @@
+1. To showcase and sell trendy designer clothing and accessories to fashion-conscious consumers interested in high-end and streetwear brands.
+2. Homepage
+3. E-commerce
+4. (a) Clear navigation menu with categories like Designers, Menswear, Womenswear
+(b) Prominent search bar for easy product discovery
+(c) Featured carousel highlighting trending items and collections
+(d) "Shop + Follow" call-to-action button to encourage engagement
+(e) Sign up and log in buttons for account creation and access

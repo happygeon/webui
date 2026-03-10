@@ -1,0 +1,11 @@
+1. To provide a platform for developers and tech enthusiasts to share and discover programming-related content, tips, and resources
+
+2. Feed/Home page
+
+3. Social media for developers
+
+4. (a) Navigation sidebar with categories
+(b) Post feed with engagement metrics (upvotes, comments)
+(c) Search bar at the top
+(d) User profile and notification icons
+(e) Trending topics or featured content section

@@ -1,0 +1,11 @@
+1. To provide movie and TV show information, trailers, and recommendations to entertainment enthusiasts
+
+2. Homepage
+
+3. Entertainment
+
+4. (a) Large featured video player for movie trailers
+(b) Horizontal scrolling carousel of featured movies/shows
+(c) Sections for different content categories (e.g. "What to watch", "Exclusive videos")
+(d) Search bar for finding specific titles
+(e) Navigation menu for accessing different areas of the site

@@ -1,0 +1,6 @@
+Purpose: Provide detailed financial information and analysis for Apple Inc. stock to investors and traders
+투자자와 트레이더를 위한 애플 주식에 대한 상세한 재무 정보 및 분석을 제공합니다.
+Page Type: Stock Information Page
+주식 정보 페이지
+Domain: Financial/Investing
+재무/투자

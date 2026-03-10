@@ -1,0 +1,116 @@
+**Thought:** The current code has been updated with the addition of the `role="main"` attribute to the main content section. However, there are still issues related to ARIA roles and color contrast that need to be addressed.
+
+**Action:** I will continue to address these remaining issues by:
+1. Assigning appropriate ARIA roles to interactive elements.
+2. Ensuring sufficient color contrast ratios for all text elements.
+
+**Observation:** After making these further changes, I will verify that the updates resolve the issues and maintain the original functionality of the webpage.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>charity: water | Help Bring Clean and Safe Water to Communities</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <nav role="navigation" class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="/" class="text-base font-medium leading-none">charity: water</a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Take Action</a>
+                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">About Us</a>
+                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Why Water?</a>
+                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Sign in</a>
+                    <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Get our emails to stay informed</a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                            aria-expanded="false">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main role="main" class="py-10 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-bold text-white mb-4">The plan? Crystal clear.</h1>
+                <p class="text-xl text-white mb-8">By June 30, help fund 22 clean water projects for rural communities. Give $40 to bring clean water to one person or $240 for a family. 100% will fund community-owned water projects worldwide.</p>
+                <img src="https://cdn.builder.io/api/v1/image/assets%2F2fe4147bb8c843bb8ebba475c8973899%2F36c52a24f6c5417196bd43fcf0f5e0d1" alt="Clean Water Projects" class="mx-auto max-h-64">
+            </div>
+        </div>
+    </main>
+
+    <section role="region" class="py-10 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <a href="#" class="block relative h-full">
+                        <img src="/images/donate-once.jpg" alt="Donate Once" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center">
+                            <span class="text-white text-xl font-semibold">Give Once</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <a href="#" class="block relative h-full">
+                        <img src="/images/monthly-donation.jpg" alt="Monthly Donation" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-end justify-center">
+                            <span class="text-white text-xl font-semibold">Monthly</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white rounded-lg shadow overflow-hidden">
+                    <form action="#" method="post" class="p-6">
+                        <span class="text-lg font-medium mb-4 block">Choose an amount to give per month</span>
+                        <div class="relative">
+                            <input type="number" id="amount" name="amount" placeholder="$10" min="10" step="10" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <div class="absolute bottom-0 left-0 right-0 flex justify-between">
+                                <button type="button" class="border-r border-gray-300 px-4 py-2">10</button>
+                                <button type="button" class="border-r border-gray-300 px-4 py-2">20</button>
+                                <button type="button" class="border-r border-gray-300 px-4 py-2">40</button>
+                                <button type="button" class="border-r border-gray-300 px-4 py-2">100</button>
+                                <button type="button" class="px-4 py-2">Other amount</button>
+                            </div>
+                        </div>
+                        <button type="submit" class="mt-6 w-full bg-indigo-500 text-white font-medium py-2 rounded hover:bg-indigo-600">Join Today</button>
+                        <div class="mt-4">
+                            <a href="#" class="text-sm text-indigo-500 hover:text-indigo-600">Give by check or stock</a>
+                            <a href="#" class="ml-4 text-sm text-indigo-500 hover:text-indigo-600">Donate crypto</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section role="region" class="py-10 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-lg font-medium mb-4">Add Impact To Your Inbox</h2>
+                <p class="mb-4">Get our emails to stay informed.</p>
+                <form action="#" method="post">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label for="first-name" class="block text-sm font-medium">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm font-medium">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium">Email address</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-

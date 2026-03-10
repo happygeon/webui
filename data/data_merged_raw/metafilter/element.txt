@@ -1,0 +1,5 @@
+(a) Prominent header with navigation links
+(b) Centralized logo and tagline
+(c) Intuitive primary navigation bar
+(d) Accessible search feature
+(e) Clear login and signup options

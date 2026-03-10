@@ -1,0 +1,6 @@
+Purpose: Showcasing a collection of recipes, meal ideas, and cooking guides to inspire users in the kitchen and help with meal planning.
+사용자가 주방에서 영감을 얻고 식사 계획에 도움을 줄 수 있도록 레시피, 식사 아이디어 및 요리 가이드를 모아 보여줍니다.
+Page Type: Recipe portal homepage
+레시피 포털 홈페이지
+Domain: Food / Cooking
+음식 / 요리

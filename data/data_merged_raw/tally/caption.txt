@@ -1,0 +1,11 @@
+1. To introduce and promote Tally, a free and intuitive form builder, to users looking for an easy way to create forms without the hassle of traditional boring forms.
+
+2. Landing page
+
+3. Software as a Service (SaaS)
+
+4. (a) Clear, bold headline stating the main value proposition
+(b) Subheadline explaining the product benefits
+(c) Prominent call-to-action button for creating a free form
+(d) Simple navigation menu with key options like Pricing and Sign up
+(e) Illustration showcasing the product's simplicity and user-friendliness

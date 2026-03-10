@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Photographer's Portfolio</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .gallery {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .photo {
+                flex: 1 0 30%;
+                margin: 5px;
+                height: 200px;
+                background-color: #ddd;
+            }
+            .photo.fullscreen {
+                width: 100%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="gallery" class="gallery">
+            <div class="photo" onclick="viewFullScreen(this)">Photo 1</div>
+            <div class="photo" onclick="viewFullScreen(this)">Photo 2</div>
+            <div class="photo" onclick="viewFullScreen(this)">Photo 3</div>
+        </div>
+
+        <script>
+            function viewFullScreen(element) {
+                const isFullScreen = element.classList.toggle('fullscreen');
+                document.body.style.overflow = isFullScreen ? 'hidden' : 'auto';
+            }
+
+            window.addEventListener('scroll', function() {
+                if (window.innerHeight + window.pageYOffset >= document.body.offsetHeight) {
+                    loadMorePhotos();
+                }
+            });
+
+            function loadMorePhotos() {
+                const gallery = document.getElementById('gallery');
+                for (let i = 0; i < 3; i++) {
+                    const photoDiv = document.createElement('div');
+                    photoDiv.className = 'photo';
+                    photoDiv.textContent = `Photo ${gallery.children.length + 1}`;
+                    photoDiv.setAttribute('onclick', 'viewFullScreen(this)');
+                    gallery.appendChild(photoDiv);
+                }
+            }
+        </script>
+    </body>
+</html>

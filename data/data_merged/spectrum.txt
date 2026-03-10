@@ -1,0 +1,6 @@
+Purpose: To introduce and promote GitHub Discussions as a platform for developer communities to collaborate, share ideas, and build connections within their coding projects.
+개발자 커뮤니티가 협력하고 아이디어를 공유하며 코딩 프로젝트 내에서 연결을 구축할 수 있는 플랫폼으로 GitHub Discussions를 소개하고 홍보합니다.
+Page Type: Product feature page
+제품 기능 페이지
+Domain: Software development
+소프트웨어 개발

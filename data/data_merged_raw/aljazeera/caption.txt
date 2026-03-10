@@ -1,0 +1,11 @@
+1. To provide breaking news and current events coverage to a global audience interested in Middle Eastern and international affairs
+
+2. News homepage
+
+3. News media
+
+4. (a) Breaking news banner with live updates
+(b) Top navigation menu with different news categories
+(c) Featured articles section with thumbnail images
+(d) Most popular stories sidebar
+(e) Newsletter signup form for breaking news alerts

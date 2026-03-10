@@ -1,0 +1,11 @@
+1. To promote Memberstack's service for adding membership functionality to Webflow sites, targeting web developers and site owners looking to implement user accounts and subscriptions easily.
+
+2. Landing page
+
+3. SaaS (Software as a Service)
+
+4. (a) Clear, bold headline highlighting the main value proposition
+(b) Prominent call-to-action buttons ("Start free trial" and "Open demo")
+(c) Navigation menu with key sections like Product, Customers, and Pricing
+(d) Social proof section showcasing trusted brands and usage statistics
+(e) Interactive demo section at the bottom to showcase the product's functionality

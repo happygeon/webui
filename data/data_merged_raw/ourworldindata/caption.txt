@@ -1,0 +1,11 @@
+1. To provide accessible research and data on global issues to inform and empower people to make progress on major world problems.
+
+2. Landing page
+
+3. Education/Research
+
+4. (a) Clear navigation menu with key topics
+(b) Large search bar for finding specific data
+(c) Featured work section highlighting key research articles
+(d) "Donate" button for supporting the organization
+(e) Statistics on available data (e.g. "14,380 charts across 123 topics")

@@ -1,0 +1,6 @@
+Purpose: Providing movie ratings, reviews, and recommendations to help users discover, evaluate, and track films and TV shows.
+사용자들이 영화와 TV 프로그램을 발견하고 평가하며 추적할 수 있도록 영화 평점, 리뷰 및 추천을 제공합니다.
+Page Type: Movie/TV ranking and review homepage
+영화/TV 순위 및 리뷰 홈페이지
+Domain: Entertainment / Media
+엔터테인먼트 / 미디어

@@ -1,0 +1,11 @@
+1. To attract and engage machine learning enthusiasts and professionals to join Kaggle's community for sharing knowledge, collaborating on projects, and accessing AI/ML resources.
+
+2. Landing page
+
+3. Technology/Education
+
+4. (a) Clear and prominent navigation menu
+(b) Large, attention-grabbing headline
+(c) Call-to-action buttons for registration
+(d) Informative subheading with community statistics
+(e) Segmented user categories (Learners, Developers, Researchers)

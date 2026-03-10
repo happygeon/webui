@@ -1,0 +1,6 @@
+Purpose: Delivering the latest sports news, live scores, and featured articles to keep fans updated on current events and game highlights.
+최신 스포츠 뉴스, 실시간 점수 및 주요 기사를 제공하여 팬들이 현재 사건 및 경기 하이라이트에 대한 정보를 유지할 수 있도록 합니다.
+Page Type: Sports news portal homepage
+스포츠 뉴스 포털 홈페이지
+Domain: Sports / Media
+스포츠 / 미디어

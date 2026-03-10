@@ -1,0 +1,11 @@
+1. To provide an online marketplace for buying and selling a wide variety of products, catering to both individual consumers and businesses looking to purchase or sell items.
+
+2. Homepage
+
+3. E-commerce
+
+4. (a) Prominent search bar with category selection
+(b) Clear navigation menu with product categories
+(c) Featured product collections and deals sections
+(d) User account and cart icons for easy access
+(e) Call-to-action buttons throughout the page

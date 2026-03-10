@@ -1,0 +1,5 @@
+1. Providing movie and TV show ratings, trailers, and recommendations to help users discover, track, and review entertainment content.
+
+2. Movie/TV portal homepage
+
+3. Entertainment / Media

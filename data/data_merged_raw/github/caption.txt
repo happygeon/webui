@@ -1,0 +1,11 @@
+1. To provide a platform for developers to collaborate, share code, and discuss open-source projects
+
+2. Feed/Timeline Page
+
+3. Developer Collaboration Platform
+
+4. (a) Navigation bar with search functionality
+(b) Post/content cards with engagement metrics (likes, comments)
+(c) Sidebar with trending topics and user information
+(d) Tagging system for categorizing posts
+(e) Interactive buttons for user actions (like, comment, share)

@@ -1,0 +1,91 @@
+Your analysis and proposed solution are correct. By adding a single level-one heading and ensuring that the `<main>` element has the appropriate `role`, you have addressed the accessibility issues identified in the report. Here is the complete, corrected HTML code with your suggested changes:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Computer Science & Python Programming</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+     .focus-ring {
+            outline: 2px solid #007BFF;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans leading-normal">
+
+    <header class="bg-blue-900 text-white p-6 text-center">
+        <h1 class="text-4xl">Welcome to Computer Science & Python Programming</h1>
+        <p class="mt-2">For Undergraduate Students with Little to No Prior Programming Experience</p>
+    </header>
+
+    <main role="main" class="container mx-auto px-6 py-8">
+        <section id="about" tabindex="-1">
+            <h2 class="text-3xl mb-4">About This Course</h2>
+            <p>This course is designed to introduce undergraduate students to the fundamental concepts of computer science and the practical application of Python programming. It caters to students with varying levels of programming experience.</p>
+        </section>
+
+        <section id="learning-outcomes" tabindex="-1">
+            <h2 class="text-3xl mb-4">Learning Outcomes</h2>
+            <ul class="list-disc pl-5">
+                <li>Understand basic computer science concepts such as algorithms, data structures, and computational thinking.</li>
+                <li>Learn the fundamentals of Python programming, including syntax, control structures, functions, and modules.</li>
+                <li>Develop problem-solving skills through hands-on coding exercises and projects.</li>
+            </ul>
+        </section>
+
+        <section id="course-content" tabindex="-1">
+            <h2 class="text-3xl mb-4">Course Content</h2>
+            <ol class="list-decimal pl-5">
+                <li>Introduction to Computer Science</li>
+                <li>Getting Started with Python</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Control Flow and Functions</li>
+                <li>Modules and Packages</li>
+                <li>Projects and Assignments</li>
+            </ol>
+        </section>
+
+        <section id="get-started" tabindex="-1">
+            <h2 class="text-3xl mb-4">Get Started Today</h2>
+            <a href="#" class="bg-blue-900 text-white px-4 py-2 rounded focus:outline-none focus:ring focus:ring-blue-900 hover:bg-blue-800">Enroll Now</a>
+        </section>
+    </main>
+
+    <footer class="bg-blue-900 text-white text-center p-4 mt-8">
+        <p>&copy; 2023 Computer Science & Python Programming. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Add focus ring for better keyboard navigation
+        document.addEventListener('DOMContentLoaded', () => {
+            const focusableElements = 'button, [href], input, select, textarea';
+            const focusElements = Array.from(document.querySelectorAll(focusableElements));
+
+            focusElements.forEach(element => {
+                element.addEventListener('keydown', event => {
+                    if (event.key === 'Tab') {
+                        const firstElement = focusElements[0];
+                        const lastElement = focusElements[focusElements.length - 1];
+
+                        if (!event.shiftKey && document.activeElement === lastElement) {
+                            event.preventDefault();
+                            firstElement.focus();
+                        } else if (event.shiftKey && document.activeElement === firstElement) {
+                            event.preventDefault();
+                            lastElement.focus();
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+```
+
+This code ensures that the document now meets the accessibility requirements by having a single level-one heading and a single `main` landmark, thus resolving the issues raised in the accessibility report.

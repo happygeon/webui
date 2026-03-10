@@ -1,0 +1,11 @@
+1. To introduce and promote Cargo, a site builder for designers and artists, highlighting its features for showcasing work and connecting with clients.
+
+2. Landing page
+
+3. Web development / Design
+
+4. (a) Minimalist, clean layout with ample white space
+(b) Large, bold typography for main headings
+(c) Clear navigation menu with key sections (Templates, Community, Information)
+(d) Prominent call-to-action buttons (Start, Login)
+(e) Descriptive text explaining the product's purpose and benefits

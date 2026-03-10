@@ -1,0 +1,11 @@
+1. To provide a user-friendly login/signup interface for Quora, encouraging knowledge sharing and understanding among a diverse global audience.
+
+2. Landing page
+
+3. Social media / Knowledge sharing
+
+4. (a) Clear and prominent Quora logo
+(b) Concise tagline explaining Quora's purpose
+(c) Simple login form with email and password fields
+(d) Social login options (Google and Facebook)
+(e) Language options for international accessibility

@@ -1,0 +1,6 @@
+Purpose: To provide a user-friendly login/signup interface for Quora, encouraging knowledge sharing and understanding among a diverse global audience.
+사용자 친화적인 로그인/가입 인터페이스를 제공하여 다양한 글로벌 청중 간의 지식 공유와 이해를 촉진합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Social media / Knowledge sharing
+소셜 미디어 / 지식 공유

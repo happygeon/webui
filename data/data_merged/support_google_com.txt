@@ -1,0 +1,6 @@
+Purpose: To provide a centralized help center for Google users to find assistance with various Google products and services
+구글 사용자들이 다양한 구글 제품 및 서비스에 대한 도움을 찾을 수 있는 중앙 집중식 도움말 센터를 제공하기 위해
+Page Type: Landing page
+랜딩 페이지
+Domain: Technology support
+기술 지원

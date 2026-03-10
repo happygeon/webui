@@ -1,0 +1,6 @@
+Purpose: To introduce and promote Tally, a free and intuitive form builder, to users looking for an easy way to create forms without the hassle of traditional boring forms.
+전통적인 지루한 양식의 번거로움 없이 양식을 쉽게 만들고자 하는 사용자에게 무료이자 직관적인 양식 작성기 Tally를 소개하고 홍보합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Software as a Service (SaaS)
+서비스로서의 소프트웨어 (SaaS)

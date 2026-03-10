@@ -1,0 +1,6 @@
+Purpose: To provide a community forum for Manjaro Linux users to search for information, browse topics, and engage in discussions about the operating system.
+Manjaro Linux 사용자가 정보를 검색하고, 주제를 탐색하며, 운영 체제에 대한 토론에 참여할 수 있는 커뮤니티 포럼을 제공합니다.
+Page Type: Forum homepage
+포럼 홈페이지
+Domain: Technology/Software
+기술/소프트웨어

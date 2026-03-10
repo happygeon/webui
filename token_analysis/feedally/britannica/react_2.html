@@ -1,0 +1,76 @@
+The provided HTML code has been updated to comply with the WCAG guidelines regarding the use of landmarks and headings. Here is the final version of the HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Temperature Records Set Amid Climate Change Concerns</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better contrast */
+     .bg-custom {
+            background-color: #f9fafb;
+        }
+     .text-custom {
+            color: #374151;
+        }
+    </style>
+</head>
+<body class="bg-custom text-custom font-sans">
+
+    <header class="p-4 bg-white shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-lg font-bold">ClimateHub</a>
+            <ul class="flex space-x-4">
+                <li><a href="/about" class="hover:text-blue-500">About</a></li>
+                <li><a href="/blog" class="hover:text-blue-500">Blog</a></li>
+                <li><a href="/contact" class="hover:text-blue-500">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main" class="container mx-auto p-6 mt-4">
+        <h1 class="text-3xl font-extrabold mb-4">Global Temperature Records Set Amid Climate Change Concerns</h1>
+        <time datetime="2023-04-15" class="block text-gray-500 text-sm mb-2">April 15, 2023</time>
+            
+        <figure>
+            <img src="path/to/image.jpg" alt="Earth temperature map showing record highs" class="w-full rounded-lg mb-4">
+            <figcaption class="text-gray-600 text-sm">Image source: NASA</figcaption>
+        </figure>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Breaking News: Record-Breaking Temperatures</h2>
+            <p>The world has just witnessed yet another alarming milestone in climate change: unprecedented temperatures across major continents. According to recent data, April 2023 was the hottest month on record globally, breaking previous records set in 2016.</p>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-2">Impact on Environment</h2>
+            <p>The rise in global temperatures is having profound effects on our environment. Increased frequency of heatwaves, melting ice caps, and more extreme weather events like hurricanes and droughts are becoming more common. These changes threaten biodiversity, disrupt ecosystems, and exacerbate food security issues worldwide.</p>
+        </section>
+
+        <section>
+            <h2 class="text-xl font-semibold mb-2">What Can We Do?</h2>
+            <p>While these challenges seem daunting, there are steps we can take to address them. Reducing greenhouse gas emissions through renewable energy adoption, improving energy efficiency, and supporting reforestation efforts are crucial. Individual actions such as using public transport, reducing plastic use, and eating a plant-based diet also make a significant difference.</p>
+        </section>
+
+        <aside>
+            <h3 class="text-lg font-medium mb-2">Stay Informed</h3>
+            <p>For the latest updates and resources on climate change, visit our dedicated section on the website or follow us on social media platforms.</p>
+        </aside>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2023 ClimateHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+### Explanation of Changes:
+1. **Added a `main` landmark**: A `main` landmark with an `id` of `main-content` and `role="main"` has been added to encapsulate the primary content of the page.
+2. **Ensured a level-one heading**: A level-one heading (`<h1>`) is present at the beginning of the `main` content, which is now correctly identified by the `main` landmark.
+
+These changes ensure that the HTML document meets the requirements for a single main landmark and proper use of headings, thereby enhancing its accessibility and usability for users with disabilities.

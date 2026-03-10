@@ -1,0 +1,9 @@
+(a) Prominent Logo Placement - Recognizable and instantly directs users to the homepage.
+
+(b) Intuitive Search Bar - Centrally located, enhances ease of navigation.
+
+(c) Clean Navigation Bar - Simplifies access to crucial pages like login and search.
+
+(d) Highlighted Log In Button - Encourages user account engagement and accessibility.
+
+(e) Engaging Header Imagery - Above-the-fold images draw attention and improve first impressions.

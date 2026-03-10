@@ -1,0 +1,6 @@
+Purpose: To provide a forum for Arch Linux users to discuss technical issues, ask questions, and get assistance with various aspects of the operating system.
+Arch Linux 사용자가 기술 문제를 논의하고, 질문을 하고, 운영 체제의 다양한 측면에 대한 도움을 받을 수 있는 포럼을 제공하기 위해.
+Page Type: Forum page
+포럼 페이지
+Domain: Technology/Operating Systems
+기술/운영 체제

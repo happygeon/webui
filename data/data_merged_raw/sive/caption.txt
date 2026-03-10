@@ -1,0 +1,8 @@
+1. To provide a quick introduction and overview of Derek Sivers, highlighting his diverse background and current activities for visitors interested in learning about him.
+2. Personal website homepage
+3. Personal branding
+4. (a) Clear, large name header
+(b) Concise "Me in 10 seconds" section
+(c) Hyperlinked text for additional information
+(d) Simple, clean layout with plenty of white space
+(e) Clear section headings for easy navigation

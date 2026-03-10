@@ -1,0 +1,11 @@
+1. To provide news and information about climate-related issues to a general audience interested in current events and environmental topics.
+
+2. Search results page
+
+3. News media
+
+4. (a) Clear search bar at the top for easy navigation
+(b) Categorized tabs (Everything, Stories, Videos, Photos) for content filtering
+(c) Headline and brief summary for each article to quickly convey key information
+(d) Pagination at the bottom for browsing through multiple pages of results
+(e) Comprehensive footer with links to various sections and topics for further exploration

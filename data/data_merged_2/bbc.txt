@@ -1,0 +1,6 @@
+Purpose: To provide a comprehensive news homepage for a global audience, offering breaking news, analysis, and diverse content across various topics.
+   전 세계 청중을 위한 포괄적인 뉴스 홈페이지를 제공하여 속보, 분석 및 다양한 주제에 대한 다양한 콘텐츠를 제공합니다.
+Page Type: Homepage
+   홈페이지
+Domain: News media
+   뉴스 미디어

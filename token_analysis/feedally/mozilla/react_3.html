@@ -1,0 +1,23 @@
+**Thought:** The current HTML document has been updated to include a `<title>` element, a single `<main>` element with the `role="main"` attribute, and a level-one heading (`<h1>`). These changes address the violations identified in the accessibility report, specifically the need for a language attribute on the `<html>` element, a main landmark, and a level-one heading. However, the report still indicates that the `<html>` element does not have a `lang` attribute, which remains an unaddressed issue.
+
+**Action:** To resolve the remaining violation related to the missing `lang` attribute on the `<html>` element, we will add the appropriate `lang` attribute.
+
+**Updated Code:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+</head>
+<body>
+    <main role="main">
+        <h1>Your Heading Text</h1>
+        <!-- Additional content here -->
+    </main>
+</body>
+</html>
+```
+
+**Observation:** By adding the `lang="en"` attribute to the `<html>` element, we have addressed the remaining violation from the accessibility report. This ensures that the document is fully compliant with the WCAG guidelines for language declaration. The presence of the `<title>` element, single `<main>` landmark, and level-one heading remains intact and enhances the overall accessibility and usability of the webpage.

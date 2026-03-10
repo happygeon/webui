@@ -1,0 +1,161 @@
+The provided HTML code now includes a `<main>` tag to encapsulate the main content area of the page, which addresses the issues related to duplicate main landmarks and ensures that all page content is within appropriate landmark regions. Here is the final corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memberstack - Add Membership Functionality to Webflow Sites</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+     .hero-bg {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-blue-700">Memberstack</a>
+            <ul class="flex space-x-4">
+                <li><a href="#features" class="text-gray-700 hover:text-blue-700">Features</a></li>
+                <li><a href="#pricing" class="text-gray-700 hover:text-blue-700">Pricing</a></li>
+                <li><a href="#testimonials" class="text-gray-700 hover:text-blue-700">Testimonials</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-700">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg h-screen bg-no-repeat bg-cover flex items-center justify-center">
+            <div class="container text-center text-white">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Unlock User Accounts & Subscriptions Easily</h1>
+                <p class="text-xl md:text-2xl lg:text-3xl mb-8">Add powerful membership functionality to your Webflow sites without coding.</p>
+                <button class="px-8 py-4 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800" tabindex="0">Get Started Now</button>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Why Choose Memberstack?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 text-blue-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mt-4">Easy Integration</h3>
+                        <p class="mt-2 text-gray-600">Effortlessly add membership functionality to your Webflow sites.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 text-blue-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mt-4">User Management</h3>
+                        <p class="mt-2 text-gray-600">Manage users, roles, and permissions seamlessly.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-10 h-10 text-blue-700">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0l3.243 3.243A2 2 0 0017.657 16.657z"></path>
+                        </svg>
+                        <h3 class="text-xl font-bold mt-4">Subscriptions</h3>
+                        <p class="mt-2 text-gray-600">Offer flexible subscription plans and manage billing automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Pricing</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Free Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$0/month</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Basic User Management</li>
+                            <li>Up to 10 Users</li>
+                            <li>Limited Customization</li>
+                        </ul>
+                        <button class="mt-4 px-8 py-4 bg-green-700 text-white font-semibold rounded hover:bg-green-800" tabindex="0">Sign Up Free</button>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Pro Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$29/month</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>All Free Plan Features</li>
+                            <li>Unlimited Users</li>
+                            <li>Advanced Customization</li>
+                            <li>Priority Support</li>
+                        </ul>
+                        <button class="mt-4 px-8 py-4 bg-green-700 text-white font-semibold rounded hover:bg-green-800" tabindex="0">Upgrade to Pro</button>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Enterprise Plan</h3>
+                        <p class="text-2xl font-bold mb-4">$99/month</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>All Pro Plan Features</li>
+                            <li>Custom Development</li>
+                            <li>Dedicated Account Manager</li>
+                            <li>24/7 Support</li>
+                        </ul>
+                        <button class="mt-4 px-8 py-4 bg-green-700 text-white font-semibold rounded hover:bg-green-800" tabindex="0">Contact Us</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">What Our Customers Say</h2>
+                <div class="max-w-2xl mx-auto">
+                    <blockquote class="border-l-4 border-blue-700 pl-8 italic">
+                        "Memberstack has made it incredibly easy to add membership functionality to our Webflow site."
+                        <footer class="mt-4 text-gray-600">- Jane Doe, Co-founder of XYZ Company</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 text-center">Ready to Get Started?</h2>
+                <form action="#" method="post" class="max-w-md mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <button type="submit" class="px-8 py-4 bg-blue-700 text-white font-semibold rounded hover:bg-blue-800" tabindex="0">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-4 text-center">
+        <p>&copy; 2023 Memberstack. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
+This code now includes a `<main>` tag to encapsulate the main content area of the page, ensuring compliance with the accessibility guidelines regarding landmarks.

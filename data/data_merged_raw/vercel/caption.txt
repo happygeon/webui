@@ -1,0 +1,11 @@
+1. To showcase Vercel's AI Cloud platform and attract developers to build and deploy AI applications using their tools and infrastructure
+
+2. Landing page
+
+3. Cloud computing / AI development
+
+4. (a) Large, bold headline emphasizing the main value proposition
+(b) Minimalist design with ample white space
+(c) Live streaming indicator to create urgency
+(d) "Find out more" call-to-action button
+(e) Animated play button in the center of the main visual element

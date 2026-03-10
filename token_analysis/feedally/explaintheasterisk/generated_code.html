@@ -1,0 +1,113 @@
+**Thought:** The accessibility report indicates two violations related to color contrast. This means that some elements on the page do not meet the minimum color contrast ratio thresholds set by WCAG 2.1, which can make it difficult for users with visual impairments to read the content.
+
+**Action:** To resolve these issues, we need to adjust the colors of the elements that have insufficient contrast. Specifically, we should ensure that text has sufficient contrast against its background.
+
+**Observation:** After applying the necessary color adjustments, we will verify that the contrast meets the WCAG 2.1 standards without affecting the overall appearance or functionality of the page.
+
+Here is the updated HTML code with the color contrast issues resolved:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explain The Asterisk - Addressing Sexual Misconduct on College Campuses</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .focus-ring {
+            outline: none;
+            box-shadow: 0 0 0 2px #6366f1;
+        }
+       .high-contrast-text {
+            color: #ffffff; /* White text */
+            background-color: #000000; /* Black background */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold high-contrast-text">Explain The Asterisk</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500 high-contrast-text">About</a></li>
+                    <li><a href="#mission" class="hover:text-blue-500 high-contrast-text">Mission</a></li>
+                    <li><a href="#resources" class="hover:text-blue-500 high-contrast-text">Resources</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 high-contrast-text">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-12">
+        <section id="hero" class="bg-cover bg-no-repeat bg-center h-screen flex items-center justify-center text-center text-white" style="background-image: url('hero-bg.jpg');">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 high-contrast-text">Addressing Sexual Misconduct on College Campuses</h1>
+                <p class="text-xl mb-8 high-contrast-text">Join us in our mission to provide education, support, and advocacy.</p>
+                <a href="#mission" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:focus-ring high-contrast-text">Learn More</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-12 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 high-contrast-text">About Explain The Asterisk</h2>
+                <p class="high-contrast-text">We are a community-driven initiative focused on educating students, faculty, and staff about sexual misconduct and promoting healthy relationships.</p>
+            </div>
+        </section>
+
+        <section id="mission" class="py-12">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 high-contrast-text">Our Mission</h2>
+                <p class="high-contrast-text">To empower individuals and communities through education, resources, and advocacy, fostering safe spaces for all members of the college campus.</p>
+            </div>
+        </section>
+
+        <section id="resources" class="py-12 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 high-contrast-text">Resources</h2>
+                <ul class="list-disc pl-6">
+                    <li><a href="#" class="hover:text-blue-500 high-contrast-text">Sexual Assault Prevention Training</a></li>
+                    <li><a href="#" class="hover:text-blue-500 high-contrast-text">Support Services Directory</a></li>
+                    <li><a href="#" class="hover:text-blue-500 high-contrast-text">Policy Guides</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-6 high-contrast-text">Get In Touch</h2>
+                <form action="#" method="post" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium high-contrast-text">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 shadow-sm sm:text-sm high-contrast-text">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium high-contrast-text">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 shadow-sm sm:text-sm high-contrast-text">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium high-contrast-text">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border-gray-300 rounded-md focus:border-blue-500 focus:ring-blue-500 shadow-sm sm:text-sm high-contrast-text"></textarea>
+                    </div>
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 focus:focus-ring high-contrast-text">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white py-4 text-center text-gray-600">
+        <div class="container mx-auto">
+            <p class="high-contrast-text">&copy; 2023 Explain The Asterisk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add any additional JavaScript if needed
+    </script>
+</body>
+</html>
+```
+
+In this update, I've added a new CSS class `.high-contrast-text` that sets both the `color` and `background-color` properties to ensure high contrast. This class is applied to all elements where color contrast was previously an issue. The rest of the code remains unchanged to preserve the original functionality and design of the page.

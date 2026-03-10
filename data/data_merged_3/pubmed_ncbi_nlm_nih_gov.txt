@@ -1,0 +1,6 @@
+Purpose: To provide a comprehensive search interface for biomedical literature, allowing researchers and medical professionals to access scientific publications and citations.
+생물 의학 문헌에 대한 포괄적인 검색 인터페이스를 제공하여 연구자와 의료 전문가가 과학 출판물 및 인용에 접근할 수 있도록 합니다.
+Page Type: Homepage
+홈페이지
+Domain: Medical research
+의학 연구

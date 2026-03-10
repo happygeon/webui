@@ -1,0 +1,6 @@
+Purpose: Presenting a streaming platform’s catalog with featured shows, movies, and personalized recommendations for subscribers to browse and watch content.
+   스트리밍 플랫폼의 카탈로그를 제공하여 구독자가 콘텐츠를 탐색하고 시청할 수 있도록 추천된 쇼, 영화 및 개인화된 추천을 포함합니다.
+Page Type: Streaming service homepage
+   스트리밍 서비스 홈페이지
+Domain: Entertainment / Streaming
+   엔터테인먼트 / 스트리밍

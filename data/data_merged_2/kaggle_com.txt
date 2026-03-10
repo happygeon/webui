@@ -1,0 +1,6 @@
+Purpose: To attract and engage machine learning enthusiasts and professionals to join Kaggle's community for sharing knowledge, collaborating on projects, and accessing AI/ML resources.
+기계 학습 애호가와 전문가를 끌어들이고 참여시켜 Kaggle 커뮤니티에 가입하여 지식을 공유하고, 프로젝트에 협력하며, AI/ML 리소스에 접근하도록 합니다.
+Page Type: Landing page
+랜딩 페이지
+Domain: Technology/Education
+기술/교육

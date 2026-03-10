@@ -1,0 +1,11 @@
+1. To provide music discovery and tracking for music enthusiasts, allowing users to explore trending artists, tracks, and global listening trends.
+
+2. Landing page
+
+3. Music streaming and social networking
+
+4. (a) Navigation menu with key sections like Live, Music, Charts, Events
+(b) "Spiking Artists" section showcasing trending musicians
+(c) Global scrobble counter showing total tracks listened
+(d) World map visualization of listening trends by region
+(e) Interactive genre exploration tool (Marvenn Gaye section)

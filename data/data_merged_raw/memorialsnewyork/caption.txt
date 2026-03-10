@@ -1,0 +1,11 @@
+1. To showcase and document various memorials and tributes throughout New York City, aimed at those interested in local history, social issues, and urban culture.
+
+2. Landing page
+
+3. Culture/History
+
+4. (a) Clear navigation menu with Home, Blog, About, and Contact options
+(b) Large, eye-catching main image with title overlay
+(c) Grid layout of categorized memorial types with thumbnail images
+(d) Social media icons for easy sharing and following
+(e) Clean, minimalist design with ample white space for easy readability

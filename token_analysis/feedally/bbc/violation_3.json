@@ -1,0 +1,15 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "duplicate-id-aria",
+      "help": "IDs used in ARIA and labels must be unique",
+      "count": 1
+    },
+    {
+      "id": "region",
+      "help": "All page content should be contained by landmarks",
+      "count": 2
+    }
+  ]
+}

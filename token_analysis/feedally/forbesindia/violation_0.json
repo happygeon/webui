@@ -1,0 +1,10 @@
+{
+  "overall_violation": "Yes",
+  "violated_elements_and_reasons": [
+    {
+      "id": "nested-interactive",
+      "help": "Interactive controls must not be nested",
+      "count": 1
+    }
+  ]
+}

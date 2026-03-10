@@ -1,0 +1,6 @@
+Purpose: To provide a platform for developers to collaborate, share code, and discuss open-source projects
+개발자들이 협업하고, 코드를 공유하며, 오픈 소스 프로젝트에 대해 논의할 수 있는 플랫폼을 제공하기 위해
+Page Type: Feed/Timeline Page
+피드/타임라인 페이지
+Domain: Developer Collaboration Platform
+개발자 협업 플랫폼

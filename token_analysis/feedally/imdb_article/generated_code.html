@@ -1,0 +1,126 @@
+**Thought:** The current HTML document lacks a main landmark and a level-one heading, which are essential for improving accessibility. The presence of these elements helps users navigate and understand the content more effectively.
+
+**Action:** Add a `<main>` element with an `id` of `"content"` and a `role` of `"main"`. Additionally, include a level-one heading at the beginning of the document.
+
+**Observation:** After applying the changes, the document will have one main landmark and a level-one heading, ensuring compliance with the WCAG guidelines.
+
+Here is the updated HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception: The Cobol Job - Movie Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for better visual appeal */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+    .header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+    .movie-poster {
+            width: 300px;
+            height: 450px;
+            object-fit: cover;
+        }
+    .rating {
+            font-size: 2rem;
+            color: gold;
+        }
+    .review-container {
+            margin-top: 2rem;
+        }
+    .related-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: space-around;
+        }
+    .related-item {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            text-align: center;
+            width: calc(33% - 1rem);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<header class="header bg-black text-white">
+    <h1 class="text-4xl">Movie Database</h1>
+</header>
+
+<main id="content" role="main" class="container">
+    <h1>Inception: The Cobol Job</h1>
+    
+    <div class="flex items-center justify-between mb-4">
+        <img src="https://via.placeholder.com/300x450?text=Inception+The+Cobol+Job" alt="Inception: The Cobol Job Poster" class="movie-poster rounded-lg shadow-md">
+        <div class="ml-4">
+            <h2 class="text-2xl font-bold">Inception: The Cobol Job</h2>
+            <p class="text-gray-700">Release Date: TBD</p>
+            <p class="text-gray-700">Director: TBD</p>
+            <p class="text-gray-700">Cast: TBD</p>
+            <div class="rating">
+                <span aria-label="Rating">★★★☆☆</span> (User Rating)
+            </div>
+        </div>
+    </div>
+
+    <div class="review-container">
+        <h3 class="text-xl font-bold mb-2">User Reviews</h3>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p><strong>User 1:</strong> This movie was amazing! The plot twists were mind-bending.</p>
+        </div>
+        <div class="bg-white p-4 shadow-md rounded-lg">
+            <p><strong>User 2:</strong> It was okay, but not as exciting as I had hoped.</p>
+        </div>
+    </div>
+
+    <div class="related-content mt-4">
+        <div class="related-item bg-white p-4 shadow-md rounded-lg">
+            <h4 class="text-lg font-bold">Related Movies</h4>
+            <ul>
+                <li><a href="#">Inception</a></li>
+                <li><a href="#">The Matrix</a></li>
+                <li><a href="#">Interstellar</a></li>
+            </ul>
+        </div>
+        <div class="related-item bg-white p-4 shadow-md rounded-lg">
+            <h4 class="text-lg font-bold">Upcoming Events</h4>
+            <ul>
+                <li><a href="#">Cinema Night</a></li>
+                <li><a href="#">Movie Marathon</a></li>
+                <li><a href="#">Film Festival</a></li>
+            </ul>
+        </div>
+        <div class="related-item bg-white p-4 shadow-md rounded-lg">
+            <h4 class="text-lg font-bold">Latest News</h4>
+            <ul>
+                <li><a href="#">New Release Alert</a></li>
+                <li><a href="#">Event Schedule Update</a></li>
+                <li><a href="#">Member Spotlight</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+```
+
+This update ensures that the document meets the requirements for having one main landmark and a level-one heading, enhancing its accessibility for users with disabilities.

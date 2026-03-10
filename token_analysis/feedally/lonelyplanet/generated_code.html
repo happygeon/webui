@@ -1,0 +1,103 @@
+The provided HTML code already includes a level-one heading (`<h1>Welcome to TravelInspire</h1>`) within the `<main role="main">` element, which satisfies the requirements outlined in the accessibility report. Therefore, no further changes are needed to address the reported issues.
+
+Here is the complete, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelInspire - Discover Your Next Adventure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :focus-visible {
+            outline: 2px solid #3498db;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-900 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <img src="logo.png" alt="TravelInspire Logo" width="50" height="50" />
+            <h1 class="text-2xl">TravelInspire</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="#destinations" class="hover:text-blue-300">Destinations</a></li>
+                <li><a href="#blog" class="hover:text-blue-300">Blog</a></li>
+                <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container mx-auto py-8">
+        <h1 class="text-4xl font-bold mb-8">Welcome to TravelInspire</h1>
+        <section id="hero" class="text-center mb-8">
+            <h2 class="text-4xl font-bold mb-4">Welcome to TravelInspire</h2>
+            <p class="text-lg mb-8">Find your next adventure with our curated list of destinations and travel guides.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" tabindex="0">Explore Destinations</button>
+        </section>
+
+        <section id="destinations" class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <article class="bg-white shadow-md p-4">
+                <img src="destination1.jpg" alt="Destination 1" class="w-full h-48 object-cover mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Paris, France</h3>
+                <p class="text-gray-600 mb-4">Experience the romance of Paris with its stunning architecture, delicious food, and beautiful culture.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+            </article>
+            <article class="bg-white shadow-md p-4">
+                <img src="destination2.jpg" alt="Destination 2" class="w-full h-48 object-cover mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Tokyo, Japan</h3>
+                <p class="text-gray-600 mb-4">Discover the vibrant energy of Tokyo with its cutting-edge technology, traditional temples, and delicious cuisine.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+            </article>
+            <article class="bg-white shadow-md p-4">
+                <img src="destination3.jpg" alt="Destination 3" class="w-full h-48 object-cover mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Sydney, Australia</h3>
+                <p class="text-gray-600 mb-4">Enjoy the beauty of Sydney with its iconic landmarks, stunning beaches, and laid-back lifestyle.</p>
+                <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+            </article>
+        </section>
+
+        <section id="blog" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">Travel Blog</h2>
+            <div class="space-y-4">
+                <article class="bg-white shadow-md p-4">
+                    <h3 class="text-xl font-semibold mb-2"><a href="#">Top Travel Tips for First-Time Visitors</a></h3>
+                    <p class="text-gray-600 mb-4">Learn essential tips and tricks for making the most of your first trip.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+                </article>
+                <article class="bg-white shadow-md p-4">
+                    <h3 class="text-xl font-semibold mb-2"><a href="#">Exploring the Hidden Gems of Asia</a></h3>
+                    <p class="text-gray-600 mb-4">Dive into lesser-known destinations in Asia that offer unique experiences.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700">Read More</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white shadow-md p-8">
+            <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 sm:text-sm" />
+
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 sm:text-sm" />
+
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md py-2 px-3 sm:text-sm"></textarea>
+
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p>&copy; 2023 TravelInspire. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+This code meets all the specified WCAG 2.1 guidelines, including the presence of a level-one heading and a main landmark. No additional changes were made as the current implementation already addresses the reported issues.

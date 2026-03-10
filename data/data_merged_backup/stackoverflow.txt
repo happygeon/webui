@@ -1,0 +1,3 @@
+1. To display and allow users to browse the newest questions posted on Stack Overflow, a Q&A platform for programmers and developers to seek help and share knowledge.
+2. Questions listing page
+3. Technology/Programming

@@ -1,0 +1,11 @@
+1. To provide an introduction to computer science and Python programming for undergraduate students with little to no prior programming experience.
+
+2. Course page
+
+3. Education
+
+4. (a) Clear course title and description
+(b) Organized sidebar menu with course materials
+(c) Course info section with instructors, topics, and departments
+(d) Learning resource types displayed as clickable buttons
+(e) Download course button for easy access to materials

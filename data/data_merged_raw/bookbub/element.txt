@@ -1,0 +1,9 @@
+(a) **Logo and Navigation Bar**: Streamlined and accessible for immediate brand recognition and easy navigation.
+
+(b) **Call to Action Section**: Prominent and inviting, encouraging user engagement through a clear sign-up prompt.
+
+(c) **Header Text**: Bold and motivating, capturing attention with its offer of free and discounted ebooks.
+
+(d) **Email Input Field**: Simple and user-friendly, facilitating quick user interaction to access deals.
+
+(e) **Sort and Filter Options**: Intuitive and organized, enhancing usability by allowing users to customize their browsing experience.

@@ -1,0 +1,11 @@
+1. To showcase MIT's latest research, innovations, and campus life to prospective students, current students, faculty, alumni, and the general public interested in science and technology.
+
+2. Homepage
+
+3. Education and Research
+
+4. (a) Clear navigation menu with key sections
+(b) Featured research spotlight with eye-catching visuals
+(c) Grid layout of additional research stories and campus news
+(d) Search bar for easy access to specific information
+(e) Social media links for wider engagement and sharing

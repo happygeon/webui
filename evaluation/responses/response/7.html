@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Lifestyle Blog</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+            }
+            nav {
+                width: 200px;
+                background-color: #f4f4f4;
+                padding: 15px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            nav ul li {
+                margin-bottom: 10px;
+            }
+            nav ul li button {
+                background: none;
+                border: none;
+                width: 100%;
+                text-align: left;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .content {
+                flex: 1;
+                padding: 20px;
+                transition: opacity 0.5s ease;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="toggleCategory('category1')">Category 1</button>
+                    <div id="category1" class="hidden">
+                        <p>Subcategory 1.1</p>
+                        <p>Subcategory 1.2</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="toggleCategory('category2')">Category 2</button>
+                    <div id="category2" class="hidden">
+                        <p>Subcategory 2.1</p>
+                        <p>Subcategory 2.2</p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="content" id="content">
+            <h1>Welcome to the Lifestyle Blog</h1>
+            <p>This is where the content will transition with animations.</p>
+        </div>
+
+        <script>
+            function toggleCategory(categoryId) {
+                let category = document.getElementById(categoryId);
+                if (category.classList.contains('hidden')) {
+                    category.classList.remove('hidden');
+                } else {
+                    category.classList.add('hidden');
+                }
+            }
+        </script>
+    </body>
+</html>

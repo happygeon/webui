@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNICEF Support Appeal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .bg-gradient-to-r {
+            background-image: linear-gradient(to right, #6a11cb, #2575fc);
+        }
+        @media (max-width: 640px) {
+         .hero-text h1 {
+                font-size: 2rem;
+            }
+         .hero-text p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white">UNICEF Support Appeal</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="text-white hover:text-opacity-75">About Us</a></li>
+                    <li><a href="#donate" class="text-white hover:text-opacity-75">Donate Now</a></li>
+                    <li><a href="#contact" class="text-white hover:text-opacity-75">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-cover bg-center h-screen hero-text flex items-center justify-center text-white">
+        <div class="container max-w-2xl text-center">
+            <h1 class="font-bold text-4xl mb-4">Join Our Mission</h1>
+            <p class="mb-8">Help children around the world thrive despite funding cuts.</p>
+            <button class="bg-blue-500 text-white py-3 px-6 rounded-full hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600">Donate Today</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="py-12 container mx-auto">
+            <h2 class="text-3xl font-bold mb-6">About UNICEF</h2>
+            <p>UNICEF is the world's leading organization dedicated to children’s rights and well-being. We work to ensure that every child has what they need to survive, learn, and reach their full potential.</p>
+        </section>
+
+        <section id="donate" class="bg-gray-200 py-12 container mx-auto">
+            <h2 class="text-3xl font-bold mb-6">How You Can Help</h2>
+            <form action="#" method="post" class="space-y-4">
+                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm sm:text-sm">
+
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm sm:text-sm">
+
+                <label for="amount" class="block text-sm font-medium text-gray-700">Amount</label>
+                <input type="number" id="amount" name="amount" min="1" step="1" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm sm:text-sm">
+
+                <button type="submit" class="bg-green-500 text-white py-3 px-6 rounded-full hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600">Submit Donation</button>
+            </form>
+        </section>
+
+        <section id="contact" class="py-12 container mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+            <address>
+                <p>Email: support@unicef.org</p>
+                <p>Phone: +1-800-123-4567</p>
+            </address>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-4 px-6 text-center">
+        <p>&copy; 2023 UNICEF Support Appeal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+```
+
+### Verification:
+
+- The `main` landmark element wraps all the primary content sections (`#about`, `#donate`, `#contact`).
+- The document begins with a `<h1>` heading titled "UNICEF Support Appeal".
+
+These changes resolve the reported accessibility issues while maintaining the original structure and functionality of the landing page.

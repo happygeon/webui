@@ -1,0 +1,8 @@
+1. To inform and engage Cisco's audience about latest innovations announced at Cisco Live event, focusing on AI-ready data centers, workplace reimagination, and digital resilience.
+2. Landing page
+3. Technology/IT
+4. (a) Large, prominent headline
+(b) Descriptive subheading
+(c) "Watch announcements" call-to-action button
+(d) Navigation menu and search functionality
+(e) "Catch up from Cisco Live" section with additional content cards

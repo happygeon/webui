@@ -1,0 +1,22 @@
+[
+  {"category": "travel", "url": "https://www.lonelyplanet.com", "purpose": "travel guides & tips"},
+  {"category": "technology", "url": "https://m.techcrunch.com", "purpose": "technology/startup news"},
+  {"category": "finance", "url": "https://m.investing.com", "purpose": "financial news & markets"},
+  {"category": "job", "url": "https://www.indeed.com/", "purpose": "job search"},
+  {"category": "reference", "url": "https://www.wikipedia.org/", "purpose": "encyclopedia"},
+  {"category": "movie", "url": "https://m.imdb.com/chart/top", "purpose": "movie ranking"},
+  {"category": "movie", "url": "https://www.rottentomatoes.com", "purpose": "movie reviews"},
+  {"category": "book", "url": "https://www.goodreads.com", "purpose": "book reviews"},
+  {"category": "book", "url": "https://www.bookbub.com/ebook-deals/free-ebooks", "purpose": "free ebooks"},
+  {"category": "dictionary", "url": "https://www.dictionary.com", "purpose": "dictionary"},
+  {"category": "news", "url": "https://www.npr.org/", "purpose": "news and radio"},
+  {"category": "shopping", "url": "https://www.amazon.com/", "purpose": "online shopping"},
+  {"category": "shopping", "url": "https://www.ebay.com/", "purpose": "auction and shopping"},
+  {"category": "sports", "url": "https://www.espn.com/", "purpose": "sports news"},
+  {"category": "finance", "url": "https://www.bloomberg.com/", "purpose": "business and finance news"},
+  {"category": "travel", "url": "https://www.tripadvisor.com/", "purpose": "travel reviews"},
+  {"category": "food", "url": "https://www.allrecipes.com/", "purpose": "recipes and cooking"},
+  {"category": "technology", "url": "https://www.theverge.com/", "purpose": "technology news"},
+  {"category": "education", "url": "https://www.khanacademy.org/", "purpose": "online education"},
+  {"category": "health", "url": "https://www.webmd.com/", "purpose": "health and medical information"}
+]

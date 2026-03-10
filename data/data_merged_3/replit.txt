@@ -1,0 +1,6 @@
+Purpose: To attract and engage developers and designers to use Replit's platform for creating data analysis and visualization tools using AI models
+개발자와 디자이너가 AI 모델을 사용하여 데이터 분석 및 시각화 도구를 만들기 위해 Replit의 플랫폼을 사용하도록 유도하고 참여시키기 위해
+Page Type: Landing page
+랜딩 페이지
+Domain: Software development
+소프트웨어 개발

@@ -1,0 +1,123 @@
+The provided HTML code has been modified to address the accessibility issues identified by the report. Here is the complete, corrected HTML code:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Talent Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+     .focus-ring {
+            outline: none;
+            box-shadow: 0 0 0 2px #6b7280;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-lg font-bold">Design Talent Network</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#jobs" class="hover:text-blue-500">Jobs</a></li>
+                    <li><a href="#about" class="hover:text-blue-500">About</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+                    Connect Designers & Companies
+                </h1>
+                <p class="mt-4 max-w-xl mx-auto text-base sm:text-lg md:text-xl">
+                    Find your next great opportunity or show off your skills.
+                </p>
+                <button class="mt-6 bg-white text-black py-2 px-4 rounded-full focus:ring ring-offset-2 ring-opacity-50 hover:bg-gray-100">
+                    Get Started
+                </button>
+            </div>
+        </section>
+
+        <!-- Jobs Section -->
+        <section id="jobs" class="py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-8">Available Jobs</h2>
+                <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <div class="aspect-w-16 aspect-h-9">
+                            <img src="job-image-1.jpg" alt="Job Image 1" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-semibold">UI/UX Designer</h3>
+                            <p class="text-gray-600">Tech Company Inc.</p>
+                            <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded-full focus:ring ring-offset-2 ring-opacity-50 hover:bg-blue-600">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Repeat above div for more jobs -->
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 px-4 sm:py-32 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-8">About Us</h2>
+                <p class="text-gray-600">
+                    We are a platform connecting talented designers with exciting job opportunities. Our mission is to provide a space where both professionals and businesses can thrive.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold mb-8">Get in Touch</h2>
+                <form action="#" method="POST" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="3" required class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto sm:flex-shrink-0">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-md p-4 mt-12">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Design Talent Network. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
+
+### Explanation of Changes:
+1. **Added `<main>` Tag**: A `<main>` tag has been added around the primary content of the page to ensure that it is correctly identified as the main section of the content.
+2. **Added `<h1>` Heading**: A level-one heading (`<h1>`) has been added at the top of the document to serve as the main title of the page, which helps improve navigation and readability for users.
+
+These changes ensure that the HTML document meets the WCAG requirements regarding landmarks and headings, addressing the issues reported in the accessibility report.
